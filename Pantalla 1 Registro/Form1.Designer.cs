@@ -33,7 +33,7 @@
             this.txtMailEspecialista = new System.Windows.Forms.TextBox();
             this.cmbDiagnostico = new System.Windows.Forms.ComboBox();
             this.rbtnFemenino = new System.Windows.Forms.RadioButton();
-            this.rbtnnMasculino = new System.Windows.Forms.RadioButton();
+            this.rbtnMasculino = new System.Windows.Forms.RadioButton();
             this.rbtnOtro = new System.Windows.Forms.RadioButton();
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.cmbAño = new System.Windows.Forms.ComboBox();
@@ -100,17 +100,17 @@
             this.rbtnFemenino.Text = "Femenino";
             this.rbtnFemenino.UseVisualStyleBackColor = true;
             // 
-            // rbtnnMasculino
+            // rbtnMasculino
             // 
-            this.rbtnnMasculino.AutoSize = true;
-            this.rbtnnMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.rbtnnMasculino.Location = new System.Drawing.Point(648, 521);
-            this.rbtnnMasculino.Name = "rbtnnMasculino";
-            this.rbtnnMasculino.Size = new System.Drawing.Size(98, 24);
-            this.rbtnnMasculino.TabIndex = 9;
-            this.rbtnnMasculino.TabStop = true;
-            this.rbtnnMasculino.Text = "Masculino";
-            this.rbtnnMasculino.UseVisualStyleBackColor = true;
+            this.rbtnMasculino.AutoSize = true;
+            this.rbtnMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.rbtnMasculino.Location = new System.Drawing.Point(648, 521);
+            this.rbtnMasculino.Name = "rbtnMasculino";
+            this.rbtnMasculino.Size = new System.Drawing.Size(98, 24);
+            this.rbtnMasculino.TabIndex = 9;
+            this.rbtnMasculino.TabStop = true;
+            this.rbtnMasculino.Text = "Masculino";
+            this.rbtnMasculino.UseVisualStyleBackColor = true;
             // 
             // rbtnOtro
             // 
@@ -141,6 +141,7 @@
             this.cmbAño.Name = "cmbAño";
             this.cmbAño.Size = new System.Drawing.Size(55, 26);
             this.cmbAño.TabIndex = 12;
+            this.cmbAño.SelectedIndexChanged += new System.EventHandler(this.CmbAño_SelectedIndexChanged);
             // 
             // cmbDía
             // 
@@ -162,6 +163,7 @@
             this.btnRegistrarse.Size = new System.Drawing.Size(139, 40);
             this.btnRegistrarse.TabIndex = 14;
             this.btnRegistrarse.UseVisualStyleBackColor = false;
+            this.btnRegistrarse.Click += new System.EventHandler(this.BtnRegistrarse_Click);
             // 
             // pictureBox1
             // 
@@ -246,7 +248,7 @@
             this.Controls.Add(this.cmbAño);
             this.Controls.Add(this.cmbMes);
             this.Controls.Add(this.rbtnOtro);
-            this.Controls.Add(this.rbtnnMasculino);
+            this.Controls.Add(this.rbtnMasculino);
             this.Controls.Add(this.rbtnFemenino);
             this.Controls.Add(this.cmbDiagnostico);
             this.Controls.Add(this.txtMailEspecialista);
@@ -276,7 +278,7 @@
         private System.Windows.Forms.TextBox txtMailEspecialista;
         private System.Windows.Forms.ComboBox cmbDiagnostico;
         private System.Windows.Forms.RadioButton rbtnFemenino;
-        private System.Windows.Forms.RadioButton rbtnnMasculino;
+        private System.Windows.Forms.RadioButton rbtnMasculino;
         private System.Windows.Forms.RadioButton rbtnOtro;
         private System.Windows.Forms.ComboBox cmbMes;
         private System.Windows.Forms.ComboBox cmbAño;

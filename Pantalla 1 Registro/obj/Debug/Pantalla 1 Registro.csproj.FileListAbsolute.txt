@@ -18,3 +18,13 @@ C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 R
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.CoreCompileInputs.cache
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe.config
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.pdb
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csprojAssemblyReference.cache
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Form1.resources
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Properties.Resources.resources
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.GenerateResource.cache
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.CoreCompileInputs.cache
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb

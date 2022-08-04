@@ -12,6 +12,18 @@ namespace Pantalla_1_Registro
 {
     public partial class Form1 : Form
     {
+        string nombre;
+        string mailusuario;
+        string mailespecialista;
+        string mesnacimiento;
+        int dia = 1;
+        int dianacimiento;
+        int año = 1921;
+        int añonacimiento;
+        string genero;
+        string diagnostico;
+        string contraseña;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,7 +31,72 @@ namespace Pantalla_1_Registro
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            while (dia <= 31)
+            {
+                cmbDía.Items.Add(dia);
+                dia++;
+            }
+            while (año <= 2012)
+            {
+                cmbAño.Items.Add(año);
+                año++;
+            }
+            cmbMes.Items.Add("Enero");
+            cmbMes.Items.Add("Febrero");
+            cmbMes.Items.Add("Marzo");
+            cmbMes.Items.Add("Abril");
+            cmbMes.Items.Add("Mayo");
+            cmbMes.Items.Add("Junio");
+            cmbMes.Items.Add("Julio");
+            cmbMes.Items.Add("Agosto");
+            cmbMes.Items.Add("Septiembre");
+            cmbMes.Items.Add("Octubre");
+            cmbMes.Items.Add("Noviembre");
+            cmbMes.Items.Add("Diciembre");
 
+            cmbDiagnostico.Items.Add("Anorexia");
+            cmbDiagnostico.Items.Add("Buliimia");
+            cmbDiagnostico.Items.Add("Obesidad");
         }
+
+        private void CmbAño_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void BtnRegistrarse_Click(object sender, EventArgs e)
+        {
+            if (txtMailDelUsuario.Text=="" || txtMailEspecialista.Text=="" || txtNombre.Text=="")
+            {
+                MessageBox.Show("Complete todos los campos para registrarse");
+            }
+            else
+            {
+                mailespecialista = txtMailEspecialista.Text;
+                mailusuario = txtMailDelUsuario.Text;
+                nombre = txtNombre.Text;
+                dianacimiento = Convert.ToInt32(cmbDía.SelectedItem.ToString());
+                añonacimiento = Convert.ToInt32(cmbAño.SelectedItem.ToString());
+                mesnacimiento = cmbMes.SelectedItem.ToString();
+                diagnostico = cmbDiagnostico.SelectedItem.ToString();
+
+                if (rbtnFemenino.Checked)
+                {
+                    genero = "Femenino";
+                }
+                else if (rbtnMasculino.Checked)
+                {
+                    genero = "Masculino";
+                }
+                else if (rbtnOtro.Checked)
+                {
+                    genero = "Otro";
+                }
+                else
+                {
+                    MessageBox.Show("Ingrese el género");
+                }
+            }
+        }
+
     }
 }
