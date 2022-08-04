@@ -88,32 +88,32 @@
             this.rbtnFemenino.AutoSize = true;
             this.rbtnFemenino.Location = new System.Drawing.Point(288, 402);
             this.rbtnFemenino.Name = "rbtnFemenino";
-            this.rbtnFemenino.Size = new System.Drawing.Size(85, 17);
+            this.rbtnFemenino.Size = new System.Drawing.Size(71, 17);
             this.rbtnFemenino.TabIndex = 8;
             this.rbtnFemenino.TabStop = true;
-            this.rbtnFemenino.Text = "radioButton1";
+            this.rbtnFemenino.Text = "Femenino";
             this.rbtnFemenino.UseVisualStyleBackColor = true;
             // 
             // rbtnnMasculino
             // 
             this.rbtnnMasculino.AutoSize = true;
-            this.rbtnnMasculino.Location = new System.Drawing.Point(379, 402);
+            this.rbtnnMasculino.Location = new System.Drawing.Point(365, 402);
             this.rbtnnMasculino.Name = "rbtnnMasculino";
-            this.rbtnnMasculino.Size = new System.Drawing.Size(85, 17);
+            this.rbtnnMasculino.Size = new System.Drawing.Size(73, 17);
             this.rbtnnMasculino.TabIndex = 9;
             this.rbtnnMasculino.TabStop = true;
-            this.rbtnnMasculino.Text = "radioButton2";
+            this.rbtnnMasculino.Text = "Masculino";
             this.rbtnnMasculino.UseVisualStyleBackColor = true;
             // 
             // rbtnOtro
             // 
             this.rbtnOtro.AutoSize = true;
-            this.rbtnOtro.Location = new System.Drawing.Point(470, 402);
+            this.rbtnOtro.Location = new System.Drawing.Point(444, 402);
             this.rbtnOtro.Name = "rbtnOtro";
-            this.rbtnOtro.Size = new System.Drawing.Size(85, 17);
+            this.rbtnOtro.Size = new System.Drawing.Size(45, 17);
             this.rbtnOtro.TabIndex = 10;
             this.rbtnOtro.TabStop = true;
-            this.rbtnOtro.Text = "radioButton3";
+            this.rbtnOtro.Text = "Otro";
             this.rbtnOtro.UseVisualStyleBackColor = true;
             // 
             // cmbMes
