@@ -39,6 +39,7 @@
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.cmbAño = new System.Windows.Forms.ComboBox();
             this.cmbDía = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,6 +141,15 @@
             this.cmbDía.Size = new System.Drawing.Size(49, 21);
             this.cmbDía.TabIndex = 13;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(727, 171);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,6 +157,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Color_fondo_registro_;
             this.ClientSize = new System.Drawing.Size(842, 464);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.cmbDía);
             this.Controls.Add(this.cmbAño);
             this.Controls.Add(this.cmbMes);
@@ -179,6 +190,7 @@
         private System.Windows.Forms.ComboBox cmbMes;
         private System.Windows.Forms.ComboBox cmbAño;
         private System.Windows.Forms.ComboBox cmbDía;
+        private System.Windows.Forms.Button button1;
     }
 }
 
