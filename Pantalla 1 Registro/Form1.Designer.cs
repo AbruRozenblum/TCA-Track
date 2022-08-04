@@ -38,7 +38,7 @@
             this.cmbMes = new System.Windows.Forms.ComboBox();
             this.cmbAño = new System.Windows.Forms.ComboBox();
             this.cmbDía = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRegistrarse = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -151,17 +151,17 @@
             this.cmbDía.Size = new System.Drawing.Size(49, 26);
             this.cmbDía.TabIndex = 13;
             // 
-            // button1
+            // btnRegistrarse
             // 
-            this.button1.BackColor = System.Drawing.Color.Indigo;
-            this.button1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.REGISTRARSE;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(631, 588);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 40);
-            this.button1.TabIndex = 14;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRegistrarse.BackColor = System.Drawing.Color.Indigo;
+            this.btnRegistrarse.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.REGISTRARSE;
+            this.btnRegistrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarse.Location = new System.Drawing.Point(631, 588);
+            this.btnRegistrarse.Name = "btnRegistrarse";
+            this.btnRegistrarse.Size = new System.Drawing.Size(139, 40);
+            this.btnRegistrarse.TabIndex = 14;
+            this.btnRegistrarse.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -241,7 +241,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRegistrarse);
             this.Controls.Add(this.cmbDía);
             this.Controls.Add(this.cmbAño);
             this.Controls.Add(this.cmbMes);
@@ -281,7 +281,7 @@
         private System.Windows.Forms.ComboBox cmbMes;
         private System.Windows.Forms.ComboBox cmbAño;
         private System.Windows.Forms.ComboBox cmbDía;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRegistrarse;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
