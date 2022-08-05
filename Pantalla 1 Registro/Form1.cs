@@ -18,7 +18,7 @@ namespace Pantalla_1_Registro
         string mesnacimiento;
         int dia = 1;
         int dianacimiento;
-        int año = 1921;
+        int año = 1942;
         int añonacimiento;
         string genero;
         string diagnostico;
@@ -55,7 +55,7 @@ namespace Pantalla_1_Registro
             cmbMes.Items.Add("Diciembre");
 
             cmbDiagnostico.Items.Add("Anorexia");
-            cmbDiagnostico.Items.Add("Buliimia");
+            cmbDiagnostico.Items.Add("Bulimia");
             cmbDiagnostico.Items.Add("Obesidad");
         }
 
@@ -65,7 +65,8 @@ namespace Pantalla_1_Registro
 
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (txtMailDelUsuario.Text=="" || txtMailEspecialista.Text=="" || txtNombre.Text=="")
+            if (txtMailDelUsuario.Text == "" || txtMailEspecialista.Text == "" || txtNombre.Text == "" || cmbAño.SelectedIndex == -1 || cmbDiagnostico.SelectedIndex == -1 || cmbDía.SelectedIndex == -1 || cmbMes.SelectedIndex == -1)
+
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
             }
