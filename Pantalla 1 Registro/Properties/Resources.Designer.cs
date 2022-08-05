@@ -63,6 +63,16 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _Tu_información_es_privada_y_no_se_comparte_con_nadie {
+            get {
+                object obj = ResourceManager.GetObject("_Tu información es privada y no se comparte con nadie", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BIENVENIDOS_1 {
             get {
                 object obj = ResourceManager.GetObject("BIENVENIDOS-1", resourceCulture);
@@ -73,9 +83,139 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_image {
+            get {
+                object obj = ResourceManager.GetObject("calendar image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Color_fondo_registro_ {
             get {
                 object obj = ResourceManager.GetObject("Color fondo registro ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap diagnosis_image {
+            get {
+                object obj = ResourceManager.GetObject("diagnosis image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DIAGNOSTICO {
+            get {
+                object obj = ResourceManager.GetObject("DIAGNOSTICO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FECHA_DE_NACIMIENTO {
+            get {
+                object obj = ResourceManager.GetObject("FECHA DE NACIMIENTO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gender_image {
+            get {
+                object obj = ResourceManager.GetObject("gender image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GENERO {
+            get {
+                object obj = ResourceManager.GetObject("GENERO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap image_5 {
+            get {
+                object obj = ResourceManager.GetObject("image 5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap INICIO {
+            get {
+                object obj = ResourceManager.GetObject("INICIO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAIL_DE_USUARIO {
+            get {
+                object obj = ResourceManager.GetObject("MAIL DE USUARIO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAIL_ESPECIALISTA {
+            get {
+                object obj = ResourceManager.GetObject("MAIL ESPECIALISTA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mail_image {
+            get {
+                object obj = ResourceManager.GetObject("mail image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NOMBRE {
+            get {
+                object obj = ResourceManager.GetObject("NOMBRE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_image {
+            get {
+                object obj = ResourceManager.GetObject("profile image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

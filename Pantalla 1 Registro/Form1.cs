@@ -98,6 +98,7 @@ namespace Pantalla_1_Registro
                 }
             }
         }
+        }
 
     }
-}
+

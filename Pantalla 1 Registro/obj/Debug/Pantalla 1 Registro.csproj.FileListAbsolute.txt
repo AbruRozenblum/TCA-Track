@@ -28,3 +28,4 @@ C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Panta
 C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.CoreCompileInputs.cache
 C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
 C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Pantalla_Inicio.resources
