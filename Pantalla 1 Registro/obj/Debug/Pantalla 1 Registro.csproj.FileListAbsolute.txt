@@ -49,3 +49,7 @@ C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debu
 \\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
 \\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb
 \\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Inicio.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Inicio.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonios.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Calendario.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Diario.resources
