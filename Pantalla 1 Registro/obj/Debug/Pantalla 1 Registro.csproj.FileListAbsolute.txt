@@ -38,3 +38,14 @@ C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debu
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.CoreCompileInputs.cache
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe.config
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.pdb
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.AssemblyReference.cache
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Form1.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Properties.Resources.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.GenerateResource.cache
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Inicio.resources

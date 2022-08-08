@@ -97,6 +97,9 @@ namespace Pantalla_1_Registro
                     MessageBox.Show("Ingrese el género");
                 }
             }
+            Inicio formaSiguiente = new Inicio();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
         }
 
     }
