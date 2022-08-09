@@ -65,12 +65,16 @@ namespace Pantalla_1_Registro
 
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (txtMailDelUsuario.Text=="" || txtMailEspecialista.Text=="" || txtNombre.Text=="" || cmbAño.SelectedIndex == -1 || cmbDiagnostico.SelectedIndex == -1 || cmbDía.SelectedIndex == -1 || cmbMes.SelectedIndex == -1) 
+            if (txtMailDelUsuario.Text == "" || txtMailEspecialista.Text == "" || txtNombre.Text == "" || cmbAño.SelectedIndex == -1 || cmbDiagnostico.SelectedIndex == -1 || cmbDía.SelectedIndex == -1 || cmbMes.SelectedIndex == -1)
 
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
             }
-            else
+            else if (rbtnFemenino == null && rbtnMasculino == null && rbtnOtro == null)
+            {
+                MessageBox.Show("Complete todos los campos para registrarse");
+            }
+            else if (rbtnOtro.Checked || rbtnMasculino.Checked || rbtnFemenino.Checked)
             {
                 mailespecialista = txtMailEspecialista.Text;
                 mailusuario = txtMailDelUsuario.Text;
@@ -92,14 +96,15 @@ namespace Pantalla_1_Registro
                 {
                     genero = "Otro";
                 }
-                else
-                {
-                    MessageBox.Show("Ingrese el género");
-                }
+                Inicio formaSiguiente = new Inicio();
+                this.Hide(); //oculta la forma actual
+                formaSiguiente.Show(); // muestra la forma2
             }
-            Inicio formaSiguiente = new Inicio();
-            this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+            else
+            {
+                MessageBox.Show("Complete todos los campos para registrarse");
+            }
+            
         }
 
     }
