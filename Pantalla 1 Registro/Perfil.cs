@@ -16,5 +16,12 @@ namespace Pantalla_1_Registro
         {
             InitializeComponent();
         }
+
+        private void BtnIrInicio_Click(object sender, EventArgs e)
+        {
+            Inicio formaSiguiente = new Inicio();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
+        }
     }
 }

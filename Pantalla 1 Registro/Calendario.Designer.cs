@@ -29,10 +29,23 @@ namespace Pantalla_1_Registro
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIrInicio = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnIrInicio
+            // 
+            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.flevha_para_atras;
+            this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIrInicio.FlatAppearance.BorderSize = 0;
+            this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrInicio.Location = new System.Drawing.Point(29, 35);
+            this.btnIrInicio.Name = "btnIrInicio";
+            this.btnIrInicio.Size = new System.Drawing.Size(53, 40);
+            this.btnIrInicio.TabIndex = 1;
+            this.btnIrInicio.UseVisualStyleBackColor = true;
+            this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
             // 
             // pictureBox1
             // 
@@ -43,19 +56,6 @@ namespace Pantalla_1_Registro
             this.pictureBox1.Size = new System.Drawing.Size(292, 34);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnIrInicio
-            // 
-            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.flevha_para_atras;
-            this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIrInicio.FlatAppearance.BorderSize = 0;
-            this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInicio.Location = new System.Drawing.Point(29, 35);
-            this.btnIrInicio.Name = "btnIrInicio";
-            this.btnIrInicio.Size = new System.Drawing.Size(64, 40);
-            this.btnIrInicio.TabIndex = 1;
-            this.btnIrInicio.UseVisualStyleBackColor = true;
-            this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
             // 
             // Calendario
             // 

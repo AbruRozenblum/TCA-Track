@@ -107,5 +107,9 @@ namespace Pantalla_1_Registro
             
         }
 
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

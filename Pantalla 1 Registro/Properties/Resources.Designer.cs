@@ -83,6 +83,16 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap alines {
+            get {
+                object obj = ResourceManager.GetObject("alines", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BIENVENIDOS {
             get {
                 object obj = ResourceManager.GetObject("BIENVENIDOS", resourceCulture);
@@ -133,6 +143,26 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CAMBIAR_INFO_DEL_PERFIL {
+            get {
+                object obj = ResourceManager.GetObject("CAMBIAR INFO DEL PERFIL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CAMBIO_DE_CONSTRASEÑA {
+            get {
+                object obj = ResourceManager.GetObject("CAMBIO DE CONSTRASEÑA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle_pic {
             get {
                 object obj = ResourceManager.GetObject("circle pic", resourceCulture);
@@ -146,6 +176,16 @@ namespace Pantalla_1_Registro.Properties {
         internal static System.Drawing.Bitmap Color_fondo_registro_ {
             get {
                 object obj = ResourceManager.GetObject("Color fondo registro ", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CONFIGURACIÓN {
+            get {
+                object obj = ResourceManager.GetObject("CONFIGURACIÓN", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +213,16 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DIAGNOSTICO_ {
+            get {
+                object obj = ResourceManager.GetObject("DIAGNOSTICO_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DIARIO_INTIMO {
             get {
                 object obj = ResourceManager.GetObject("DIARIO INTIMO", resourceCulture);
@@ -186,6 +236,26 @@ namespace Pantalla_1_Registro.Properties {
         internal static System.Drawing.Bitmap diqariojluwqbdwlieaq {
             get {
                 object obj = ResourceManager.GetObject("diqariojluwqbdwlieaq", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EDAD_ {
+            get {
+                object obj = ResourceManager.GetObject("EDAD_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ellipse_6 {
+            get {
+                object obj = ResourceManager.GetObject("Ellipse 6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,9 +283,39 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FOTO_DE_PERFIL {
+            get {
+                object obj = ResourceManager.GetObject("FOTO DE PERFIL", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap GENERO {
             get {
                 object obj = ResourceManager.GetObject("GENERO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GENERO_ {
+            get {
+                object obj = ResourceManager.GetObject("GENERO_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Importar_imagen_de_galería {
+            get {
+                object obj = ResourceManager.GetObject("Importar imagen de galería", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,9 +383,49 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MAIL_ESPECIALISTA_ {
+            get {
+                object obj = ResourceManager.GetObject("MAIL ESPECIALISTA_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAIL_ESPECIALISTA1 {
+            get {
+                object obj = ResourceManager.GetObject("MAIL ESPECIALISTA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MAIL_USUARIO_ {
+            get {
+                object obj = ResourceManager.GetObject("MAIL USUARIO_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NOMBRE {
             get {
                 object obj = ResourceManager.GetObject("NOMBRE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NOMBRE_ {
+            get {
+                object obj = ResourceManager.GetObject("NOMBRE_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +486,16 @@ namespace Pantalla_1_Registro.Properties {
         internal static System.Drawing.Bitmap TESTIMONIOS_DE_PERSONAS1 {
             get {
                 object obj = ResourceManager.GetObject("TESTIMONIOS DE PERSONAS1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tomar_una_foto {
+            get {
+                object obj = ResourceManager.GetObject("Tomar una foto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

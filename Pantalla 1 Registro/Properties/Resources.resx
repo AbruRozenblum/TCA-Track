@@ -118,8 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Ellipse 6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ellipse 6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Importar imagen de galería" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Importar imagen de galería.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NOMBRE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NOMBRE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FOTO DE PERFIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FOTO DE PERFIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="INICIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\INICIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -127,8 +136,20 @@
   <data name="diqariojluwqbdwlieaq" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diqariojluwqbdwlieaq.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="EDAD_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EDAD_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAIL USUARIO_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAIL USUARIO_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="DIAGNOSTICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DIAGNOSTICO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAIL ESPECIALISTA_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAIL ESPECIALISTA_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="INFORMACIÓNhfxcjgvhkbjlnkñm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\INFORMACIÓNhfxcjgvhkbjlnkñm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MAIL DE USUARIO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\MAIL DE USUARIO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +168,9 @@
   </data>
   <data name="REGISTRARSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\REGISTRARSE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="linea" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\linea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FECHA DE NACIMIENTO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FECHA DE NACIMIENTO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,14 +196,23 @@
   <data name="calendar pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_Tu información es privada y no se comparte con nadie" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\_Tu información es privada y no se comparte con nadie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DIAGNOSTICO_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DIAGNOSTICO_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DIARIO INTIMO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\DIARIO INTIMO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="alines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MAIL ESPECIALISTA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MAIL ESPECIALISTA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="profile pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAMBIAR INFO DEL PERFIL" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAMBIAR INFO DEL PERFIL.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Color fondo registro " type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Color fondo registro .png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,8 +226,14 @@
   <data name="Union" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Union.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="linea" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\linea.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tomar una foto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tomar una foto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_Tu información es privada y no se comparte con nadie" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_Tu información es privada y no se comparte con nadie.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CONFIGURACIÓN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CONFIGURACIÓN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="circle pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\circle pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,10 +247,16 @@
   <data name="Vector 5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vector 5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GENERO_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GENERO_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="aaaaaaaaaaaaaaaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aaaaaaaaaaaaaaaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="INFORMACIÓNhfxcjgvhkbjlnkñm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\INFORMACIÓNhfxcjgvhkbjlnkñm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="NOMBRE_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NOMBRE_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CAMBIO DE CONSTRASEÑA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CAMBIO DE CONSTRASEÑA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

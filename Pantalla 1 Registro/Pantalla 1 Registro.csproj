@@ -68,12 +68,6 @@
     <Compile Include="Calendario.Designer.cs">
       <DependentUpon>Calendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Configuracion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Configuracion.Designer.cs">
-      <DependentUpon>Configuracion.cs</DependentUpon>
-    </Compile>
     <Compile Include="Diario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -269,6 +266,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\INFORMACIÓNhfxcjgvhkbjlnkñm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ellipse 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOMBRE_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EDAD_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GENERO_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DIAGNOSTICO_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIL ESPECIALISTA1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIL ESPECIALISTA_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAIL USUARIO_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CONFIGURACIÓN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAMBIAR INFO DEL PERFIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FOTO DE PERFIL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Importar imagen de galería.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tomar una foto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CAMBIO DE CONSTRASEÑA.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
