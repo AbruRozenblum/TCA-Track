@@ -86,6 +86,7 @@ namespace Pantalla_1_Registro
 
                 if (rbtnFemenino.Checked)
                 {
+                    
                     genero = "Femenino";
                 }
                 else if (rbtnMasculino.Checked)
