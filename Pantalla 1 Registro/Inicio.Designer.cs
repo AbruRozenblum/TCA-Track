@@ -47,7 +47,7 @@ namespace Pantalla_1_Registro
             this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Un_pequeño_progreso_cada_día_se_convierte_en_grandes_resultados_mañana;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(602, 151);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(252, 313);
             this.pictureBox2.TabIndex = 8;
@@ -60,7 +60,7 @@ namespace Pantalla_1_Registro
             this.btnIrRecetas.FlatAppearance.BorderSize = 0;
             this.btnIrRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrRecetas.Location = new System.Drawing.Point(168, 427);
-            this.btnIrRecetas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrRecetas.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrRecetas.Name = "btnIrRecetas";
             this.btnIrRecetas.Size = new System.Drawing.Size(184, 24);
             this.btnIrRecetas.TabIndex = 7;
@@ -74,7 +74,7 @@ namespace Pantalla_1_Registro
             this.btnIrInformacion.FlatAppearance.BorderSize = 0;
             this.btnIrInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrInformacion.Location = new System.Drawing.Point(168, 357);
-            this.btnIrInformacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrInformacion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrInformacion.Name = "btnIrInformacion";
             this.btnIrInformacion.Size = new System.Drawing.Size(130, 31);
             this.btnIrInformacion.TabIndex = 6;
@@ -88,7 +88,7 @@ namespace Pantalla_1_Registro
             this.btnIrDiario.FlatAppearance.BorderSize = 0;
             this.btnIrDiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrDiario.Location = new System.Drawing.Point(168, 298);
-            this.btnIrDiario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrDiario.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrDiario.Name = "btnIrDiario";
             this.btnIrDiario.Size = new System.Drawing.Size(144, 24);
             this.btnIrDiario.TabIndex = 5;
@@ -102,7 +102,7 @@ namespace Pantalla_1_Registro
             this.btnIrCalendario.FlatAppearance.BorderSize = 0;
             this.btnIrCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrCalendario.Location = new System.Drawing.Point(168, 232);
-            this.btnIrCalendario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrCalendario.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrCalendario.Name = "btnIrCalendario";
             this.btnIrCalendario.Size = new System.Drawing.Size(122, 24);
             this.btnIrCalendario.TabIndex = 4;
@@ -116,7 +116,7 @@ namespace Pantalla_1_Registro
             this.btnIrTestimonios.FlatAppearance.BorderSize = 0;
             this.btnIrTestimonios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrTestimonios.Location = new System.Drawing.Point(168, 164);
-            this.btnIrTestimonios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrTestimonios.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrTestimonios.Name = "btnIrTestimonios";
             this.btnIrTestimonios.Size = new System.Drawing.Size(270, 24);
             this.btnIrTestimonios.TabIndex = 3;
@@ -130,7 +130,7 @@ namespace Pantalla_1_Registro
             this.btnIrConfiguracion.FlatAppearance.BorderSize = 0;
             this.btnIrConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrConfiguracion.Location = new System.Drawing.Point(56, 32);
-            this.btnIrConfiguracion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrConfiguracion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrConfiguracion.Name = "btnIrConfiguracion";
             this.btnIrConfiguracion.Size = new System.Drawing.Size(56, 48);
             this.btnIrConfiguracion.TabIndex = 2;
@@ -144,7 +144,7 @@ namespace Pantalla_1_Registro
             this.btnIrPerfil.FlatAppearance.BorderSize = 0;
             this.btnIrPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrPerfil.Location = new System.Drawing.Point(872, 35);
-            this.btnIrPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIrPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrPerfil.Name = "btnIrPerfil";
             this.btnIrPerfil.Size = new System.Drawing.Size(54, 42);
             this.btnIrPerfil.TabIndex = 1;
@@ -156,7 +156,7 @@ namespace Pantalla_1_Registro
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.INICIO;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(420, 27);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(172, 45);
             this.pictureBox1.TabIndex = 0;
@@ -177,9 +177,10 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnIrConfiguracion);
             this.Controls.Add(this.btnIrPerfil);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
             this.Text = "Inicio";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -54,9 +54,7 @@ namespace Pantalla_1_Registro
 
         private void btnIrConfiguracion_Click(object sender, EventArgs e)
         {
-            Configuracion formaSiguiente = new Configuracion();
-            this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+ 
         }
 
         private void btnIrPerfil_Click(object sender, EventArgs e)
@@ -64,6 +62,11 @@ namespace Pantalla_1_Registro
             Perfil formaSiguiente = new Perfil();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

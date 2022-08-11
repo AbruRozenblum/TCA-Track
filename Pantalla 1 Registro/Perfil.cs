@@ -15,6 +15,15 @@ namespace Pantalla_1_Registro
         public Perfil()
         {
             InitializeComponent();
+            txtPrueba.Hide();
+            txtMailU.Hide();
+            txtNomE.Hide();
+            txtMailE.Hide();
+            txtDiagnostico.Hide();
+            txtEdad.Hide();
+            txtPronombre.Hide();
+            txtActualC.Hide();
+            txtNuevaC.Hide();
         }
 
         private void BtnPic_Click(object sender, EventArgs e)
@@ -27,6 +36,60 @@ namespace Pantalla_1_Registro
             Inicio formaSiguiente = new Inicio();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
+        }
+
+        private void BtnMUsuario_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtPrueba.Show();
+        }
+
+        private void BtnNUsuario_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtMailU.Show();
+        }
+
+        private void BtnNEspecialista_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtNomE.Show();
+        }
+
+        private void BtnMEspecialista_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtMailE.Show();
+        }
+
+        private void BtnDiagnostico_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtDiagnostico.Show();
+        }
+
+        private void BtnEdad_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtEdad.Show();
+        }
+
+        private void BtnPronombre_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtPronombre.Show();
+        }
+
+        private void BtnActualC_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtActualC.Show();
+        }
+
+        private void BtnNuevaC_Click(object sender, EventArgs e)
+        {
+            picNombreU.Hide();
+            txtNuevaC.Show();
         }
     }
 }
