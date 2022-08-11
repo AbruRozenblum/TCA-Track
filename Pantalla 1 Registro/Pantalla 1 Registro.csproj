@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bienvenido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bienvenido.Designer.cs">
+      <DependentUpon>Bienvenido.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,12 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Log In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log In.Designer.cs">
+      <DependentUpon>Log In.cs</DependentUpon>
+    </Compile>
     <Compile Include="Perfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,9 @@
     <Compile Include="Testimonios.Designer.cs">
       <DependentUpon>Testimonios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bienvenido.resx">
+      <DependentUpon>Bienvenido.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log In.resx">
+      <DependentUpon>Log In.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Perfil.resx">
       <DependentUpon>Perfil.cs</DependentUpon>
@@ -443,6 +461,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de pantalla 2022-08-11 142246.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 1342114.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145754.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145652.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145632.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145423.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145447.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 145605.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 1342115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 151507.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 151523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 151649.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 151428.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2022-08-11 151444.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

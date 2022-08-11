@@ -32,14 +32,13 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtMailEspecialista = new System.Windows.Forms.TextBox();
             this.cmbDiagnostico = new System.Windows.Forms.ComboBox();
-            this.cmbMes = new System.Windows.Forms.ComboBox();
-            this.cmbAño = new System.Windows.Forms.ComboBox();
-            this.cmbDía = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.txtNyA = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.txtNombreEspecialista = new System.Windows.Forms.TextBox();
+            this.txtPronombre = new System.Windows.Forms.TextBox();
+            this.TimePicker = new System.Windows.Forms.DateTimePicker();
+            this.btnLogIn = new System.Windows.Forms.Button();
+            this.chk = new System.Windows.Forms.CheckBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
@@ -106,75 +105,67 @@
             this.cmbDiagnostico.Size = new System.Drawing.Size(312, 28);
             this.cmbDiagnostico.TabIndex = 7;
             // 
-            // cmbMes
+            // txtNyA
             // 
-            this.cmbMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.cmbMes.FormattingEnabled = true;
-            this.cmbMes.Location = new System.Drawing.Point(829, 295);
-            this.cmbMes.Name = "cmbMes";
-            this.cmbMes.Size = new System.Drawing.Size(81, 26);
-            this.cmbMes.TabIndex = 11;
+            this.txtNyA.Location = new System.Drawing.Point(195, 231);
+            this.txtNyA.Multiline = true;
+            this.txtNyA.Name = "txtNyA";
+            this.txtNyA.Size = new System.Drawing.Size(315, 26);
+            this.txtNyA.TabIndex = 32;
             // 
-            // cmbAño
+            // txtContraseña
             // 
-            this.cmbAño.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.cmbAño.FormattingEnabled = true;
-            this.cmbAño.Location = new System.Drawing.Point(916, 295);
-            this.cmbAño.Name = "cmbAño";
-            this.cmbAño.Size = new System.Drawing.Size(55, 26);
-            this.cmbAño.TabIndex = 12;
-            this.cmbAño.SelectedIndexChanged += new System.EventHandler(this.CmbAño_SelectedIndexChanged);
+            this.txtContraseña.Location = new System.Drawing.Point(195, 358);
+            this.txtContraseña.Multiline = true;
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(312, 28);
+            this.txtContraseña.TabIndex = 34;
             // 
-            // cmbDía
+            // txtNombreEspecialista
             // 
-            this.cmbDía.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.cmbDía.FormattingEnabled = true;
-            this.cmbDía.Location = new System.Drawing.Point(774, 296);
-            this.cmbDía.Name = "cmbDía";
-            this.cmbDía.Size = new System.Drawing.Size(49, 26);
-            this.cmbDía.TabIndex = 13;
+            this.txtNombreEspecialista.Location = new System.Drawing.Point(774, 170);
+            this.txtNombreEspecialista.Multiline = true;
+            this.txtNombreEspecialista.Name = "txtNombreEspecialista";
+            this.txtNombreEspecialista.Size = new System.Drawing.Size(315, 26);
+            this.txtNombreEspecialista.TabIndex = 36;
             // 
-            // textBox1
+            // txtPronombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(195, 231);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(315, 26);
-            this.textBox1.TabIndex = 32;
+            this.txtPronombre.Location = new System.Drawing.Point(774, 358);
+            this.txtPronombre.Multiline = true;
+            this.txtPronombre.Name = "txtPronombre";
+            this.txtPronombre.Size = new System.Drawing.Size(315, 27);
+            this.txtPronombre.TabIndex = 38;
             // 
-            // textBox2
+            // TimePicker
             // 
-            this.textBox2.Location = new System.Drawing.Point(195, 358);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(312, 28);
-            this.textBox2.TabIndex = 34;
+            this.TimePicker.Location = new System.Drawing.Point(774, 301);
+            this.TimePicker.Name = "TimePicker";
+            this.TimePicker.Size = new System.Drawing.Size(315, 20);
+            this.TimePicker.TabIndex = 42;
             // 
-            // textBox3
+            // btnLogIn
             // 
-            this.textBox3.Location = new System.Drawing.Point(774, 170);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(315, 26);
-            this.textBox3.TabIndex = 36;
+            this.btnLogIn.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_145754;
+            this.btnLogIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogIn.FlatAppearance.BorderSize = 0;
+            this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogIn.Location = new System.Drawing.Point(607, 634);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(107, 17);
+            this.btnLogIn.TabIndex = 41;
+            this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
             // 
-            // textBox4
+            // chk
             // 
-            this.textBox4.Location = new System.Drawing.Point(774, 358);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(315, 27);
-            this.textBox4.TabIndex = 38;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_1342113;
-            this.checkBox1.Location = new System.Drawing.Point(525, 526);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(15, 14);
-            this.checkBox1.TabIndex = 40;
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chk.AutoSize = true;
+            this.chk.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_1342113;
+            this.chk.Location = new System.Drawing.Point(525, 526);
+            this.chk.Name = "chk";
+            this.chk.Size = new System.Drawing.Size(15, 14);
+            this.chk.TabIndex = 40;
+            this.chk.UseVisualStyleBackColor = true;
             // 
             // pictureBox8
             // 
@@ -299,7 +290,8 @@
             this.btnRegistrarse.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_142246;
             this.btnRegistrarse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRegistrarse.FlatAppearance.BorderColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRegistrarse.FlatAppearance.BorderSize = 0;
+            this.btnRegistrarse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarse.Location = new System.Drawing.Point(546, 578);
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.Size = new System.Drawing.Size(225, 50);
@@ -376,15 +368,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1129, 734);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.TimePicker);
+            this.Controls.Add(this.btnLogIn);
+            this.Controls.Add(this.chk);
             this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtPronombre);
             this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtNombreEspecialista);
             this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNyA);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -393,9 +387,6 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnRegistrarse);
-            this.Controls.Add(this.cmbDía);
-            this.Controls.Add(this.cmbAño);
-            this.Controls.Add(this.cmbMes);
             this.Controls.Add(this.rbtnOtro);
             this.Controls.Add(this.rbtnMasculino);
             this.Controls.Add(this.rbtnFemenino);
@@ -436,9 +427,6 @@
         private System.Windows.Forms.RadioButton rbtnFemenino;
         private System.Windows.Forms.RadioButton rbtnMasculino;
         private System.Windows.Forms.RadioButton rbtnOtro;
-        private System.Windows.Forms.ComboBox cmbMes;
-        private System.Windows.Forms.ComboBox cmbAño;
-        private System.Windows.Forms.ComboBox cmbDía;
         private System.Windows.Forms.Button btnRegistrarse;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -448,15 +436,17 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNyA;
         private System.Windows.Forms.PictureBox pictureBox18;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNombreEspecialista;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtPronombre;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chk;
+        private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.DateTimePicker TimePicker;
     }
 }
 

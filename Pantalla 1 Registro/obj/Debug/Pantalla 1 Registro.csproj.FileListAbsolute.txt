@@ -62,3 +62,5 @@ C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Panta
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Informacion.resources
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Recetas.resources
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Log_In.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Bienvenido.resources

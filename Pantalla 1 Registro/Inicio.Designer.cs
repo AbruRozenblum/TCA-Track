@@ -35,7 +35,6 @@ namespace Pantalla_1_Registro
             this.btnIrDiario = new System.Windows.Forms.Button();
             this.btnIrCalendario = new System.Windows.Forms.Button();
             this.btnIrTestimonios = new System.Windows.Forms.Button();
-            this.btnIrConfiguracion = new System.Windows.Forms.Button();
             this.btnIrPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -123,20 +122,6 @@ namespace Pantalla_1_Registro
             this.btnIrTestimonios.UseVisualStyleBackColor = true;
             this.btnIrTestimonios.Click += new System.EventHandler(this.btnIrTestimonios_Click);
             // 
-            // btnIrConfiguracion
-            // 
-            this.btnIrConfiguracion.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Union;
-            this.btnIrConfiguracion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIrConfiguracion.FlatAppearance.BorderSize = 0;
-            this.btnIrConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrConfiguracion.Location = new System.Drawing.Point(56, 32);
-            this.btnIrConfiguracion.Margin = new System.Windows.Forms.Padding(2);
-            this.btnIrConfiguracion.Name = "btnIrConfiguracion";
-            this.btnIrConfiguracion.Size = new System.Drawing.Size(56, 48);
-            this.btnIrConfiguracion.TabIndex = 2;
-            this.btnIrConfiguracion.UseVisualStyleBackColor = true;
-            this.btnIrConfiguracion.Click += new System.EventHandler(this.btnIrConfiguracion_Click);
-            // 
             // btnIrPerfil
             // 
             this.btnIrPerfil.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.profile_pic;
@@ -174,7 +159,6 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnIrDiario);
             this.Controls.Add(this.btnIrCalendario);
             this.Controls.Add(this.btnIrTestimonios);
-            this.Controls.Add(this.btnIrConfiguracion);
             this.Controls.Add(this.btnIrPerfil);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -191,7 +175,6 @@ namespace Pantalla_1_Registro
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIrPerfil;
-        private System.Windows.Forms.Button btnIrConfiguracion;
         private System.Windows.Forms.Button btnIrTestimonios;
         private System.Windows.Forms.Button btnIrCalendario;
         private System.Windows.Forms.Button btnIrDiario;
