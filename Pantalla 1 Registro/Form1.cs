@@ -112,5 +112,10 @@ namespace Pantalla_1_Registro
         {
 
         }
+
+        private void TxtMailDelUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
