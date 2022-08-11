@@ -183,6 +183,16 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_083134 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 083134", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_083327 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 083327", resourceCulture);
@@ -283,6 +293,46 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_085949 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 085949", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_090008 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 090008", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_090024 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 090024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_090038 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 090038", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_090056 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 090056", resourceCulture);
@@ -306,6 +356,16 @@ namespace Pantalla_1_Registro.Properties {
         internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_090123 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 090123", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_11_102745 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-11 102745", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
