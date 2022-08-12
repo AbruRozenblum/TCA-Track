@@ -37,24 +37,27 @@ namespace Pantalla_1_Registro
             this.btnIrTestimonios = new System.Windows.Forms.Button();
             this.btnIrPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Un_pequeño_progreso_cada_día_se_convierte_en_grandes_resultados_mañana;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111223;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(602, 151);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(252, 313);
+            this.pictureBox2.Size = new System.Drawing.Size(274, 313);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
             // btnIrRecetas
             // 
-            this.btnIrRecetas.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.RECETAS_CREATIVAS;
+            this.btnIrRecetas.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111722;
             this.btnIrRecetas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrRecetas.FlatAppearance.BorderSize = 0;
             this.btnIrRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -68,35 +71,35 @@ namespace Pantalla_1_Registro
             // 
             // btnIrInformacion
             // 
-            this.btnIrInformacion.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.INFORMACIÓN;
+            this.btnIrInformacion.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111659;
             this.btnIrInformacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInformacion.FlatAppearance.BorderSize = 0;
             this.btnIrInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrInformacion.Location = new System.Drawing.Point(168, 357);
             this.btnIrInformacion.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrInformacion.Name = "btnIrInformacion";
-            this.btnIrInformacion.Size = new System.Drawing.Size(130, 31);
+            this.btnIrInformacion.Size = new System.Drawing.Size(151, 31);
             this.btnIrInformacion.TabIndex = 6;
             this.btnIrInformacion.UseVisualStyleBackColor = true;
             this.btnIrInformacion.Click += new System.EventHandler(this.btnIrInformacion_Click);
             // 
             // btnIrDiario
             // 
-            this.btnIrDiario.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.DIARIO_INTIMO;
+            this.btnIrDiario.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111611;
             this.btnIrDiario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrDiario.FlatAppearance.BorderSize = 0;
             this.btnIrDiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIrDiario.Location = new System.Drawing.Point(168, 298);
             this.btnIrDiario.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrDiario.Name = "btnIrDiario";
-            this.btnIrDiario.Size = new System.Drawing.Size(144, 24);
+            this.btnIrDiario.Size = new System.Drawing.Size(151, 24);
             this.btnIrDiario.TabIndex = 5;
             this.btnIrDiario.UseVisualStyleBackColor = true;
             this.btnIrDiario.Click += new System.EventHandler(this.btnIrDiario_Click);
             // 
             // btnIrCalendario
             // 
-            this.btnIrCalendario.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.CALENDARIO;
+            this.btnIrCalendario.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111559;
             this.btnIrCalendario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrCalendario.FlatAppearance.BorderSize = 0;
             this.btnIrCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -110,7 +113,7 @@ namespace Pantalla_1_Registro
             // 
             // btnIrTestimonios
             // 
-            this.btnIrTestimonios.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.TESTIMONIOS_DE_PERSONAS;
+            this.btnIrTestimonios.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111541;
             this.btnIrTestimonios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrTestimonios.FlatAppearance.BorderSize = 0;
             this.btnIrTestimonios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -124,28 +127,40 @@ namespace Pantalla_1_Registro
             // 
             // btnIrPerfil
             // 
-            this.btnIrPerfil.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.profile_pic;
+            this.btnIrPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.btnIrPerfil.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_112009;
             this.btnIrPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrPerfil.FlatAppearance.BorderSize = 0;
             this.btnIrPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrPerfil.Location = new System.Drawing.Point(872, 35);
+            this.btnIrPerfil.Location = new System.Drawing.Point(834, 32);
             this.btnIrPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.btnIrPerfil.Name = "btnIrPerfil";
-            this.btnIrPerfil.Size = new System.Drawing.Size(54, 42);
+            this.btnIrPerfil.Size = new System.Drawing.Size(68, 56);
             this.btnIrPerfil.TabIndex = 1;
-            this.btnIrPerfil.UseVisualStyleBackColor = true;
+            this.btnIrPerfil.UseVisualStyleBackColor = false;
             this.btnIrPerfil.Click += new System.EventHandler(this.btnIrPerfil_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.INICIO;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_12_111400;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(420, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(390, 32);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(172, 45);
+            this.pictureBox1.Size = new System.Drawing.Size(210, 45);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_1342116;
+            this.pictureBox3.Location = new System.Drawing.Point(-50, -90);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(1231, 719);
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
             // 
             // Inicio
             // 
@@ -161,12 +176,16 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnIrTestimonios);
             this.Controls.Add(this.btnIrPerfil);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox3);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -181,5 +200,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnIrInformacion;
         private System.Windows.Forms.Button btnIrRecetas;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

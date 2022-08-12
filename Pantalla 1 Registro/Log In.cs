@@ -21,7 +21,7 @@ namespace Pantalla_1_Registro
         {
             Inicio formaSiguiente = new Inicio();
             this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+            formaSiguiente.Show(); // muestra la forma
         }
 
         private void Button2_Click(object sender, EventArgs e)
