@@ -64,3 +64,11 @@ C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_R
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Log_In.resources
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Bienvenido.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Bienvenido.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Calendario.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Diario.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Informacion.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Log_In.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Recetas.resources
+\\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonios.resources
