@@ -143,28 +143,28 @@
   <data name="&gt;&gt;txtMailDelUsuario.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="txtUsuario.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 170</value>
   </data>
-  <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtUsuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 26</value>
   </data>
-  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;txtNombre.Name" xml:space="preserve">
-    <value>txtNombre</value>
+  <data name="&gt;&gt;txtUsuario.Name" xml:space="preserve">
+    <value>txtUsuario</value>
   </data>
-  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtUsuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtUsuario.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtUsuario.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
   <data name="txtMailEspecialista.Font" type="System.Drawing.Font, System.Drawing">
@@ -215,28 +215,28 @@
   <data name="&gt;&gt;cmbDiagnostico.ZOrder" xml:space="preserve">
     <value>22</value>
   </data>
-  <data name="txtNyA.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 231</value>
   </data>
-  <data name="txtNyA.Multiline" type="System.Boolean, mscorlib">
+  <data name="txtNombre.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="txtNyA.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 26</value>
   </data>
-  <data name="txtNyA.TabIndex" type="System.Int32, mscorlib">
+  <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="&gt;&gt;txtNyA.Name" xml:space="preserve">
-    <value>txtNyA</value>
+  <data name="&gt;&gt;txtNombre.Name" xml:space="preserve">
+    <value>txtNombre</value>
   </data>
-  <data name="&gt;&gt;txtNyA.Type" xml:space="preserve">
+  <data name="&gt;&gt;txtNombre.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;txtNyA.Parent" xml:space="preserve">
+  <data name="&gt;&gt;txtNombre.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txtNyA.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="txtContraseña.Location" type="System.Drawing.Point, System.Drawing">
@@ -311,25 +311,25 @@
   <data name="&gt;&gt;txtPronombre.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="TimePicker.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="dtFecha.Location" type="System.Drawing.Point, System.Drawing">
     <value>774, 301</value>
   </data>
-  <data name="TimePicker.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="dtFecha.Size" type="System.Drawing.Size, System.Drawing">
     <value>315, 20</value>
   </data>
-  <data name="TimePicker.TabIndex" type="System.Int32, mscorlib">
+  <data name="dtFecha.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
-  <data name="&gt;&gt;TimePicker.Name" xml:space="preserve">
-    <value>TimePicker</value>
+  <data name="&gt;&gt;dtFecha.Name" xml:space="preserve">
+    <value>dtFecha</value>
   </data>
-  <data name="&gt;&gt;TimePicker.Type" xml:space="preserve">
+  <data name="&gt;&gt;dtFecha.Type" xml:space="preserve">
     <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TimePicker.Parent" xml:space="preserve">
+  <data name="&gt;&gt;dtFecha.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TimePicker.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;dtFecha.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />

@@ -18,6 +18,11 @@ namespace Pantalla_1_Registro
         string genero;
         string diagnostico;
         string contraseña;
+        DateTime fecha;
+        string usuario;
+        string nombreespecialista;
+        string pronombre;
+            
 
         public Form1()
         {
@@ -26,10 +31,11 @@ namespace Pantalla_1_Registro
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
             cmbDiagnostico.Items.Add("Anorexia");
             cmbDiagnostico.Items.Add("Bulimia");
             cmbDiagnostico.Items.Add("Obesidad");
+
         }
 
         private void CmbAño_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,7 +44,7 @@ namespace Pantalla_1_Registro
 
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (txtMailDelUsuario.Text == "" || txtMailEspecialista.Text == "" || txtNombre.Text == "" || cmbDiagnostico.SelectedIndex == -1 )
+            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "" || txtPronombre.Text == "")  
 
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
@@ -51,8 +57,12 @@ namespace Pantalla_1_Registro
             {
                 mailespecialista = txtMailEspecialista.Text;
                 mailusuario = txtMailDelUsuario.Text;
-                nombre = txtNombre.Text;
+                nombre = txtUsuario.Text;
                 diagnostico = cmbDiagnostico.SelectedItem.ToString();
+                fecha = dtFecha.Value;
+                contraseña = txtContraseña.Text;
+                nombreespecialista = txtNombreEspecialista.Text;
+                pronombre = txtPronombre.Text;
 
                 if (rbtnFemenino.Checked)
                 {

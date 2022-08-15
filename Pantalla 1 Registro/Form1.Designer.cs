@@ -30,14 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtMailDelUsuario = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtMailEspecialista = new System.Windows.Forms.TextBox();
             this.cmbDiagnostico = new System.Windows.Forms.ComboBox();
-            this.txtNyA = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtNombreEspecialista = new System.Windows.Forms.TextBox();
             this.txtPronombre = new System.Windows.Forms.TextBox();
-            this.TimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.chk = new System.Windows.Forms.CheckBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -78,10 +78,10 @@
             this.txtMailDelUsuario.Name = "txtMailDelUsuario";
             this.txtMailDelUsuario.TextChanged += new System.EventHandler(this.TxtMailDelUsuario_TextChanged);
             // 
-            // txtNombre
+            // txtUsuario
             // 
-            resources.ApplyResources(this.txtNombre, "txtNombre");
-            this.txtNombre.Name = "txtNombre";
+            resources.ApplyResources(this.txtUsuario, "txtUsuario");
+            this.txtUsuario.Name = "txtUsuario";
             // 
             // txtMailEspecialista
             // 
@@ -94,10 +94,10 @@
             this.cmbDiagnostico.FormattingEnabled = true;
             this.cmbDiagnostico.Name = "cmbDiagnostico";
             // 
-            // txtNyA
+            // txtNombre
             // 
-            resources.ApplyResources(this.txtNyA, "txtNyA");
-            this.txtNyA.Name = "txtNyA";
+            resources.ApplyResources(this.txtNombre, "txtNombre");
+            this.txtNombre.Name = "txtNombre";
             // 
             // txtContraseña
             // 
@@ -114,10 +114,13 @@
             resources.ApplyResources(this.txtPronombre, "txtPronombre");
             this.txtPronombre.Name = "txtPronombre";
             // 
-            // TimePicker
+            // dtFecha
             // 
-            resources.ApplyResources(this.TimePicker, "TimePicker");
-            this.TimePicker.Name = "TimePicker";
+            resources.ApplyResources(this.dtFecha, "dtFecha");
+            this.dtFecha.MaxDate = new System.DateTime(2022, 8, 14, 0, 0, 0, 0);
+            this.dtFecha.MinDate = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Value = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             // 
             // btnLogIn
             // 
@@ -276,7 +279,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.Controls.Add(this.TimePicker);
+            this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.chk);
             this.Controls.Add(this.pictureBox8);
@@ -286,7 +289,7 @@
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.txtNyA);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -300,7 +303,7 @@
             this.Controls.Add(this.rbtnFemenino);
             this.Controls.Add(this.cmbDiagnostico);
             this.Controls.Add(this.txtMailEspecialista);
-            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtMailDelUsuario);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox16);
@@ -329,7 +332,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtMailDelUsuario;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtMailEspecialista;
         private System.Windows.Forms.ComboBox cmbDiagnostico;
         private System.Windows.Forms.RadioButton rbtnFemenino;
@@ -344,7 +347,7 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
-        private System.Windows.Forms.TextBox txtNyA;
+        private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.PictureBox pictureBox15;
@@ -354,7 +357,7 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.CheckBox chk;
         private System.Windows.Forms.Button btnLogIn;
-        private System.Windows.Forms.DateTimePicker TimePicker;
+        private System.Windows.Forms.DateTimePicker dtFecha;
     }
 }
 
