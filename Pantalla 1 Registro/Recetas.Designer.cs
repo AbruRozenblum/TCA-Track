@@ -29,11 +29,38 @@ namespace Pantalla_1_Registro
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnIrInicio = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnDulce = new System.Windows.Forms.Button();
             this.btnSalado = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnIrInicio
+            // 
+            this.btnIrInicio.BackColor = System.Drawing.Color.Transparent;
+            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_16_141317;
+            this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIrInicio.FlatAppearance.BorderSize = 0;
+            this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrInicio.Location = new System.Drawing.Point(44, 41);
+            this.btnIrInicio.Name = "btnIrInicio";
+            this.btnIrInicio.Size = new System.Drawing.Size(63, 50);
+            this.btnIrInicio.TabIndex = 4;
+            this.btnIrInicio.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_16_141017;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(390, 41);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(233, 50);
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
             // 
             // btnDulce
             // 
@@ -74,11 +101,14 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(952, 521);
+            this.Controls.Add(this.btnIrInicio);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnDulce);
             this.Controls.Add(this.btnSalado);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Recetas";
             this.Text = "Recetas";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -89,5 +119,7 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnSalado;
         private System.Windows.Forms.Button btnDulce;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnIrInicio;
     }
 }

@@ -82,6 +82,7 @@
             // 
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
             // txtMailEspecialista
             // 

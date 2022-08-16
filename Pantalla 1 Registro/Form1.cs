@@ -104,5 +104,10 @@ namespace Pantalla_1_Registro
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
+
+        private void TxtUsuario_TextChanged(object sender, EventArgs e)
+        {
+             
+        }
     }
 }
