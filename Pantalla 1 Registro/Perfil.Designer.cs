@@ -392,6 +392,7 @@ namespace Pantalla_1_Registro
             // 
             // txtPrueba
             // 
+            this.txtPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtPrueba.Location = new System.Drawing.Point(95, 158);
             this.txtPrueba.Multiline = true;
             this.txtPrueba.Name = "txtPrueba";
@@ -400,6 +401,7 @@ namespace Pantalla_1_Registro
             // 
             // txtMailU
             // 
+            this.txtMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtMailU.Location = new System.Drawing.Point(95, 197);
             this.txtMailU.Multiline = true;
             this.txtMailU.Name = "txtMailU";
@@ -408,6 +410,7 @@ namespace Pantalla_1_Registro
             // 
             // txtNomE
             // 
+            this.txtNomE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtNomE.Location = new System.Drawing.Point(95, 236);
             this.txtNomE.Multiline = true;
             this.txtNomE.Name = "txtNomE";
@@ -416,6 +419,7 @@ namespace Pantalla_1_Registro
             // 
             // txtMailE
             // 
+            this.txtMailE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtMailE.Location = new System.Drawing.Point(95, 275);
             this.txtMailE.Multiline = true;
             this.txtMailE.Name = "txtMailE";
@@ -424,6 +428,7 @@ namespace Pantalla_1_Registro
             // 
             // txtDiagnostico
             // 
+            this.txtDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtDiagnostico.Location = new System.Drawing.Point(95, 314);
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
@@ -432,6 +437,7 @@ namespace Pantalla_1_Registro
             // 
             // txtEdad
             // 
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtEdad.Location = new System.Drawing.Point(95, 353);
             this.txtEdad.Multiline = true;
             this.txtEdad.Name = "txtEdad";
@@ -440,6 +446,7 @@ namespace Pantalla_1_Registro
             // 
             // txtPronombre
             // 
+            this.txtPronombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtPronombre.Location = new System.Drawing.Point(95, 392);
             this.txtPronombre.Multiline = true;
             this.txtPronombre.Name = "txtPronombre";
@@ -448,6 +455,7 @@ namespace Pantalla_1_Registro
             // 
             // txtActualC
             // 
+            this.txtActualC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtActualC.Location = new System.Drawing.Point(623, 377);
             this.txtActualC.Multiline = true;
             this.txtActualC.Name = "txtActualC";
@@ -456,6 +464,7 @@ namespace Pantalla_1_Registro
             // 
             // txtNuevaC
             // 
+            this.txtNuevaC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtNuevaC.Location = new System.Drawing.Point(623, 416);
             this.txtNuevaC.Multiline = true;
             this.txtNuevaC.Name = "txtNuevaC";
