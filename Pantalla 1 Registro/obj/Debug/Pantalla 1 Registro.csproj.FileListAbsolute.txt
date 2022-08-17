@@ -81,3 +81,6 @@ C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debu
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Recetas.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonios.resources
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Bienvenido.resources
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Log_In.resources
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources

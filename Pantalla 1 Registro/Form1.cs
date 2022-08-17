@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Pantalla_1_Registro
 {
@@ -21,8 +22,7 @@ namespace Pantalla_1_Registro
         DateTime fecha;
         string usuario;
         string nombreespecialista;
-        string pronombre;
-            
+        OleDbConnection registro;
 
         public Form1()
         {
@@ -35,8 +35,18 @@ namespace Pantalla_1_Registro
             cmbDiagnostico.Items.Add("Anorexia");
             cmbDiagnostico.Items.Add("Bulimia");
             cmbDiagnostico.Items.Add("Obesidad");
+             /*
+             * Creo la conexión
+             */
+            registro = new OleDbConnection();
+            /*
+             * Conecto con la base de datos
+             */
+            registro.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+
 
         }
+
 
         private void CmbAño_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -44,7 +54,7 @@ namespace Pantalla_1_Registro
 
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "" || txtPronombre.Text == "")  
+            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "")  
 
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
@@ -55,14 +65,14 @@ namespace Pantalla_1_Registro
             }
             else if (rbtnOtro.Checked || rbtnMasculino.Checked || rbtnFemenino.Checked)
             {
+                nombre = txtNombre.Text;
                 mailespecialista = txtMailEspecialista.Text;
                 mailusuario = txtMailDelUsuario.Text;
-                nombre = txtUsuario.Text;
+                usuario = txtUsuario.Text;
                 diagnostico = cmbDiagnostico.SelectedItem.ToString();
                 fecha = dtFecha.Value;
                 contraseña = txtContraseña.Text;
                 nombreespecialista = txtNombreEspecialista.Text;
-                pronombre = txtPronombre.Text;
 
                 if (rbtnFemenino.Checked)
                 {
@@ -77,10 +87,33 @@ namespace Pantalla_1_Registro
                 {
                     genero = "Otro";
                 }
+
+                registro.Open();
+                /*
+                 *declaro el objeto de mi comando
+                 */
+                OleDbCommand AgregoInfoUser;
+                /*
+                 * asigno la funcion del comando
+                 */
+                AgregoInfoUser = new OleDbCommand("INSERT INTO Registro (Nombre_de_usuario, Nombre_y_apellido, Mail_usuario, Contraseña, Diagnostico, Nombre_especialista, Mail_especialista, Fecha_nacimiento, Género) VALUES ('" + usuario + "', '" + nombre + "', '" + mailusuario + "','" + contraseña + "', '" + diagnostico + "','" + nombreespecialista + "', '" + mailespecialista + "', '" + fecha + "', '" + genero + "');");
+                /*
+                 * asigno el comando a la base de datos sobre la que lo voy a ejecutar
+                 */
+                AgregoInfoUser.Connection = registro;
+                /*
+                 * ejecuto el comando
+                 */
+                AgregoInfoUser.ExecuteNonQuery();
+                registro.Close();
+
+
                 Inicio formaSiguiente = new Inicio();
                 this.Hide(); //oculta la forma actual
                 formaSiguiente.Show(); // muestra la forma2
             }
+
+
             else
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
