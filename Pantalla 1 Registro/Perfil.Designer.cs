@@ -37,7 +37,6 @@ namespace Pantalla_1_Registro
             this.picMailU = new System.Windows.Forms.PictureBox();
             this.picPronombre = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnFaceID = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnTomar = new System.Windows.Forms.Button();
             this.btnImportar = new System.Windows.Forms.Button();
@@ -141,6 +140,7 @@ namespace Pantalla_1_Registro
             this.picMailU.Size = new System.Drawing.Size(198, 33);
             this.picMailU.TabIndex = 29;
             this.picMailU.TabStop = false;
+            this.picMailU.Click += new System.EventHandler(this.PicMailU_Click);
             // 
             // picPronombre
             // 
@@ -161,18 +161,6 @@ namespace Pantalla_1_Registro
             this.pictureBox4.Size = new System.Drawing.Size(255, 27);
             this.pictureBox4.TabIndex = 27;
             this.pictureBox4.TabStop = false;
-            // 
-            // btnFaceID
-            // 
-            this.btnFaceID.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_085515;
-            this.btnFaceID.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFaceID.FlatAppearance.BorderSize = 0;
-            this.btnFaceID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFaceID.Location = new System.Drawing.Point(623, 455);
-            this.btnFaceID.Name = "btnFaceID";
-            this.btnFaceID.Size = new System.Drawing.Size(202, 33);
-            this.btnFaceID.TabIndex = 25;
-            this.btnFaceID.UseVisualStyleBackColor = true;
             // 
             // pictureBox3
             // 
@@ -335,7 +323,7 @@ namespace Pantalla_1_Registro
             this.btnMUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMUsuario.FlatAppearance.BorderSize = 0;
             this.btnMUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMUsuario.Location = new System.Drawing.Point(299, 157);
+            this.btnMUsuario.Location = new System.Drawing.Point(299, 197);
             this.btnMUsuario.Name = "btnMUsuario";
             this.btnMUsuario.Size = new System.Drawing.Size(35, 33);
             this.btnMUsuario.TabIndex = 41;
@@ -348,7 +336,7 @@ namespace Pantalla_1_Registro
             this.btnNUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNUsuario.FlatAppearance.BorderSize = 0;
             this.btnNUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNUsuario.Location = new System.Drawing.Point(299, 197);
+            this.btnNUsuario.Location = new System.Drawing.Point(299, 158);
             this.btnNUsuario.Name = "btnNUsuario";
             this.btnNUsuario.Size = new System.Drawing.Size(35, 33);
             this.btnNUsuario.TabIndex = 42;
@@ -404,65 +392,74 @@ namespace Pantalla_1_Registro
             // 
             // txtPrueba
             // 
-            this.txtPrueba.Location = new System.Drawing.Point(95, 164);
+            this.txtPrueba.Location = new System.Drawing.Point(95, 158);
+            this.txtPrueba.Multiline = true;
             this.txtPrueba.Name = "txtPrueba";
-            this.txtPrueba.Size = new System.Drawing.Size(198, 20);
+            this.txtPrueba.Size = new System.Drawing.Size(198, 33);
             this.txtPrueba.TabIndex = 47;
             // 
             // txtMailU
             // 
-            this.txtMailU.Location = new System.Drawing.Point(95, 204);
+            this.txtMailU.Location = new System.Drawing.Point(95, 197);
+            this.txtMailU.Multiline = true;
             this.txtMailU.Name = "txtMailU";
-            this.txtMailU.Size = new System.Drawing.Size(198, 20);
+            this.txtMailU.Size = new System.Drawing.Size(198, 33);
             this.txtMailU.TabIndex = 48;
             // 
             // txtNomE
             // 
-            this.txtNomE.Location = new System.Drawing.Point(95, 243);
+            this.txtNomE.Location = new System.Drawing.Point(95, 236);
+            this.txtNomE.Multiline = true;
             this.txtNomE.Name = "txtNomE";
-            this.txtNomE.Size = new System.Drawing.Size(198, 20);
+            this.txtNomE.Size = new System.Drawing.Size(198, 33);
             this.txtNomE.TabIndex = 49;
             // 
             // txtMailE
             // 
-            this.txtMailE.Location = new System.Drawing.Point(95, 282);
+            this.txtMailE.Location = new System.Drawing.Point(95, 275);
+            this.txtMailE.Multiline = true;
             this.txtMailE.Name = "txtMailE";
-            this.txtMailE.Size = new System.Drawing.Size(198, 20);
+            this.txtMailE.Size = new System.Drawing.Size(198, 33);
             this.txtMailE.TabIndex = 50;
             // 
             // txtDiagnostico
             // 
-            this.txtDiagnostico.Location = new System.Drawing.Point(95, 321);
+            this.txtDiagnostico.Location = new System.Drawing.Point(95, 314);
+            this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
-            this.txtDiagnostico.Size = new System.Drawing.Size(198, 20);
+            this.txtDiagnostico.Size = new System.Drawing.Size(198, 33);
             this.txtDiagnostico.TabIndex = 51;
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(95, 360);
+            this.txtEdad.Location = new System.Drawing.Point(95, 353);
+            this.txtEdad.Multiline = true;
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(198, 20);
+            this.txtEdad.Size = new System.Drawing.Size(198, 33);
             this.txtEdad.TabIndex = 52;
             // 
             // txtPronombre
             // 
-            this.txtPronombre.Location = new System.Drawing.Point(95, 399);
+            this.txtPronombre.Location = new System.Drawing.Point(95, 392);
+            this.txtPronombre.Multiline = true;
             this.txtPronombre.Name = "txtPronombre";
-            this.txtPronombre.Size = new System.Drawing.Size(198, 20);
+            this.txtPronombre.Size = new System.Drawing.Size(198, 33);
             this.txtPronombre.TabIndex = 53;
             // 
             // txtActualC
             // 
-            this.txtActualC.Location = new System.Drawing.Point(623, 384);
+            this.txtActualC.Location = new System.Drawing.Point(623, 377);
+            this.txtActualC.Multiline = true;
             this.txtActualC.Name = "txtActualC";
-            this.txtActualC.Size = new System.Drawing.Size(202, 20);
+            this.txtActualC.Size = new System.Drawing.Size(202, 33);
             this.txtActualC.TabIndex = 54;
             // 
             // txtNuevaC
             // 
-            this.txtNuevaC.Location = new System.Drawing.Point(623, 423);
+            this.txtNuevaC.Location = new System.Drawing.Point(623, 416);
+            this.txtNuevaC.Multiline = true;
             this.txtNuevaC.Name = "txtNuevaC";
-            this.txtNuevaC.Size = new System.Drawing.Size(202, 20);
+            this.txtNuevaC.Size = new System.Drawing.Size(202, 33);
             this.txtNuevaC.TabIndex = 55;
             // 
             // Perfil
@@ -499,7 +496,6 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.picMailU);
             this.Controls.Add(this.picPronombre);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.btnFaceID);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnTomar);
             this.Controls.Add(this.btnImportar);
@@ -538,7 +534,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.Button btnTomar;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button btnFaceID;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox picPronombre;
         private System.Windows.Forms.PictureBox picMailU;

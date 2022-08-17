@@ -40,56 +40,61 @@ namespace Pantalla_1_Registro
 
         private void BtnMUsuario_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
-            txtPrueba.Show();
+            picMailU.Hide();
+            txtMailU.Show();
         }
 
         private void BtnNUsuario_Click(object sender, EventArgs e)
         {
             picNombreU.Hide();
-            txtMailU.Show();
+            txtPrueba.Show();
         }
 
         private void BtnNEspecialista_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picNomE.Hide();
             txtNomE.Show();
         }
 
         private void BtnMEspecialista_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picMailE.Hide();
             txtMailE.Show();
         }
 
         private void BtnDiagnostico_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picDiag.Hide();
             txtDiagnostico.Show();
         }
 
         private void BtnEdad_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picEdad.Hide();
             txtEdad.Show();
         }
 
         private void BtnPronombre_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picPronombre.Hide();
             txtPronombre.Show();
         }
 
         private void BtnActualC_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picActualC.Hide();
             txtActualC.Show();
         }
 
         private void BtnNuevaC_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
+            picNuevaC.Hide();
             txtNuevaC.Show();
+        }
+
+        private void PicMailU_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
