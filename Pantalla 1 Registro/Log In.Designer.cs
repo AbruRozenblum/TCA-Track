@@ -77,7 +77,7 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(423, 474);
+            this.button2.Location = new System.Drawing.Point(440, 474);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 17);
             this.button2.TabIndex = 7;
@@ -92,7 +92,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(423, 410);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 58);
+            this.button1.Size = new System.Drawing.Size(194, 58);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -130,7 +130,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_1342114;
-            this.pictureBox1.Location = new System.Drawing.Point(-33, -125);
+            this.pictureBox1.Location = new System.Drawing.Point(-30, -132);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1365, 712);
             this.pictureBox1.TabIndex = 0;

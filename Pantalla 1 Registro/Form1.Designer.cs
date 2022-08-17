@@ -36,12 +36,8 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtNombreEspecialista = new System.Windows.Forms.TextBox();
-            this.txtPronombre = new System.Windows.Forms.TextBox();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.btnLogIn = new System.Windows.Forms.Button();
-            this.chk = new System.Windows.Forms.CheckBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
@@ -57,8 +53,6 @@
             this.rbtnFemenino = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
@@ -110,11 +104,6 @@
             resources.ApplyResources(this.txtNombreEspecialista, "txtNombreEspecialista");
             this.txtNombreEspecialista.Name = "txtNombreEspecialista";
             // 
-            // txtPronombre
-            // 
-            resources.ApplyResources(this.txtPronombre, "txtPronombre");
-            this.txtPronombre.Name = "txtPronombre";
-            // 
             // dtFecha
             // 
             resources.ApplyResources(this.dtFecha, "dtFecha");
@@ -131,27 +120,6 @@
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.UseVisualStyleBackColor = true;
             this.btnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
-            // 
-            // chk
-            // 
-            resources.ApplyResources(this.chk, "chk");
-            this.chk.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_1342113;
-            this.chk.Name = "chk";
-            this.chk.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_141904;
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            this.pictureBox19.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_134940;
-            resources.ApplyResources(this.pictureBox19, "pictureBox19");
-            this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.TabStop = false;
             // 
             // pictureBox15
             // 
@@ -282,10 +250,6 @@
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.btnLogIn);
-            this.Controls.Add(this.chk);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.txtPronombre);
-            this.Controls.Add(this.pictureBox19);
             this.Controls.Add(this.txtNombreEspecialista);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.txtContraseña);
@@ -311,8 +275,6 @@
             this.Name = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
@@ -353,10 +315,6 @@
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.TextBox txtNombreEspecialista;
-        private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.TextBox txtPronombre;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.CheckBox chk;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.DateTimePicker dtFecha;
     }

@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtMailDelUsuario.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>21</value>
   </data>
   <data name="txtUsuario.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -165,7 +165,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtUsuario.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>20</value>
   </data>
   <data name="txtMailEspecialista.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -189,7 +189,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtMailEspecialista.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>19</value>
   </data>
   <data name="cmbDiagnostico.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -213,7 +213,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;cmbDiagnostico.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>18</value>
+  </data>
+  <data name="txtNombre.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 231</value>
@@ -237,7 +240,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtNombre.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>6</value>
+  </data>
+  <data name="txtContraseña.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtContraseña.Location" type="System.Drawing.Point, System.Drawing">
     <value>195, 358</value>
@@ -261,7 +267,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtContraseña.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>4</value>
+  </data>
+  <data name="txtNombreEspecialista.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtNombreEspecialista.Location" type="System.Drawing.Point, System.Drawing">
     <value>774, 170</value>
@@ -285,37 +294,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txtNombreEspecialista.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>2</value>
   </data>
-  <data name="txtPronombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 358</value>
-  </data>
-  <data name="txtPronombre.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtPronombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 27</value>
-  </data>
-  <data name="txtPronombre.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;txtPronombre.Name" xml:space="preserve">
-    <value>txtPronombre</value>
-  </data>
-  <data name="&gt;&gt;txtPronombre.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtPronombre.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txtPronombre.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="dtFecha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="dtFecha.Location" type="System.Drawing.Point, System.Drawing">
     <value>774, 301</value>
   </data>
   <data name="dtFecha.Size" type="System.Drawing.Size, System.Drawing">
-    <value>315, 20</value>
+    <value>315, 26</value>
   </data>
   <data name="dtFecha.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -343,7 +331,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnLogIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>607, 634</value>
+    <value>589, 599</value>
   </data>
   <data name="btnLogIn.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 17</value>
@@ -362,87 +350,6 @@
   </data>
   <data name="&gt;&gt;btnLogIn.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="chk.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chk.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="chk.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 526</value>
-  </data>
-  <data name="chk.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="chk.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="&gt;&gt;chk.Name" xml:space="preserve">
-    <value>chk</value>
-  </data>
-  <data name="&gt;&gt;chk.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;chk.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chk.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="pictureBox8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pictureBox8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 522</value>
-  </data>
-  <data name="pictureBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>237, 18</value>
-  </data>
-  <data name="pictureBox8.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="&gt;&gt;pictureBox8.Name" xml:space="preserve">
-    <value>pictureBox8</value>
-  </data>
-  <data name="&gt;&gt;pictureBox8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox8.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox8.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pictureBox19.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pictureBox19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pictureBox19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 331</value>
-  </data>
-  <data name="pictureBox19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 21</value>
-  </data>
-  <data name="pictureBox19.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="&gt;&gt;pictureBox19.Name" xml:space="preserve">
-    <value>pictureBox19</value>
-  </data>
-  <data name="&gt;&gt;pictureBox19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox19.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pictureBox19.ZOrder" xml:space="preserve">
-    <value>5</value>
   </data>
   <data name="pictureBox15.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -469,7 +376,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox15.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>3</value>
   </data>
   <data name="pictureBox18.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -496,7 +403,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox18.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>5</value>
   </data>
   <data name="pictureBox17.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -523,7 +430,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox17.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>7</value>
   </data>
   <data name="pictureBox7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -532,7 +439,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 392</value>
+    <value>774, 333</value>
   </data>
   <data name="pictureBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>94, 21</value>
@@ -550,7 +457,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>8</value>
   </data>
   <data name="pictureBox6.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -577,7 +484,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox6.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>9</value>
   </data>
   <data name="pictureBox5.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -604,7 +511,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>10</value>
   </data>
   <data name="pictureBox4.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -631,7 +538,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>11</value>
   </data>
   <data name="pictureBox3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -658,7 +565,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>12</value>
   </data>
   <data name="pictureBox2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -685,7 +592,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>13</value>
   </data>
   <data name="btnRegistrarse.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -697,10 +604,10 @@
     <value>NoControl</value>
   </data>
   <data name="btnRegistrarse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>546, 578</value>
+    <value>510, 522</value>
   </data>
   <data name="btnRegistrarse.Size" type="System.Drawing.Size, System.Drawing">
-    <value>225, 50</value>
+    <value>273, 71</value>
   </data>
   <data name="btnRegistrarse.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -718,7 +625,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btnRegistrarse.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>14</value>
   </data>
   <data name="rbtnOtro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -730,7 +637,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbtnOtro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>977, 420</value>
+    <value>774, 423</value>
   </data>
   <data name="rbtnOtro.Size" type="System.Drawing.Size, System.Drawing">
     <value>58, 24</value>
@@ -751,7 +658,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rbtnOtro.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>15</value>
   </data>
   <data name="rbtnMasculino.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -763,7 +670,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbtnMasculino.Location" type="System.Drawing.Point, System.Drawing">
-    <value>873, 420</value>
+    <value>774, 392</value>
   </data>
   <data name="rbtnMasculino.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 24</value>
@@ -784,7 +691,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rbtnMasculino.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>16</value>
   </data>
   <data name="rbtnFemenino.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -796,7 +703,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbtnFemenino.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 420</value>
+    <value>774, 362</value>
   </data>
   <data name="rbtnFemenino.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 24</value>
@@ -817,7 +724,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;rbtnFemenino.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>17</value>
   </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -844,7 +751,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>22</value>
   </data>
   <data name="pictureBox16.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -871,7 +778,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox16.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>23</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
