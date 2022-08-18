@@ -242,6 +242,7 @@
             resources.ApplyResources(this.pictureBox16, "pictureBox16");
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Click += new System.EventHandler(this.PictureBox16_Click);
             // 
             // Form1
             // 

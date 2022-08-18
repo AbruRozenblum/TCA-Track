@@ -38,12 +38,10 @@ namespace Pantalla_1_Registro
             this.picPronombre = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.btnTomar = new System.Windows.Forms.Button();
             this.btnImportar = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIrInicio = new System.Windows.Forms.Button();
-            this.btnPic = new System.Windows.Forms.Button();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.btnPronombre = new System.Windows.Forms.Button();
             this.btnEdad = new System.Windows.Forms.Button();
@@ -65,6 +63,7 @@ namespace Pantalla_1_Registro
             this.txtPronombre = new System.Windows.Forms.TextBox();
             this.txtActualC = new System.Windows.Forms.TextBox();
             this.txtNuevaC = new System.Windows.Forms.TextBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picNombreU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEdad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDiag)).BeginInit();
@@ -79,6 +78,7 @@ namespace Pantalla_1_Registro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNuevaC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picActualC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // picNombreU
@@ -172,29 +172,18 @@ namespace Pantalla_1_Registro
             this.pictureBox3.TabIndex = 23;
             this.pictureBox3.TabStop = false;
             // 
-            // btnTomar
-            // 
-            this.btnTomar.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_084332;
-            this.btnTomar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTomar.FlatAppearance.BorderSize = 0;
-            this.btnTomar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTomar.Location = new System.Drawing.Point(694, 253);
-            this.btnTomar.Name = "btnTomar";
-            this.btnTomar.Size = new System.Drawing.Size(81, 14);
-            this.btnTomar.TabIndex = 22;
-            this.btnTomar.UseVisualStyleBackColor = true;
-            // 
             // btnImportar
             // 
             this.btnImportar.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_084314;
             this.btnImportar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnImportar.FlatAppearance.BorderSize = 0;
             this.btnImportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImportar.Location = new System.Drawing.Point(670, 273);
+            this.btnImportar.Location = new System.Drawing.Point(669, 253);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(128, 14);
             this.btnImportar.TabIndex = 21;
             this.btnImportar.UseVisualStyleBackColor = true;
+            this.btnImportar.Click += new System.EventHandler(this.BtnImportar_Click);
             // 
             // pictureBox2
             // 
@@ -228,20 +217,6 @@ namespace Pantalla_1_Registro
             this.btnIrInicio.TabIndex = 18;
             this.btnIrInicio.UseVisualStyleBackColor = true;
             this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click_1);
-            // 
-            // btnPic
-            // 
-            this.btnPic.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnPic.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_082801;
-            this.btnPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPic.FlatAppearance.BorderSize = 0;
-            this.btnPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPic.Location = new System.Drawing.Point(681, 146);
-            this.btnPic.Name = "btnPic";
-            this.btnPic.Size = new System.Drawing.Size(105, 101);
-            this.btnPic.TabIndex = 3;
-            this.btnPic.UseVisualStyleBackColor = false;
-            this.btnPic.Click += new System.EventHandler(this.BtnPic_Click);
             // 
             // pictureBox8
             // 
@@ -471,12 +446,21 @@ namespace Pantalla_1_Registro
             this.txtNuevaC.Size = new System.Drawing.Size(202, 33);
             this.txtNuevaC.TabIndex = 55;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(697, 158);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox5.TabIndex = 56;
+            this.pictureBox5.TabStop = false;
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumOrchid;
             this.ClientSize = new System.Drawing.Size(958, 533);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.txtNuevaC);
             this.Controls.Add(this.txtActualC);
             this.Controls.Add(this.txtPronombre);
@@ -506,12 +490,10 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.picPronombre);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.btnTomar);
             this.Controls.Add(this.btnImportar);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnIrInicio);
-            this.Controls.Add(this.btnPic);
             this.Controls.Add(this.pictureBox8);
             this.Name = "Perfil";
             this.Text = "¿¿¿¿¿¿¿¿¿¿¿¿";
@@ -529,19 +511,18 @@ namespace Pantalla_1_Registro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNuevaC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picActualC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btnPic;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Button btnIrInicio;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnImportar;
-        private System.Windows.Forms.Button btnTomar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox picPronombre;
@@ -571,5 +552,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.TextBox txtPronombre;
         private System.Windows.Forms.TextBox txtActualC;
         private System.Windows.Forms.TextBox txtNuevaC;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

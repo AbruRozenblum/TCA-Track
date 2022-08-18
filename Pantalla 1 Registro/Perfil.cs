@@ -96,5 +96,10 @@ namespace Pantalla_1_Registro
         {
 
         }
+
+        private void BtnImportar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
