@@ -73,6 +73,7 @@ namespace Pantalla_1_Registro
             this.btnDulce.Size = new System.Drawing.Size(217, 207);
             this.btnDulce.TabIndex = 2;
             this.btnDulce.UseVisualStyleBackColor = true;
+            this.btnDulce.Click += new System.EventHandler(this.BtnDulce_Click);
             // 
             // btnSalado
             // 

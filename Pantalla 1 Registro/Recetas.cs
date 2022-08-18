@@ -16,5 +16,12 @@ namespace Pantalla_1_Registro
         {
             InitializeComponent();
         }
+
+        private void BtnDulce_Click(object sender, EventArgs e)
+        {
+           Dulces formaSiguiente = new Dulces();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
+        }
     }
 }
