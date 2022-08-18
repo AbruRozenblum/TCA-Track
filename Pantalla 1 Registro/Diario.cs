@@ -23,5 +23,20 @@ namespace Pantalla_1_Registro
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
+
+        private void Diario_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
