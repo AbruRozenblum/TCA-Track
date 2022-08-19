@@ -19,7 +19,7 @@ namespace Pantalla_1_Registro
 
         private void Button17_Click(object sender, EventArgs e)
         {
-            TableBlindingSource.Filter = "Firstname LIKE´" & txtBuscador & "%´"
+           
         }
 
         private void BtnNRe_Click(object sender, EventArgs e)
@@ -32,7 +32,6 @@ namespace Pantalla_1_Registro
             Random random = new Random(System.Environment.TickCount);//random location everytime
             Button button = new Button();
             button.Size = new Size(99, 88);
-            button.Location = new Point(random.Next(0, this.Size.Width - button.Width), random.Next(0, this.Size.Height - button.Height)); //change this to random or something 
             button.Visible = true;
             this.Controls.Add(button);
             button.Click += BtnNRe_Click;//when the new button is clicked, call this method.
@@ -42,6 +41,13 @@ namespace Pantalla_1_Registro
         {
             
 
+        }
+
+        private void Button16_Click(object sender, EventArgs e)
+        {
+            Recetas formaSiguiente = new Recetas();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
         }
     }
 }

@@ -883,6 +883,16 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_18_1332352 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-18 1332352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_pantalla_2022_08_18_134034 {
             get {
                 object obj = ResourceManager.GetObject("Captura de pantalla 2022-08-18 134034", resourceCulture);
