@@ -49,5 +49,11 @@ namespace Pantalla_1_Registro
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
+
+        private void BtnReceta1_Click(object sender, EventArgs e)
+        {
+            Receta_1 formaSiguiente = new Receta_1();
+            formaSiguiente.Show();  
+        }
     }
 }
