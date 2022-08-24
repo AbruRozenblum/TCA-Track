@@ -63,8 +63,7 @@ namespace Pantalla_1_Registro
             this.txtPronombre = new System.Windows.Forms.TextBox();
             this.txtActualC = new System.Windows.Forms.TextBox();
             this.txtNuevaC = new System.Windows.Forms.TextBox();
-            this.pbFotoPerfil = new System.Windows.Forms.PictureBox();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picNombreU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEdad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDiag)).BeginInit();
@@ -79,7 +78,7 @@ namespace Pantalla_1_Registro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNuevaC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picActualC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // picNombreU
@@ -447,19 +446,13 @@ namespace Pantalla_1_Registro
             this.txtNuevaC.Size = new System.Drawing.Size(202, 33);
             this.txtNuevaC.TabIndex = 55;
             // 
-            // pbFotoPerfil
+            // pictureBox5
             // 
-            this.pbFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbFotoPerfil.Location = new System.Drawing.Point(683, 158);
-            this.pbFotoPerfil.Name = "pbFotoPerfil";
-            this.pbFotoPerfil.Size = new System.Drawing.Size(100, 72);
-            this.pbFotoPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFotoPerfil.TabIndex = 56;
-            this.pbFotoPerfil.TabStop = false;
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
+            this.pictureBox5.Location = new System.Drawing.Point(697, 158);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 72);
+            this.pictureBox5.TabIndex = 56;
+            this.pictureBox5.TabStop = false;
             // 
             // Perfil
             // 
@@ -467,7 +460,7 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumOrchid;
             this.ClientSize = new System.Drawing.Size(958, 533);
-            this.Controls.Add(this.pbFotoPerfil);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.txtNuevaC);
             this.Controls.Add(this.txtActualC);
             this.Controls.Add(this.txtPronombre);
@@ -518,7 +511,7 @@ namespace Pantalla_1_Registro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picNuevaC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picActualC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -559,7 +552,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.TextBox txtPronombre;
         private System.Windows.Forms.TextBox txtActualC;
         private System.Windows.Forms.TextBox txtNuevaC;
-        private System.Windows.Forms.PictureBox pbFotoPerfil;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }

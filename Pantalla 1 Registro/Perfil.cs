@@ -99,17 +99,7 @@ namespace Pantalla_1_Registro
 
         private void BtnImportar_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "JPG |*.jpg";
-            openFileDialog1.Title = "Foto de perfil";
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
-            {
-                string foto_perfil = openFileDialog1.FileName;
-                pbFotoPerfil.Image = Image.FromFile(foto_perfil);
-            }
-            else
-            {
-                MessageBox.Show("No se selecciono ninguna imagen");
-            }
+
         }
     }
 }
