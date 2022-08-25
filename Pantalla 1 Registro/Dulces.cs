@@ -29,12 +29,7 @@ namespace Pantalla_1_Registro
 
         private void BtnNewB_Click(object sender, EventArgs e)
         {
-            Random random = new Random(System.Environment.TickCount);//random location everytime
-            Button button = new Button();
-            button.Size = new Size(99, 88);
-            button.Visible = true;
-            this.Controls.Add(button);
-            button.Click += BtnNRe_Click;//when the new button is clicked, call this method.
+           
         }
 
         private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
@@ -52,8 +47,14 @@ namespace Pantalla_1_Registro
 
         private void BtnReceta1_Click(object sender, EventArgs e)
         {
-            Receta_1 formaSiguiente = new Receta_1();
+            MisDulces formaSiguiente = new MisDulces ();
             formaSiguiente.Show();  
+        }
+
+        private void Dulces_Load(object sender, EventArgs e)
+        {
+            //UserControl1 uc = new UserControl1();
+            //uc.
         }
     }
 }

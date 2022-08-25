@@ -85,4 +85,10 @@ C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Panta
 C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Log_In.resources
 C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Dulces.resources
+<<<<<<< HEAD
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Salados.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.RecetaTemplate.resources
+C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControl1.resources
+=======
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Receta_1.resources
+>>>>>>> aeb799a4614a5a0bd907aaad7b16104fbacf986f

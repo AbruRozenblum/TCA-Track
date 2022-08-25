@@ -37,7 +37,8 @@ namespace Pantalla_1_Registro
             this.txtDiario = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTexto = new System.Windows.Forms.TextBox();
+            this.txtBuscador = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -49,7 +50,7 @@ namespace Pantalla_1_Registro
             // 
             this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.aaaaaaaaaaaaaaaaaa;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(746, 118);
+            this.pictureBox2.Location = new System.Drawing.Point(748, 85);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(171, 386);
             this.pictureBox2.TabIndex = 6;
@@ -80,20 +81,20 @@ namespace Pantalla_1_Registro
             // 
             // txtDiario
             // 
-            this.txtDiario.BackColor = System.Drawing.Color.Pink;
+            this.txtDiario.BackColor = System.Drawing.Color.BlueViolet;
             this.txtDiario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDiario.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDiario.Location = new System.Drawing.Point(104, 144);
+            this.txtDiario.Location = new System.Drawing.Point(104, 118);
             this.txtDiario.Multiline = true;
             this.txtDiario.Name = "txtDiario";
-            this.txtDiario.Size = new System.Drawing.Size(595, 360);
+            this.txtDiario.Size = new System.Drawing.Size(542, 368);
             this.txtDiario.TabIndex = 5;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Rectangle_162;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(58, 85);
+            this.pictureBox3.Location = new System.Drawing.Point(28, 85);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(652, 419);
             this.pictureBox3.TabIndex = 7;
@@ -103,28 +104,39 @@ namespace Pantalla_1_Registro
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtTexto);
             this.panel1.Location = new System.Drawing.Point(104, 118);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(545, 339);
             this.panel1.TabIndex = 8;
             // 
-            // textBox1
+            // txtTexto
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(545, 339);
-            this.textBox1.TabIndex = 0;
+            this.txtTexto.BackColor = System.Drawing.Color.BlueViolet;
+            this.txtTexto.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTexto.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTexto.Location = new System.Drawing.Point(0, 0);
+            this.txtTexto.Multiline = true;
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtTexto.Size = new System.Drawing.Size(545, 339);
+            this.txtTexto.TabIndex = 0;
+            // 
+            // txtBuscador
+            // 
+            this.txtBuscador.Location = new System.Drawing.Point(711, 29);
+            this.txtBuscador.Multiline = true;
+            this.txtBuscador.Name = "txtBuscador";
+            this.txtBuscador.Size = new System.Drawing.Size(208, 25);
+            this.txtBuscador.TabIndex = 9;
             // 
             // Diario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(929, 528);
+            this.BackColor = System.Drawing.Color.BlueViolet;
+            this.ClientSize = new System.Drawing.Size(946, 528);
+            this.Controls.Add(this.txtBuscador);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.txtDiario);
@@ -154,6 +166,7 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.TextBox txtDiario;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTexto;
+        private System.Windows.Forms.TextBox txtBuscador;
     }
 }

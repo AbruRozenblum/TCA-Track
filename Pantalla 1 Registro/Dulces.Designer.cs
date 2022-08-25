@@ -29,10 +29,15 @@
         private void InitializeComponent()
         {
             this.txtBuscador = new System.Windows.Forms.TextBox();
-            this.btnNewB = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnIrAtras = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReceta16 = new System.Windows.Forms.Button();
+            this.btnReceta17 = new System.Windows.Forms.Button();
+            this.btnReceta18 = new System.Windows.Forms.Button();
+            this.btnReceta19 = new System.Windows.Forms.Button();
+            this.btnReceta20 = new System.Windows.Forms.Button();
+            this.btnReceta15 = new System.Windows.Forms.Button();
             this.btnReceta11 = new System.Windows.Forms.Button();
             this.btnReceta12 = new System.Windows.Forms.Button();
             this.btnReceta13 = new System.Windows.Forms.Button();
@@ -55,43 +60,33 @@
             // 
             // txtBuscador
             // 
-            this.txtBuscador.Location = new System.Drawing.Point(1026, 48);
+            this.txtBuscador.Location = new System.Drawing.Point(1065, 48);
             this.txtBuscador.Multiline = true;
             this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(309, 40);
+            this.txtBuscador.Size = new System.Drawing.Size(270, 32);
             this.txtBuscador.TabIndex = 17;
             this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
             // 
-            // btnNewB
+            // btnIrAtras
             // 
-            this.btnNewB.Location = new System.Drawing.Point(1089, 627);
-            this.btnNewB.Name = "btnNewB";
-            this.btnNewB.Size = new System.Drawing.Size(246, 55);
-            this.btnNewB.TabIndex = 21;
-            this.btnNewB.Text = "button10";
-            this.btnNewB.UseVisualStyleBackColor = true;
-            this.btnNewB.Click += new System.EventHandler(this.BtnNewB_Click);
-            // 
-            // button16
-            // 
-            this.button16.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_16_1413171;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(70, 34);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(67, 46);
-            this.button16.TabIndex = 16;
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.Button16_Click);
+            this.btnIrAtras.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_24_083547;
+            this.btnIrAtras.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIrAtras.FlatAppearance.BorderSize = 0;
+            this.btnIrAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrAtras.Location = new System.Drawing.Point(61, 27);
+            this.btnIrAtras.Name = "btnIrAtras";
+            this.btnIrAtras.Size = new System.Drawing.Size(76, 53);
+            this.btnIrAtras.TabIndex = 16;
+            this.btnIrAtras.UseVisualStyleBackColor = true;
+            this.btnIrAtras.Click += new System.EventHandler(this.Button16_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_18_133213;
+            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_24_083531;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(143, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(161, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(228, 46);
+            this.pictureBox1.Size = new System.Drawing.Size(271, 53);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
             // 
@@ -101,6 +96,12 @@
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_18_134034;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.btnReceta16);
+            this.panel1.Controls.Add(this.btnReceta17);
+            this.panel1.Controls.Add(this.btnReceta18);
+            this.panel1.Controls.Add(this.btnReceta19);
+            this.panel1.Controls.Add(this.btnReceta20);
+            this.panel1.Controls.Add(this.btnReceta15);
             this.panel1.Controls.Add(this.btnReceta11);
             this.panel1.Controls.Add(this.btnReceta12);
             this.panel1.Controls.Add(this.btnReceta13);
@@ -118,8 +119,56 @@
             this.panel1.Controls.Add(this.btnReceta1);
             this.panel1.Location = new System.Drawing.Point(61, 109);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1274, 467);
+            this.panel1.Size = new System.Drawing.Size(1274, 604);
             this.panel1.TabIndex = 19;
+            // 
+            // btnReceta16
+            // 
+            this.btnReceta16.Location = new System.Drawing.Point(41, 670);
+            this.btnReceta16.Name = "btnReceta16";
+            this.btnReceta16.Size = new System.Drawing.Size(163, 147);
+            this.btnReceta16.TabIndex = 26;
+            this.btnReceta16.UseVisualStyleBackColor = true;
+            // 
+            // btnReceta17
+            // 
+            this.btnReceta17.Location = new System.Drawing.Point(286, 670);
+            this.btnReceta17.Name = "btnReceta17";
+            this.btnReceta17.Size = new System.Drawing.Size(163, 147);
+            this.btnReceta17.TabIndex = 25;
+            this.btnReceta17.UseVisualStyleBackColor = true;
+            // 
+            // btnReceta18
+            // 
+            this.btnReceta18.Location = new System.Drawing.Point(536, 670);
+            this.btnReceta18.Name = "btnReceta18";
+            this.btnReceta18.Size = new System.Drawing.Size(163, 147);
+            this.btnReceta18.TabIndex = 24;
+            this.btnReceta18.UseVisualStyleBackColor = true;
+            // 
+            // btnReceta19
+            // 
+            this.btnReceta19.Location = new System.Drawing.Point(781, 670);
+            this.btnReceta19.Name = "btnReceta19";
+            this.btnReceta19.Size = new System.Drawing.Size(163, 147);
+            this.btnReceta19.TabIndex = 23;
+            this.btnReceta19.UseVisualStyleBackColor = true;
+            // 
+            // btnReceta20
+            // 
+            this.btnReceta20.Location = new System.Drawing.Point(1028, 670);
+            this.btnReceta20.Name = "btnReceta20";
+            this.btnReceta20.Size = new System.Drawing.Size(163, 147);
+            this.btnReceta20.TabIndex = 22;
+            this.btnReceta20.UseVisualStyleBackColor = true;
+            // 
+            // btnReceta15
+            // 
+            this.btnReceta15.Location = new System.Drawing.Point(1028, 457);
+            this.btnReceta15.Name = "btnReceta15";
+            this.btnReceta15.Size = new System.Drawing.Size(163, 147);
+            this.btnReceta15.TabIndex = 21;
+            this.btnReceta15.UseVisualStyleBackColor = true;
             // 
             // btnReceta11
             // 
@@ -249,13 +298,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_19_0859171;
             this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.btnNewB);
             this.Controls.Add(this.txtBuscador);
-            this.Controls.Add(this.button16);
+            this.Controls.Add(this.btnIrAtras);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Name = "Dulces";
             this.Text = "Dulces";
+            this.Load += new System.EventHandler(this.Dulces_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -281,10 +330,15 @@
         private System.Windows.Forms.Button btnReceta4;
         private System.Windows.Forms.Button btnReceta5;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnIrAtras;
         private System.Windows.Forms.TextBox txtBuscador;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnNewB;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnReceta16;
+        private System.Windows.Forms.Button btnReceta17;
+        private System.Windows.Forms.Button btnReceta18;
+        private System.Windows.Forms.Button btnReceta19;
+        private System.Windows.Forms.Button btnReceta20;
+        private System.Windows.Forms.Button btnReceta15;
     }
 }

@@ -86,6 +86,7 @@ namespace Pantalla_1_Registro
             this.btnSalado.Size = new System.Drawing.Size(217, 207);
             this.btnSalado.TabIndex = 1;
             this.btnSalado.UseVisualStyleBackColor = true;
+            this.btnSalado.Click += new System.EventHandler(this.BtnSalado_Click);
             // 
             // pictureBox1
             // 

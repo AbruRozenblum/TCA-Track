@@ -10,25 +10,24 @@ using System.Windows.Forms;
 
 namespace Pantalla_1_Registro
 {
-    public partial class Recetas : Form
+    public partial class Salados : Form
     {
-        public Recetas()
+        public Salados()
         {
             InitializeComponent();
         }
 
-        private void BtnDulce_Click(object sender, EventArgs e)
+        private void BtnIrAtras_Click(object sender, EventArgs e)
         {
-           Dulces formaSiguiente = new Dulces();
+            Recetas formaSiguiente = new Recetas();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
 
-        private void BtnSalado_Click(object sender, EventArgs e)
+        private void BtnReceta2_Click(object sender, EventArgs e)
         {
-            Salados formaSiguiente = new Salados();
-            this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+            MisSaladas formaSiguiente = new MisSaladas();
+            formaSiguiente.Show();
         }
     }
 }

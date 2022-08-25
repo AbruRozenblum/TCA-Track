@@ -736,7 +736,7 @@
     <value>477, 35</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>382, 38</value>
+    <value>368, 46</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -760,7 +760,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1179, -455</value>
+    <value>-1193, -452</value>
   </data>
   <data name="pictureBox16.Size" type="System.Drawing.Size, System.Drawing">
     <value>2552, 1251</value>
@@ -791,6 +791,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1129, 734</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
