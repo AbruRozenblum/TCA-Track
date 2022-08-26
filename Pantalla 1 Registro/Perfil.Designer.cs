@@ -367,6 +367,7 @@ namespace Pantalla_1_Registro
             // 
             // txtPrueba
             // 
+            this.txtPrueba.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.txtPrueba.Location = new System.Drawing.Point(95, 158);
             this.txtPrueba.Multiline = true;

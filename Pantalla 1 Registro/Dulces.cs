@@ -47,8 +47,7 @@ namespace Pantalla_1_Registro
 
         private void BtnReceta1_Click(object sender, EventArgs e)
         {
-            MisDulces formaSiguiente = new MisDulces ();
-            formaSiguiente.Show();  
+           
         }
 
         private void Dulces_Load(object sender, EventArgs e)
