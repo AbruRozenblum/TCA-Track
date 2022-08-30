@@ -92,3 +92,7 @@ C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_R
 =======
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Receta_1.resources
 >>>>>>> aeb799a4614a5a0bd907aaad7b16104fbacf986f
+C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Dulces.resources
+C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Salados.resources
+C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.RecetaTemplate.resources
+C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControl1.resources

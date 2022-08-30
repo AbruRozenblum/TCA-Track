@@ -92,20 +92,25 @@ namespace Pantalla_1_Registro
                 /*
                  *declaro el objeto de mi comando
                  */
-                OleDbCommand AgregoInfoUser;
+                OleDbCommand AgregoInfoEspecialista;
                 /*
                  * asigno la funcion del comando
                  */
-                AgregoInfoUser = new OleDbCommand("INSERT INTO Registro (Nombre_de_usuario, Nombre_y_apellido, Mail_usuario, Contraseña, Diagnostico, Nombre_especialista, Mail_especialista, Fecha_nacimiento, Género) VALUES ('" + usuario + "', '" + nombre + "', '" + mailusuario + "','" + contraseña + "', '" + diagnostico + "','" + nombreespecialista + "', '" + mailespecialista + "', '" + fecha + "', '" + genero + "');");
+                AgregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + nombreespecialista + "', '" + mailespecialista + "');");
                 /*
                  * asigno el comando a la base de datos sobre la que lo voy a ejecutar
                  */
-                AgregoInfoUser.Connection = registro;
+                AgregoInfoEspecialista.Connection = registro;
                 /*
                  * ejecuto el comando
                  */
+                AgregoInfoEspecialista.ExecuteNonQuery();
+                OleDbCommand AgregoInfoUser;
+                AgregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género) VALUES ('" + usuario + "', '" + nombre + "', '" + mailusuario + "','" + contraseña + "', '" + diagnostico + "', '" + fecha + "', '" + genero + "');");
+                AgregoInfoUser.Connection = registro;
                 AgregoInfoUser.ExecuteNonQuery();
                 registro.Close();
+
 
 
                 Inicio formaSiguiente = new Inicio();
