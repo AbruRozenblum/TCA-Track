@@ -26,8 +26,8 @@ namespace Pantalla_1_Registro
 
         private void BtnReceta2_Click(object sender, EventArgs e)
         {
-            MisSaladas formaSiguiente = new MisSaladas();
-            formaSiguiente.Show();
+            /*MisSaladas formaSiguiente = new MisSaladas();
+            formaSiguiente.Show();*/
         }
     }
 }
