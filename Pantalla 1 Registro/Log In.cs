@@ -15,6 +15,7 @@ namespace Pantalla_1_Registro
     public partial class Log_In : Form
     {
         OleDbConnection inicioSesion;
+        bool cuentaExistente;
 
         public Log_In()
         {
@@ -41,6 +42,9 @@ namespace Pantalla_1_Registro
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            
+
+
             Form1 formaSiguiente = new Form1();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2

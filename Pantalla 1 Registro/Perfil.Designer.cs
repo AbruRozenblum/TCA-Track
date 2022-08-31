@@ -227,6 +227,7 @@ namespace Pantalla_1_Registro
             this.pictureBox8.Size = new System.Drawing.Size(1361, 768);
             this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // btnPronombre
             // 
@@ -504,6 +505,7 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.pictureBox8);
             this.Name = "Perfil";
             this.Text = "¿¿¿¿¿¿¿¿¿¿¿¿";
+            this.Load += new System.EventHandler(this.Perfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picNombreU)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEdad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDiag)).EndInit();

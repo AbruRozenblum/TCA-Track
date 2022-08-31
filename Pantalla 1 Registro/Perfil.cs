@@ -13,6 +13,9 @@ namespace Pantalla_1_Registro
 {
     public partial class Perfil : Form
     {
+        OleDbConnection dataBase;
+        
+
         public Perfil()
         {
             InitializeComponent();
@@ -112,5 +115,23 @@ namespace Pantalla_1_Registro
                 MessageBox.Show("No se selecciono ninguna imagen");
             }
         }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Perfil_Load(object sender, EventArgs e)
+        {
+            dataBase = new OleDbConnection();
+            dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+
+        }
     }
 }
+
+
+
+/*UPDATE Info_usuario
+SET Username = 'variable', Nombre_completo= 'variable'
+WHERE ID = ...;*/
