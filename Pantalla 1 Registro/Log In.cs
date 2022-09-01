@@ -15,7 +15,6 @@ namespace Pantalla_1_Registro
     public partial class Log_In : Form
     {
         OleDbConnection inicioSesion;
-        bool cuentaExistente;
 
         public Log_In()
         {
@@ -27,12 +26,20 @@ namespace Pantalla_1_Registro
             string username = txtusername.Text;
             string contraseña = txtcontraseña.Text;
 
-            /*inicioSesion.Open();
+            inicioSesion.Open();
             OleDbCommand verificoLogIn;
-            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + username + "' || Contraseña = '" + contraseña + "'");
+            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + username + "' && Contraseña = '" + contraseña + "'");
             verificoLogIn.Connection = inicioSesion;
             verificoLogIn.ExecuteNonQuery();
-            verificoLogIn.Close();*/
+            if (verificoLogIn == null)
+            {
+                MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
+            }
+            else
+            {
+
+            }
+            inicioSesion.Close();
 
             //no tocar, estoy intentando confgurar el log in
 

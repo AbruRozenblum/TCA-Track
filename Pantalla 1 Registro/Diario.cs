@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace Pantalla_1_Registro
 {
     public partial class Diario : Form
     {
+        OleDbConnection db;
         public Diario()
         {
             InitializeComponent();
@@ -26,6 +28,8 @@ namespace Pantalla_1_Registro
 
         private void Diario_Load(object sender, EventArgs e)
         {
+            db = new OleDbConnection();
+            db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
 
         }
 
@@ -40,6 +44,30 @@ namespace Pantalla_1_Registro
         }
 
         private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsave_Click(object sender, EventArgs e)
+        {
+            if (txtTexto == null)
+            {
+                MessageBox.Show("No hay ningun texto registrado");
+            }
+            else
+            {
+                DateTime Fecha = dtfecha.Value;
+                string testimonio = txtTexto.Text;
+                db.Open();
+
+                OleDbCommand AgregarTestimonio;
+                AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha) VALUES ('" + testimonio + "', '" + Fecha + "');");
+                AgregarTestimonio.Connection = db;
+                AgregarTestimonio.ExecuteNonQuery();
+            }
+        }
+
+        private void txtTexto_TextChanged(object sender, EventArgs e)
         {
 
         }

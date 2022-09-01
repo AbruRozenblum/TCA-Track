@@ -89,26 +89,40 @@ namespace Pantalla_1_Registro
                 }
 
                 registro.Open();
-                /*
-                 *declaro el objeto de mi comando
-                 */
-                OleDbCommand AgregoInfoEspecialista;
-                /*
-                 * asigno la funcion del comando
-                 */
-                AgregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + nombreespecialista + "', '" + mailespecialista + "');");
-                /*
-                 * asigno el comando a la base de datos sobre la que lo voy a ejecutar
-                 */
-                AgregoInfoEspecialista.Connection = registro;
-                /*
-                 * ejecuto el comando
-                 */
-                AgregoInfoEspecialista.ExecuteNonQuery();
+                
                 OleDbCommand AgregoInfoUser;
-                AgregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género) VALUES ('" + usuario + "', '" + nombre + "', '" + mailusuario + "','" + contraseña + "', '" + diagnostico + "', '" + fecha + "', '" + genero + "');");
+                AgregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + usuario + "', '" + nombre + "', '" + mailusuario + "','" + contraseña + "', '" + diagnostico + "', '" + fecha + "', '" + genero + "', '" + mailespecialista + "');");
                 AgregoInfoUser.Connection = registro;
                 AgregoInfoUser.ExecuteNonQuery();
+
+                OleDbCommand BuscoInfoEspecialista;
+                BuscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + mailespecialista + "';");
+                BuscoInfoEspecialista.Connection = registro;
+                BuscoInfoEspecialista.ExecuteNonQuery();
+                if (BuscoInfoEspecialista == null)
+                {
+                    /*
+                     *declaro el objeto de mi comando
+                     */
+                    OleDbCommand AgregoInfoEspecialista;
+                    /*
+                     * asigno la funcion del comando
+                     */
+                    AgregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + nombreespecialista + "', '" + mailespecialista + "');");
+                    /*
+                     * asigno el comando a la base de datos sobre la que lo voy a ejecutar
+                     */
+                    AgregoInfoEspecialista.Connection = registro;
+                    /*
+                     * ejecuto el comando
+                     */
+                    AgregoInfoEspecialista.ExecuteNonQuery();
+                }
+                else
+                {
+
+                }
+
                 registro.Close();
 
 

@@ -39,6 +39,8 @@ namespace Pantalla_1_Registro
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTexto = new System.Windows.Forms.TextBox();
             this.txtBuscador = new System.Windows.Forms.TextBox();
+            this.btnsave = new System.Windows.Forms.Button();
+            this.dtfecha = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -121,6 +123,7 @@ namespace Pantalla_1_Registro
             this.txtTexto.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtTexto.Size = new System.Drawing.Size(545, 339);
             this.txtTexto.TabIndex = 0;
+            this.txtTexto.TextChanged += new System.EventHandler(this.txtTexto_TextChanged);
             // 
             // txtBuscador
             // 
@@ -130,12 +133,31 @@ namespace Pantalla_1_Registro
             this.txtBuscador.Size = new System.Drawing.Size(208, 25);
             this.txtBuscador.TabIndex = 9;
             // 
+            // btnsave
+            // 
+            this.btnsave.Location = new System.Drawing.Point(571, 463);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(75, 23);
+            this.btnsave.TabIndex = 1;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            // 
+            // dtfecha
+            // 
+            this.dtfecha.Location = new System.Drawing.Point(446, 92);
+            this.dtfecha.Name = "dtfecha";
+            this.dtfecha.Size = new System.Drawing.Size(200, 20);
+            this.dtfecha.TabIndex = 2;
+            // 
             // Diario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BlueViolet;
             this.ClientSize = new System.Drawing.Size(946, 528);
+            this.Controls.Add(this.btnsave);
+            this.Controls.Add(this.dtfecha);
             this.Controls.Add(this.txtBuscador);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
@@ -168,5 +190,7 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.TextBox txtBuscador;
+        private System.Windows.Forms.Button btnsave;
+        private System.Windows.Forms.DateTimePicker dtfecha;
     }
 }
