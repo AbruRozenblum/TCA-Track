@@ -29,10 +29,11 @@ namespace Pantalla_1_Registro
 
             /*inicioSesion.Open();
             OleDbCommand verificoLogIn;
-            verificoLogIn = new OleDbCommand();
+            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + username + "' || Contraseña = '" + contraseña + "'");
             verificoLogIn.Connection = inicioSesion;
             verificoLogIn.ExecuteNonQuery();
             verificoLogIn.Close();*/
+
             //no tocar, estoy intentando confgurar el log in
 
             Inicio formaSiguiente = new Inicio();
