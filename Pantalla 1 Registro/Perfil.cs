@@ -14,20 +14,18 @@ namespace Pantalla_1_Registro
     public partial class Perfil : Form
     {
         OleDbConnection dataBase;
-        
+        string nombreCompleto;
+        string username;
+        string contraseña;
+        string mail;
+        string diagnostico;
+        string fechaNacimiento;
+        string genero;
+        string mailEspecialista;
 
         public Perfil()
         {
             InitializeComponent();
-            txtPrueba.Hide();
-            txtMailU.Hide();
-            txtNomE.Hide();
-            txtMailE.Hide();
-            txtDiagnostico.Hide();
-            txtEdad.Hide();
-            txtPronombre.Hide();
-            txtActualC.Hide();
-            txtNuevaC.Hide();
         }
 
         private void BtnPic_Click(object sender, EventArgs e)
@@ -44,56 +42,38 @@ namespace Pantalla_1_Registro
 
         private void BtnMUsuario_Click(object sender, EventArgs e)
         {
-            picMailU.Hide();
-            txtMailU.Show();
         }
 
         private void BtnNUsuario_Click(object sender, EventArgs e)
         {
-            picNombreU.Hide();
-            txtPrueba.Show();
         }
 
         private void BtnNEspecialista_Click(object sender, EventArgs e)
         {
-            picNomE.Hide();
-            txtNomE.Show();
         }
 
         private void BtnMEspecialista_Click(object sender, EventArgs e)
         {
-            picMailE.Hide();
-            txtMailE.Show();
         }
 
         private void BtnDiagnostico_Click(object sender, EventArgs e)
         {
-            picDiag.Hide();
-            txtDiagnostico.Show();
         }
 
         private void BtnEdad_Click(object sender, EventArgs e)
         {
-            picEdad.Hide();
-            txtEdad.Show();
         }
 
         private void BtnPronombre_Click(object sender, EventArgs e)
         {
-            picPronombre.Hide();
-            txtPronombre.Show();
         }
 
         private void BtnActualC_Click(object sender, EventArgs e)
         {
-            picActualC.Hide();
-            txtActualC.Show();
         }
 
         private void BtnNuevaC_Click(object sender, EventArgs e)
         {
-            picNuevaC.Hide();
-            txtNuevaC.Show();
         }
 
         private void PicMailU_Click(object sender, EventArgs e)
@@ -125,6 +105,26 @@ namespace Pantalla_1_Registro
         {
             dataBase = new OleDbConnection();
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+
+            dataBase.Open();
+            OleDbCommand diagnostico;
+            diagnostico = new OleDbCommand("SELECT  Diagnostico FROM Info_usuario WHERE Mail = 'mail';");
+            diagnostico.Connection = dataBase;
+            diagnostico.ExecuteNonQuery();
+
+            txtDiagnostico.Text = "Diagnostico";
+            txtEdad.Text = "Edad";
+            txtMailE.Text = "Mail Especialista";
+            txtMailU.Text = "Mail Usuario";
+            txtNomE.Text = "Nombre Especialista";
+            txtNuevaC.Text = "Nueva contraseña";
+            txtPronombre.Text = "Pronombre";
+            txtActualC.Text = "Actual contraseña";
+
+        }
+
+        private void txtMailU_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

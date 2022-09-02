@@ -29,13 +29,6 @@ namespace Pantalla_1_Registro
         /// </summary>
         private void InitializeComponent()
         {
-            this.picNombreU = new System.Windows.Forms.PictureBox();
-            this.picEdad = new System.Windows.Forms.PictureBox();
-            this.picDiag = new System.Windows.Forms.PictureBox();
-            this.picMailE = new System.Windows.Forms.PictureBox();
-            this.picNomE = new System.Windows.Forms.PictureBox();
-            this.picMailU = new System.Windows.Forms.PictureBox();
-            this.picPronombre = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnImportar = new System.Windows.Forms.Button();
@@ -50,8 +43,6 @@ namespace Pantalla_1_Registro
             this.btnNEspecialista = new System.Windows.Forms.Button();
             this.btnMUsuario = new System.Windows.Forms.Button();
             this.btnNUsuario = new System.Windows.Forms.Button();
-            this.picNuevaC = new System.Windows.Forms.PictureBox();
-            this.picActualC = new System.Windows.Forms.PictureBox();
             this.btnNuevaC = new System.Windows.Forms.Button();
             this.btnActualC = new System.Windows.Forms.Button();
             this.txtPrueba = new System.Windows.Forms.TextBox();
@@ -65,93 +56,13 @@ namespace Pantalla_1_Registro
             this.txtNuevaC = new System.Windows.Forms.TextBox();
             this.pbFotoPerfil = new System.Windows.Forms.PictureBox();
             this.ofd1 = new System.Windows.Forms.OpenFileDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.picNombreU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdad)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDiag)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMailE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNomE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMailU)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPronombre)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNuevaC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picActualC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picNombreU
-            // 
-            this.picNombreU.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_085949;
-            this.picNombreU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picNombreU.Location = new System.Drawing.Point(95, 158);
-            this.picNombreU.Name = "picNombreU";
-            this.picNombreU.Size = new System.Drawing.Size(198, 33);
-            this.picNombreU.TabIndex = 34;
-            this.picNombreU.TabStop = false;
-            // 
-            // picEdad
-            // 
-            this.picEdad.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_090110;
-            this.picEdad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picEdad.Location = new System.Drawing.Point(95, 353);
-            this.picEdad.Name = "picEdad";
-            this.picEdad.Size = new System.Drawing.Size(198, 33);
-            this.picEdad.TabIndex = 33;
-            this.picEdad.TabStop = false;
-            // 
-            // picDiag
-            // 
-            this.picDiag.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_090056;
-            this.picDiag.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picDiag.Location = new System.Drawing.Point(95, 314);
-            this.picDiag.Name = "picDiag";
-            this.picDiag.Size = new System.Drawing.Size(198, 33);
-            this.picDiag.TabIndex = 32;
-            this.picDiag.TabStop = false;
-            // 
-            // picMailE
-            // 
-            this.picMailE.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_090038;
-            this.picMailE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMailE.Location = new System.Drawing.Point(95, 275);
-            this.picMailE.Name = "picMailE";
-            this.picMailE.Size = new System.Drawing.Size(198, 33);
-            this.picMailE.TabIndex = 31;
-            this.picMailE.TabStop = false;
-            // 
-            // picNomE
-            // 
-            this.picNomE.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_090024;
-            this.picNomE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picNomE.Location = new System.Drawing.Point(95, 236);
-            this.picNomE.Name = "picNomE";
-            this.picNomE.Size = new System.Drawing.Size(198, 33);
-            this.picNomE.TabIndex = 30;
-            this.picNomE.TabStop = false;
-            // 
-            // picMailU
-            // 
-            this.picMailU.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_090008;
-            this.picMailU.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMailU.Location = new System.Drawing.Point(95, 197);
-            this.picMailU.Name = "picMailU";
-            this.picMailU.Size = new System.Drawing.Size(198, 33);
-            this.picMailU.TabIndex = 29;
-            this.picMailU.TabStop = false;
-            this.picMailU.Click += new System.EventHandler(this.PicMailU_Click);
-            // 
-            // picPronombre
-            // 
-            this.picPronombre.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_090123;
-            this.picPronombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picPronombre.Location = new System.Drawing.Point(95, 392);
-            this.picPronombre.Name = "picPronombre";
-            this.picPronombre.Size = new System.Drawing.Size(198, 33);
-            this.picPronombre.TabIndex = 28;
-            this.picPronombre.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -320,26 +231,6 @@ namespace Pantalla_1_Registro
             this.btnNUsuario.UseVisualStyleBackColor = true;
             this.btnNUsuario.Click += new System.EventHandler(this.BtnNUsuario_Click);
             // 
-            // picNuevaC
-            // 
-            this.picNuevaC.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_085458;
-            this.picNuevaC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picNuevaC.Location = new System.Drawing.Point(623, 416);
-            this.picNuevaC.Name = "picNuevaC";
-            this.picNuevaC.Size = new System.Drawing.Size(202, 33);
-            this.picNuevaC.TabIndex = 43;
-            this.picNuevaC.TabStop = false;
-            // 
-            // picActualC
-            // 
-            this.picActualC.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_084949;
-            this.picActualC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picActualC.Location = new System.Drawing.Point(623, 377);
-            this.picActualC.Name = "picActualC";
-            this.picActualC.Size = new System.Drawing.Size(202, 33);
-            this.picActualC.TabIndex = 44;
-            this.picActualC.TabStop = false;
-            // 
             // btnNuevaC
             // 
             this.btnNuevaC.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_083134;
@@ -380,16 +271,17 @@ namespace Pantalla_1_Registro
             // txtMailU
             // 
             this.txtMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtMailU.Location = new System.Drawing.Point(95, 197);
+            this.txtMailU.Location = new System.Drawing.Point(95, 314);
             this.txtMailU.Multiline = true;
             this.txtMailU.Name = "txtMailU";
             this.txtMailU.Size = new System.Drawing.Size(198, 33);
             this.txtMailU.TabIndex = 48;
+            this.txtMailU.TextChanged += new System.EventHandler(this.txtMailU_TextChanged);
             // 
             // txtNomE
             // 
             this.txtNomE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtNomE.Location = new System.Drawing.Point(95, 236);
+            this.txtNomE.Location = new System.Drawing.Point(95, 197);
             this.txtNomE.Multiline = true;
             this.txtNomE.Name = "txtNomE";
             this.txtNomE.Size = new System.Drawing.Size(198, 33);
@@ -398,7 +290,7 @@ namespace Pantalla_1_Registro
             // txtMailE
             // 
             this.txtMailE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtMailE.Location = new System.Drawing.Point(95, 275);
+            this.txtMailE.Location = new System.Drawing.Point(95, 235);
             this.txtMailE.Multiline = true;
             this.txtMailE.Name = "txtMailE";
             this.txtMailE.Size = new System.Drawing.Size(198, 33);
@@ -407,7 +299,7 @@ namespace Pantalla_1_Registro
             // txtDiagnostico
             // 
             this.txtDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtDiagnostico.Location = new System.Drawing.Point(95, 314);
+            this.txtDiagnostico.Location = new System.Drawing.Point(95, 275);
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
             this.txtDiagnostico.Size = new System.Drawing.Size(198, 33);
@@ -480,8 +372,6 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.txtPrueba);
             this.Controls.Add(this.btnActualC);
             this.Controls.Add(this.btnNuevaC);
-            this.Controls.Add(this.picActualC);
-            this.Controls.Add(this.picNuevaC);
             this.Controls.Add(this.btnNUsuario);
             this.Controls.Add(this.btnMUsuario);
             this.Controls.Add(this.btnNEspecialista);
@@ -489,13 +379,6 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnDiagnostico);
             this.Controls.Add(this.btnEdad);
             this.Controls.Add(this.btnPronombre);
-            this.Controls.Add(this.picNombreU);
-            this.Controls.Add(this.picEdad);
-            this.Controls.Add(this.picDiag);
-            this.Controls.Add(this.picMailE);
-            this.Controls.Add(this.picNomE);
-            this.Controls.Add(this.picMailU);
-            this.Controls.Add(this.picPronombre);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnImportar);
@@ -506,20 +389,11 @@ namespace Pantalla_1_Registro
             this.Name = "Perfil";
             this.Text = "¿¿¿¿¿¿¿¿¿¿¿¿";
             this.Load += new System.EventHandler(this.Perfil_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picNombreU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picEdad)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picDiag)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMailE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNomE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMailU)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPronombre)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picNuevaC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picActualC)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -534,13 +408,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox picPronombre;
-        private System.Windows.Forms.PictureBox picMailU;
-        private System.Windows.Forms.PictureBox picNomE;
-        private System.Windows.Forms.PictureBox picMailE;
-        private System.Windows.Forms.PictureBox picDiag;
-        private System.Windows.Forms.PictureBox picEdad;
-        private System.Windows.Forms.PictureBox picNombreU;
         private System.Windows.Forms.Button btnPronombre;
         private System.Windows.Forms.Button btnEdad;
         private System.Windows.Forms.Button btnDiagnostico;
@@ -548,8 +415,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnNEspecialista;
         private System.Windows.Forms.Button btnMUsuario;
         private System.Windows.Forms.Button btnNUsuario;
-        private System.Windows.Forms.PictureBox picNuevaC;
-        private System.Windows.Forms.PictureBox picActualC;
         private System.Windows.Forms.Button btnNuevaC;
         private System.Windows.Forms.Button btnActualC;
         private System.Windows.Forms.TextBox txtPrueba;
