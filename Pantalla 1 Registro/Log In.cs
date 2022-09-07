@@ -23,14 +23,14 @@ namespace Pantalla_1_Registro
 
         private void Button1_Click /* BOTON DE INICIO DE SESION*/(object sender, EventArgs e)
         {
+            //
+            //dataBase.Open()
+            //OleDbCommand verificoLogIn;
+            //verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "'", dataBase);
+            //OleDbDataReader reader = verificoLogIn.ExecuteReader();
 
-            dataBase.Open();
-            OleDbCommand verificoLogIn;
-            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "'", dataBase);
-            OleDbDataReader reader = verificoLogIn.ExecuteReader();
 
-
-            if (reader.HasRows)
+            //if (reader.HasRows)
             {
                 string nombreCompleto;
                 string username = txtusername.Text;
@@ -65,7 +65,7 @@ namespace Pantalla_1_Registro
                 formaSiguiente.Show(); // muestra la forma
 
             }
-            else
+            //else
             {
                 dataBase.Close();
                 MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
