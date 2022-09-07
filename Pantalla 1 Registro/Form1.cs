@@ -20,7 +20,6 @@ namespace Pantalla_1_Registro
         string diagnostico;
         string contraseña;
         DateTime fecha;
-        string usuario;
         string nombreEspecialista;
         OleDbConnection dataBase;
 
@@ -68,7 +67,7 @@ namespace Pantalla_1_Registro
                 nombre = txtNombre.Text;
                 mailEspecialista = txtMailEspecialista.Text;
                 mailUsuario = txtMailDelUsuario.Text;
-                usuario = txtUsuario.Text;
+                Class1.username = txtUsuario.Text;
                 diagnostico = cmbDiagnostico.SelectedItem.ToString();
                 fecha = dtFecha.Value;
                 contraseña = txtContraseña.Text;
@@ -91,7 +90,7 @@ namespace Pantalla_1_Registro
                 dataBase.Open();
                 
                 OleDbCommand agregoInfoUser;
-                agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + usuario + "', '" + nombre + "', '" + mailUsuario + "','" + contraseña + "', '" + diagnostico + "', '" + fecha + "', '" + genero + "', '" + mailEspecialista + "');");
+                agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + Class1.username + "', '" + nombre + "', '" + mailUsuario + "','" + contraseña + "', '" + diagnostico + "', '" + fecha + "', '" + genero + "', '" + mailEspecialista + "');");
                 agregoInfoUser.Connection = dataBase;
                 agregoInfoUser.ExecuteNonQuery();
 

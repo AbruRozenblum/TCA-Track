@@ -74,6 +74,7 @@
     <Compile Include="Calendario.Designer.cs">
       <DependentUpon>Calendario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Diario.cs">
       <SubType>Form</SubType>
     </Compile>
