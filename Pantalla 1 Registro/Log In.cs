@@ -26,19 +26,19 @@ namespace Pantalla_1_Registro
 
             dataBase.Open();
             OleDbCommand verificoLogIn;
-            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "", dataBase);
-            OleDbDataReader reader = verificoLogIn.ExecuteReader();
-
-            if (reader.HasRows)
+            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "' and Contraseña = '" + txtcontraseña.Text + "'", dataBase);
+            OleDbDataAdapter adapter = new OleDbDataAdapter (verificoLogIn);
+            DataSet dataset = new DataSet();
+            adapter.Fill(dataset);
+            if (dataset.Tables[0].Rows.Count != 0)
             {
-                Class1.username = verificoLogIn.CommandText;
-
+                Class1.username = txtusername.Text;
                 Inicio formaSiguiente = new Inicio();
                 this.Hide(); //oculta la forma actual
                 formaSiguiente.Show(); // muestra la forma
 
             }
-            //else
+            else
             {
                 MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
             }
