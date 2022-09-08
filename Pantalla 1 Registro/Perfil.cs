@@ -107,19 +107,34 @@ namespace Pantalla_1_Registro
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
 
             dataBase.Open();
-            OleDbCommand diagnostico;
-            diagnostico = new OleDbCommand("SELECT  Diagnostico FROM Info_usuario WHERE Mail = 'mail';");
-            diagnostico.Connection = dataBase;
-            diagnostico.ExecuteNonQuery();
+            OleDbCommand commandD;
+            commandD = new OleDbCommand("SELECT  Diagnostico FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandD.ExecuteNonQuery();
+            OleDbDataAdapter adapterD = new OleDbDataAdapter(commandD);
+            DataSet datasetD = new DataSet();
+            adapterD.Fill(datasetD);
 
-            txtDiagnostico.Text = "Diagnostico";
-            txtEdad.Text = "Edad";
-            txtMailE.Text = "Mail Especialista";
-            txtMailU.Text = "Mail Usuario";
+            OleDbCommand commandMe;
+            commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandMe.ExecuteNonQuery();
+            OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
+            DataSet datasetMe = new DataSet();
+            adapterMe.Fill(datasetMe);
+
+            OleDbCommand commandM;
+            commandM = new OleDbCommand("SELECT Mail FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandM.ExecuteNonQuery();
+            OleDbDataAdapter adapterM = new OleDbDataAdapter(commandM);
+            DataSet datasetM = new DataSet();
+            adapterM.Fill(datasetM);
+
+            txtDiagnostico.Text = datasetD.Tables[0].Rows[0][0].ToString();
+            txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
+            txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
             txtNomE.Text = "Nombre Especialista";
             txtNuevaC.Text = "Nueva contraseña";
-            txtPronombre.Text = "Pronombre";
             txtActualC.Text = "Actual contraseña";
+            txtPrueba.Text = Class1.username;
 
         }
 

@@ -64,71 +64,76 @@ namespace Pantalla_1_Registro
             }
             else if (rbtnOtro.Checked || rbtnMasculino.Checked || rbtnFemenino.Checked)
             {
-                nombre = txtNombre.Text;
-                mailEspecialista = txtMailEspecialista.Text;
-                mailUsuario = txtMailDelUsuario.Text;
-                Class1.username = txtUsuario.Text;
-                diagnostico = cmbDiagnostico.SelectedItem.ToString();
-                fecha = dtFecha.Value;
-                contraseña = txtContraseña.Text;
-                nombreEspecialista = txtNombreEspecialista.Text;
-
-                if (rbtnFemenino.Checked)
-                {
-                    
-                    genero = "Femenino";
-                }
-                else if (rbtnMasculino.Checked)
-                {
-                    genero = "Masculino";
-                }
-                else if (rbtnOtro.Checked)
-                {
-                    genero = "Otro";
-                }
-
                 dataBase.Open();
-                
-                OleDbCommand agregoInfoUser;
-                agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + Class1.username + "', '" + nombre + "', '" + mailUsuario + "','" + contraseña + "', '" + diagnostico + "', '" + fecha + "', '" + genero + "', '" + mailEspecialista + "');");
-                agregoInfoUser.Connection = dataBase;
-                agregoInfoUser.ExecuteNonQuery();
-
-                OleDbCommand buscoInfoEspecialista;
-                buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + mailEspecialista + "';");
-                buscoInfoEspecialista.Connection = dataBase;
-                buscoInfoEspecialista.ExecuteNonQuery();
-                if (buscoInfoEspecialista == null)
+                OleDbCommand userExistente;
+                userExistente = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtUsuario.Text + "'", dataBase);
+                OleDbDataAdapter adapter1 = new OleDbDataAdapter(userExistente);
+                DataSet dataset1 = new DataSet();
+                adapter1.Fill(dataset1);
+                if (dataset1.Tables[0].Rows.Count == 0)
                 {
-                    /*
-                     *declaro el objeto de mi comando
-                     */
-                    OleDbCommand agregoInfoEspecialista;
-                    /*
-                     * asigno la funcion del comando
-                     */
-                    agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + nombreEspecialista + "', '" + mailEspecialista + "');");
-                    /*
-                     * asigno el comando a la base de datos sobre la que lo voy a ejecutar
-                     */
-                    agregoInfoEspecialista.Connection = dataBase;
-                    /*
-                     * ejecuto el comando
-                     */
-                    agregoInfoEspecialista.ExecuteNonQuery();
+                    if (rbtnFemenino.Checked)
+                    {
+
+                        genero = "Femenino";
+                    }
+                    else if (rbtnMasculino.Checked)
+                    {
+                        genero = "Masculino";
+                    }
+                    else if (rbtnOtro.Checked)
+                    {
+                        genero = "Otro";
+                    }
+
+
+                    OleDbCommand agregoInfoUser;
+                    agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + txtUsuario.Text + "', '" + txtNombre.Text + "', '" + txtMailDelUsuario.Text + "','" + txtContraseña.Text + "', '" + cmbDiagnostico.SelectedItem + "', '" + dtFecha + "', '" + genero + "', '" + txtMailEspecialista + "');");
+                    agregoInfoUser.Connection = dataBase;
+                    agregoInfoUser.ExecuteNonQuery();
+
+                    OleDbCommand buscoInfoEspecialista;
+                    buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + mailEspecialista + "'", dataBase);
+                    OleDbDataAdapter adapter = new OleDbDataAdapter(buscoInfoEspecialista);
+                    DataSet dataset = new DataSet();
+                    adapter.Fill(dataset);
+
+                    if (dataset.Tables[0].Rows.Count == 0)
+                    {
+                        /*
+                         *declaro el objeto de mi comando
+                         */
+                        OleDbCommand agregoInfoEspecialista;
+                        /*
+                         * asigno la funcion del comando
+                         */
+                        agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + nombreEspecialista + "', '" + mailEspecialista + "');");
+                        /*
+                         * asigno el comando a la base de datos sobre la que lo voy a ejecutar
+                         */
+                        agregoInfoEspecialista.Connection = dataBase;
+                        /*
+                         * ejecuto el comando
+                         */
+                        agregoInfoEspecialista.ExecuteNonQuery();
+                    }
+                    else
+                    {
+
+                    }
+
+                    dataBase.Close();
+
+
+
+                    Inicio formaSiguiente = new Inicio();
+                    this.Hide(); //oculta la forma actual
+                    formaSiguiente.Show(); // muestra la forma2
                 }
                 else
                 {
-
+                    MessageBox.Show("Username no disponible");
                 }
-
-                dataBase.Close();
-
-
-
-                Inicio formaSiguiente = new Inicio();
-                this.Hide(); //oculta la forma actual
-                formaSiguiente.Show(); // muestra la forma2
             }
 
 
