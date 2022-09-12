@@ -70,7 +70,12 @@ namespace Pantalla_1_Registro
                 OleDbDataAdapter adapter1 = new OleDbDataAdapter(userExistente);
                 DataSet dataset1 = new DataSet();
                 adapter1.Fill(dataset1);
-                if (dataset1.Tables[0].Rows.Count == 0)
+                OleDbCommand mailUsado;
+                mailUsado = new OleDbCommand("SELECT * FROM Info_usuario WHERE mail = '" + txtMailDelUsuario.Text + "'", dataBase);
+                OleDbDataAdapter adapter2 = new OleDbDataAdapter(mailUsado);
+                DataSet dataset2 = new DataSet();
+                adapter2.Fill(dataset2);
+                if (dataset1.Tables[0].Rows.Count == 0 && dataset2.Tables[0].Rows.Count == 0) 
                 {
                     if (rbtnFemenino.Checked)
                     {
@@ -129,6 +134,10 @@ namespace Pantalla_1_Registro
                     Inicio formaSiguiente = new Inicio();
                     this.Hide(); //oculta la forma actual
                     formaSiguiente.Show(); // muestra la forma2
+                }
+                else if (dataset2.Tables[0].Rows.Count != 0)
+                {
+                    MessageBox.Show("Mail ya utilizado")
                 }
                 else
                 {
