@@ -128,14 +128,27 @@ namespace Pantalla_1_Registro
             DataSet datasetM = new DataSet();
             adapterM.Fill(datasetM);
 
+            OleDbCommand commandNe;
+            commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "';", dataBase);
+            commandNe.ExecuteNonQuery();
+            OleDbDataAdapter adapterNe = new OleDbDataAdapter(commandNe);
+            DataSet datasetNe = new DataSet();
+            adapterM.Fill(datasetNe);
+
             txtDiagnostico.Text = datasetD.Tables[0].Rows[0][0].ToString();
             txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
             txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
-            txtNomE.Text = "Nombre Especialista";
+            txtNomE.Text = datasetNe.Tables[0].Rows[0][0].ToString();
             txtNuevaC.Text = "Nueva contraseña";
             txtActualC.Text = "Actual contraseña";
             txtPrueba.Text = Class1.username;
 
+            /*OleDbCommand commandC;
+            commandC = new OleDbCommand("SELECT Contraseña FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandC.ExecuteNonQuery();
+            OleDbDataAdapter adapterC = new OleDbDataAdapter(commandC);
+            DataSet datasetC = new DataSet();
+            adapterC.Fill(datasetC);*/
         }
 
         private void txtMailU_TextChanged(object sender, EventArgs e)
