@@ -112,7 +112,7 @@ namespace Pantalla_1_Registro
                         /*
                          * asigno la funcion del comando
                          */
-                        agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + nombreEspecialista + "', '" + mailEspecialista + "');");
+                        agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + txtNombreEspecialista.Text + "', '" + txtMailEspecialista.Text + "');");
                         /*
                          * asigno el comando a la base de datos sobre la que lo voy a ejecutar
                          */
@@ -137,7 +137,7 @@ namespace Pantalla_1_Registro
                 }
                 else if (dataset2.Tables[0].Rows.Count != 0)
                 {
-                    MessageBox.Show("Mail ya utilizado")
+                    MessageBox.Show("Mail ya utilizado");
                 }
                 else
                 {

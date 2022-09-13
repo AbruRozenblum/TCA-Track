@@ -50,26 +50,65 @@ namespace Pantalla_1_Registro
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (txtTexto == null)
+            DateTime fecha = dtfecha.Value;
+            OleDbCommand commandF;
+            commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
+            commandF.ExecuteNonQuery();
+            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
+            DataSet datasetF = new DataSet();
+            adapterF.Fill(datasetF);
+            if (datasetF.Tables[0].Rows.Count == 0)
             {
-                MessageBox.Show("No hay ningun texto registrado");
+                if (txtTexto.Text == null)
+                {
+                    MessageBox.Show("No hay ningun texto escrito");
+                }
+                else
+                {
+                    string testimonio = txtTexto.Text;
+                    db.Open();
+
+                    OleDbCommand AgregarTestimonio;
+                    AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Username) VALUES ('" + testimonio + "', '" + fecha + "', '" + Class1.username + "');");
+                    AgregarTestimonio.Connection = db;
+                    AgregarTestimonio.ExecuteNonQuery();
+                }
             }
             else
             {
-                DateTime Fecha = dtfecha.Value;
-                string testimonio = txtTexto.Text;
-                db.Open();
+                    string testimonio = txtTexto.Text;
+                    db.Open();
 
-                OleDbCommand AgregarTestimonio;
-                AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha) VALUES ('" + testimonio + "', '" + Fecha + "');");
-                AgregarTestimonio.Connection = db;
-                AgregarTestimonio.ExecuteNonQuery();
+                    OleDbCommand ModificarTestimonio;
+                ModificarTestimonio = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'");
+                    ModificarTestimonio.Connection = db;
+                    ModificarTestimonio.ExecuteNonQuery();
             }
+
+            
         }
 
         private void txtTexto_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Dtfecha_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fecha = dtfecha.Value;
+            OleDbCommand commandF;
+            commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
+            commandF.ExecuteNonQuery();
+            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
+            DataSet datasetF = new DataSet();
+            adapterF.Fill(datasetF);
+            if (datasetF.Tables[0].Rows.Count == 0)
+            {
+            }
+            else
+            {
+                txtTexto.Text = datasetF.Tables[0].Rows[0][0].ToString();
+            }
         }
     }
 }

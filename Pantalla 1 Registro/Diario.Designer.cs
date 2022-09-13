@@ -146,9 +146,13 @@ namespace Pantalla_1_Registro
             // dtfecha
             // 
             this.dtfecha.Location = new System.Drawing.Point(446, 92);
+            this.dtfecha.MaxDate = new System.DateTime(2022, 9, 13, 0, 0, 0, 0);
+            this.dtfecha.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dtfecha.Name = "dtfecha";
             this.dtfecha.Size = new System.Drawing.Size(200, 20);
             this.dtfecha.TabIndex = 2;
+            this.dtfecha.Value = new System.DateTime(2022, 9, 13, 0, 0, 0, 0);
+            this.dtfecha.ValueChanged += new System.EventHandler(this.Dtfecha_ValueChanged);
             // 
             // Diario
             // 

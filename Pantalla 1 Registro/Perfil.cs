@@ -14,14 +14,6 @@ namespace Pantalla_1_Registro
     public partial class Perfil : Form
     {
         OleDbConnection dataBase;
-        string nombreCompleto;
-        string username;
-        string contraseña;
-        string mail;
-        string diagnostico;
-        string fechaNacimiento;
-        string genero;
-        string mailEspecialista;
 
         public Perfil()
         {
