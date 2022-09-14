@@ -67,6 +67,10 @@ namespace Pantalla_1_Registro
         {
             dataBase = new OleDbConnection();
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            txtcontraseña.Text = "";
+            txtcontraseña.PasswordChar = '*';
+            txtcontraseña.MaxLength = 14;
         }
+
     }
 }

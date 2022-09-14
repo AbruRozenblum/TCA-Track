@@ -643,5 +643,53 @@
   <ItemGroup>
     <None Include="Resources\Captura de Pantalla 2022-09-07 a la%28s%29 08.12.511.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-07 a la%28s%29 08.10.331.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 2181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 08.34.08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 08.36.07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 08.38.59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 08.44.37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 08.46.23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 08.47.28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 09.54.58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vfnsljdnvlo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 09.59.42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 10.05.02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 09.54.581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 09.54.582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 09.54.583.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 10.45.44.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

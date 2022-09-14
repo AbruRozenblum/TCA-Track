@@ -69,10 +69,10 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.BIENVENIDOS1;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(796, 50);
+            this.pictureBox3.Location = new System.Drawing.Point(801, 104);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(1254, 119);
+            this.pictureBox3.Size = new System.Drawing.Size(1254, 114);
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
