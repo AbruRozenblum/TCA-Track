@@ -34,14 +34,32 @@ namespace Pantalla_1_Registro
 
         private void BtnMUsuario_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
+            OleDbCommand mailU;
+            mailU = new OleDbCommand("UPDATE Info_usuario SET Mail = '" + txtMailU.Text + "' WHERE Username = '" + Class1.username + "'");
+            mailU.Connection = dataBase;
+            mailU.ExecuteNonQuery();
         }
 
         private void BtnNUsuario_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
+            OleDbCommand nombreU;
+            nombreU = new OleDbCommand("UPDATE Info_usuario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
+            nombreU.Connection = dataBase;
+            nombreU.ExecuteNonQuery();
+
+            OleDbCommand diario;
+            diario = new OleDbCommand("UPDATE Diario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
+            diario.Connection = dataBase;
+            diario.ExecuteNonQuery();
+
+            Class1.username = txtPrueba.Text;
         }
 
         private void BtnNEspecialista_Click(object sender, EventArgs e)
         {
+
         }
 
         private void BtnMEspecialista_Click(object sender, EventArgs e)
@@ -141,6 +159,7 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapterC = new OleDbDataAdapter(commandC);
             DataSet datasetC = new DataSet();
             adapterC.Fill(datasetC);*/
+            dataBase.Close();
         }
 
         private void txtMailU_TextChanged(object sender, EventArgs e)

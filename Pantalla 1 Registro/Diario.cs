@@ -30,7 +30,6 @@ namespace Pantalla_1_Registro
         {
             db = new OleDbConnection();
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -50,6 +49,7 @@ namespace Pantalla_1_Registro
 
         private void btnsave_Click(object sender, EventArgs e)
         {
+            db.Open();
             DateTime fecha = dtfecha.Value;
             OleDbCommand commandF;
             commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
@@ -66,7 +66,6 @@ namespace Pantalla_1_Registro
                 else
                 {
                     string testimonio = txtTexto.Text;
-                    db.Open();
 
                     OleDbCommand AgregarTestimonio;
                     AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Username) VALUES ('" + testimonio + "', '" + fecha + "', '" + Class1.username + "');");
@@ -77,14 +76,13 @@ namespace Pantalla_1_Registro
             else
             {
                     string testimonio = txtTexto.Text;
-                    db.Open();
 
                     OleDbCommand ModificarTestimonio;
                 ModificarTestimonio = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'");
                     ModificarTestimonio.Connection = db;
                     ModificarTestimonio.ExecuteNonQuery();
             }
-
+            db.Close();
             
         }
 
@@ -95,6 +93,7 @@ namespace Pantalla_1_Registro
 
         private void Dtfecha_ValueChanged(object sender, EventArgs e)
         {
+            db.Open();
             DateTime fecha = dtfecha.Value;
             OleDbCommand commandF;
             commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
@@ -109,6 +108,8 @@ namespace Pantalla_1_Registro
             {
                 txtTexto.Text = datasetF.Tables[0].Rows[0][0].ToString();
             }
+            db.Close();
         }
+
     }
 }
