@@ -122,7 +122,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtMailDelUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 843</value>
+    <value>383, 847</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtMailDelUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -133,7 +133,7 @@
     <value>True</value>
   </data>
   <data name="txtMailDelUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 66</value>
+    <value>778, 62</value>
   </data>
   <data name="txtMailDelUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -154,7 +154,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 506</value>
+    <value>383, 509</value>
   </data>
   <data name="txtUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -163,7 +163,7 @@
     <value>True</value>
   </data>
   <data name="txtUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 66</value>
+    <value>778, 63</value>
   </data>
   <data name="txtUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -184,7 +184,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtMailEspecialista.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1713, 687</value>
+    <value>1721, 689</value>
   </data>
   <data name="txtMailEspecialista.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -193,7 +193,7 @@
     <value>True</value>
   </data>
   <data name="txtMailEspecialista.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 66</value>
+    <value>765, 66</value>
   </data>
   <data name="txtMailEspecialista.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -241,7 +241,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 675</value>
+    <value>383, 679</value>
   </data>
   <data name="txtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -250,7 +250,7 @@
     <value>True</value>
   </data>
   <data name="txtNombre.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 66</value>
+    <value>778, 62</value>
   </data>
   <data name="txtNombre.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
@@ -271,7 +271,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtContraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>383, 1017</value>
+    <value>383, 1020</value>
   </data>
   <data name="txtContraseña.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
@@ -280,7 +280,7 @@
     <value>True</value>
   </data>
   <data name="txtContraseña.Size" type="System.Drawing.Size, System.Drawing">
-    <value>778, 66</value>
+    <value>778, 63</value>
   </data>
   <data name="txtContraseña.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
@@ -364,13 +364,13 @@
     <value>NoControl</value>
   </data>
   <data name="btnLogIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1332, 1532</value>
+    <value>1315, 1532</value>
   </data>
   <data name="btnLogIn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 6, 6, 6</value>
   </data>
   <data name="btnLogIn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>214, 33</value>
+    <value>290, 50</value>
   </data>
   <data name="btnLogIn.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>

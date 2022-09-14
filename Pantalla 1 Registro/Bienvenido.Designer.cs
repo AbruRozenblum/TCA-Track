@@ -102,6 +102,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Bienvenido";
             this.Text = "66";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

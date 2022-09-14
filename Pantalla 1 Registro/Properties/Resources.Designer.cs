@@ -1153,6 +1153,16 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__09_544 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 09.544", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__09_59_42 {
             get {
                 object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 09.59.42", resourceCulture);
@@ -1176,6 +1186,96 @@ namespace Pantalla_1_Registro.Properties {
         internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__10_45_44 {
             get {
                 object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 10.45.44", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_05_37 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.05.37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_33_26 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.33.26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_37_16 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.37.16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_39_20 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.39.20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_43_41 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.43.41", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_45_17 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.45.17", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_47_48 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.47.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_49_56 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.49.56", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__15_52_02 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 15.52.02", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -41,21 +41,21 @@
             // txtusername
             // 
             this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.125F);
-            this.txtusername.Location = new System.Drawing.Point(896, 628);
+            this.txtusername.Location = new System.Drawing.Point(896, 635);
             this.txtusername.Margin = new System.Windows.Forms.Padding(6);
             this.txtusername.Multiline = true;
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(976, 74);
+            this.txtusername.Size = new System.Drawing.Size(976, 63);
             this.txtusername.TabIndex = 4;
             // 
             // txtcontraseña
             // 
             this.txtcontraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtcontraseña.Location = new System.Drawing.Point(896, 899);
+            this.txtcontraseña.Location = new System.Drawing.Point(896, 902);
             this.txtcontraseña.Margin = new System.Windows.Forms.Padding(6);
             this.txtcontraseña.Multiline = true;
             this.txtcontraseña.Name = "txtcontraseña";
-            this.txtcontraseña.Size = new System.Drawing.Size(976, 74);
+            this.txtcontraseña.Size = new System.Drawing.Size(976, 69);
             this.txtcontraseña.TabIndex = 5;
             // 
             // button2

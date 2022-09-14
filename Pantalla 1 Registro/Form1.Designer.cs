@@ -99,7 +99,7 @@
             // 
             // btnLogIn
             // 
-            this.btnLogIn.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_11_145754;
+            this.btnLogIn.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__15_05_37;
             resources.ApplyResources(this.btnLogIn, "btnLogIn");
             this.btnLogIn.FlatAppearance.BorderSize = 0;
             this.btnLogIn.Name = "btnLogIn";
