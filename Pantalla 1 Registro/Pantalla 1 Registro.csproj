@@ -736,5 +736,38 @@
   <ItemGroup>
     <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 21.06.13.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.23.08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.22.35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.23.40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.58.21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.58.45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.58.451.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.58.29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 09.59.47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 10.00.21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 10.42.07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-15 a la%28s%29 10.44.25.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
