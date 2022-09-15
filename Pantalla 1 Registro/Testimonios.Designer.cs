@@ -36,37 +36,44 @@ namespace Pantalla_1_Registro
             // 
             // btnIrInicio
             // 
-            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.flevha_para_atras;
+            this.btnIrInicio.BackColor = System.Drawing.Color.White;
+            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__21_01_38;
             this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInicio.FlatAppearance.BorderSize = 0;
             this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInicio.Location = new System.Drawing.Point(42, 62);
+            this.btnIrInicio.Location = new System.Drawing.Point(73, 109);
+            this.btnIrInicio.Margin = new System.Windows.Forms.Padding(6);
             this.btnIrInicio.Name = "btnIrInicio";
-            this.btnIrInicio.Size = new System.Drawing.Size(61, 35);
+            this.btnIrInicio.Size = new System.Drawing.Size(160, 133);
             this.btnIrInicio.TabIndex = 1;
-            this.btnIrInicio.UseVisualStyleBackColor = true;
+            this.btnIrInicio.UseVisualStyleBackColor = false;
             this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.TESTIMONIOS_DE_PERSONAS1;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__21_01_12;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(180, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(297, 109);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(619, 35);
+            this.pictureBox1.Size = new System.Drawing.Size(2305, 121);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Testimonios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(920, 541);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__21_03_37;
+            this.ClientSize = new System.Drawing.Size(2884, 1759);
             this.Controls.Add(this.btnIrInicio);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Testimonios";
             this.Text = "Testimonios";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Testimonios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

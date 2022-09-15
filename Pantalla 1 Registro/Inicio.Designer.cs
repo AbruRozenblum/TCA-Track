@@ -62,7 +62,7 @@ namespace Pantalla_1_Registro
             this.btnIrRecetas.Location = new System.Drawing.Point(212, 616);
             this.btnIrRecetas.Margin = new System.Windows.Forms.Padding(4);
             this.btnIrRecetas.Name = "btnIrRecetas";
-            this.btnIrRecetas.Size = new System.Drawing.Size(873, 177);
+            this.btnIrRecetas.Size = new System.Drawing.Size(789, 177);
             this.btnIrRecetas.TabIndex = 7;
             this.btnIrRecetas.UseVisualStyleBackColor = true;
             this.btnIrRecetas.Click += new System.EventHandler(this.btnIrRecetas_Click);
@@ -73,7 +73,7 @@ namespace Pantalla_1_Registro
             this.btnIrInformacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInformacion.FlatAppearance.BorderSize = 0;
             this.btnIrInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInformacion.Location = new System.Drawing.Point(212, 1021);
+            this.btnIrInformacion.Location = new System.Drawing.Point(212, 1084);
             this.btnIrInformacion.Margin = new System.Windows.Forms.Padding(4);
             this.btnIrInformacion.Name = "btnIrInformacion";
             this.btnIrInformacion.Size = new System.Drawing.Size(542, 153);
@@ -87,10 +87,10 @@ namespace Pantalla_1_Registro
             this.btnIrDiario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrDiario.FlatAppearance.BorderSize = 0;
             this.btnIrDiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrDiario.Location = new System.Drawing.Point(212, 801);
+            this.btnIrDiario.Location = new System.Drawing.Point(212, 860);
             this.btnIrDiario.Margin = new System.Windows.Forms.Padding(4);
             this.btnIrDiario.Name = "btnIrDiario";
-            this.btnIrDiario.Size = new System.Drawing.Size(527, 153);
+            this.btnIrDiario.Size = new System.Drawing.Size(552, 153);
             this.btnIrDiario.TabIndex = 5;
             this.btnIrDiario.UseVisualStyleBackColor = true;
             this.btnIrDiario.Click += new System.EventHandler(this.btnIrDiario_Click);
@@ -101,7 +101,7 @@ namespace Pantalla_1_Registro
             this.btnIrCalendario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrCalendario.FlatAppearance.BorderSize = 0;
             this.btnIrCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrCalendario.Location = new System.Drawing.Point(212, 1245);
+            this.btnIrCalendario.Location = new System.Drawing.Point(212, 1314);
             this.btnIrCalendario.Margin = new System.Windows.Forms.Padding(4);
             this.btnIrCalendario.Name = "btnIrCalendario";
             this.btnIrCalendario.Size = new System.Drawing.Size(480, 153);
@@ -133,7 +133,7 @@ namespace Pantalla_1_Registro
             this.btnIrPerfil.Location = new System.Drawing.Point(184, 62);
             this.btnIrPerfil.Margin = new System.Windows.Forms.Padding(4);
             this.btnIrPerfil.Name = "btnIrPerfil";
-            this.btnIrPerfil.Size = new System.Drawing.Size(178, 155);
+            this.btnIrPerfil.Size = new System.Drawing.Size(206, 178);
             this.btnIrPerfil.TabIndex = 1;
             this.btnIrPerfil.UseVisualStyleBackColor = false;
             this.btnIrPerfil.Click += new System.EventHandler(this.btnIrPerfil_Click);
@@ -146,7 +146,7 @@ namespace Pantalla_1_Registro
             this.pictureBox1.Location = new System.Drawing.Point(1082, 62);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(635, 155);
+            this.pictureBox1.Size = new System.Drawing.Size(732, 178);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 

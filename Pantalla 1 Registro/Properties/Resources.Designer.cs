@@ -1283,6 +1283,56 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__21_01_12 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 21.01.12", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__21_01_38 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 21.01.38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__21_03_37 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 21.03.37", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__21_031 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 21.031", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_14_a_la_s__21_06_13 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-14 a la(s) 21.06.13", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle_pic {
             get {
                 object obj = ResourceManager.GetObject("circle pic", resourceCulture);

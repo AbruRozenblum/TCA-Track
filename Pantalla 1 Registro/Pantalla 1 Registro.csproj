@@ -721,5 +721,20 @@
   <ItemGroup>
     <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 15.52.02.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 21.01.12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 21.01.38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 21.03.37.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 21.03.371.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de Pantalla 2022-09-14 a la%28s%29 21.06.13.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

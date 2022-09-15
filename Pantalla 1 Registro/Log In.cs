@@ -40,7 +40,7 @@ namespace Pantalla_1_Registro
             }
             else
             {
-                MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
+                //MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
             }
             dataBase.Close();
             //no tocar, estoy intentando confgurar el log in
