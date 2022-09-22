@@ -189,5 +189,10 @@ namespace Pantalla_1_Registro
         {
 
         }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
