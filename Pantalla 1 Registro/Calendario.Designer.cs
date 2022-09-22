@@ -40,9 +40,10 @@ namespace Pantalla_1_Registro
             this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInicio.FlatAppearance.BorderSize = 0;
             this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInicio.Location = new System.Drawing.Point(29, 35);
+            this.btnIrInicio.Location = new System.Drawing.Point(58, 67);
+            this.btnIrInicio.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnIrInicio.Name = "btnIrInicio";
-            this.btnIrInicio.Size = new System.Drawing.Size(53, 40);
+            this.btnIrInicio.Size = new System.Drawing.Size(106, 77);
             this.btnIrInicio.TabIndex = 1;
             this.btnIrInicio.UseVisualStyleBackColor = true;
             this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
@@ -51,22 +52,25 @@ namespace Pantalla_1_Registro
             // 
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.C_A_L_E_N_D_A_R_I_O;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(148, 35);
+            this.pictureBox1.Location = new System.Drawing.Point(296, 67);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(292, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(584, 65);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Calendario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(930, 529);
+            this.ClientSize = new System.Drawing.Size(1860, 1017);
             this.Controls.Add(this.btnIrInicio);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Calendario";
             this.Text = "Calendario";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

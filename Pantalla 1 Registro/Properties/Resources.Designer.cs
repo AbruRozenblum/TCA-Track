@@ -1463,6 +1463,36 @@ namespace Pantalla_1_Registro.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_22_a_la_s__13_42_48 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-22 a la(s) 13.42.48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_22_a_la_s__13_47_38 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-22 a la(s) 13.47.38", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_Pantalla_2022_09_22_a_la_s__13_57_26 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de Pantalla 2022-09-22 a la(s) 13.57.26", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap circle_pic {
             get {
                 object obj = ResourceManager.GetObject("circle pic", resourceCulture);

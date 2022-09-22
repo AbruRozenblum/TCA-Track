@@ -111,5 +111,9 @@ namespace Pantalla_1_Registro
             db.Close();
         }
 
+        private void txtTexto_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

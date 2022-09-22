@@ -321,21 +321,21 @@ namespace Pantalla_1_Registro
             // txtActualC
             // 
             this.txtActualC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtActualC.Location = new System.Drawing.Point(1784, 1103);
+            this.txtActualC.Location = new System.Drawing.Point(1773, 1103);
             this.txtActualC.Margin = new System.Windows.Forms.Padding(6);
             this.txtActualC.Multiline = true;
             this.txtActualC.Name = "txtActualC";
-            this.txtActualC.Size = new System.Drawing.Size(432, 48);
+            this.txtActualC.Size = new System.Drawing.Size(443, 48);
             this.txtActualC.TabIndex = 54;
             // 
             // txtNuevaC
             // 
             this.txtNuevaC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtNuevaC.Location = new System.Drawing.Point(1784, 1215);
+            this.txtNuevaC.Location = new System.Drawing.Point(1773, 1215);
             this.txtNuevaC.Margin = new System.Windows.Forms.Padding(6);
             this.txtNuevaC.Multiline = true;
             this.txtNuevaC.Name = "txtNuevaC";
-            this.txtNuevaC.Size = new System.Drawing.Size(432, 48);
+            this.txtNuevaC.Size = new System.Drawing.Size(443, 48);
             this.txtNuevaC.TabIndex = 55;
             // 
             // pbFotoPerfil

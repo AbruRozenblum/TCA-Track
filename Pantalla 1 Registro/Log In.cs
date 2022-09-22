@@ -24,25 +24,25 @@ namespace Pantalla_1_Registro
         private void Button1_Click /* BOTON DE INICIO DE SESION*/(object sender, EventArgs e)
         {
 
-            //dataBase.Open();
-            //OleDbCommand verificoLogIn;
-            //verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "' and Contraseña = '" + txtcontraseña.Text + "'", dataBase);
-            //OleDbDataAdapter adapter = new OleDbDataAdapter (verificoLogIn);
-            //DataSet dataset = new DataSet();
-            //adapter.Fill(dataset);
-            //if (dataset.Tables[0].Rows.Count != 0)
+            dataBase.Open();
+            OleDbCommand verificoLogIn;
+            verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "' and Contraseña = '" + txtcontraseña.Text + "'", dataBase);
+            OleDbDataAdapter adapter = new OleDbDataAdapter (verificoLogIn);
+            DataSet dataset = new DataSet();
+            adapter.Fill(dataset);
+            if (dataset.Tables[0].Rows.Count != 0)
             {
                 Class1.username = txtusername.Text;
                 Inicio formaSiguiente = new Inicio();
-                this.Hide(); //oculta la forma actual
-                formaSiguiente.Show(); // muestra la forma
+                this.Hide(); 
+                formaSiguiente.Show(); 
 
             }
-            //else
+            else
             {
-                //MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
+                MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
             }
-            //dataBase.Close();
+            dataBase.Close();
             //no tocar, estoy intentando confgurar el log in
 
 
@@ -54,8 +54,8 @@ namespace Pantalla_1_Registro
 
 
             Form1 formaSiguiente = new Form1();
-            this.Hide(); //oculta la forma actual
-            formaSiguiente.Show(); // muestra la forma2
+            this.Hide(); 
+            formaSiguiente.Show(); 
         }
 
         private void PictureBox1_Click(object sender, EventArgs e)
