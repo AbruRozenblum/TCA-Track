@@ -43,21 +43,21 @@ namespace Pantalla_1_Registro
             db = new OleDbConnection();
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
             db.Open();
-            OleDbCommand hoy_command = new OleDbCommand("SELECT Evento, Inicio FROM Actividades WHERE Dia = '" + date + "' ORDER BY Inicio ASC", db);
+            OleDbCommand hoy_command = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Dia = '" + date + "' ORDER BY Inicio ASC", db);
             OleDbDataAdapter adapter = new OleDbDataAdapter(hoy_command);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
             //checklist
             Label hoy = new Label();
             hoy.Text = date.ToString();
-            /*flowLayoutPanel3.Controls.Add(hoy);
+            flowLayoutPanel3.Controls.Add(hoy);
 
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
                 CheckBox Act = new CheckBox();
                 Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
                 flowLayoutPanel1.Controls.Add(Act);
-            }*/
+            }
         }
 
             private void CheckBox1_CheckedChanged(object sender, EventArgs e)

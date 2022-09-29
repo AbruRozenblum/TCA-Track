@@ -173,6 +173,9 @@
     <Compile Include="UserControlDays.Designer.cs">
       <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddEvent.resx">
+      <DependentUpon>AddEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bienvenido.resx">
       <DependentUpon>Bienvenido.cs</DependentUpon>
     </EmbeddedResource>

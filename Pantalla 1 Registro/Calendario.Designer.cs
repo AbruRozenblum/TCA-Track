@@ -35,6 +35,21 @@ namespace Pantalla_1_Registro
             this.lblDATE = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
+            this.chbEjercicio = new System.Windows.Forms.CheckBox();
+            this.chbMedicación = new System.Windows.Forms.CheckBox();
+            this.chbConsulta = new System.Windows.Forms.CheckBox();
+            this.Reuniones = new System.Windows.Forms.CheckBox();
+            this.chbComida = new System.Windows.Forms.CheckBox();
+            this.Otros = new System.Windows.Forms.CheckBox();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,12 +113,171 @@ namespace Pantalla_1_Registro
             this.btnAnterior.UseVisualStyleBackColor = true;
             this.btnAnterior.Click += new System.EventHandler(this.BtnAnterior_Click);
             // 
+            // chbEjercicio
+            // 
+            this.chbEjercicio.AutoSize = true;
+            this.chbEjercicio.Location = new System.Drawing.Point(24, 141);
+            this.chbEjercicio.Name = "chbEjercicio";
+            this.chbEjercicio.Size = new System.Drawing.Size(66, 17);
+            this.chbEjercicio.TabIndex = 7;
+            this.chbEjercicio.Text = "Ejercicio";
+            this.chbEjercicio.UseVisualStyleBackColor = true;
+            // 
+            // chbMedicación
+            // 
+            this.chbMedicación.AutoSize = true;
+            this.chbMedicación.Location = new System.Drawing.Point(24, 164);
+            this.chbMedicación.Name = "chbMedicación";
+            this.chbMedicación.Size = new System.Drawing.Size(81, 17);
+            this.chbMedicación.TabIndex = 8;
+            this.chbMedicación.Text = "Medicación";
+            this.chbMedicación.UseVisualStyleBackColor = true;
+            // 
+            // chbConsulta
+            // 
+            this.chbConsulta.AutoSize = true;
+            this.chbConsulta.Location = new System.Drawing.Point(24, 187);
+            this.chbConsulta.Name = "chbConsulta";
+            this.chbConsulta.Size = new System.Drawing.Size(105, 17);
+            this.chbConsulta.TabIndex = 9;
+            this.chbConsulta.Text = "Consulta Medica";
+            this.chbConsulta.UseVisualStyleBackColor = true;
+            // 
+            // Reuniones
+            // 
+            this.Reuniones.AutoSize = true;
+            this.Reuniones.Location = new System.Drawing.Point(24, 210);
+            this.Reuniones.Name = "Reuniones";
+            this.Reuniones.Size = new System.Drawing.Size(77, 17);
+            this.Reuniones.TabIndex = 10;
+            this.Reuniones.Text = "Reuniones";
+            this.Reuniones.UseVisualStyleBackColor = true;
+            // 
+            // chbComida
+            // 
+            this.chbComida.AutoSize = true;
+            this.chbComida.Location = new System.Drawing.Point(24, 233);
+            this.chbComida.Name = "chbComida";
+            this.chbComida.Size = new System.Drawing.Size(66, 17);
+            this.chbComida.TabIndex = 11;
+            this.chbComida.Text = "Comidas";
+            this.chbComida.UseVisualStyleBackColor = true;
+            // 
+            // Otros
+            // 
+            this.Otros.AutoSize = true;
+            this.Otros.Location = new System.Drawing.Point(24, 256);
+            this.Otros.Name = "Otros";
+            this.Otros.Size = new System.Drawing.Size(51, 17);
+            this.Otros.TabIndex = 12;
+            this.Otros.Text = "Otros";
+            this.Otros.UseVisualStyleBackColor = true;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 297);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(153, 32);
+            this.flowLayoutPanel3.TabIndex = 13;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 326);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 393);
+            this.flowLayoutPanel1.TabIndex = 14;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(421, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 25);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Lunes";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(575, 84);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(148, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Martes";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(729, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 25);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Miércoles";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(883, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 25);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Jueves";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(1037, 84);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(148, 25);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Viernes";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(267, 84);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 25);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Domingo";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(1191, 84);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(148, 25);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Sábado";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Calendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.Otros);
+            this.Controls.Add(this.chbComida);
+            this.Controls.Add(this.Reuniones);
+            this.Controls.Add(this.chbConsulta);
+            this.Controls.Add(this.chbMedicación);
+            this.Controls.Add(this.chbEjercicio);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblDATE);
@@ -128,5 +302,20 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label lblDATE;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
+        private System.Windows.Forms.CheckBox chbEjercicio;
+        private System.Windows.Forms.CheckBox chbMedicación;
+        private System.Windows.Forms.CheckBox chbConsulta;
+        private System.Windows.Forms.CheckBox Reuniones;
+        private System.Windows.Forms.CheckBox chbComida;
+        private System.Windows.Forms.CheckBox Otros;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
