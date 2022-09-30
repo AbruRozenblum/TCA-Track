@@ -182,6 +182,9 @@
     <EmbeddedResource Include="Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dia.resx">
+      <DependentUpon>Dia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diario.resx">
       <DependentUpon>Diario.cs</DependentUpon>
     </EmbeddedResource>

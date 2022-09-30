@@ -24,6 +24,7 @@ namespace Pantalla_1_Registro
         string D;
         string M;
         string A;
+
         public AddEvent()
         {
             InitializeComponent();
@@ -98,7 +99,7 @@ namespace Pantalla_1_Registro
             if (evento != null || dia != null || horaF != null || horaI != null || tipo != null|| descripción!= null)
             {
                 cn.Open();
-                string query = "INSERT INTO Actividades (Evento, Inicio, Fin, Dia, descripcion,tipo) VALUES ('" + evento + "', '" + horaI + "', '" + horaF + "', '" + dia + "', '" + descripción + "','" + tipo + "')";
+                string query = "INSERT INTO Calendario (Evento, Inicio, Fin, Dia, descripcion,tipo) VALUES ('" + evento + "', '" + horaI + "', '" + horaF + "', '" + dia + "', '" + descripción + "','" + tipo + "')";
                 OleDbCommand MiComando = new OleDbCommand(query);
                 MiComando.Connection = cn;
                 MiComando.ExecuteNonQuery();

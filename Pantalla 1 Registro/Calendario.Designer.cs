@@ -50,6 +50,7 @@ namespace Pantalla_1_Registro
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnNuevoEvento = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -116,7 +117,7 @@ namespace Pantalla_1_Registro
             // chbEjercicio
             // 
             this.chbEjercicio.AutoSize = true;
-            this.chbEjercicio.Location = new System.Drawing.Point(24, 141);
+            this.chbEjercicio.Location = new System.Drawing.Point(24, 172);
             this.chbEjercicio.Name = "chbEjercicio";
             this.chbEjercicio.Size = new System.Drawing.Size(66, 17);
             this.chbEjercicio.TabIndex = 7;
@@ -126,7 +127,7 @@ namespace Pantalla_1_Registro
             // chbMedicación
             // 
             this.chbMedicación.AutoSize = true;
-            this.chbMedicación.Location = new System.Drawing.Point(24, 164);
+            this.chbMedicación.Location = new System.Drawing.Point(24, 195);
             this.chbMedicación.Name = "chbMedicación";
             this.chbMedicación.Size = new System.Drawing.Size(81, 17);
             this.chbMedicación.TabIndex = 8;
@@ -136,7 +137,7 @@ namespace Pantalla_1_Registro
             // chbConsulta
             // 
             this.chbConsulta.AutoSize = true;
-            this.chbConsulta.Location = new System.Drawing.Point(24, 187);
+            this.chbConsulta.Location = new System.Drawing.Point(24, 218);
             this.chbConsulta.Name = "chbConsulta";
             this.chbConsulta.Size = new System.Drawing.Size(105, 17);
             this.chbConsulta.TabIndex = 9;
@@ -146,7 +147,7 @@ namespace Pantalla_1_Registro
             // Reuniones
             // 
             this.Reuniones.AutoSize = true;
-            this.Reuniones.Location = new System.Drawing.Point(24, 210);
+            this.Reuniones.Location = new System.Drawing.Point(24, 241);
             this.Reuniones.Name = "Reuniones";
             this.Reuniones.Size = new System.Drawing.Size(77, 17);
             this.Reuniones.TabIndex = 10;
@@ -156,7 +157,7 @@ namespace Pantalla_1_Registro
             // chbComida
             // 
             this.chbComida.AutoSize = true;
-            this.chbComida.Location = new System.Drawing.Point(24, 233);
+            this.chbComida.Location = new System.Drawing.Point(24, 264);
             this.chbComida.Name = "chbComida";
             this.chbComida.Size = new System.Drawing.Size(66, 17);
             this.chbComida.TabIndex = 11;
@@ -166,7 +167,7 @@ namespace Pantalla_1_Registro
             // Otros
             // 
             this.Otros.AutoSize = true;
-            this.Otros.Location = new System.Drawing.Point(24, 256);
+            this.Otros.Location = new System.Drawing.Point(24, 287);
             this.Otros.Name = "Otros";
             this.Otros.Size = new System.Drawing.Size(51, 17);
             this.Otros.TabIndex = 12;
@@ -175,22 +176,22 @@ namespace Pantalla_1_Registro
             // 
             // flowLayoutPanel3
             // 
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 297);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 332);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(153, 32);
             this.flowLayoutPanel3.TabIndex = 13;
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 326);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 361);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 393);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 356);
             this.flowLayoutPanel1.TabIndex = 14;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(421, 84);
+            this.label1.Location = new System.Drawing.Point(391, 84);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 25);
             this.label1.TabIndex = 15;
@@ -200,7 +201,7 @@ namespace Pantalla_1_Registro
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(575, 84);
+            this.label2.Location = new System.Drawing.Point(545, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 16;
@@ -210,7 +211,7 @@ namespace Pantalla_1_Registro
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(729, 84);
+            this.label3.Location = new System.Drawing.Point(704, 84);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(148, 25);
             this.label3.TabIndex = 17;
@@ -220,7 +221,7 @@ namespace Pantalla_1_Registro
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(883, 84);
+            this.label4.Location = new System.Drawing.Point(858, 84);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 25);
             this.label4.TabIndex = 18;
@@ -230,7 +231,7 @@ namespace Pantalla_1_Registro
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(1037, 84);
+            this.label5.Location = new System.Drawing.Point(1012, 84);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(148, 25);
             this.label5.TabIndex = 19;
@@ -240,7 +241,7 @@ namespace Pantalla_1_Registro
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(267, 84);
+            this.label6.Location = new System.Drawing.Point(237, 84);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(148, 25);
             this.label6.TabIndex = 20;
@@ -250,12 +251,22 @@ namespace Pantalla_1_Registro
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1191, 84);
+            this.label7.Location = new System.Drawing.Point(1166, 84);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(148, 25);
             this.label7.TabIndex = 21;
             this.label7.Text = "Sábado";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNuevoEvento
+            // 
+            this.btnNuevoEvento.Location = new System.Drawing.Point(24, 100);
+            this.btnNuevoEvento.Name = "btnNuevoEvento";
+            this.btnNuevoEvento.Size = new System.Drawing.Size(153, 57);
+            this.btnNuevoEvento.TabIndex = 22;
+            this.btnNuevoEvento.Text = "Nuevo Evento";
+            this.btnNuevoEvento.UseVisualStyleBackColor = true;
+            this.btnNuevoEvento.Click += new System.EventHandler(this.BtnNuevoEvento_Click_1);
             // 
             // Calendario
             // 
@@ -263,6 +274,7 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnNuevoEvento);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -317,5 +329,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnNuevoEvento;
     }
 }

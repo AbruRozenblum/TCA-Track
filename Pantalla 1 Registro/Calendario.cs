@@ -107,15 +107,15 @@ namespace Pantalla_1_Registro
             }
         }
 
+        private void BtnNuevoEvento_Click_1(object sender, EventArgs e)
+        {
+            AddEvent formaSiguiente = new AddEvent();
+            formaSiguiente.Show();
+        }
+
         private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
             {
 
-            }
-
-            private void BtnNuevoEvento_Click(object sender, EventArgs e)
-            {
-                AddEvent formaSiguiente = new AddEvent();
-                formaSiguiente.Show();
             }
             
             private void displaDays()

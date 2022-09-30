@@ -130,3 +130,4 @@ C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Panta
 C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.pdb
 C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControlDays.resources
 C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.AddEvent.resources
+C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Dia.resources
