@@ -20,7 +20,11 @@ namespace Pantalla_1_Registro
 
         private void UserControlDays_Load(object sender, EventArgs e)
         {
+            if (Calendario.si == true)
+            {
+                pxbEjercicio.Hide();
 
+            }
         }
         public void days(int numday)
         {

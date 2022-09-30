@@ -235,6 +235,9 @@
   <data name="Captura de pantalla 2022-08-11 1342115" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-11 1342115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Captura de Pantalla 2022-09-22 a la(s) 13.57.26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de Pantalla 2022-09-22 a la(s) 13.57.26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura de pantalla 2022-08-11 115554" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-11 115554.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -301,9 +304,6 @@
   <data name="Captura de Pantalla 2022-09-14 a la(s) 15.33.26" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 15.33.26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de Pantalla 2022-09-14 a la(s) 15.05.37" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 15.05.37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Captura de Pantalla 2022-09-14 a la(s) 08.38.59" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 08.38.59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -340,6 +340,9 @@
   <data name="GENERO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\GENERO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BIENVENIDOS-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BIENVENIDOS-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura de Pantalla 2022-09-14 a la(s) 08.44.37" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 08.44.37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -375,6 +378,9 @@
   </data>
   <data name="Captura de pantalla 2022-08-12 111541" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-12 111541.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de pantalla 2022-08-11 151507" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de pantalla 2022-08-11 151507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de Pantalla 2022-09-15 a la(s) 09.59.47" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-15 a la(s) 09.59.47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -439,8 +445,8 @@
   <data name="Union" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Union.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de pantalla 2022-08-11 151507" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de pantalla 2022-08-11 151507.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de Pantalla 2022-09-14 a la(s) 15.05.37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 15.05.37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CONFIGURACIÓN" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CONFIGURACIÓN.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -481,6 +487,9 @@
   <data name="Captura de pantalla 2022-08-11 090024" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-11 090024.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rectangle 466" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 466.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Captura de pantalla 2022-08-11 1342113" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-11 1342113.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -501,6 +510,9 @@
   </data>
   <data name="Captura de Pantalla 2022-09-14 a la(s) 21.01.12" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 21.01.12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle 462" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 462.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla 2022-08-11 090056" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-11 090056.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -525,6 +537,9 @@
   </data>
   <data name="Captura de pantalla 2022-08-11 145652" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-11 145652.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle 465" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 465.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BIENVENIDOS1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BIENVENIDOS1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -601,8 +616,8 @@
   <data name="Captura de Pantalla 2022-09-14 a la(s) 09.542" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-14 a la(s) 09.54.582.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BIENVENIDOS-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BIENVENIDOS-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle 469" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 469.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de pantalla 2022-08-16 1413171" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-16 1413171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -612,6 +627,9 @@
   </data>
   <data name="Captura de Pantalla 2022-09-15 a la(s) 11.40.58" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de Pantalla 2022-09-15 a la(s) 11.40.58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rectangle 470" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 470.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="diagnosis pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diagnosis pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -673,7 +691,7 @@
   <data name="Captura de pantalla 2022-08-24 081537" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de pantalla 2022-08-24 081537.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de Pantalla 2022-09-22 a la(s) 13.57.26" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de Pantalla 2022-09-22 a la(s) 13.57.26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Rectangle 463" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rectangle 463.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -29,8 +29,6 @@ namespace Pantalla_1_Registro
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnIrInicio = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.daycontainer = new System.Windows.Forms.FlowLayoutPanel();
             this.lblDATE = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
@@ -51,31 +49,10 @@ namespace Pantalla_1_Registro
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnNuevoEvento = new System.Windows.Forms.Button();
+            this.btnIrInicio = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnIrInicio
-            // 
-            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.flevha_para_atras;
-            this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIrInicio.FlatAppearance.BorderSize = 0;
-            this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInicio.Location = new System.Drawing.Point(29, 35);
-            this.btnIrInicio.Name = "btnIrInicio";
-            this.btnIrInicio.Size = new System.Drawing.Size(53, 40);
-            this.btnIrInicio.TabIndex = 1;
-            this.btnIrInicio.UseVisualStyleBackColor = true;
-            this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.C_A_L_E_N_D_A_R_I_O;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(148, 35);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(292, 34);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // daycontainer
             // 
@@ -123,6 +100,7 @@ namespace Pantalla_1_Registro
             this.chbEjercicio.TabIndex = 7;
             this.chbEjercicio.Text = "Ejercicio";
             this.chbEjercicio.UseVisualStyleBackColor = true;
+            this.chbEjercicio.CheckedChanged += new System.EventHandler(this.chbEjercicio_CheckedChanged);
             // 
             // chbMedicación
             // 
@@ -267,6 +245,29 @@ namespace Pantalla_1_Registro
             this.btnNuevoEvento.Text = "Nuevo Evento";
             this.btnNuevoEvento.UseVisualStyleBackColor = true;
             this.btnNuevoEvento.Click += new System.EventHandler(this.BtnNuevoEvento_Click_1);
+            // 
+            // btnIrInicio
+            // 
+            this.btnIrInicio.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.flevha_para_atras;
+            this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnIrInicio.FlatAppearance.BorderSize = 0;
+            this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIrInicio.Location = new System.Drawing.Point(29, 35);
+            this.btnIrInicio.Name = "btnIrInicio";
+            this.btnIrInicio.Size = new System.Drawing.Size(53, 40);
+            this.btnIrInicio.TabIndex = 1;
+            this.btnIrInicio.UseVisualStyleBackColor = true;
+            this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.C_A_L_E_N_D_A_R_I_O;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(148, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(292, 34);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Calendario
             // 

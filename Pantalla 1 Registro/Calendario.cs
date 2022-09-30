@@ -15,6 +15,7 @@ namespace Pantalla_1_Registro
     {
         OleDbConnection db;
         int month, year, day;
+        public static bool si;
 
         public static int static_month, static_year;
         public Calendario()
@@ -43,12 +44,14 @@ namespace Pantalla_1_Registro
             db = new OleDbConnection();
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
             db.Open();
+
             OleDbCommand hoy_command = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Dia = '" + date + "' ORDER BY Inicio ASC", db);
             OleDbDataAdapter adapter = new OleDbDataAdapter(hoy_command);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
+
             //checklist
-            Label hoy = new Label();
+            TextBox hoy = new TextBox();
             hoy.Text = date.ToString();
             flowLayoutPanel3.Controls.Add(hoy);
 
@@ -58,16 +61,16 @@ namespace Pantalla_1_Registro
                 Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
                 flowLayoutPanel1.Controls.Add(Act);
             }
-        }
-
-            private void CheckBox1_CheckedChanged(object sender, EventArgs e)
+            //calendarios checkbox
+            OleDbCommand calendarios = new OleDbCommand("SELECT Ejercicio FROM Tipo", db);
+            OleDbDataAdapter adapter1 = new OleDbDataAdapter(calendarios);
+            DataSet dataset1 = new DataSet();
+            adapter.Fill(dataset);
+            if (dataset.Tables[0].Rows["Ejercicio"]== true)
             {
-                /* form2 = new Form2();
-                 if(form2.checkbox1)
-                 {
-                     eowfjw´f
-                 }*/
+
             }
+        }
 
         private void BtnAnterior_Click(object sender, EventArgs e)
         {
@@ -104,6 +107,21 @@ namespace Pantalla_1_Registro
             else
             {
                 displaDays();
+            }
+        }
+
+        private void chbEjercicio_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbEjercicio.Checked)
+            {
+                si= true;
+                db.Open();
+                string query = "INSERT INTO Tipo (Ejercicio) VALUES ('" + si + "')";
+                OleDbCommand MiComando = new OleDbCommand(query);
+                MiComando.Connection = db;
+                MiComando.ExecuteNonQuery();
+                db.Close();
+                this.Refresh();
             }
         }
 

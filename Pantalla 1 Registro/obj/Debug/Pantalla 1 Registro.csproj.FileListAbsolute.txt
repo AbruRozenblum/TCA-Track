@@ -131,3 +131,30 @@ C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Panta
 C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControlDays.resources
 C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.AddEvent.resources
 C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Dia.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.AssemblyReference.cache
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.AddEvent.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Bienvenido.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Calendario.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Dia.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Diario.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Dulces.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Form1.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Informacion.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Inicio.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Log_In.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Perfil.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Properties.Resources.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Recetas.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Salados.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonios.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.RecetaTemplate.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControl1.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControlBlank.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControlDays.resources
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.GenerateResource.cache
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.csproj.CoreCompileInputs.cache
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.exe
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 Registro.pdb
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe.config
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe
+C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.pdb

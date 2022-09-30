@@ -21,6 +21,7 @@ namespace Pantalla_1_Registro
 
         private void Dia_Load(object sender, EventArgs e)
         {
+            
             txtFecha.Text = UserControlDays.static_day + "/" + Calendario.static_month + "/" + Calendario.static_year;
 
             //conexion base de datos
@@ -46,6 +47,10 @@ namespace Pantalla_1_Registro
             AddEvent formaSiguiente = new AddEvent();
             formaSiguiente.Show();
             this.Hide();
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
         }
     }
  }
