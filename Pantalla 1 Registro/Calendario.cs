@@ -16,7 +16,6 @@ namespace Pantalla_1_Registro
         OleDbConnection db;
         int month, year, day;
         public static bool si;
-
         public static int static_month, static_year;
         public Calendario()
         {
@@ -62,13 +61,18 @@ namespace Pantalla_1_Registro
                 flowLayoutPanel1.Controls.Add(Act);
             }
             //calendarios checkbox
-            OleDbCommand calendarios = new OleDbCommand("SELECT Ejercicio FROM Tipo", db);
-            OleDbDataAdapter adapter1 = new OleDbDataAdapter(calendarios);
-            DataSet dataset1 = new DataSet();
-            adapter.Fill(dataset);
-            if (dataset.Tables[0].Rows["Ejercicio"]== true)
-            {
+            OleDbCommand calendarios = new OleDbCommand("SELECT Ejercicio FROM Tipo WERE Username ='" + Class1.username + "' ", db);
+            OleDbDataAdapter adapter2 = new OleDbDataAdapter(calendarios);
+            DataSet dataset2 = new DataSet();
+            adapter2.Fill(dataset2);
 
+            if(dataset2.Tables[0].Rows.Count != 0){}
+            else
+            {
+                OleDbCommand crearCal = new OleDbCommand("INSERT INTO Tipo (Ejercicio,Username) VALUES ('" + false + "','" + Class1.username + "' )", db);
+                OleDbDataAdapter adapter3 = new OleDbDataAdapter(crearCal);
+                DataSet dataset3 = new DataSet();
+                adapter3.Fill(dataset3);
             }
         }
 
@@ -116,7 +120,18 @@ namespace Pantalla_1_Registro
             {
                 si= true;
                 db.Open();
-                string query = "INSERT INTO Tipo (Ejercicio) VALUES ('" + si + "')";
+                string query = "UPDATE Tipo (Ejercicio) VALUES ('" + si + "') WERE Username = '"+Class1.username+"'";
+                OleDbCommand MiComando = new OleDbCommand(query);
+                MiComando.Connection = db;
+                MiComando.ExecuteNonQuery();
+                db.Close();
+                this.Refresh();
+            }
+            else
+            {
+                si = false;
+                db.Open();
+                string query = "UPDATE Tipo (Ejercicio) VALUES ('" + si + "')WERE Username = '" + Class1.username + "'";
                 OleDbCommand MiComando = new OleDbCommand(query);
                 MiComando.Connection = db;
                 MiComando.ExecuteNonQuery();
