@@ -117,9 +117,9 @@ namespace Pantalla_1_Registro
                          * asigno el comando a la base de datos sobre la que lo voy a ejecutar
                          */
                         agregoInfoEspecialista.Connection = dataBase;
-                        /*
-                         * ejecuto el comando
-                         */
+                        
+                         // ejecuto el comando
+                         
                         agregoInfoEspecialista.ExecuteNonQuery();
                     }
                     else

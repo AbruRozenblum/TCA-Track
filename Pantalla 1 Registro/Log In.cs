@@ -23,8 +23,8 @@ namespace Pantalla_1_Registro
 
         private void Button1_Click /* BOTON DE INICIO DE SESION*/(object sender, EventArgs e)
         {
-
-            dataBase.Open();
+            
+            /*dataBase.Open();
             OleDbCommand verificoLogIn;
             verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "' and Contraseña = '" + txtcontraseña.Text + "'", dataBase);
             OleDbDataAdapter adapter = new OleDbDataAdapter (verificoLogIn);
@@ -32,19 +32,19 @@ namespace Pantalla_1_Registro
             adapter.Fill(dataset);
             if (dataset.Tables[0].Rows.Count != 0)
             {
-                Class1.username = txtusername.Text;
+                Class1.username = txtusername.Text;*/
                 Inicio formaSiguiente = new Inicio();
                 this.Hide(); 
                 formaSiguiente.Show(); 
-
+            /*
             }
-            else
+           else
             {
                 MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
             }
             dataBase.Close();
             //no tocar, estoy intentando confgurar el log in
-
+           
 
         }
 
@@ -72,5 +72,5 @@ namespace Pantalla_1_Registro
             txtcontraseña.MaxLength = 14;
         }
 
-    }
+    }*/
 }
