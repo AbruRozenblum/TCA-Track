@@ -83,6 +83,7 @@ namespace Pantalla_1_Registro
             this.btnSiguiente.Size = new System.Drawing.Size(42, 34);
             this.btnSiguiente.TabIndex = 5;
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // btnAnterior
             // 
@@ -93,6 +94,7 @@ namespace Pantalla_1_Registro
             this.btnAnterior.Size = new System.Drawing.Size(42, 34);
             this.btnAnterior.TabIndex = 6;
             this.btnAnterior.UseVisualStyleBackColor = true;
+            this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click_1);
             // 
             // chbEjercicio
             // 
@@ -315,7 +317,7 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_03_a_la_s__19_07_16;
-            this.ClientSize = new System.Drawing.Size(685, 389);
+            this.ClientSize = new System.Drawing.Size(958, 389);
             this.Controls.Add(this.btnNuevoEvento);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);

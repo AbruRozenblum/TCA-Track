@@ -37,7 +37,7 @@ namespace Pantalla_1_Registro
 
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
-                CheckBox Act = new CheckBox();
+                TextBox Act = new TextBox();
                 Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
                 flowLayoutPanel1.Controls.Add(Act);
             }
