@@ -54,19 +54,16 @@
             // 
             resources.ApplyResources(this.txtMailDelUsuario, "txtMailDelUsuario");
             this.txtMailDelUsuario.Name = "txtMailDelUsuario";
-            this.txtMailDelUsuario.TextChanged += new System.EventHandler(this.TxtMailDelUsuario_TextChanged);
             // 
             // txtUsuario
             // 
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.TextChanged += new System.EventHandler(this.TxtUsuario_TextChanged);
             // 
             // txtMailEspecialista
             // 
             resources.ApplyResources(this.txtMailEspecialista, "txtMailEspecialista");
             this.txtMailEspecialista.Name = "txtMailEspecialista";
-            this.txtMailEspecialista.TextChanged += new System.EventHandler(this.txtMailEspecialista_TextChanged);
             // 
             // cmbDiagnostico
             // 
@@ -134,7 +131,6 @@
             this.rbtnMasculino.Name = "rbtnMasculino";
             this.rbtnMasculino.TabStop = true;
             this.rbtnMasculino.UseVisualStyleBackColor = true;
-            this.rbtnMasculino.CheckedChanged += new System.EventHandler(this.rbtnMasculino_CheckedChanged);
             // 
             // rbtnFemenino
             // 
@@ -168,7 +164,6 @@
             resources.ApplyResources(this.pictureBox4, "pictureBox4");
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.PictureBox4_Click);
             // 
             // Form1
             // 

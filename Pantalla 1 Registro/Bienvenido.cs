@@ -30,10 +30,5 @@ namespace Pantalla_1_Registro
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

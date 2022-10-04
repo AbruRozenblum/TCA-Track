@@ -17,6 +17,7 @@ namespace Pantalla_1_Registro
         int month, year, day;
         public static bool si;
         public static int static_month, static_year;
+
         public Calendario()
         {
             InitializeComponent();
@@ -35,6 +36,7 @@ namespace Pantalla_1_Registro
             month = now.Month;
             year = now.Year;
             day = now.Day;
+
             displaDays();
 
             string date = day + "/" + month + "/" + year;
@@ -44,35 +46,75 @@ namespace Pantalla_1_Registro
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
             db.Open();
 
+            //encontrar dia actual en base de datos
             OleDbCommand hoy_command = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Dia = '" + date + "' ORDER BY Inicio ASC", db);
             OleDbDataAdapter adapter = new OleDbDataAdapter(hoy_command);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
 
-            //checklist
+            //checklist dia actual
             TextBox hoy = new TextBox();
             hoy.Text = date.ToString();
             flowLayoutPanel3.Controls.Add(hoy);
-
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
                 CheckBox Act = new CheckBox();
                 Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
                 flowLayoutPanel1.Controls.Add(Act);
             }
-            //calendarios checkbox
-            OleDbCommand calendarios = new OleDbCommand("SELECT Ejercicio FROM Tipo WERE Username ='" + Class1.username + "' ", db);
-            OleDbDataAdapter adapter2 = new OleDbDataAdapter(calendarios);
-            DataSet dataset2 = new DataSet();
-            adapter2.Fill(dataset2);
 
-            if(dataset2.Tables[0].Rows.Count != 0){}
-            else
+            //calendarios checkbox
+            OleDbCommand Ejercicio = new OleDbCommand("SELECT Ejercicio FROM Tipo WHERE Username ='" + Class1.username + "' ", db);
+            OleDbDataAdapter adapterE = new OleDbDataAdapter(Ejercicio);
+            DataSet datasetE = new DataSet();
+            adapterE.Fill(datasetE);
+
+            if (datasetE.Tables[0].Rows.Count == 0)
             {
-                OleDbCommand crearCal = new OleDbCommand("INSERT INTO Tipo (Ejercicio,Username) VALUES ('" + false + "','" + Class1.username + "' )", db);
+                OleDbCommand crearCal = new OleDbCommand("INSERT INTO Tipo (Ejercicio,Username) VALUES ('"+true+"','" + Class1.username + "' )", db);
                 OleDbDataAdapter adapter3 = new OleDbDataAdapter(crearCal);
                 DataSet dataset3 = new DataSet();
                 adapter3.Fill(dataset3);
+            }
+            else
+            {
+                /*DataRow foundRow = datasetE.Tables["Tipo"].Rows.Find(true);
+                if (foundRow != null)
+                {
+                    chbEjercicio.CheckState = CheckState.Checked;
+                    si = true;
+                }
+                else
+                {
+                    chbEjercicio.CheckState = CheckState.Unchecked;
+                    si = no;
+                }*/
+            }
+
+            OleDbCommand Medicación = new OleDbCommand("SELECT Ejercicio FROM Tipo WHERE Username ='" + Class1.username + "' ", db);
+            OleDbDataAdapter adapterM = new OleDbDataAdapter(Medicación);
+            DataSet datasetM = new DataSet();
+            adapterM.Fill(datasetM);
+
+            if (datasetM.Tables[0].Rows.Count == 0)
+            {
+                OleDbCommand crearCal = new OleDbCommand("INSERT INTO Tipo (Medicacion,Username) VALUES ('" + true + "','" + Class1.username + "' )", db);
+                OleDbDataAdapter adapter3 = new OleDbDataAdapter(crearCal);
+                DataSet dataset3 = new DataSet();
+                adapter3.Fill(dataset3);
+            }
+            else
+            {
+                /*DataRow foundRow = datasetM.Tables["Tipo"].Rows.Find(true);
+                if (foundRow != null)
+                {
+                    chbMedicacion.CheckState = CheckState.Checked;
+                    si = true;
+                }
+                else
+                {
+                    chbMedicacion.CheckState = CheckState.Unchecked;
+                }*/
             }
         }
 
@@ -118,25 +160,12 @@ namespace Pantalla_1_Registro
         {
             if (chbEjercicio.Checked)
             {
-                si= true;
-                db.Open();
-                string query = "UPDATE Tipo (Ejercicio) VALUES ('" + si + "') WERE Username = '"+Class1.username+"'";
-                OleDbCommand MiComando = new OleDbCommand(query);
-                MiComando.Connection = db;
-                MiComando.ExecuteNonQuery();
-                db.Close();
-                this.Refresh();
+                si = true;
+
             }
             else
             {
                 si = false;
-                db.Open();
-                string query = "UPDATE Tipo (Ejercicio) VALUES ('" + si + "')WERE Username = '" + Class1.username + "'";
-                OleDbCommand MiComando = new OleDbCommand(query);
-                MiComando.Connection = db;
-                MiComando.ExecuteNonQuery();
-                db.Close();
-                this.Refresh();
             }
         }
 
@@ -146,11 +175,6 @@ namespace Pantalla_1_Registro
             formaSiguiente.Show();
         }
 
-        private void FlowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-            {
-
-            }
-            
             private void displaDays()
             {
 

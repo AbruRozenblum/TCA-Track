@@ -34,9 +34,8 @@ namespace Pantalla_1_Registro
             cmbDiagnostico.Items.Add("Anorexia");
             cmbDiagnostico.Items.Add("Bulimia");
             cmbDiagnostico.Items.Add("Obesidad");
-             /*
-             * Creo la conexión
-             */
+             
+             // Creo la conexión
             dataBase = new OleDbConnection();
             /*
              * Conecto con la base de datos
@@ -45,12 +44,6 @@ namespace Pantalla_1_Registro
 
 
         }
-
-
-        private void CmbAño_SelectedIndexChanged(object sender, EventArgs e)
-        {
-        }
-
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
             if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "")  
@@ -112,7 +105,7 @@ namespace Pantalla_1_Registro
                         /*
                          * asigno la funcion del comando
                          */
-                        agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + txtNombreEspecialista.Text + "', '" + txtMailEspecialista.Text + "');");
+                        agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + txtNombreEspecialista.Text + "', '" + txtMailEspecialista.Text + "')");
                         /*
                          * asigno el comando a la base de datos sobre la que lo voy a ejecutar
                          */
@@ -153,46 +146,11 @@ namespace Pantalla_1_Registro
             
         }
 
-        private void PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtMailDelUsuario_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnLogIn_Click(object sender, EventArgs e)
         {
             Log_In formaSiguiente = new Log_In();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
-        }
-
-        private void TxtUsuario_TextChanged(object sender, EventArgs e)
-        {
-             
-        }
-
-        private void PictureBox16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtMailEspecialista_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbtnMasculino_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox4_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

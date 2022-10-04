@@ -22,8 +22,11 @@ namespace Pantalla_1_Registro
         {
             if (Calendario.si == true)
             {
+                pxbEjercicio.Show();
+            }
+            else
+            {
                 pxbEjercicio.Hide();
-
             }
         }
         public void days(int numday)
