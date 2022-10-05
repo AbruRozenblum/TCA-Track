@@ -35,6 +35,7 @@ namespace Pantalla_1_Registro
              * Conecto con la base de datos
              */
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            dtFecha.MaxDate = DateTime.Now;
             dtFecha.Value = DateTime.Now;
         }
         private void BtnRegistrarse_Click(object sender, EventArgs e)

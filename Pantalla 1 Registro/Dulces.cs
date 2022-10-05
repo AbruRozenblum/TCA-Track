@@ -42,13 +42,13 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapter1 = new OleDbDataAdapter(nombresRecetas);
             DataSet dataset1 = new DataSet();
             adapter1.Fill(dataset1);
-
             for (int i = 0; i < dataset1.Tables[0].Rows.Count; i++)
             {
                 Button btnReceta = new Button();
                 {
                     btnReceta.Size = new Size(150, 150);
                     btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                    //btnReceta.Name = "btnReceta" + i;
                 };
                 flowLayoutPanel1.Controls.Add(btnReceta);
                 btnReceta.Click += btnReceta_Click;
