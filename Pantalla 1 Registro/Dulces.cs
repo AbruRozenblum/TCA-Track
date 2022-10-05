@@ -38,7 +38,7 @@ namespace Pantalla_1_Registro
 
             dataBase.Open();
             OleDbCommand nombresRecetas;
-            nombresRecetas = new OleDbCommand("SELECT Nombre FROM Recetas_dulces", dataBase);
+            nombresRecetas = new OleDbCommand("SELECT Nombre FROM Recetas WHERE Tipo = 'Dulce'", dataBase);
             OleDbDataAdapter adapter1 = new OleDbDataAdapter(nombresRecetas);
             DataSet dataset1 = new DataSet();
             adapter1.Fill(dataset1);
@@ -46,12 +46,23 @@ namespace Pantalla_1_Registro
             for (int i = 0; i < dataset1.Tables[0].Rows.Count; i++)
             {
                 Button receta = new Button();
-                receta.Size = new Size (150, 150);
-                receta.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                {
+                    receta.Size = new Size(150, 150);
+                    receta.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                };
                 flowLayoutPanel1.Controls.Add(receta);
+                receta.Click += receta_Click;
+                //receta.Click += (Class1.nReceta = receta.Text);
             }
-            
-            
         }
+        void receta_Click(Object sender, EventArgs e)
+        {
+            Receta formaSiguiente = new Receta();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra la forma2
+        }
+
+
     }
-}
+    }
+

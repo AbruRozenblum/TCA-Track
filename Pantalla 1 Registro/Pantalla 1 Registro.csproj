@@ -105,6 +105,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Receta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receta.Designer.cs">
+      <DependentUpon>Receta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Informacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Receta.resx">
+      <DependentUpon>Receta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Recetas.resx">
       <DependentUpon>Recetas.cs</DependentUpon>
     </EmbeddedResource>

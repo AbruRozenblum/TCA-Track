@@ -113,53 +113,53 @@ namespace Pantalla_1_Registro
 
         private void Perfil_Load(object sender, EventArgs e)
         {
-            //dataBase = new OleDbConnection();
-            //dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            dataBase = new OleDbConnection();
+            dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
 
-            //dataBase.Open();
-            //OleDbCommand commandD;
-            //commandD = new OleDbCommand("SELECT  Diagnostico FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
-            //commandD.ExecuteNonQuery();
-            //OleDbDataAdapter adapterD = new OleDbDataAdapter(commandD);
-            //DataSet datasetD = new DataSet();
-            //adapterD.Fill(datasetD);
+            dataBase.Open();
+            OleDbCommand commandD;
+            commandD = new OleDbCommand("SELECT  Diagnostico FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandD.ExecuteNonQuery();
+            OleDbDataAdapter adapterD = new OleDbDataAdapter(commandD);
+            DataSet datasetD = new DataSet();
+            adapterD.Fill(datasetD);
 
-            //OleDbCommand commandMe;
-            //commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
-            //commandMe.ExecuteNonQuery();
-            //OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
-            //DataSet datasetMe = new DataSet();
-            //adapterMe.Fill(datasetMe);
+            OleDbCommand commandMe;
+            commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandMe.ExecuteNonQuery();
+            OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
+            DataSet datasetMe = new DataSet();
+            adapterMe.Fill(datasetMe);
 
-            //OleDbCommand commandM;
-            //commandM = new OleDbCommand("SELECT Mail FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
-            //commandM.ExecuteNonQuery();
-            //OleDbDataAdapter adapterM = new OleDbDataAdapter(commandM);
-            //DataSet datasetM = new DataSet();
-            //adapterM.Fill(datasetM);
+            OleDbCommand commandM;
+            commandM = new OleDbCommand("SELECT Mail FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandM.ExecuteNonQuery();
+            OleDbDataAdapter adapterM = new OleDbDataAdapter(commandM);
+            DataSet datasetM = new DataSet();
+            adapterM.Fill(datasetM);
 
-            //OleDbCommand commandNe;
-            //commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "';", dataBase);
-            //commandNe.ExecuteNonQuery();
-            //OleDbDataAdapter adapterNe = new OleDbDataAdapter(commandNe);
-            //DataSet datasetNe = new DataSet();
-            //adapterM.Fill(datasetNe);
+            OleDbCommand commandNe;
+            commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "';", dataBase);
+            commandNe.ExecuteNonQuery();
+            OleDbDataAdapter adapterNe = new OleDbDataAdapter(commandNe);
+            DataSet datasetNe = new DataSet();
+            adapterNe.Fill(datasetNe);
 
-            //txtDiagnostico.Text = datasetD.Tables[0].Rows[0][0].ToString();
-            //txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
-            //txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
-            //txtNomE.Text = datasetNe.Tables[0].Rows[0][0].ToString();
-            //txtNuevaC.Text = "Nueva contraseña";
-            //txtActualC.Text = "Actual contraseña";
-            //txtPrueba.Text = Class1.username;
+            txtDiagnostico.Text = datasetD.Tables[0].Rows[0][0].ToString();
+            txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
+            txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
+            txtNomE.Text = datasetNe.Tables[0].Rows[0][0].ToString();
+            txtNuevaC.Text = "Nueva contraseña";
+            txtActualC.Text = "Actual contraseña";
+            txtPrueba.Text = Class1.username;
 
-            /*OleDbCommand commandC;
+            OleDbCommand commandC;
             commandC = new OleDbCommand("SELECT Contraseña FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
             commandC.ExecuteNonQuery();
             OleDbDataAdapter adapterC = new OleDbDataAdapter(commandC);
             DataSet datasetC = new DataSet();
-            adapterC.Fill(datasetC);*/
-            //dataBase.Close();
+            adapterC.Fill(datasetC);
+            dataBase.Close();
         }
 
         private void txtMailU_TextChanged(object sender, EventArgs e)

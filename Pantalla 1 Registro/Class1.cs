@@ -10,6 +10,6 @@ namespace Pantalla_1_Registro
     class Class1
     {
         static public string username;
-
+        static public string nReceta;
     }
 }
