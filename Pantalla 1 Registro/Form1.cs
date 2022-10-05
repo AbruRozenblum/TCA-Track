@@ -13,14 +13,8 @@ namespace Pantalla_1_Registro
 {
     public partial class Form1 : Form
     {
-        string nombre;
-        string mailUsuario;
         string mailEspecialista;
         string genero;
-        string diagnostico;
-        string contraseña;
-        DateTime fecha;
-        string nombreEspecialista;
         OleDbConnection dataBase;
 
         public Form1()
