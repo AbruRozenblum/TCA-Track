@@ -30,6 +30,19 @@ namespace Pantalla_1_Registro
         {
             db = new OleDbConnection();
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            txtTitulo.Size = new System.Drawing.Size(298, 21);
+            txtTitulo.Hide();
+            OleDbCommand commandT;
+            commandT = new OleDbCommand("SELECT Titulo FROM Diario WHERE Username = '" + Class1.username + "';", db);
+            commandT.ExecuteNonQuery();
+            OleDbDataAdapter adapterT = new OleDbDataAdapter(commandT);
+            DataSet datasetT = new DataSet();
+            adapterT.Fill(datasetT);
+            for (int i = 0; i < datasetT.Tables[0].Rows.Count; i++)
+            {
+                cbxTitulo.Items.Add(datasetT.Tables[0].Rows[i][0].ToString();
+            }
+            dtFecha.Value = DateTime.Now;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -57,26 +70,33 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
             DataSet datasetF = new DataSet();
             adapterF.Fill(datasetF);
+            /*OleDbCommand commandT;
+            commandT = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
+            commandT.ExecuteNonQuery();
+            OleDbDataAdapter adapterT = new OleDbDataAdapter(commandT);
+            DataSet datasetT = new DataSet();
+            adapterF.Fill(datasetT);*/
             if (datasetF.Tables[0].Rows.Count == 0)
             {
                 if (txtTexto.Text == null)
                 {
                     MessageBox.Show("No hay ningun texto escrito");
                 }
+                else if (txtTitulo == null)
+                {
+                    MessageBox.Show("Escriba un título");
+                }
                 else
                 {
                     string testimonio = txtTexto.Text;
-
                     OleDbCommand AgregarTestimonio;
-                    AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Username) VALUES ('" + testimonio + "', '" + fecha + "', '" + Class1.username + "');");
+                    AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Username, Titulo) VALUES ('" + testimonio + "', '" + fecha + "', '" + Class1.username + "', '" + txtTitulo.Text + "');");
                     AgregarTestimonio.Connection = db;
                     AgregarTestimonio.ExecuteNonQuery();
                 }
             }
             else
             {
-                    string testimonio = txtTexto.Text;
-
                     OleDbCommand ModificarTestimonio;
                 ModificarTestimonio = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'");
                     ModificarTestimonio.Connection = db;
@@ -103,6 +123,7 @@ namespace Pantalla_1_Registro
             adapterF.Fill(datasetF);
             if (datasetF.Tables[0].Rows.Count == 0)
             {
+                txtTitulo.Show();
             }
             else
             {
@@ -114,6 +135,17 @@ namespace Pantalla_1_Registro
         private void txtTexto_TextChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void cbxTitulo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OleDbCommand commandF;
+            commandF = new OleDbCommand("SELECT Fecha FROM Diario WHERE Username = '" + Class1.username + "' AND Titulo = '" + cbxTitulo.SelectedItem + "';", db);
+            commandF.ExecuteNonQuery();
+            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
+            DataSet datasetF = new DataSet();
+            adapterF.Fill(datasetF);
+            dtfecha.Value = Convert.ToDateTime(datasetF.Tables[0].Rows[0][0]);
         }
     }
 }

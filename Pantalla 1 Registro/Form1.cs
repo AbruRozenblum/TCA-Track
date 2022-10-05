@@ -24,19 +24,18 @@ namespace Pantalla_1_Registro
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             cmbDiagnostico.Items.Add("Anorexia");
             cmbDiagnostico.Items.Add("Bulimia");
             cmbDiagnostico.Items.Add("Obesidad");
-             
-             // Creo la conexión
+
+            // Creo la conexión
             dataBase = new OleDbConnection();
             /*
              * Conecto con la base de datos
              */
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-
-
+            dtFecha.Value = DateTime.Now;
         }
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {

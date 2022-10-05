@@ -45,17 +45,16 @@ namespace Pantalla_1_Registro
 
             for (int i = 0; i < dataset1.Tables[0].Rows.Count; i++)
             {
-                Button receta = new Button();
+                Button btnReceta = new Button();
                 {
-                    receta.Size = new Size(150, 150);
-                    receta.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                    btnReceta.Size = new Size(150, 150);
+                    btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
                 };
-                flowLayoutPanel1.Controls.Add(receta);
-                receta.Click += receta_Click;
-                //receta.Click += (Class1.nReceta = receta.Text);
+                flowLayoutPanel1.Controls.Add(btnReceta);
+                btnReceta.Click += btnReceta_Click;
             }
         }
-        void receta_Click(Object sender, EventArgs e)
+        void btnReceta_Click(Object sender, EventArgs e)
         {
             Receta formaSiguiente = new Receta();
             this.Hide(); //oculta la forma actual
