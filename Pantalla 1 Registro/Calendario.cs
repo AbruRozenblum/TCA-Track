@@ -23,10 +23,79 @@ namespace Pantalla_1_Registro
         int month, year, day;
         public static bool si;
         public static int static_month, static_year;
-
+        string horaactual = DateTime.Now.ToString("HH:mm");
+        string horaexacta = "12:00";
         public Calendario()
         {
             InitializeComponent();
+            if (horaactual == horaexacta)
+            {
+                StringBuilder Mensaje;
+                DateTime FechaEnvio = DateTime.Now;
+                string De = Usuario;
+                string Para;
+                string Asunto;
+                string error = "";
+
+                //mail especialista
+                OleDbConnection db;
+                db = new OleDbConnection();
+                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+                db.Open();
+                OleDbCommand commandMailEspecialista = new OleDbCommand("SELECT Mail_especialista FROM Info_Usuario  WHERE Username ='" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterME = new OleDbDataAdapter(commandMailEspecialista);
+                DataSet datasetME = new DataSet();
+                adapterME.Fill(datasetME);
+                int contME = datasetME.Tables[0].Rows.Count;
+                Para = datasetME.Tables[0].Rows[contME]["Mail_especialista"].ToString();
+
+                //mail asunto
+                OleDbCommand commandAsunto = new OleDbCommand("SELECT Nombre_completo FROM Info_Usuario  WHERE Username ='" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterAsunto = new OleDbDataAdapter(commandAsunto);
+                DataSet datasetAsunto = new DataSet();
+                adapterAsunto.Fill(datasetAsunto);
+                int contA = datasetAsunto.Tables[0].Rows.Count;
+                Asunto = datasetAsunto.Tables[0].Rows[contA]["Nombre_completo"].ToString();
+
+                //mail mensaje
+                OleDbCommand commandMensaje = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Tipo = Comida ", db);
+                OleDbDataAdapter adapterMensaje = new OleDbDataAdapter(commandMensaje);
+                DataSet datasetMensaje = new DataSet();
+                adapterMensaje.Fill(datasetMensaje);
+                int contMensaje = datasetAsunto.Tables[0].Rows.Count;
+                for (int i = 0; i < datasetMensaje.Tables[0].Rows.Count; i++)
+                {
+                    //escribe todas las actividades
+                }
+                StringBuilder MensajeBuilder = new StringBuilder();
+                MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[contMensaje]);
+                Mensaje = MensajeBuilder;
+                try
+                {
+                    Mensaje.Append(Environment.NewLine);
+                    Mensaje.Append(string.Format("fecha envio: {0:dd/MM/yyyy}", FechaEnvio));
+                    Mensaje.Append(Environment.NewLine);
+                    MailMessage mail = new MailMessage();
+                    mail.From = new MailAddress(De);
+                    mail.To.Add(Para);
+                    mail.Subject = Asunto;
+                    mail.Body = Mensaje.ToString();
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                    smtp.Port = 587;
+                    smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new System.Net.NetworkCredential(Usuario, Password);
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                    error = "Exito";
+
+
+                }
+                catch (Exception ex)
+                {
+
+                    return;
+                }
+            }
         }
 
         private void BtnIrInicio_Click(object sender, EventArgs e)
@@ -213,60 +282,5 @@ namespace Pantalla_1_Registro
                     daycontainer.Controls.Add(ucdays);
                 }
             }
-        public static void EnviarCorreo(StringBuilder Mensaje, DateTime FechaEnvio,string De,string Para, string Asunto, out string error)
-        {
-            error = "";
-            FechaEnvio = DateTime.Now;
-            De = Usuario;
-
-            //mail especialista
-            OleDbConnection db;
-            db = new OleDbConnection();
-            db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-            db.Open();
-            OleDbCommand commandMailEspecialista = new OleDbCommand("SELECT Mail_especialista FROM Info_Usuario  WHERE Username ='" + Class1.username + "' ", db);
-            OleDbDataAdapter adapterME = new OleDbDataAdapter(commandMailEspecialista);
-            DataSet datasetME = new DataSet();
-            adapterME.Fill(datasetME);
-            int contME = datasetME.Tables[0].Rows.Count;
-
-            Para = datasetME.Tables[0].Rows[contME]["Mail_especialista"].ToString();
-
-            //mail asunto
-            OleDbCommand commandAsunto = new OleDbCommand("SELECT Nombre_completo FROM Info_Usuario  WHERE Username ='" + Class1.username + "' ", db);
-            OleDbDataAdapter adapterAsunto= new OleDbDataAdapter(commandAsunto);
-            DataSet datasetAsunto = new DataSet();
-            adapterAsunto.Fill(datasetAsunto);
-            int contA = datasetAsunto.Tables[0].Rows.Count;
-            Asunto = datasetAsunto.Tables[0].Rows[contA]["Nombre_completo"].ToString();
-
-            StringBuilder MensajeBuilder = new StringBuilder();
-            MensajeBuilder.Append("actividades con respectivos horarios");
-            try
-            {
-                Mensaje.Append(Environment.NewLine);
-                Mensaje.Append(string.Format("fecha envio: {0:dd/MM/yyyy}" , FechaEnvio));
-                Mensaje.Append(Environment.NewLine);
-                MailMessage mail = new MailMessage();
-                mail.From = new MailAddress(De);
-                mail.To.Add(Para);
-                mail.Subject = Asunto;
-                mail.Body = Mensaje.ToString();
-                SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                smtp.Port = 587;
-                smtp.UseDefaultCredentials = false;
-                smtp.Credentials = new System.Net.NetworkCredential(Usuario, Password);
-                smtp.EnableSsl = true;
-                smtp.Send(mail);
-                error = "Exito";
-
-
-            }
-            catch (Exception ex)
-            {
-                
-                return;
-            }
-        }
         }
     }
