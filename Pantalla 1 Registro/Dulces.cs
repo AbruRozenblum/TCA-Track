@@ -57,7 +57,7 @@ namespace Pantalla_1_Registro
         void btnReceta_Click(Object sender, EventArgs e)
         {
             Receta formaSiguiente = new Receta();
-            this.Hide(); //oculta la forma actual
+            Class1.nReceta = (sender as Button).Text;
             formaSiguiente.Show(); // muestra la forma2
         }
 

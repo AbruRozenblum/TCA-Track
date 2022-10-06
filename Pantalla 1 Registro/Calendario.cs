@@ -24,7 +24,7 @@ namespace Pantalla_1_Registro
         public static bool si;
         public static int static_month, static_year;
         string horaactual = DateTime.Now.ToString("HH:mm");
-        string horaexacta = "12:00";
+        string horaexacta = "9:58";
         public Calendario()
         {
             InitializeComponent();
@@ -58,7 +58,7 @@ namespace Pantalla_1_Registro
                 Asunto = datasetAsunto.Tables[0].Rows[contA]["Nombre_completo"].ToString();
 
                 //mail mensaje
-                OleDbCommand commandMensaje = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Tipo = Comida ", db);
+                OleDbCommand commandMensaje = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Tipo = Comida && WHERE Username = '"+ Class1.username +"' ", db);
                 OleDbDataAdapter adapterMensaje = new OleDbDataAdapter(commandMensaje);
                 DataSet datasetMensaje = new DataSet();
                 adapterMensaje.Fill(datasetMensaje);
