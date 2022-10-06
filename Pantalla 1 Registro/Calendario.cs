@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Data.OleDb;
 using System.Net.Mail;
-using System.Windows.ApplicationModel.Backround;
 
 namespace Pantalla_1_Registro
 {
@@ -138,74 +137,7 @@ namespace Pantalla_1_Registro
                 Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
                 flowLayoutPanel1.Controls.Add(Act);
             }
-
-            /*calendarios checkbox
-            OleDbCommand Ejercicio = new OleDbCommand("SELECT Ejercicio FROM Tipo WHERE Username ='" + Class1.username + "' ", db);
-            OleDbDataAdapter adapterE = new OleDbDataAdapter(Ejercicio);
-            DataSet datasetE = new DataSet();
-            adapterE.Fill(datasetE);
-
-            if (datasetE.Tables[0].Rows.Count == 0)
-            {
-                OleDbCommand crearCal = new OleDbCommand("INSERT INTO Tipo (Ejercicio,Username) VALUES ('"+true+"','" + Class1.username + "' )", db);
-                OleDbDataAdapter adapter3 = new OleDbDataAdapter(crearCal);
-                DataSet dataset3 = new DataSet();
-                adapter3.Fill(dataset3);
-            }
-            else
-            {
-                DataRow foundRow = datasetE.Tables["Tipo"].Rows.Find(true);
-                if (foundRow != null)
-                {
-                    chbEjercicio.CheckState = CheckState.Checked;
-                    si = true;
-                }
-                else
-                {
-                    chbEjercicio.CheckState = CheckState.Unchecked;
-                    si = no;
-                }
-            }
-
-            OleDbCommand Medicación = new OleDbCommand("SELECT Ejercicio FROM Tipo WHERE Username ='" + Class1.username + "' ", db);
-            OleDbDataAdapter adapterM = new OleDbDataAdapter(Medicación);
-            DataSet datasetM = new DataSet();
-            adapterM.Fill(datasetM);
-
-            if (datasetM.Tables[0].Rows.Count == 0)
-            {
-                OleDbCommand crearCal = new OleDbCommand("INSERT INTO Tipo (Medicacion,Username) VALUES ('" + true + "','" + Class1.username + "' )", db);
-                OleDbDataAdapter adapter3 = new OleDbDataAdapter(crearCal);
-                DataSet dataset3 = new DataSet();
-                adapter3.Fill(dataset3);
-            }
-            else
-            {
-                /*DataRow foundRow = datasetM.Tables["Tipo"].Rows.Find(true);
-                if (foundRow != null)
-                {
-                    chbMedicacion.CheckState = CheckState.Checked;
-                    si = true;
-                }
-                else
-                {
-                    chbMedicacion.CheckState = CheckState.Unchecked;
-                }
-            }*/
         }
-        private void chbEjercicio_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chbEjercicio.Checked)
-            {
-                si = true;
-
-            }
-            else
-            {
-                si = false;
-            }
-        }
-
         private void btnAnterior_Click_1(object sender, EventArgs e)
         {
             //limpiar conteiner
@@ -283,9 +215,5 @@ namespace Pantalla_1_Registro
                     daycontainer.Controls.Add(ucdays);
                 }
             }
-        public void run (IBackroundTaskInstance taskInstance)
-        {
-
-        }
         }
     }

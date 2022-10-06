@@ -101,7 +101,7 @@ namespace Pantalla_1_Registro
                 Console.WriteLine(foto_perfil);
                 pbFotoPerfil.Image = Image.FromFile(foto_perfil);
                 dataBase.Open();
-                OleDbCommand foto = new OleDbCommand ("UPDATE")
+                OleDbCommand foto = new OleDbCommand("UPDATE");
             }
             else
             {

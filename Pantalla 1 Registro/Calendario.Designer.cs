@@ -33,12 +33,6 @@ namespace Pantalla_1_Registro
             this.lblDATE = new System.Windows.Forms.Label();
             this.btnSiguiente = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
-            this.chbEjercicio = new System.Windows.Forms.CheckBox();
-            this.chbMedicación = new System.Windows.Forms.CheckBox();
-            this.chbConsulta = new System.Windows.Forms.CheckBox();
-            this.Reuniones = new System.Windows.Forms.CheckBox();
-            this.chbComida = new System.Windows.Forms.CheckBox();
-            this.Otros = new System.Windows.Forms.CheckBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
@@ -96,89 +90,10 @@ namespace Pantalla_1_Registro
             this.btnAnterior.UseVisualStyleBackColor = true;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click_1);
             // 
-            // chbEjercicio
-            // 
-            this.chbEjercicio.AutoSize = true;
-            this.chbEjercicio.BackColor = System.Drawing.Color.Transparent;
-            this.chbEjercicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.chbEjercicio.ForeColor = System.Drawing.Color.White;
-            this.chbEjercicio.Location = new System.Drawing.Point(24, 163);
-            this.chbEjercicio.Name = "chbEjercicio";
-            this.chbEjercicio.Size = new System.Drawing.Size(87, 24);
-            this.chbEjercicio.TabIndex = 7;
-            this.chbEjercicio.Text = "Ejercicio";
-            this.chbEjercicio.UseVisualStyleBackColor = false;
-            this.chbEjercicio.CheckedChanged += new System.EventHandler(this.chbEjercicio_CheckedChanged);
-            // 
-            // chbMedicación
-            // 
-            this.chbMedicación.AutoSize = true;
-            this.chbMedicación.BackColor = System.Drawing.Color.Transparent;
-            this.chbMedicación.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.chbMedicación.ForeColor = System.Drawing.Color.White;
-            this.chbMedicación.Location = new System.Drawing.Point(24, 191);
-            this.chbMedicación.Name = "chbMedicación";
-            this.chbMedicación.Size = new System.Drawing.Size(108, 24);
-            this.chbMedicación.TabIndex = 8;
-            this.chbMedicación.Text = "Medicación";
-            this.chbMedicación.UseVisualStyleBackColor = false;
-            // 
-            // chbConsulta
-            // 
-            this.chbConsulta.AutoSize = true;
-            this.chbConsulta.BackColor = System.Drawing.Color.Transparent;
-            this.chbConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.chbConsulta.ForeColor = System.Drawing.Color.White;
-            this.chbConsulta.Location = new System.Drawing.Point(24, 218);
-            this.chbConsulta.Name = "chbConsulta";
-            this.chbConsulta.Size = new System.Drawing.Size(146, 24);
-            this.chbConsulta.TabIndex = 9;
-            this.chbConsulta.Text = "Consulta Medica";
-            this.chbConsulta.UseVisualStyleBackColor = false;
-            // 
-            // Reuniones
-            // 
-            this.Reuniones.AutoSize = true;
-            this.Reuniones.BackColor = System.Drawing.Color.Transparent;
-            this.Reuniones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Reuniones.ForeColor = System.Drawing.Color.White;
-            this.Reuniones.Location = new System.Drawing.Point(24, 242);
-            this.Reuniones.Name = "Reuniones";
-            this.Reuniones.Size = new System.Drawing.Size(105, 24);
-            this.Reuniones.TabIndex = 10;
-            this.Reuniones.Text = "Reuniones";
-            this.Reuniones.UseVisualStyleBackColor = false;
-            // 
-            // chbComida
-            // 
-            this.chbComida.AutoSize = true;
-            this.chbComida.BackColor = System.Drawing.Color.Transparent;
-            this.chbComida.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.chbComida.ForeColor = System.Drawing.Color.White;
-            this.chbComida.Location = new System.Drawing.Point(24, 270);
-            this.chbComida.Name = "chbComida";
-            this.chbComida.Size = new System.Drawing.Size(90, 24);
-            this.chbComida.TabIndex = 11;
-            this.chbComida.Text = "Comidas";
-            this.chbComida.UseVisualStyleBackColor = false;
-            // 
-            // Otros
-            // 
-            this.Otros.AutoSize = true;
-            this.Otros.BackColor = System.Drawing.Color.Transparent;
-            this.Otros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Otros.ForeColor = System.Drawing.Color.White;
-            this.Otros.Location = new System.Drawing.Point(24, 297);
-            this.Otros.Name = "Otros";
-            this.Otros.Size = new System.Drawing.Size(67, 24);
-            this.Otros.TabIndex = 12;
-            this.Otros.Text = "Otros";
-            this.Otros.UseVisualStyleBackColor = false;
-            // 
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 332);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 173);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
             this.flowLayoutPanel3.Size = new System.Drawing.Size(153, 32);
             this.flowLayoutPanel3.TabIndex = 13;
@@ -186,7 +101,7 @@ namespace Pantalla_1_Registro
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 361);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 202);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 356);
             this.flowLayoutPanel1.TabIndex = 14;
@@ -328,12 +243,6 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.label1);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.flowLayoutPanel3);
-            this.Controls.Add(this.Otros);
-            this.Controls.Add(this.chbComida);
-            this.Controls.Add(this.Reuniones);
-            this.Controls.Add(this.chbConsulta);
-            this.Controls.Add(this.chbMedicación);
-            this.Controls.Add(this.chbEjercicio);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.lblDATE);
@@ -358,12 +267,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label lblDATE;
         private System.Windows.Forms.Button btnSiguiente;
         private System.Windows.Forms.Button btnAnterior;
-        private System.Windows.Forms.CheckBox chbEjercicio;
-        private System.Windows.Forms.CheckBox chbMedicación;
-        private System.Windows.Forms.CheckBox chbConsulta;
-        private System.Windows.Forms.CheckBox Reuniones;
-        private System.Windows.Forms.CheckBox chbComida;
-        private System.Windows.Forms.CheckBox Otros;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label label1;

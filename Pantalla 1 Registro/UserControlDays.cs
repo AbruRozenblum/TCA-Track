@@ -17,21 +17,10 @@ namespace Pantalla_1_Registro
         {
             InitializeComponent();
         }
-
-        private void UserControlDays_Load(object sender, EventArgs e)
-        {
-            if (Calendario.si == true)
-            {
-                pxbEjercicio.Show();
-            }
-            else
-            {
-                pxbEjercicio.Hide();
-            }
-        }
         public void days(int numday)
         {
             lbldays.Text = numday + "";
+
         }
 
         private void UserControlDays_Click(object sender, EventArgs e)
@@ -39,6 +28,11 @@ namespace Pantalla_1_Registro
             static_day = lbldays.Text;
             Dia Diaform = new Dia();
             Diaform.Show();
+        }
+
+        private void UserControlDays_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
