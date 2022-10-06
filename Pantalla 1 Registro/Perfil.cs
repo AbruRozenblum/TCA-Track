@@ -98,12 +98,16 @@ namespace Pantalla_1_Registro
             if (ofd1.ShowDialog() == DialogResult.OK)
             {
                 string foto_perfil = ofd1.FileName;
+                Console.WriteLine(foto_perfil);
                 pbFotoPerfil.Image = Image.FromFile(foto_perfil);
+                dataBase.Open();
+                OleDbCommand foto = new OleDbCommand ("UPDATE")
             }
             else
             {
                 MessageBox.Show("No se selecciono ninguna imagen");
             }
+
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)

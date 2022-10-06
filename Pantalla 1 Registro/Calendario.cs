@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Globalization;
 using System.Data.OleDb;
 using System.Net.Mail;
+using System.Windows.ApplicationModel.Backround;
 
 namespace Pantalla_1_Registro
 {
@@ -282,5 +283,9 @@ namespace Pantalla_1_Registro
                     daycontainer.Controls.Add(ucdays);
                 }
             }
+        public void run (IBackroundTaskInstance taskInstance)
+        {
+
+        }
         }
     }

@@ -24,13 +24,12 @@ namespace Pantalla_1_Registro
         {
             dataBase = new OleDbConnection();
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-
             OleDbCommand commandN;
-            /*commandN = new OleDbCommand("SELECT Nombre FROM Recetas WHERE Nombre = '" + Dulces..Text + "';", dataBase);
+            commandN = new OleDbCommand("SELECT Nombre FROM Recetas WHERE Nombre = '" + Class1.nReceta + "';", dataBase);
             commandN.ExecuteNonQuery();
             OleDbDataAdapter adapterN = new OleDbDataAdapter(commandN);
             DataSet datasetN = new DataSet();
-            adapterN.Fill(datasetN);*/
+            adapterN.Fill(datasetN);
 
             lblNombre.Text = Class1.nReceta;
         }
