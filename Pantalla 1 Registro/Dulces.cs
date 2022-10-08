@@ -36,6 +36,7 @@ namespace Pantalla_1_Registro
             {
                 Button btnReceta = new Button();
                 {
+                    btnReceta.Font = new Font("Microsoft Sans Serif", 14);
                     btnReceta.Size = new Size(150, 150);
                     btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
                 };
