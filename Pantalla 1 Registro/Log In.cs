@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace Pantalla_1_Registro
 {
@@ -23,22 +17,22 @@ namespace Pantalla_1_Registro
 
         private void Button1_Click /* BOTON DE INICIO DE SESION*/(object sender, EventArgs e)
         {
-            
+
             dataBase.Open();
             OleDbCommand verificoLogIn;
             verificoLogIn = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + txtusername.Text + "' and Contraseña = '" + txtcontraseña.Text + "'", dataBase);
-            OleDbDataAdapter adapter = new OleDbDataAdapter (verificoLogIn);
+            OleDbDataAdapter adapter = new OleDbDataAdapter(verificoLogIn);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
             if (dataset.Tables[0].Rows.Count != 0)
             {
                 Class1.username = txtusername.Text;
                 Inicio formaSiguiente = new Inicio();
-                this.Hide(); 
-                formaSiguiente.Show(); 
-            
+                this.Hide();
+                formaSiguiente.Show();
+
             }
-           else
+            else
             {
                 MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
             }
@@ -49,8 +43,8 @@ namespace Pantalla_1_Registro
         private void Button2_Click(object sender, EventArgs e)
         {
             Form1 formaSiguiente = new Form1();
-            this.Hide(); 
-            formaSiguiente.Show(); 
+            this.Hide();
+            formaSiguiente.Show();
         }
 
         private void Log_In_Load(object sender, EventArgs e)

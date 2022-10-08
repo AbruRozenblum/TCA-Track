@@ -1,17 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Pantalla_1_Registro
 {
     public partial class Salados : Form
     {
+        OleDbConnection dataBase;
         public Salados()
         {
             InitializeComponent();
@@ -24,10 +21,36 @@ namespace Pantalla_1_Registro
             formaSiguiente.Show(); // muestra la forma2
         }
 
-        private void BtnReceta2_Click(object sender, EventArgs e)
+        private void Salados_Load(object sender, EventArgs e)
         {
-            /*MisSaladas formaSiguiente = new MisSaladas();
-            formaSiguiente.Show();*/
+            dataBase = new OleDbConnection();
+            dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+
+            dataBase.Open();
+            OleDbCommand nombresRecetas;
+            nombresRecetas = new OleDbCommand("SELECT Nombre FROM Recetas WHERE Tipo = 'Salado'", dataBase);
+            OleDbDataAdapter adapter1 = new OleDbDataAdapter(nombresRecetas);
+            DataSet dataset1 = new DataSet();
+            adapter1.Fill(dataset1);
+            for (int i = 0; i < dataset1.Tables[0].Rows.Count; i++)
+            {
+                Button btnReceta = new Button();
+                {
+                    btnReceta.Size = new Size(150, 150);
+                    btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                };
+                flowLayoutPanel1.Controls.Add(btnReceta);
+                btnReceta.Click += BtnReceta_Click;
+            }
         }
+        void BtnReceta_Click(Object sender, EventArgs e)
+        {
+            Receta formaSiguiente = new Receta();
+            Class1.nReceta = (sender as Button).Text;
+            formaSiguiente.Show(); // muestra la forma2
+        }
+
+
     }
 }
+

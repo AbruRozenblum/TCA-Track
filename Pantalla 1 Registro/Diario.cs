@@ -1,20 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace Pantalla_1_Registro
 {
     public partial class Diario : Form
     {
         OleDbConnection db;
-        bool nuevo;
         public Diario()
         {
             InitializeComponent();
@@ -33,6 +26,7 @@ namespace Pantalla_1_Registro
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
             txtTitulo.Size = new System.Drawing.Size(298, 21);
             txtTitulo.Hide();
+            db.Open();
             OleDbCommand commandT;
             commandT = new OleDbCommand("SELECT Titulo FROM Diario WHERE Username = '" + Class1.username + "';", db);
             OleDbDataAdapter adapterT = new OleDbDataAdapter(commandT);
@@ -46,24 +40,8 @@ namespace Pantalla_1_Registro
             dtfecha.Value = DateTime.Now;
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnsave_Click(object sender, EventArgs e)
         {
-            db.Open();
             DateTime fecha = dtfecha.Value;
             OleDbCommand commandF;
             commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
@@ -105,17 +83,12 @@ namespace Pantalla_1_Registro
             }
             else
             {
-                    OleDbCommand ModificarTestimonio;
+                OleDbCommand ModificarTestimonio;
                 ModificarTestimonio = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'");
-                    ModificarTestimonio.Connection = db;
-                    ModificarTestimonio.ExecuteNonQuery();
+                ModificarTestimonio.Connection = db;
+                ModificarTestimonio.ExecuteNonQuery();
             }
             db.Close();
-            
-        }
-
-        private void txtTexto_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -147,12 +120,14 @@ namespace Pantalla_1_Registro
 
         private void cbxTitulo_SelectedIndexChanged(object sender, EventArgs e)
         {
+            db.Open();
             OleDbCommand commandF;
             commandF = new OleDbCommand("SELECT Fecha FROM Diario WHERE Username = '" + Class1.username + "' AND Titulo = '" + cbxTitulo.SelectedItem + "';", db);
             OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
             DataSet datasetF = new DataSet();
             adapterF.Fill(datasetF);
             dtfecha.Value = Convert.ToDateTime(datasetF.Tables[0].Rows[0][0]);
+            db.Close();
         }
     }
 }

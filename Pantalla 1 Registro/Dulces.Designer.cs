@@ -35,15 +35,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtBuscador
-            // 
-            this.txtBuscador.Location = new System.Drawing.Point(1065, 48);
-            this.txtBuscador.Multiline = true;
-            this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(270, 32);
-            this.txtBuscador.TabIndex = 17;
-            this.txtBuscador.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBuscador_KeyPress);
-            // 
             // btnIrAtras
             // 
             this.btnIrAtras.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_24_083547;

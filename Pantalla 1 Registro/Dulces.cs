@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Pantalla_1_Registro
 {
@@ -17,11 +12,6 @@ namespace Pantalla_1_Registro
         public Dulces()
         {
             InitializeComponent();
-        }
-        private void txtBuscador_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
-
         }
 
         private void Button16_Click(object sender, EventArgs e)
@@ -48,13 +38,12 @@ namespace Pantalla_1_Registro
                 {
                     btnReceta.Size = new Size(150, 150);
                     btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
-                    //btnReceta.Name = "btnReceta" + i;
                 };
                 flowLayoutPanel1.Controls.Add(btnReceta);
-                btnReceta.Click += btnReceta_Click;
+                btnReceta.Click += BtnReceta_Click;
             }
         }
-        void btnReceta_Click(Object sender, EventArgs e)
+        void BtnReceta_Click(Object sender, EventArgs e)
         {
             Receta formaSiguiente = new Receta();
             Class1.nReceta = (sender as Button).Text;
@@ -63,5 +52,5 @@ namespace Pantalla_1_Registro
 
 
     }
-    }
+}
 

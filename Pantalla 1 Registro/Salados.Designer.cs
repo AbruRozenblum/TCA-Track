@@ -30,9 +30,7 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIrAtras = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnAgregarReceta = new System.Windows.Forms.Button();
-            this.txtBuscador = new System.Windows.Forms.TextBox();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,34 +57,15 @@
             this.btnIrAtras.UseVisualStyleBackColor = true;
             this.btnIrAtras.Click += new System.EventHandler(this.BtnIrAtras_Click);
             // 
-            // panel1
+            // flowLayoutPanel1
             // 
-            this.panel1.AutoScroll = true;
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(75, 140);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1143, 368);
-            this.panel1.TabIndex = 13;
-            // 
-            // btnAgregarReceta
-            // 
-            this.btnAgregarReceta.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_24_082841;
-            this.btnAgregarReceta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAgregarReceta.FlatAppearance.BorderSize = 0;
-            this.btnAgregarReceta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregarReceta.Location = new System.Drawing.Point(1011, 544);
-            this.btnAgregarReceta.Name = "btnAgregarReceta";
-            this.btnAgregarReceta.Size = new System.Drawing.Size(259, 53);
-            this.btnAgregarReceta.TabIndex = 14;
-            this.btnAgregarReceta.UseVisualStyleBackColor = true;
-            // 
-            // txtBuscador
-            // 
-            this.txtBuscador.Location = new System.Drawing.Point(1026, 43);
-            this.txtBuscador.Multiline = true;
-            this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(244, 30);
-            this.txtBuscador.TabIndex = 15;
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 143);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1200, 442);
+            this.flowLayoutPanel1.TabIndex = 26;
             // 
             // Salados
             // 
@@ -94,16 +73,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_24_081521;
             this.ClientSize = new System.Drawing.Size(1300, 621);
-            this.Controls.Add(this.txtBuscador);
-            this.Controls.Add(this.btnAgregarReceta);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnIrAtras);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Salados";
             this.Text = "Salados";
+            this.Load += new System.EventHandler(this.Salados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -111,8 +88,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIrAtras;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnAgregarReceta;
-        private System.Windows.Forms.TextBox txtBuscador;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }

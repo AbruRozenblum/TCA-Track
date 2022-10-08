@@ -1,19 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace Pantalla_1_Registro
 {
     public partial class Form1 : Form
     {
-        string mailEspecialista;
         string genero;
         OleDbConnection dataBase;
 
@@ -40,7 +33,7 @@ namespace Pantalla_1_Registro
         }
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "")  
+            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "")
 
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
@@ -62,7 +55,7 @@ namespace Pantalla_1_Registro
                 OleDbDataAdapter adapter2 = new OleDbDataAdapter(mailUsado);
                 DataSet dataset2 = new DataSet();
                 adapter2.Fill(dataset2);
-                if (dataset1.Tables[0].Rows.Count == 0 && dataset2.Tables[0].Rows.Count == 0) 
+                if (dataset1.Tables[0].Rows.Count == 0 && dataset2.Tables[0].Rows.Count == 0)
                 {
                     if (rbtnFemenino.Checked)
                     {
@@ -80,12 +73,12 @@ namespace Pantalla_1_Registro
 
 
                     OleDbCommand agregoInfoUser;
-                    agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + txtUsuario.Text + "', '" + txtNombre.Text + "', '" + txtMailDelUsuario.Text + "','" + txtContraseña.Text + "', '" + cmbDiagnostico.SelectedItem + "', '" + dtFecha + "', '" + genero + "', '" + txtMailEspecialista + "');");
+                    agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + txtUsuario.Text + "', '" + txtNombre.Text + "', '" + txtMailDelUsuario.Text + "','" + txtContraseña.Text + "', '" + cmbDiagnostico.SelectedItem + "', '" + dtFecha + "', '" + genero + "', '" + txtMailEspecialista.Text + "');");
                     agregoInfoUser.Connection = dataBase;
                     agregoInfoUser.ExecuteNonQuery();
 
                     OleDbCommand buscoInfoEspecialista;
-                    buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + mailEspecialista + "'", dataBase);
+                    buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + txtMailEspecialista.Text + "'", dataBase);
                     OleDbDataAdapter adapter = new OleDbDataAdapter(buscoInfoEspecialista);
                     DataSet dataset = new DataSet();
                     adapter.Fill(dataset);
@@ -104,9 +97,9 @@ namespace Pantalla_1_Registro
                          * asigno el comando a la base de datos sobre la que lo voy a ejecutar
                          */
                         agregoInfoEspecialista.Connection = dataBase;
-                        
-                         // ejecuto el comando
-                         
+
+                        // ejecuto el comando
+
                         agregoInfoEspecialista.ExecuteNonQuery();
                     }
                     else
@@ -137,7 +130,7 @@ namespace Pantalla_1_Registro
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
             }
-            
+
         }
 
         private void BtnLogIn_Click(object sender, EventArgs e)
