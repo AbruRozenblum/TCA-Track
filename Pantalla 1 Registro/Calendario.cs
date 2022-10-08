@@ -24,10 +24,13 @@ namespace Pantalla_1_Registro
         public static bool si;
         public static int static_month, static_year;
         string horaactual = DateTime.Now.ToString("HH:mm");
-        string horaexacta = "9:58";
+        string horaexacta = "11:32";
         public Calendario()
         {
             InitializeComponent();
+
+
+            //mail especialista
             if (horaactual == horaexacta)
             {
                 StringBuilder Mensaje;
@@ -42,7 +45,7 @@ namespace Pantalla_1_Registro
                 db = new OleDbConnection();
                 db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
                 db.Open();
-                OleDbCommand commandMailEspecialista = new OleDbCommand("SELECT Mail_especialista FROM Info_Usuario  WHERE Username ='" + Class1.username + "' ", db);
+                OleDbCommand commandMailEspecialista = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario  WHERE Username ='" + Class1.username + "' ", db);
                 OleDbDataAdapter adapterME = new OleDbDataAdapter(commandMailEspecialista);
                 DataSet datasetME = new DataSet();
                 adapterME.Fill(datasetME);
@@ -50,7 +53,7 @@ namespace Pantalla_1_Registro
                 Para = datasetME.Tables[0].Rows[contME]["Mail_especialista"].ToString();
 
                 //mail asunto
-                OleDbCommand commandAsunto = new OleDbCommand("SELECT Nombre_completo FROM Info_Usuario  WHERE Username ='" + Class1.username + "' ", db);
+                OleDbCommand commandAsunto = new OleDbCommand("SELECT Nombre_completo FROM Info_usuario  WHERE Username ='" + Class1.username + "' ", db);
                 OleDbDataAdapter adapterAsunto = new OleDbDataAdapter(commandAsunto);
                 DataSet datasetAsunto = new DataSet();
                 adapterAsunto.Fill(datasetAsunto);
@@ -62,14 +65,13 @@ namespace Pantalla_1_Registro
                 OleDbDataAdapter adapterMensaje = new OleDbDataAdapter(commandMensaje);
                 DataSet datasetMensaje = new DataSet();
                 adapterMensaje.Fill(datasetMensaje);
-                int contMensaje = datasetAsunto.Tables[0].Rows.Count;
+                StringBuilder MensajeBuilder = new StringBuilder();
                 for (int i = 0; i < datasetMensaje.Tables[0].Rows.Count; i++)
                 {
-                    //escribe todas las actividades
+                    MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[i]+"\n");
                 }
-                StringBuilder MensajeBuilder = new StringBuilder();
-                MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[contMensaje]);
                 Mensaje = MensajeBuilder;
+
                 try
                 {
                     Mensaje.Append(Environment.NewLine);
@@ -156,6 +158,7 @@ namespace Pantalla_1_Registro
                 displaDays();
             }
         }
+
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
