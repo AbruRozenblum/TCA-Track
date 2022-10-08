@@ -11,6 +11,7 @@ using System.Globalization;
 using System.Data.OleDb;
 using System.Net.Mail;
 
+
 namespace Pantalla_1_Registro
 {
     public partial class Calendario : Form
@@ -61,14 +62,27 @@ namespace Pantalla_1_Registro
                 Asunto = datasetAsunto.Tables[0].Rows[contA]["Nombre_completo"].ToString();
 
                 //mail mensaje
-                OleDbCommand commandMensaje = new OleDbCommand("SELECT Evento, Inicio FROM Calendario WHERE Tipo = Comida && WHERE Username = '"+ Class1.username +"' ", db);
+                OleDbCommand commandMensaje = new OleDbCommand("SELECT Evento FROM Calendario WHERE tipo = comida && WHERE Username = '" + Class1.username + "' ", db);
                 OleDbDataAdapter adapterMensaje = new OleDbDataAdapter(commandMensaje);
                 DataSet datasetMensaje = new DataSet();
                 adapterMensaje.Fill(datasetMensaje);
+
+                OleDbCommand commandMensaje2 = new OleDbCommand("SELECT Inicio FROM Calendario WHERE tipo = comida && WHERE Username = '" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterMensaje2 = new OleDbDataAdapter(commandMensaje2);
+                DataSet datasetMensaje2 = new DataSet();
+                adapterMensaje2.Fill(datasetMensaje2);
+
+                OleDbCommand commandMensaje3 = new OleDbCommand("SELECT Descripcion FROM Calendario WHERE tipo = comida && WHERE Username = '" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterMensaje3 = new OleDbDataAdapter(commandMensaje3);
+                DataSet datasetMensaje3 = new DataSet();
+                adapterMensaje3.Fill(datasetMensaje3);
+
                 StringBuilder MensajeBuilder = new StringBuilder();
+
+
                 for (int i = 0; i < datasetMensaje.Tables[0].Rows.Count; i++)
                 {
-                    MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[i]+"\n");
+                    MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[i] + "-" + datasetMensaje2.Tables[0].Rows[i] + "\n" + "Descripcion:" + datasetMensaje2.Tables[0].Rows[i] +"\n");
                 }
                 Mensaje = MensajeBuilder;
 
@@ -136,7 +150,7 @@ namespace Pantalla_1_Registro
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
                 CheckBox Act = new CheckBox();
-                Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
+                Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
                 flowLayoutPanel1.Controls.Add(Act);
             }
         }
@@ -159,6 +173,10 @@ namespace Pantalla_1_Registro
             }
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
@@ -183,6 +201,7 @@ namespace Pantalla_1_Registro
         {
             AddEvent formaSiguiente = new AddEvent();
             formaSiguiente.Show();
+            this.Refresh();
         }
 
             private void displaDays()

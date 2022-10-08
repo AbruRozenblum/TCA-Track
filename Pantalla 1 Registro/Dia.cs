@@ -34,12 +34,17 @@ namespace Pantalla_1_Registro
             adapter.Fill(dataset);
 
             // mostrar actividades
-
+            ComboBox Act;
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
-                TextBox Act = new TextBox();
-                Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString();
+                Act = new ComboBox();
+                Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
                 flowLayoutPanel1.Controls.Add(Act);
+            }
+
+            if ()
+            {
+                    // UPDATE combobox
             }
         }
         private void BtnDiaNE_Click(object sender, EventArgs e)
@@ -47,10 +52,6 @@ namespace Pantalla_1_Registro
             AddEvent formaSiguiente = new AddEvent();
             formaSiguiente.Show();
             this.Hide();
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
         }
     }
  }
