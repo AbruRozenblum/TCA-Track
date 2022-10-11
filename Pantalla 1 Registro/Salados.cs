@@ -36,7 +36,9 @@ namespace Pantalla_1_Registro
             {
                 Button btnReceta = new Button();
                 {
-                    btnReceta.Font = new Font("Microsoft Sans Serif", 14);
+                    btnReceta.Font = new Font("Mongolian Baiti", 14);
+                    btnReceta.ForeColor = Color.White;
+                    btnReceta.BackgroundImage = Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_19_0859171;
                     btnReceta.Size = new Size(150, 150);
                     btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
                 };

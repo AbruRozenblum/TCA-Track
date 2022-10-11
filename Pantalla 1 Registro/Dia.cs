@@ -42,10 +42,10 @@ namespace Pantalla_1_Registro
                 flowLayoutPanel1.Controls.Add(Act);
             }
 
-            if ()
-            {
+            //if ()
+            //{
                     // UPDATE combobox
-            }
+            //}
         }
         private void BtnDiaNE_Click(object sender, EventArgs e)
         {
