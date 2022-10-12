@@ -39,6 +39,7 @@ namespace Pantalla_1_Registro
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
                 chbAct = new CheckBox();
+                chbAct.Font = new Font("Mongolian Baiti", 12);
                 chbAct.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
                 if ((bool)dataset.Tables[0].Rows[i]["Checked"]== true)
                 {
@@ -79,6 +80,16 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
+        }
+
+        private void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
  }

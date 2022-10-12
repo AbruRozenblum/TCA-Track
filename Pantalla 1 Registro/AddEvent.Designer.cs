@@ -42,99 +42,129 @@
             // 
             // txtEvento
             // 
-            this.txtEvento.Location = new System.Drawing.Point(12, 31);
+            this.txtEvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtEvento.ForeColor = System.Drawing.Color.Black;
+            this.txtEvento.Location = new System.Drawing.Point(24, 60);
+            this.txtEvento.Margin = new System.Windows.Forms.Padding(6);
             this.txtEvento.Name = "txtEvento";
-            this.txtEvento.Size = new System.Drawing.Size(321, 20);
+            this.txtEvento.Size = new System.Drawing.Size(638, 44);
             this.txtEvento.TabIndex = 0;
+            this.txtEvento.Text = "Añade titulo";
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 73);
+            this.comboBox1.Location = new System.Drawing.Point(24, 140);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(6);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(78, 21);
+            this.comboBox1.Size = new System.Drawing.Size(152, 45);
             this.comboBox1.TabIndex = 1;
             // 
             // cmbmes
             // 
             this.cmbmes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbmes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbmes.FormattingEnabled = true;
-            this.cmbmes.Location = new System.Drawing.Point(96, 73);
+            this.cmbmes.Location = new System.Drawing.Point(192, 140);
+            this.cmbmes.Margin = new System.Windows.Forms.Padding(6);
             this.cmbmes.Name = "cmbmes";
-            this.cmbmes.Size = new System.Drawing.Size(78, 21);
+            this.cmbmes.Size = new System.Drawing.Size(152, 45);
             this.cmbmes.TabIndex = 2;
             // 
             // cmbaño
             // 
             this.cmbaño.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbaño.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbaño.FormattingEnabled = true;
-            this.cmbaño.Location = new System.Drawing.Point(180, 73);
+            this.cmbaño.Location = new System.Drawing.Point(360, 140);
+            this.cmbaño.Margin = new System.Windows.Forms.Padding(6);
             this.cmbaño.Name = "cmbaño";
-            this.cmbaño.Size = new System.Drawing.Size(78, 21);
+            this.cmbaño.Size = new System.Drawing.Size(152, 45);
             this.cmbaño.TabIndex = 3;
             // 
             // cmbtipo
             // 
             this.cmbtipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbtipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbtipo.FormattingEnabled = true;
-            this.cmbtipo.Location = new System.Drawing.Point(12, 131);
+            this.cmbtipo.Location = new System.Drawing.Point(24, 252);
+            this.cmbtipo.Margin = new System.Windows.Forms.Padding(6);
             this.cmbtipo.Name = "cmbtipo";
-            this.cmbtipo.Size = new System.Drawing.Size(321, 21);
+            this.cmbtipo.Size = new System.Drawing.Size(638, 45);
             this.cmbtipo.TabIndex = 4;
             // 
             // cmbHorarioInicio
             // 
             this.cmbHorarioInicio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHorarioInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbHorarioInicio.FormattingEnabled = true;
-            this.cmbHorarioInicio.Location = new System.Drawing.Point(12, 181);
+            this.cmbHorarioInicio.Location = new System.Drawing.Point(24, 348);
+            this.cmbHorarioInicio.Margin = new System.Windows.Forms.Padding(6);
             this.cmbHorarioInicio.Name = "cmbHorarioInicio";
-            this.cmbHorarioInicio.Size = new System.Drawing.Size(103, 21);
+            this.cmbHorarioInicio.Size = new System.Drawing.Size(202, 45);
             this.cmbHorarioInicio.TabIndex = 5;
             // 
             // cmbHorarioFin
             // 
             this.cmbHorarioFin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbHorarioFin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbHorarioFin.FormattingEnabled = true;
-            this.cmbHorarioFin.Location = new System.Drawing.Point(12, 211);
+            this.cmbHorarioFin.Location = new System.Drawing.Point(24, 406);
+            this.cmbHorarioFin.Margin = new System.Windows.Forms.Padding(6);
             this.cmbHorarioFin.Name = "cmbHorarioFin";
-            this.cmbHorarioFin.Size = new System.Drawing.Size(103, 21);
+            this.cmbHorarioFin.Size = new System.Drawing.Size(202, 45);
             this.cmbHorarioFin.TabIndex = 6;
             // 
             // chbTodoelDia
             // 
             this.chbTodoelDia.AutoSize = true;
-            this.chbTodoelDia.Location = new System.Drawing.Point(144, 199);
+            this.chbTodoelDia.BackColor = System.Drawing.Color.Transparent;
+            this.chbTodoelDia.FlatAppearance.BorderSize = 0;
+            this.chbTodoelDia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chbTodoelDia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.chbTodoelDia.ForeColor = System.Drawing.Color.White;
+            this.chbTodoelDia.Location = new System.Drawing.Point(288, 383);
+            this.chbTodoelDia.Margin = new System.Windows.Forms.Padding(6);
             this.chbTodoelDia.Name = "chbTodoelDia";
-            this.chbTodoelDia.Size = new System.Drawing.Size(81, 17);
+            this.chbTodoelDia.Size = new System.Drawing.Size(203, 41);
             this.chbTodoelDia.TabIndex = 7;
             this.chbTodoelDia.Text = "Todo el día";
-            this.chbTodoelDia.UseVisualStyleBackColor = true;
+            this.chbTodoelDia.UseVisualStyleBackColor = false;
             this.chbTodoelDia.CheckedChanged += new System.EventHandler(this.ChbTodoelDia_CheckedChanged);
             // 
             // rtbDescripcion
             // 
-            this.rtbDescripcion.Location = new System.Drawing.Point(12, 254);
+            this.rtbDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.rtbDescripcion.Location = new System.Drawing.Point(24, 488);
+            this.rtbDescripcion.Margin = new System.Windows.Forms.Padding(6);
             this.rtbDescripcion.Name = "rtbDescripcion";
-            this.rtbDescripcion.Size = new System.Drawing.Size(384, 177);
+            this.rtbDescripcion.Size = new System.Drawing.Size(764, 337);
             this.rtbDescripcion.TabIndex = 8;
             this.rtbDescripcion.Text = "";
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(321, 437);
+            this.btnSave.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_12_a_la_s__09_54_58;
+            this.btnSave.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnSave.Location = new System.Drawing.Point(561, 837);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(6);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.Size = new System.Drawing.Size(227, 71);
             this.btnSave.TabIndex = 9;
-            this.btnSave.Text = "guardar";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
             // 
             // AddEvent
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 477);
+            this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_12_a_la_s__09_45_31;
+            this.ClientSize = new System.Drawing.Size(822, 917);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.rtbDescripcion);
             this.Controls.Add(this.chbTodoelDia);
@@ -145,6 +175,8 @@
             this.Controls.Add(this.cmbmes);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.txtEvento);
+            this.ForeColor = System.Drawing.Color.Transparent;
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AddEvent";
             this.Text = "AddEvent";
             this.Load += new System.EventHandler(this.AddEvent_Load);
