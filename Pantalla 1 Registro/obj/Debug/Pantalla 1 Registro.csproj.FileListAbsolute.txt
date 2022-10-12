@@ -178,3 +178,4 @@ C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debu
 C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Info.resources
 \\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Info.resources
 \\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Receta.resources
+C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Info.resources

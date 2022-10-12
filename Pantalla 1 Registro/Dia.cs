@@ -57,9 +57,14 @@ namespace Pantalla_1_Registro
 
         private void BtnDiaNE_Click(object sender, EventArgs e)
         {
-            AddEvent formaSiguiente = new AddEvent();
-            formaSiguiente.Show();
-            this.Hide();
+            //base de datos
+            db = new OleDbConnection();
+            db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            db.Open();
+            OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + txtFecha + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "';", db);
+            OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
+            DataSet dataset = new DataSet();
+            adapter.Fill(dataset);
         }
 
         private void chbAct_CheckedChanged(object sender, EventArgs e)
@@ -72,24 +77,6 @@ namespace Pantalla_1_Registro
             {
                 Estado = false;
             }
-            //base de datos
-            db = new OleDbConnection();
-            db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-            db.Open();
-            OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + txtFecha + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "';", db);
-            OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
-            DataSet dataset = new DataSet();
-            adapter.Fill(dataset);
-        }
-
-        private void txtFecha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
  }

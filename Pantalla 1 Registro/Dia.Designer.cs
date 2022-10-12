@@ -36,12 +36,9 @@
             // txtFecha
             // 
             this.txtFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtFecha.Location = new System.Drawing.Point(24, 62);
-            this.txtFecha.Margin = new System.Windows.Forms.Padding(6);
+            this.txtFecha.Location = new System.Drawing.Point(12, 32);
             this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(400, 44);
-            this.txtFecha.TabIndex = 0;
-            this.txtFecha.TextChanged += new System.EventHandler(this.txtFecha_TextChanged);
+            this.txtFecha.Size = new System.Drawing.Size(202, 26);
             // 
             // btnDiaNE
             // 
@@ -50,10 +47,9 @@
             this.btnDiaNE.FlatAppearance.BorderSize = 0;
             this.btnDiaNE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiaNE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnDiaNE.Location = new System.Drawing.Point(490, 773);
-            this.btnDiaNE.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDiaNE.Location = new System.Drawing.Point(245, 402);
             this.btnDiaNE.Name = "btnDiaNE";
-            this.btnDiaNE.Size = new System.Drawing.Size(230, 69);
+            this.btnDiaNE.Size = new System.Drawing.Size(115, 36);
             this.btnDiaNE.TabIndex = 2;
             this.btnDiaNE.UseVisualStyleBackColor = true;
             this.btnDiaNE.Click += new System.EventHandler(this.BtnDiaNE_Click);
@@ -62,23 +58,21 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 173);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 90);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(400, 617);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 321);
             this.flowLayoutPanel1.TabIndex = 3;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // Dia
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_12_a_la_s__09_45_31;
-            this.ClientSize = new System.Drawing.Size(744, 865);
+            this.ClientSize = new System.Drawing.Size(372, 450);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnDiaNE);
             this.Controls.Add(this.txtFecha);
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Dia";
             this.Text = "Dia";
             this.Load += new System.EventHandler(this.Dia_Load);

@@ -45,6 +45,7 @@ namespace Pantalla_1_Registro
             this.btnNuevoEvento = new System.Windows.Forms.Button();
             this.btnIrInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -227,6 +228,19 @@ namespace Pantalla_1_Registro
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_03_a_la_s__19_45_39;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(560, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(143, 48);
+            this.button1.TabIndex = 23;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // Calendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +248,7 @@ namespace Pantalla_1_Registro
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_03_a_la_s__19_07_16;
             this.ClientSize = new System.Drawing.Size(958, 389);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNuevoEvento);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -278,5 +293,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnNuevoEvento;
+        private System.Windows.Forms.Button button1;
     }
 }
