@@ -18,9 +18,12 @@ namespace Pantalla_1_Registro
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            cmbDiagnostico.Items.Add("Anorexia");
-            cmbDiagnostico.Items.Add("Bulimia");
-            cmbDiagnostico.Items.Add("Obesidad");
+            cmbDiagnostico.Items.Add("Anorexia nerviosa");
+            cmbDiagnostico.Items.Add("Bulimia nerviosa");
+            cmbDiagnostico.Items.Add("Trastorno por atracon");
+            cmbDiagnostico.Items.Add("Vigorexia");
+            cmbDiagnostico.Items.Add("Ortorexia");
+            cmbDiagnostico.Items.Add("Otro");
 
             // Creo la conexión
             dataBase = new OleDbConnection();
@@ -117,11 +120,11 @@ namespace Pantalla_1_Registro
                 }
                 else if (dataset2.Tables[0].Rows.Count != 0)
                 {
-                    MessageBox.Show("Mail ya utilizado");
+                    MessageBox.Show("El mail ingresado ya fue utilizado por otro usuario");
                 }
-                else
+                else if (dataset1.Tables[0].Rows.Count != 0)
                 {
-                    MessageBox.Show("Username no disponible");
+                    MessageBox.Show("El nombre de usuario ya fue utilizado");
                 }
             }
 
