@@ -1,5 +1,4 @@
 ﻿using System;
-using System.ComponentModel;
 using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
@@ -16,10 +15,6 @@ namespace Pantalla_1_Registro
             InitializeComponent();
         }
 
-        private void BtnPic_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtnIrInicio_Click_1(object sender, EventArgs e)
         {
@@ -90,17 +85,8 @@ namespace Pantalla_1_Registro
         {
         }
 
-        private void BtnActualC_Click(object sender, EventArgs e)
-        {
-        }
-
         private void BtnNuevaC_Click(object sender, EventArgs e)
         {
-        }
-
-        private void PicMailU_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BtnImportar_Click(object sender, EventArgs e)
@@ -113,7 +99,9 @@ namespace Pantalla_1_Registro
                 Console.WriteLine(foto_perfil);
                 pbFotoPerfil.Image = Image.FromFile(foto_perfil);
                 dataBase.Open();
-                OleDbCommand foto = new OleDbCommand("UPDATE");
+                OleDbCommand foto = new OleDbCommand("UPDATE Info_usuario SET Foto_perfil = '" + foto_perfil + "' WHERE Username = '" + Class1.username + "'");
+                foto.Connection = dataBase;
+                foto.ExecuteNonQuery();
             }
             else
             {
@@ -122,10 +110,6 @@ namespace Pantalla_1_Registro
 
         }
 
-        private void pictureBox8_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Perfil_Load(object sender, EventArgs e)
         {
@@ -175,6 +159,20 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapterC = new OleDbDataAdapter(commandC);
             DataSet datasetC = new DataSet();
             adapterC.Fill(datasetC);
+
+            OleDbCommand commandI;
+            commandI = new OleDbCommand("SELECT Foto_perfil FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandI.ExecuteNonQuery();
+            OleDbDataAdapter adapterI = new OleDbDataAdapter(commandI);
+            DataSet datasetI = new DataSet();
+            adapterI.Fill(datasetI);
+            if (datasetI.Tables[0].Rows.Count != 0)
+            {
+                pbFotoPerfil.ImageLocation = datasetI.Tables[0].Rows[0][0].ToString();
+            }
+            else
+            {
+            }
             dataBase.Close();
         }
 
@@ -183,9 +181,28 @@ namespace Pantalla_1_Registro
 
         }
 
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        private void txtPrueba_KeyPress(object sender, KeyPressEventArgs e)
         {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                dataBase.Open();
+                OleDbCommand nombreU;
+                nombreU = new OleDbCommand("UPDATE Info_usuario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
+                nombreU.Connection = dataBase;
+                nombreU.ExecuteNonQuery();
 
+                OleDbCommand diario;
+                diario = new OleDbCommand("UPDATE Diario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
+                diario.Connection = dataBase;
+                diario.ExecuteNonQuery();
+
+                OleDbCommand calendario;
+                calendario = new OleDbCommand("UPDATE Calendario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
+                calendario.Connection = dataBase;
+                calendario.ExecuteNonQuery();
+
+                Class1.username = txtPrueba.Text;
+            }
         }
     }
 }

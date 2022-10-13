@@ -88,7 +88,7 @@ namespace Pantalla_1_Registro
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.txtTexto);
             this.panel1.Location = new System.Drawing.Point(58, 118);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(910, 603);
             this.panel1.TabIndex = 10;
@@ -97,7 +97,7 @@ namespace Pantalla_1_Registro
             // 
             this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTexto.Location = new System.Drawing.Point(2, 0);
-            this.txtTexto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
             this.txtTexto.Size = new System.Drawing.Size(892, 632);
@@ -170,6 +170,7 @@ namespace Pantalla_1_Registro
             // 
             // Diario
             // 
+            this.AcceptButton = this.btnsave;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;

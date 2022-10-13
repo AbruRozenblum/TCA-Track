@@ -54,5 +54,6 @@ namespace Pantalla_1_Registro
             txtcontraseña.PasswordChar = '*';
             txtcontraseña.MaxLength = 14;
         }
+
     }
 }

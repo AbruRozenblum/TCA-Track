@@ -241,6 +241,7 @@ namespace Pantalla_1_Registro
             this.txtPrueba.Name = "txtPrueba";
             this.txtPrueba.Size = new System.Drawing.Size(336, 33);
             this.txtPrueba.TabIndex = 47;
+            this.txtPrueba.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrueba_KeyPress);
             // 
             // txtMailU
             // 

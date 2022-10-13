@@ -39,6 +39,7 @@
             this.txtFecha.Location = new System.Drawing.Point(12, 32);
             this.txtFecha.Name = "txtFecha";
             this.txtFecha.Size = new System.Drawing.Size(202, 26);
+            this.txtFecha.TabIndex = 4;
             // 
             // btnDiaNE
             // 
@@ -65,6 +66,7 @@
             // 
             // Dia
             // 
+            this.AcceptButton = this.btnDiaNE;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
