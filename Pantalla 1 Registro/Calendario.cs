@@ -17,7 +17,7 @@ namespace Pantalla_1_Registro
     public partial class Calendario : Form
     {
         const string Usuario = "tca.track.mail@gmail.com";
-        const string Password = "Proyecto10";
+        const string Password = "cokgkgcgxzkjfxgi";
 
 
         OleDbConnection db;
@@ -159,14 +159,16 @@ namespace Pantalla_1_Registro
                     Mensaje.Append(Environment.NewLine);
                     Mensaje.Append(string.Format("fecha envio: {0:dd/MM/yyyy}", FechaEnvio));
                     Mensaje.Append(Environment.NewLine);
+
                     MailMessage mail = new MailMessage();
                     mail.From = new MailAddress(De);
                     mail.To.Add(Para);
                     mail.Subject = Asunto;
                     mail.Body = Mensaje.ToString();
+
                     SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                    smtp.Port = 587;
-                    smtp.UseDefaultCredentials = false;
+                    smtp.Port = 25;
+                 // smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new System.Net.NetworkCredential(Usuario, Password);
                     smtp.EnableSsl = true;
                     smtp.Send(mail);
@@ -176,7 +178,8 @@ namespace Pantalla_1_Registro
                 }
                 catch (Exception ex)
                 {
-
+                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.Message);
                     return;
                 }
             //}
