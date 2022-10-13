@@ -32,7 +32,7 @@ namespace Pantalla_1_Registro
              */
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
             dtFecha.MaxDate = DateTime.Now;
-            dtFecha.Value = DateTime.Now;
+            dtFecha.Value = DateTime.Today;
         }
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
@@ -74,49 +74,61 @@ namespace Pantalla_1_Registro
                         genero = "Otro";
                     }
 
-
-                    OleDbCommand agregoInfoUser;
-                    agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + txtUsuario.Text + "', '" + txtNombre.Text + "', '" + txtMailDelUsuario.Text + "','" + txtContraseña.Text + "', '" + cmbDiagnostico.SelectedItem + "', '" + dtFecha + "', '" + genero + "', '" + txtMailEspecialista.Text + "');");
-                    agregoInfoUser.Connection = dataBase;
-                    agregoInfoUser.ExecuteNonQuery();
-
-                    OleDbCommand buscoInfoEspecialista;
-                    buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + txtMailEspecialista.Text + "'", dataBase);
-                    OleDbDataAdapter adapter = new OleDbDataAdapter(buscoInfoEspecialista);
-                    DataSet dataset = new DataSet();
-                    adapter.Fill(dataset);
-
-                    if (dataset.Tables[0].Rows.Count == 0)
+                    if ((txtMailEspecialista.Text!="" && txtNombreEspecialista.Text == "") || (txtNombre.Text != "" && txtMailEspecialista.Text == ""))
                     {
-                        /*
-                         *declaro el objeto de mi comando
-                         */
-                        OleDbCommand agregoInfoEspecialista;
-                        /*
-                         * asigno la funcion del comando
-                         */
-                        agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + txtNombreEspecialista.Text + "', '" + txtMailEspecialista.Text + "')");
-                        /*
-                         * asigno el comando a la base de datos sobre la que lo voy a ejecutar
-                         */
-                        agregoInfoEspecialista.Connection = dataBase;
-
-                        // ejecuto el comando
-
-                        agregoInfoEspecialista.ExecuteNonQuery();
+                        MessageBox.Show("Ingrese el nombre o el mail del especialista");
                     }
+                    else if (txtMailEspecialista.Text!="" && txtNombreEspecialista.Text != "")
+                    {
+                        OleDbCommand agregoInfoUser;
+                        agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Nombre_completo, Username, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género, Mail_especialista) VALUES ('" + txtUsuario.Text + "', '" + txtNombre.Text + "', '" + txtMailDelUsuario.Text + "','" + txtContraseña.Text + "', '" + cmbDiagnostico.SelectedItem + "', '" + dtFecha.Value + "', '" + genero + "', '" + txtMailEspecialista.Text + "');");
+                        agregoInfoUser.Connection = dataBase;
+                        agregoInfoUser.ExecuteNonQuery();
+
+                        OleDbCommand buscoInfoEspecialista;
+                        buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + txtMailEspecialista.Text + "'", dataBase);
+                        OleDbDataAdapter adapter = new OleDbDataAdapter(buscoInfoEspecialista);
+                        DataSet dataset = new DataSet();
+                        adapter.Fill(dataset);
+
+                        if (dataset.Tables[0].Rows.Count == 0)
+                        {
+                            /*
+                             *declaro el objeto de mi comando
+                             */
+                            OleDbCommand agregoInfoEspecialista;
+                            /*
+                             * asigno la funcion del comando
+                             */
+                            agregoInfoEspecialista = new OleDbCommand("INSERT INTO Info_especialista (Nombre, Mail) VALUES ('" + txtNombreEspecialista.Text + "', '" + txtMailEspecialista.Text + "')");
+                            /*
+                             * asigno el comando a la base de datos sobre la que lo voy a ejecutar
+                             */
+                            agregoInfoEspecialista.Connection = dataBase;
+
+                            // ejecuto el comando
+
+                            agregoInfoEspecialista.ExecuteNonQuery();
+                        }
+                        Inicio formaSiguiente = new Inicio();
+                        this.Hide(); //oculta la forma actual
+                        formaSiguiente.Show(); // muestra la forma2
+                    }
+
                     else
                     {
+                        OleDbCommand agregoInfoUser;
+                        agregoInfoUser = new OleDbCommand("INSERT INTO Info_usuario (Username, Nombre_completo, Mail, Contraseña, Diagnostico, Fecha_nacimiento, Género) VALUES ('" + txtUsuario.Text + "', '" + txtNombre.Text + "', '" + txtMailDelUsuario.Text + "','" + txtContraseña.Text + "', '" + cmbDiagnostico.SelectedItem + "', '" + dtFecha + "', '" + genero + "');");
+                        agregoInfoUser.Connection = dataBase;
+                        agregoInfoUser.ExecuteNonQuery();
 
+                        Inicio formaSiguiente = new Inicio();
+                        this.Hide(); //oculta la forma actual
+                        formaSiguiente.Show(); // muestra la forma2
                     }
+                    
 
                     dataBase.Close();
-
-
-
-                    Inicio formaSiguiente = new Inicio();
-                    this.Hide(); //oculta la forma actual
-                    formaSiguiente.Show(); // muestra la forma2
                 }
                 else if (dataset2.Tables[0].Rows.Count != 0)
                 {

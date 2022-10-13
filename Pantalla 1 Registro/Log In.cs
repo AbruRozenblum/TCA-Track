@@ -24,17 +24,16 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapter = new OleDbDataAdapter(verificoLogIn);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
-            if (dataset.Tables[0].Rows.Count != 0)
+            if (dataset.Tables[0].Rows.Count == 0)
+            {
+                MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
+            }
+            else
             {
                 Class1.username = txtusername.Text;
                 Inicio formaSiguiente = new Inicio();
                 this.Hide();
                 formaSiguiente.Show();
-
-            }
-            else
-            {
-                MessageBox.Show("Usuario y/o contraseña ingresado incorrecto");
             }
             dataBase.Close();
             //no tocar, estoy intentando confgurar el log in

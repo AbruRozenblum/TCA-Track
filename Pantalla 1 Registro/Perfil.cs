@@ -50,12 +50,28 @@ namespace Pantalla_1_Registro
             diario.Connection = dataBase;
             diario.ExecuteNonQuery();
 
+            OleDbCommand calendario;
+            calendario = new OleDbCommand("UPDATE Calendario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
+            calendario.Connection = dataBase;
+            calendario.ExecuteNonQuery();
+
             Class1.username = txtPrueba.Text;
         }
 
         private void BtnNEspecialista_Click(object sender, EventArgs e)
         {
+            OleDbCommand commandMe;
+            commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandMe.ExecuteNonQuery();
+            OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
+            DataSet datasetMe = new DataSet();
+            adapterMe.Fill(datasetMe);
 
+
+            OleDbCommand nEspecialista;
+            nEspecialista = new OleDbCommand("UPDATE Info_especialista SET Nombre = '" + txtNomE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
+            nEspecialista.Connection = dataBase;
+            nEspecialista.ExecuteNonQuery();
         }
 
         private void BtnMEspecialista_Click(object sender, EventArgs e)

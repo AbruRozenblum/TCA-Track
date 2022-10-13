@@ -370,7 +370,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnRegistrarse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 719</value>
+    <value>590, 665</value>
   </data>
   <data name="btnRegistrarse.Size" type="System.Drawing.Size, System.Drawing">
     <value>273, 71</value>
