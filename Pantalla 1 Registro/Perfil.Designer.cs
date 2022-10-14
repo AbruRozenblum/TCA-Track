@@ -251,7 +251,6 @@ namespace Pantalla_1_Registro
             this.txtMailU.Name = "txtMailU";
             this.txtMailU.Size = new System.Drawing.Size(336, 33);
             this.txtMailU.TabIndex = 48;
-            this.txtMailU.TextChanged += new System.EventHandler(this.txtMailU_TextChanged);
             // 
             // txtNomE
             // 
@@ -335,7 +334,7 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__09_58_21;
-            this.ClientSize = new System.Drawing.Size(964, 541);
+            this.ClientSize = new System.Drawing.Size(964, 713);
             this.Controls.Add(this.pbFotoPerfil);
             this.Controls.Add(this.txtNuevaC);
             this.Controls.Add(this.txtActualC);

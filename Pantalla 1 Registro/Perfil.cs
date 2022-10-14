@@ -87,6 +87,24 @@ namespace Pantalla_1_Registro
 
         private void BtnNuevaC_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
+            OleDbCommand commandC;
+            commandC = new OleDbCommand("SELECT * FROM Info_usuario WHERE Username = '" + Class1.username + "' AND Contraseña = '" + txtActualC.Text + "';", dataBase);
+            OleDbDataAdapter adapterC = new OleDbDataAdapter(commandC);
+            DataSet datasetC = new DataSet();
+            adapterC.Fill(datasetC);
+            if (datasetC.Tables[0].Rows.Count != 0)
+            {
+                OleDbCommand commandU;
+                commandU = new OleDbCommand("UPDATE Info_usuario SET Contraseña = '" + txtNuevaC.Text + "' WHERE Username = '" + Class1.username + "'", dataBase);
+                commandU.ExecuteNonQuery();
+                MessageBox.Show("Se actualizo la contraseña");
+            }
+            else
+            {
+                MessageBox.Show("La contraseña ingresada es incorrecta, para actualizarla debe ingresar la contraseña actual");
+            }
+            dataBase.Close();
         }
 
         private void BtnImportar_Click(object sender, EventArgs e)
@@ -166,20 +184,18 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapterI = new OleDbDataAdapter(commandI);
             DataSet datasetI = new DataSet();
             adapterI.Fill(datasetI);
-            if (datasetI.Tables[0].Rows.Count != 0)
+            if (datasetI.Tables[0].Rows[0][0].ToString() != "")
             {
                 pbFotoPerfil.ImageLocation = datasetI.Tables[0].Rows[0][0].ToString();
             }
             else
             {
+                pbFotoPerfil.Image = Pantalla_1_Registro.Properties.Resources.profile_pic;
             }
+            this.pbFotoPerfil.SizeMode = PictureBoxSizeMode.StretchImage;
             dataBase.Close();
         }
 
-        private void txtMailU_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void txtPrueba_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -206,9 +222,3 @@ namespace Pantalla_1_Registro
         }
     }
 }
-
-
-
-/*UPDATE Info_usuario
-SET Username = 'variable', Nombre_completo= 'variable'
-WHERE ID = ...;*/
