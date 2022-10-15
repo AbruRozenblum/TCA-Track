@@ -35,7 +35,7 @@ namespace Pantalla_1_Registro
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnIrInicio = new System.Windows.Forms.Button();
-            this.btnPronombre = new System.Windows.Forms.Button();
+            this.btnNyA = new System.Windows.Forms.Button();
             this.btnEdad = new System.Windows.Forms.Button();
             this.btnDiagnostico = new System.Windows.Forms.Button();
             this.btnMEspecialista = new System.Windows.Forms.Button();
@@ -47,13 +47,13 @@ namespace Pantalla_1_Registro
             this.txtMailU = new System.Windows.Forms.TextBox();
             this.txtNomE = new System.Windows.Forms.TextBox();
             this.txtMailE = new System.Windows.Forms.TextBox();
-            this.txtDiagnostico = new System.Windows.Forms.TextBox();
-            this.txtEdad = new System.Windows.Forms.TextBox();
-            this.txtPronombre = new System.Windows.Forms.TextBox();
+            this.txtNyA = new System.Windows.Forms.TextBox();
             this.txtActualC = new System.Windows.Forms.TextBox();
             this.txtNuevaC = new System.Windows.Forms.TextBox();
             this.pbFotoPerfil = new System.Windows.Forms.PictureBox();
             this.ofd1 = new System.Windows.Forms.OpenFileDialog();
+            this.dtfnacimiento = new System.Windows.Forms.DateTimePicker();
+            this.cmbDiagnostico = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -127,18 +127,18 @@ namespace Pantalla_1_Registro
             this.btnIrInicio.UseVisualStyleBackColor = true;
             this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click_1);
             // 
-            // btnPronombre
+            // btnNyA
             // 
-            this.btnPronombre.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__11_52_33;
-            this.btnPronombre.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPronombre.FlatAppearance.BorderSize = 0;
-            this.btnPronombre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPronombre.Location = new System.Drawing.Point(585, 729);
-            this.btnPronombre.Name = "btnPronombre";
-            this.btnPronombre.Size = new System.Drawing.Size(38, 35);
-            this.btnPronombre.TabIndex = 36;
-            this.btnPronombre.UseVisualStyleBackColor = true;
-            this.btnPronombre.Click += new System.EventHandler(this.BtnPronombre_Click);
+            this.btnNyA.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__11_52_33;
+            this.btnNyA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNyA.FlatAppearance.BorderSize = 0;
+            this.btnNyA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNyA.Location = new System.Drawing.Point(585, 729);
+            this.btnNyA.Name = "btnNyA";
+            this.btnNyA.Size = new System.Drawing.Size(38, 35);
+            this.btnNyA.TabIndex = 36;
+            this.btnNyA.UseVisualStyleBackColor = true;
+            this.btnNyA.Click += new System.EventHandler(this.BtnNyA_Click);
             // 
             // btnEdad
             // 
@@ -241,7 +241,6 @@ namespace Pantalla_1_Registro
             this.txtPrueba.Name = "txtPrueba";
             this.txtPrueba.Size = new System.Drawing.Size(336, 33);
             this.txtPrueba.TabIndex = 47;
-            this.txtPrueba.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrueba_KeyPress);
             // 
             // txtMailU
             // 
@@ -270,32 +269,14 @@ namespace Pantalla_1_Registro
             this.txtMailE.Size = new System.Drawing.Size(336, 33);
             this.txtMailE.TabIndex = 50;
             // 
-            // txtDiagnostico
+            // txtNyA
             // 
-            this.txtDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtDiagnostico.Location = new System.Drawing.Point(233, 591);
-            this.txtDiagnostico.Multiline = true;
-            this.txtDiagnostico.Name = "txtDiagnostico";
-            this.txtDiagnostico.Size = new System.Drawing.Size(336, 33);
-            this.txtDiagnostico.TabIndex = 51;
-            // 
-            // txtEdad
-            // 
-            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtEdad.Location = new System.Drawing.Point(233, 661);
-            this.txtEdad.Multiline = true;
-            this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(336, 33);
-            this.txtEdad.TabIndex = 52;
-            // 
-            // txtPronombre
-            // 
-            this.txtPronombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtPronombre.Location = new System.Drawing.Point(233, 731);
-            this.txtPronombre.Multiline = true;
-            this.txtPronombre.Name = "txtPronombre";
-            this.txtPronombre.Size = new System.Drawing.Size(336, 33);
-            this.txtPronombre.TabIndex = 53;
+            this.txtNyA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.txtNyA.Location = new System.Drawing.Point(233, 731);
+            this.txtNyA.Multiline = true;
+            this.txtNyA.Name = "txtNyA";
+            this.txtNyA.Size = new System.Drawing.Size(336, 33);
+            this.txtNyA.TabIndex = 53;
             // 
             // txtActualC
             // 
@@ -328,19 +309,36 @@ namespace Pantalla_1_Registro
             // 
             this.ofd1.FileName = "openFileDialog1";
             // 
+            // dtfnacimiento
+            // 
+            this.dtfnacimiento.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.dtfnacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.dtfnacimiento.Location = new System.Drawing.Point(233, 664);
+            this.dtfnacimiento.Name = "dtfnacimiento";
+            this.dtfnacimiento.Size = new System.Drawing.Size(336, 29);
+            this.dtfnacimiento.TabIndex = 57;
+            // 
+            // cmbDiagnostico
+            // 
+            this.cmbDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.cmbDiagnostico.Location = new System.Drawing.Point(233, 591);
+            this.cmbDiagnostico.Name = "cmbDiagnostico";
+            this.cmbDiagnostico.Size = new System.Drawing.Size(336, 32);
+            this.cmbDiagnostico.TabIndex = 0;
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__09_58_21;
-            this.ClientSize = new System.Drawing.Size(964, 713);
+            this.ClientSize = new System.Drawing.Size(964, 749);
+            this.Controls.Add(this.cmbDiagnostico);
+            this.Controls.Add(this.dtfnacimiento);
             this.Controls.Add(this.pbFotoPerfil);
             this.Controls.Add(this.txtNuevaC);
             this.Controls.Add(this.txtActualC);
-            this.Controls.Add(this.txtPronombre);
-            this.Controls.Add(this.txtEdad);
-            this.Controls.Add(this.txtDiagnostico);
+            this.Controls.Add(this.txtNyA);
             this.Controls.Add(this.txtMailE);
             this.Controls.Add(this.txtNomE);
             this.Controls.Add(this.txtMailU);
@@ -352,7 +350,7 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnMEspecialista);
             this.Controls.Add(this.btnDiagnostico);
             this.Controls.Add(this.btnEdad);
-            this.Controls.Add(this.btnPronombre);
+            this.Controls.Add(this.btnNyA);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.btnImportar);
             this.Controls.Add(this.pictureBox2);
@@ -379,7 +377,7 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnPronombre;
+        private System.Windows.Forms.Button btnNyA;
         private System.Windows.Forms.Button btnEdad;
         private System.Windows.Forms.Button btnDiagnostico;
         private System.Windows.Forms.Button btnMEspecialista;
@@ -391,12 +389,12 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.TextBox txtMailU;
         private System.Windows.Forms.TextBox txtNomE;
         private System.Windows.Forms.TextBox txtMailE;
-        private System.Windows.Forms.TextBox txtDiagnostico;
-        private System.Windows.Forms.TextBox txtEdad;
-        private System.Windows.Forms.TextBox txtPronombre;
+        private System.Windows.Forms.TextBox txtNyA;
         private System.Windows.Forms.TextBox txtActualC;
         private System.Windows.Forms.TextBox txtNuevaC;
         private System.Windows.Forms.PictureBox pbFotoPerfil;
         private System.Windows.Forms.OpenFileDialog ofd1;
+        private System.Windows.Forms.DateTimePicker dtfnacimiento;
+        private System.Windows.Forms.ComboBox cmbDiagnostico;
     }
 }

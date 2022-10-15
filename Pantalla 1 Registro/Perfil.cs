@@ -30,6 +30,8 @@ namespace Pantalla_1_Registro
             mailU = new OleDbCommand("UPDATE Info_usuario SET Mail = '" + txtMailU.Text + "' WHERE Username = '" + Class1.username + "'");
             mailU.Connection = dataBase;
             mailU.ExecuteNonQuery();
+            dataBase.Close();
+            MessageBox.Show("Se actualizó el mail del usuario");
         }
 
         private void BtnNUsuario_Click(object sender, EventArgs e)
@@ -51,6 +53,8 @@ namespace Pantalla_1_Registro
             calendario.ExecuteNonQuery();
 
             Class1.username = txtPrueba.Text;
+            dataBase.Close();
+            MessageBox.Show("Se actualizó el nombre de usuario");
         }
 
         private void BtnNEspecialista_Click(object sender, EventArgs e)
@@ -67,22 +71,63 @@ namespace Pantalla_1_Registro
             nEspecialista = new OleDbCommand("UPDATE Info_especialista SET Nombre = '" + txtNomE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
             nEspecialista.Connection = dataBase;
             nEspecialista.ExecuteNonQuery();
+
+            MessageBox.Show("Se actualizó el nombre del especialista");
         }
 
         private void BtnMEspecialista_Click(object sender, EventArgs e)
         {
+            OleDbCommand commandMe;
+            commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandMe.ExecuteNonQuery();
+            OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
+            DataSet datasetMe = new DataSet();
+            adapterMe.Fill(datasetMe);
+
+            OleDbCommand mEspecialista;
+            mEspecialista = new OleDbCommand("UPDATE Info_usuario SET Mail_especialista = '" + txtMailE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
+            mEspecialista.Connection = dataBase;
+            mEspecialista.ExecuteNonQuery();
+
+            OleDbCommand mEspecialista2;
+            mEspecialista2 = new OleDbCommand("UPDATE Info_especialista SET Mail = '" + txtMailE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
+            mEspecialista2.Connection = dataBase;
+            mEspecialista2.ExecuteNonQuery();
+
+            MessageBox.Show("Se actualizó el nombre del especialista");
         }
 
         private void BtnDiagnostico_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
+            OleDbCommand fNacimiento;
+            fNacimiento = new OleDbCommand("UPDATE Info_usuario SET Diagnostico = '" + cmbDiagnostico.SelectedItem + "' WHERE Username = '" + Class1.username + "'");
+            fNacimiento.Connection = dataBase;
+            fNacimiento.ExecuteNonQuery();
+            dataBase.Close();
+            MessageBox.Show("Se actualizó el diagnostico");
         }
 
         private void BtnEdad_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
+            OleDbCommand fNacimiento;
+            fNacimiento = new OleDbCommand("UPDATE Info_usuario SET Fecha_nacimiento = '" + dtfnacimiento.Value + "' WHERE Username = '" + Class1.username + "'");
+            fNacimiento.Connection = dataBase;
+            fNacimiento.ExecuteNonQuery();
+            dataBase.Close();
+            MessageBox.Show("Se actualizó la fecha de nacimiento");
         }
 
-        private void BtnPronombre_Click(object sender, EventArgs e)
+        private void BtnNyA_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
+            OleDbCommand fNacimiento;
+            fNacimiento = new OleDbCommand("UPDATE Info_usuario SET Nombre_completo = '" + txtNyA.Text + "' WHERE Username = '" + Class1.username + "'");
+            fNacimiento.Connection = dataBase;
+            fNacimiento.ExecuteNonQuery();
+            dataBase.Close();
+            MessageBox.Show("Se actualizó el nombre completo");
         }
 
         private void BtnNuevaC_Click(object sender, EventArgs e)
@@ -98,7 +143,9 @@ namespace Pantalla_1_Registro
                 OleDbCommand commandU;
                 commandU = new OleDbCommand("UPDATE Info_usuario SET Contraseña = '" + txtNuevaC.Text + "' WHERE Username = '" + Class1.username + "'", dataBase);
                 commandU.ExecuteNonQuery();
-                MessageBox.Show("Se actualizo la contraseña");
+                MessageBox.Show("Se actualizó la contraseña");
+                txtActualC.Text = "";
+                txtNuevaC.Text = "";
             }
             else
             {
@@ -131,6 +178,14 @@ namespace Pantalla_1_Registro
 
         private void Perfil_Load(object sender, EventArgs e)
         {
+            cmbDiagnostico.Items.Add("Anorexia nerviosa");
+            cmbDiagnostico.Items.Add("Bulimia nerviosa");
+            cmbDiagnostico.Items.Add("Trastorno por atracon");
+            cmbDiagnostico.Items.Add("Vigorexia");
+            cmbDiagnostico.Items.Add("Ortorexia");
+            cmbDiagnostico.Items.Add("Otro");
+
+
             dataBase = new OleDbConnection();
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
 
@@ -163,14 +218,32 @@ namespace Pantalla_1_Registro
             DataSet datasetNe = new DataSet();
             adapterNe.Fill(datasetNe);
 
-            txtDiagnostico.Text = datasetD.Tables[0].Rows[0][0].ToString();
+            OleDbCommand commandF;
+            commandF = new OleDbCommand("SELECT Fecha_nacimiento FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandF.ExecuteNonQuery();
+            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
+            DataSet datasetF = new DataSet();
+            adapterF.Fill(datasetF);
+
+            OleDbCommand commandN;
+            commandN = new OleDbCommand("SELECT Nombre_completo FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandN.ExecuteNonQuery();
+            OleDbDataAdapter adapterN = new OleDbDataAdapter(commandN);
+            DataSet datasetN = new DataSet();
+            adapterN.Fill(datasetN);
+
+            cmbDiagnostico.SelectedItem = datasetD.Tables[0].Rows[0][0].ToString();
             txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
             txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
             txtNomE.Text = datasetNe.Tables[0].Rows[0][0].ToString();
-            txtNuevaC.Text = "Nueva contraseña";
-            txtActualC.Text = "Actual contraseña";
+            txtNyA.Text = datasetN.Tables[0].Rows[0][0].ToString();
+            txtNuevaC.Text = "Nueva";
+            txtActualC.Text = "Actual";
             txtPrueba.Text = Class1.username;
-
+            txtActualC.MaxLength = 14;
+            txtNuevaC.MaxLength = 14;
+            dtfnacimiento.MaxDate = DateTime.Now;
+            dtfnacimiento.Value = DateTime.Parse(datasetF.Tables[0].Rows[0][0].ToString());
             OleDbCommand commandC;
             commandC = new OleDbCommand("SELECT Contraseña FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
             commandC.ExecuteNonQuery();
@@ -196,29 +269,5 @@ namespace Pantalla_1_Registro
             dataBase.Close();
         }
 
-
-        private void txtPrueba_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            {
-                dataBase.Open();
-                OleDbCommand nombreU;
-                nombreU = new OleDbCommand("UPDATE Info_usuario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
-                nombreU.Connection = dataBase;
-                nombreU.ExecuteNonQuery();
-
-                OleDbCommand diario;
-                diario = new OleDbCommand("UPDATE Diario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
-                diario.Connection = dataBase;
-                diario.ExecuteNonQuery();
-
-                OleDbCommand calendario;
-                calendario = new OleDbCommand("UPDATE Calendario SET Username = '" + txtPrueba.Text + "' WHERE Username = '" + Class1.username + "'");
-                calendario.Connection = dataBase;
-                calendario.ExecuteNonQuery();
-
-                Class1.username = txtPrueba.Text;
-            }
-        }
     }
 }
