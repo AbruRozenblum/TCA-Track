@@ -25,7 +25,7 @@ namespace Pantalla_1_Registro
         public static bool si;
         public static int static_month, static_year;
         string horaactual = DateTime.Now.ToString("HH:mm");
-        string horaexacta = "8:00";
+        string horaexacta = "18:15";
         public Calendario()
         {
             InitializeComponent();
@@ -101,88 +101,7 @@ namespace Pantalla_1_Registro
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            //if (horaactual == horaexacta){
-                StringBuilder Mensaje;
-                DateTime FechaEnvio = DateTime.Now;
-                string De = Usuario;
-                string Para;
-                string Asunto;
-                string error = "";
-
-                //mail especialista
-                OleDbConnection db;
-                db = new OleDbConnection();
-                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-                db.Open();
-                OleDbCommand commandMailEspecialista = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username ='" + Class1.username + "' ", db);
-                OleDbDataAdapter adapterME = new OleDbDataAdapter(commandMailEspecialista);
-                DataSet datasetME = new DataSet();
-                adapterME.Fill(datasetME);
-                int contME = datasetME.Tables[0].Rows.Count;
-                Para = datasetME.Tables[0].Rows[contME-1]["Mail_especialista"].ToString();
-
-                //mail asunto
-                OleDbCommand commandAsunto = new OleDbCommand("SELECT Nombre_completo FROM Info_usuario  WHERE Username ='" + Class1.username + "' ", db);
-                OleDbDataAdapter adapterAsunto = new OleDbDataAdapter(commandAsunto);
-                DataSet datasetAsunto = new DataSet();
-                adapterAsunto.Fill(datasetAsunto);
-                int contA = datasetAsunto.Tables[0].Rows.Count;
-                Asunto = datasetAsunto.Tables[0].Rows[contA-1]["Nombre_completo"].ToString();
-
-                //mail mensaje
-                OleDbCommand commandMensaje = new OleDbCommand ("SELECT Evento FROM Calendario WHERE tipo = 'comidas' AND Username = '" + Class1.username + "' ", db);
-                OleDbDataAdapter adapterMensaje = new OleDbDataAdapter(commandMensaje);
-                DataSet datasetMensaje = new DataSet();
-                adapterMensaje.Fill(datasetMensaje);
-
-                OleDbCommand commandMensaje2 = new OleDbCommand("SELECT Inicio FROM Calendario WHERE tipo = 'comidas' AND Username = '" + Class1.username + "' ", db);
-                OleDbDataAdapter adapterMensaje2 = new OleDbDataAdapter(commandMensaje2);
-                DataSet datasetMensaje2 = new DataSet();
-                adapterMensaje2.Fill(datasetMensaje2);
-
-                OleDbCommand commandMensaje3 = new OleDbCommand("SELECT Descripcion FROM Calendario WHERE tipo = 'comidas' AND Username = '" + Class1.username + "' ", db);
-                OleDbDataAdapter adapterMensaje3 = new OleDbDataAdapter(commandMensaje3);
-                DataSet datasetMensaje3 = new DataSet();
-                adapterMensaje3.Fill(datasetMensaje3);
-
-                StringBuilder MensajeBuilder = new StringBuilder();
-
-
-                for (int i = 0; i < datasetMensaje.Tables[0].Rows.Count; i++)
-                {
-                    MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[i] + "-" + datasetMensaje2.Tables[0].Rows[i] + "\n" + "Descripcion:" + datasetMensaje2.Tables[0].Rows[i] + "\n");
-                }
-                Mensaje = MensajeBuilder;
-
-                try
-                {
-                    Mensaje.Append(Environment.NewLine);
-                    Mensaje.Append(string.Format("fecha envio: {0:dd/MM/yyyy}", FechaEnvio));
-                    Mensaje.Append(Environment.NewLine);
-
-                    MailMessage mail = new MailMessage();
-                    mail.From = new MailAddress(De);
-                    mail.To.Add(Para);
-                    mail.Subject = Asunto;
-                    mail.Body = Mensaje.ToString();
-
-                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-                    smtp.Port = 25;
-                 // smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new System.Net.NetworkCredential(Usuario, Password);
-                    smtp.EnableSsl = true;
-                    smtp.Send(mail);
-                    error = "Exito";
-                MessageBox.Show(error);
-
-                }
-                catch (Exception ex)
-                {
-                MessageBox.Show(ex.ToString());
-                MessageBox.Show(ex.Message);
-                    return;
-                }
-            //}
+            MessageBox.Show(horaactual.ToString());
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -211,38 +130,125 @@ namespace Pantalla_1_Registro
             this.Refresh();
         }
 
-            private void displaDays()
-            {
+        private void displaDays()
+        {
 
-                static_month = month;
-                static_year = year;
+            static_month = month;
+            static_year = year;
 
-                string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
-                lblDATE.Text = monthname + " " + year;
+            string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
+            lblDATE.Text = monthname + " " + year;
 
-                //primer dia del mes 
-                DateTime startofthemonth = new DateTime(year, month, 1);
+            //primer dia del mes 
+            DateTime startofthemonth = new DateTime(year, month, 1);
 
-                // contador de dias en el mes
-                int days = DateTime.DaysInMonth(year, month);
+            // contador de dias en el mes
+            int days = DateTime.DaysInMonth(year, month);
 
-                //convertir el comienzo del mes 
-                int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
+            //convertir el comienzo del mes 
+            int dayoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-                // user control blank
-                for (int i = 1; i < dayoftheweek; i++)
+            // user control blank
+            for (int i = 1; i < dayoftheweek; i++)
                 {
                     UserControlBlank ucblank = new UserControlBlank();
                     daycontainer.Controls.Add(ucblank);
                 }
 
-                //user control days
-                for (int i = 1; i <= days; i++)
+            //user control days
+            for (int i = 1; i <= days; i++)
                 {
                     UserControlDays ucdays = new UserControlDays();
                     ucdays.days(i);
                     daycontainer.Controls.Add(ucdays);
                 }
+        }
+
+        public void EnviarCorreo_Especialista()
+        {
+            if (horaactual == horaexacta)
+            {
+                StringBuilder Mensaje;
+                DateTime FechaEnvio = DateTime.Now;
+                string De = Usuario;
+                string Para;
+                string Asunto;
+                string error = "";
+
+                //mail especialista
+                OleDbConnection db;
+                db = new OleDbConnection();
+                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+                db.Open();
+                OleDbCommand commandMailEspecialista = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username ='" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterME = new OleDbDataAdapter(commandMailEspecialista);
+                DataSet datasetME = new DataSet();
+                adapterME.Fill(datasetME);
+                int contME = datasetME.Tables[0].Rows.Count;
+                Para = datasetME.Tables[0].Rows[contME - 1][0].ToString(); ;
+
+                //mail asunto
+                OleDbCommand commandAsunto = new OleDbCommand("SELECT Nombre_completo FROM Info_usuario  WHERE Username ='" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterAsunto = new OleDbDataAdapter(commandAsunto);
+                DataSet datasetAsunto = new DataSet();
+                adapterAsunto.Fill(datasetAsunto);
+                int contA = datasetAsunto.Tables[0].Rows.Count;
+                Asunto = datasetAsunto.Tables[0].Rows[0][contA - 1].ToString();
+
+                //mail mensaje
+                OleDbCommand commandMensaje = new OleDbCommand("SELECT Evento FROM Calendario WHERE tipo = 'comidas' AND Username = '" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterMensaje = new OleDbDataAdapter(commandMensaje);
+                DataSet datasetMensaje = new DataSet();
+                adapterMensaje.Fill(datasetMensaje);
+
+                OleDbCommand commandMensaje2 = new OleDbCommand("SELECT Inicio FROM Calendario WHERE tipo = 'comidas' AND Username = '" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterMensaje2 = new OleDbDataAdapter(commandMensaje2);
+                DataSet datasetMensaje2 = new DataSet();
+                adapterMensaje2.Fill(datasetMensaje2);
+
+                OleDbCommand commandMensaje3 = new OleDbCommand("SELECT Descripcion FROM Calendario WHERE tipo = 'comidas' AND Username = '" + Class1.username + "' ", db);
+                OleDbDataAdapter adapterMensaje3 = new OleDbDataAdapter(commandMensaje3);
+                DataSet datasetMensaje3 = new DataSet();
+                adapterMensaje3.Fill(datasetMensaje3);
+
+                StringBuilder MensajeBuilder = new StringBuilder();
+
+
+                for (int i = 0; i < datasetMensaje.Tables[0].Rows.Count; i++)
+                {
+                    MensajeBuilder.Append(datasetMensaje.Tables[0].Rows[i][0].ToString() + "-" + datasetMensaje2.Tables[0].Rows[i][0].ToString() + "\n" + "Descripcion:" + datasetMensaje2.Tables[0].Rows[i][0].ToString() + "\n");
+                }
+                Mensaje = MensajeBuilder;
+
+                try
+                {
+                    Mensaje.Append(Environment.NewLine);
+                    Mensaje.Append(string.Format("fecha envio: {0:dd/MM/yyyy}", FechaEnvio));
+                    Mensaje.Append(Environment.NewLine);
+
+                    MailMessage mail = new MailMessage();
+                    mail.From = new MailAddress(De);
+                    mail.To.Add(Para);
+                    mail.Subject = Asunto;
+                    mail.Body = Mensaje.ToString();
+
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                    smtp.Port = 25;
+                    // smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new System.Net.NetworkCredential(Usuario, Password);
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                    error = "Exito";
+                    MessageBox.Show(error);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
             }
         }
-    }
+     }
+ }
