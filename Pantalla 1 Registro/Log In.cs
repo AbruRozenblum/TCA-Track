@@ -55,5 +55,10 @@ namespace Pantalla_1_Registro
             txtcontraseña.MaxLength = 14;
         }
 
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtcontraseña.PasswordChar = ;
+            txtcontraseña.MaxLength = 14;
+        }
     }
 }
