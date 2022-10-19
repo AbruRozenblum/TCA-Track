@@ -15,7 +15,7 @@ namespace Pantalla_1_Registro
     {
         OleDbConnection db;
         CheckBox chbAct;
-        bool Estado;
+        string Estado;
         public Dia()
         {
             InitializeComponent();
@@ -41,13 +41,14 @@ namespace Pantalla_1_Registro
                 chbAct = new CheckBox();
                 chbAct.Font = new Font("Mongolian Baiti", 12);
                 chbAct.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
-                if ((bool)dataset.Tables[0].Rows[i]["Checked"]== true)
+                if (dataset.Tables[0].Rows[i][""].ToString() == "si")
                 {
-                    chbAct.Checked = true;
+                    chbAct.CheckState = CheckState.Checked;
+
                 }
                 else
                 {
-                    chbAct.Checked = false;
+                    chbAct.CheckState = CheckState.Unchecked;
                 }
                 flowLayoutPanel1.Controls.Add(chbAct);
                 chbAct.CheckedChanged += chbAct_CheckedChanged;
@@ -65,17 +66,19 @@ namespace Pantalla_1_Registro
             OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
+            MessageBox.Show("Se guardaron sus cambios");
+            this.Hide();
         }
 
         private void chbAct_CheckedChanged(object sender, EventArgs e)
         {
             if (chbAct.Checked)
             {
-                Estado = true;
+                Estado = "si";
             }
             else
             {
-                Estado = false;
+                Estado = "no";
             }
         }
     }

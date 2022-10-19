@@ -46,16 +46,16 @@ namespace Pantalla_1_Registro
             this.btnIrInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // daycontainer
             // 
             this.daycontainer.BackColor = System.Drawing.Color.Transparent;
-            this.daycontainer.Location = new System.Drawing.Point(484, 215);
-            this.daycontainer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.daycontainer.Location = new System.Drawing.Point(242, 112);
             this.daycontainer.Name = "daycontainer";
-            this.daycontainer.Size = new System.Drawing.Size(2194, 1167);
+            this.daycontainer.Size = new System.Drawing.Size(1097, 607);
             this.daycontainer.TabIndex = 2;
             // 
             // lblDATE
@@ -64,21 +64,19 @@ namespace Pantalla_1_Registro
             this.lblDATE.BackColor = System.Drawing.Color.Transparent;
             this.lblDATE.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDATE.ForeColor = System.Drawing.Color.White;
-            this.lblDATE.Location = new System.Drawing.Point(1710, 73);
-            this.lblDATE.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblDATE.Location = new System.Drawing.Point(855, 38);
             this.lblDATE.Name = "lblDATE";
-            this.lblDATE.Size = new System.Drawing.Size(458, 73);
+            this.lblDATE.Size = new System.Drawing.Size(231, 37);
             this.lblDATE.TabIndex = 4;
             this.lblDATE.Text = "MONTH YEAR";
             // 
             // btnSiguiente
             // 
             this.btnSiguiente.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.mayor;
-            this.btnSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSiguiente.Location = new System.Drawing.Point(1550, 73);
-            this.btnSiguiente.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnSiguiente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSiguiente.Location = new System.Drawing.Point(775, 38);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(84, 65);
+            this.btnSiguiente.Size = new System.Drawing.Size(42, 34);
             this.btnSiguiente.TabIndex = 5;
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
@@ -87,10 +85,9 @@ namespace Pantalla_1_Registro
             // 
             this.btnAnterior.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_03_a_la_s__19_41_58;
             this.btnAnterior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnterior.Location = new System.Drawing.Point(1452, 73);
-            this.btnAnterior.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnAnterior.Location = new System.Drawing.Point(726, 38);
             this.btnAnterior.Name = "btnAnterior";
-            this.btnAnterior.Size = new System.Drawing.Size(84, 65);
+            this.btnAnterior.Size = new System.Drawing.Size(42, 34);
             this.btnAnterior.TabIndex = 6;
             this.btnAnterior.UseVisualStyleBackColor = true;
             this.btnAnterior.Click += new System.EventHandler(this.btnAnterior_Click_1);
@@ -98,19 +95,17 @@ namespace Pantalla_1_Registro
             // flowLayoutPanel3
             // 
             this.flowLayoutPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(48, 333);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(24, 173);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(306, 62);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(153, 32);
             this.flowLayoutPanel3.TabIndex = 13;
             // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(48, 388);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(24, 202);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(306, 685);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 356);
             this.flowLayoutPanel1.TabIndex = 14;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -119,10 +114,9 @@ namespace Pantalla_1_Registro
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(782, 162);
-            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label1.Location = new System.Drawing.Point(391, 84);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(296, 48);
+            this.label1.Size = new System.Drawing.Size(148, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Lunes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -132,10 +126,9 @@ namespace Pantalla_1_Registro
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1090, 162);
-            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label2.Location = new System.Drawing.Point(545, 84);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(296, 48);
+            this.label2.Size = new System.Drawing.Size(148, 25);
             this.label2.TabIndex = 16;
             this.label2.Text = "Martes";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -145,10 +138,9 @@ namespace Pantalla_1_Registro
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(1408, 162);
-            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label3.Location = new System.Drawing.Point(704, 84);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(296, 48);
+            this.label3.Size = new System.Drawing.Size(148, 25);
             this.label3.TabIndex = 17;
             this.label3.Text = "Miércoles";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -158,10 +150,9 @@ namespace Pantalla_1_Registro
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(1716, 162);
-            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label4.Location = new System.Drawing.Point(858, 84);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(296, 48);
+            this.label4.Size = new System.Drawing.Size(148, 25);
             this.label4.TabIndex = 18;
             this.label4.Text = "Jueves";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -171,10 +162,9 @@ namespace Pantalla_1_Registro
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(2024, 162);
-            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label5.Location = new System.Drawing.Point(1012, 84);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(296, 48);
+            this.label5.Size = new System.Drawing.Size(148, 25);
             this.label5.TabIndex = 19;
             this.label5.Text = "Viernes";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,10 +174,9 @@ namespace Pantalla_1_Registro
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(474, 162);
-            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label6.Location = new System.Drawing.Point(237, 84);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(296, 48);
+            this.label6.Size = new System.Drawing.Size(148, 25);
             this.label6.TabIndex = 20;
             this.label6.Text = "Domingo";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -197,10 +186,9 @@ namespace Pantalla_1_Registro
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(2332, 162);
-            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.label7.Location = new System.Drawing.Point(1166, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(296, 48);
+            this.label7.Size = new System.Drawing.Size(148, 25);
             this.label7.TabIndex = 21;
             this.label7.Text = "Sábado";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,10 +199,9 @@ namespace Pantalla_1_Registro
             this.btnNuevoEvento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNuevoEvento.FlatAppearance.BorderSize = 0;
             this.btnNuevoEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoEvento.Location = new System.Drawing.Point(28, 162);
-            this.btnNuevoEvento.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnNuevoEvento.Location = new System.Drawing.Point(14, 84);
             this.btnNuevoEvento.Name = "btnNuevoEvento";
-            this.btnNuevoEvento.Size = new System.Drawing.Size(414, 140);
+            this.btnNuevoEvento.Size = new System.Drawing.Size(207, 73);
             this.btnNuevoEvento.TabIndex = 22;
             this.btnNuevoEvento.UseVisualStyleBackColor = true;
             this.btnNuevoEvento.Click += new System.EventHandler(this.BtnNuevoEvento_Click_1);
@@ -225,10 +212,9 @@ namespace Pantalla_1_Registro
             this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInicio.FlatAppearance.BorderSize = 0;
             this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInicio.Location = new System.Drawing.Point(48, 15);
-            this.btnIrInicio.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnIrInicio.Location = new System.Drawing.Point(24, 8);
             this.btnIrInicio.Name = "btnIrInicio";
-            this.btnIrInicio.Size = new System.Drawing.Size(136, 117);
+            this.btnIrInicio.Size = new System.Drawing.Size(68, 61);
             this.btnIrInicio.TabIndex = 1;
             this.btnIrInicio.UseVisualStyleBackColor = true;
             this.btnIrInicio.Click += new System.EventHandler(this.BtnIrInicio_Click);
@@ -237,10 +223,9 @@ namespace Pantalla_1_Registro
             // 
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_03_a_la_s__19_22_25;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(212, 15);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(106, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(896, 117);
+            this.pictureBox1.Size = new System.Drawing.Size(448, 61);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -250,21 +235,24 @@ namespace Pantalla_1_Registro
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1120, 52);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Location = new System.Drawing.Point(560, 27);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(286, 92);
+            this.button1.Size = new System.Drawing.Size(143, 48);
             this.button1.TabIndex = 23;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.WorkerReportsProgress = true;
+            // 
             // Calendario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_10_03_a_la_s__19_07_16;
-            this.ClientSize = new System.Drawing.Size(2501, 1508);
+            this.ClientSize = new System.Drawing.Size(1086, 389);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNuevoEvento);
             this.Controls.Add(this.label7);
@@ -282,7 +270,6 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.daycontainer);
             this.Controls.Add(this.btnIrInicio);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Calendario";
             this.Text = "Calendario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -312,5 +299,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnNuevoEvento;
         private System.Windows.Forms.Button button1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
