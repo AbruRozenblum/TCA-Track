@@ -56,5 +56,9 @@ namespace Pantalla_1_Registro
             formaSiguiente.Show(); // muestra la forma2
         }
 
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

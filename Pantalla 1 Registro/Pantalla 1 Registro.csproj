@@ -161,12 +161,6 @@
     <Compile Include="Testimonios.Designer.cs">
       <DependentUpon>Testimonios.cs</DependentUpon>
     </Compile>
-    <Compile Include="RecetaTemplate.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="RecetaTemplate.Designer.cs">
-      <DependentUpon>RecetaTemplate.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -242,9 +236,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Testimonios.resx">
       <DependentUpon>Testimonios.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RecetaTemplate.resx">
-      <DependentUpon>RecetaTemplate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

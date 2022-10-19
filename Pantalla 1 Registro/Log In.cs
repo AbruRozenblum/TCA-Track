@@ -66,5 +66,10 @@ namespace Pantalla_1_Registro
                 txtcontraseña.UseSystemPasswordChar = false;
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

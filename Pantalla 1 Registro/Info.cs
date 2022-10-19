@@ -35,5 +35,10 @@ namespace Pantalla_1_Registro
             adapterI.Fill(datasetI);
             lblinformacion.Text = datasetI.Tables[0].Rows[0][0].ToString();
         }
+
+        private void lblNombre_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

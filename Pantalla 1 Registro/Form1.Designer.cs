@@ -114,7 +114,7 @@
             this.btnRegistrarse.BackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarse.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__10_45_44;
             resources.ApplyResources(this.btnRegistrarse, "btnRegistrarse");
-            this.btnRegistrarse.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRegistrarse.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnRegistrarse.FlatAppearance.BorderSize = 0;
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
@@ -225,7 +225,7 @@
             this.AcceptButton = this.btnRegistrarse;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__09_54_58;
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
