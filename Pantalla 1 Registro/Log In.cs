@@ -57,8 +57,14 @@ namespace Pantalla_1_Registro
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            txtcontraseña.PasswordChar = ;
-            txtcontraseña.MaxLength = 14;
+            if (checkBox1.Checked)
+            {
+                txtcontraseña.UseSystemPasswordChar = true;
+            }
+            else 
+            {
+                txtcontraseña.UseSystemPasswordChar = false;
+            }
         }
     }
 }

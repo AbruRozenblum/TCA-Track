@@ -122,7 +122,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtMailDelUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 856</value>
+    <value>416, 761</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtMailDelUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -154,7 +154,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 523</value>
+    <value>416, 461</value>
   </data>
   <data name="txtUsuario.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -184,7 +184,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtMailEspecialista.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1848, 523</value>
+    <value>1848, 461</value>
   </data>
   <data name="txtMailEspecialista.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -214,7 +214,7 @@
     <value>Microsoft Sans Serif, 17pt</value>
   </data>
   <data name="cmbDiagnostico.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 1201</value>
+    <value>416, 1047</value>
   </data>
   <data name="cmbDiagnostico.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -241,7 +241,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtNombre.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 687</value>
+    <value>416, 615</value>
   </data>
   <data name="txtNombre.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -271,7 +271,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtContraseña.Location" type="System.Drawing.Point, System.Drawing">
-    <value>416, 1029</value>
+    <value>416, 900</value>
   </data>
   <data name="txtContraseña.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -301,7 +301,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="txtNombreEspecialista.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1848, 687</value>
+    <value>1848, 615</value>
   </data>
   <data name="txtNombreEspecialista.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -331,7 +331,7 @@
     <value>Microsoft Sans Serif, 14pt</value>
   </data>
   <data name="dtFecha.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1848, 860</value>
+    <value>1848, 761</value>
   </data>
   <data name="dtFecha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -364,7 +364,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnLogIn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1414, 1466</value>
+    <value>1435, 1321</value>
   </data>
   <data name="btnLogIn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -397,7 +397,7 @@
     <value>NoControl</value>
   </data>
   <data name="btnRegistrarse.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1279, 1302</value>
+    <value>1287, 1167</value>
   </data>
   <data name="btnRegistrarse.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -433,7 +433,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbtnOtro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1848, 1123</value>
+    <value>1848, 1020</value>
   </data>
   <data name="rbtnOtro.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -469,7 +469,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbtnMasculino.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1848, 1023</value>
+    <value>1848, 900</value>
   </data>
   <data name="rbtnMasculino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -505,7 +505,7 @@
     <value>NoControl</value>
   </data>
   <data name="rbtnFemenino.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1848, 1073</value>
+    <value>1848, 960</value>
   </data>
   <data name="rbtnFemenino.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>7, 6, 7, 6</value>
@@ -568,7 +568,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 459</value>
+    <value>411, 397</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>484, 58</value>
@@ -598,7 +598,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 623</value>
+    <value>411, 551</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>497, 58</value>
@@ -628,7 +628,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 793</value>
+    <value>411, 697</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 58</value>
@@ -658,7 +658,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 963</value>
+    <value>406, 836</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>331, 58</value>
@@ -688,7 +688,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>411, 1137</value>
+    <value>411, 983</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>335, 58</value>
@@ -718,7 +718,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1850, 459</value>
+    <value>1850, 397</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>621, 58</value>
@@ -748,7 +748,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1850, 623</value>
+    <value>1850, 551</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>447, 58</value>
@@ -778,7 +778,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1850, 793</value>
+    <value>1850, 697</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>545, 58</value>
@@ -808,7 +808,7 @@
     <value>Palatino Linotype, 16.125pt</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1850, 963</value>
+    <value>1850, 836</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>209, 58</value>
