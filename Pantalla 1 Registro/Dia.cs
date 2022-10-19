@@ -41,7 +41,7 @@ namespace Pantalla_1_Registro
                 chbAct = new CheckBox();
                 chbAct.Font = new Font("Mongolian Baiti", 12);
                 chbAct.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
-                if (dataset.Tables[0].Rows[i][""].ToString() == "si")
+                if (dataset.Tables[0].Rows[i]["Checked"].ToString() == "si")
                 {
                     chbAct.CheckState = CheckState.Checked;
 
@@ -62,10 +62,6 @@ namespace Pantalla_1_Registro
             db = new OleDbConnection();
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
             db.Open();
-            OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + txtFecha + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "';", db);
-            OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
-            DataSet dataset = new DataSet();
-            adapter.Fill(dataset);
             MessageBox.Show("Se guardaron sus cambios");
             this.Hide();
         }
@@ -75,10 +71,29 @@ namespace Pantalla_1_Registro
             if (chbAct.Checked)
             {
                 Estado = "si";
+                //base de datos
+                db = new OleDbConnection();
+                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+                db.Open();
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + txtFecha + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "';", db);
+                OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
+                DataSet dataset = new DataSet();
+                adapter.Fill(dataset);
+                db.Close();
+                MessageBox.Show
             }
             else
             {
                 Estado = "no";
+                //base de datos
+                db = new OleDbConnection();
+                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+                db.Open();
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + txtFecha + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "'");
+                OleDbDataAdapter adapter = new OleDbDataAdapter(EstadoCommand);
+                DataSet dataset = new DataSet();
+                adapter.Fill(dataset);
+                db.Close();
             }
         }
     }
