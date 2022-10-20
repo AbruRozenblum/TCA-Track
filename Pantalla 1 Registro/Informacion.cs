@@ -52,7 +52,7 @@ namespace Pantalla_1_Registro
         void BtnInfo_Click(Object sender, EventArgs e)
         {
             Info formaSiguiente = new Info();
-            Class1.Info = (sender as Button).Text;
+            Class1.info = (sender as Button).Text;
             formaSiguiente.Show(); // muestra la forma2
         }
 

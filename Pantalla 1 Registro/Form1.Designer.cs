@@ -72,6 +72,7 @@
             // 
             // cmbDiagnostico
             // 
+            this.cmbDiagnostico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.cmbDiagnostico, "cmbDiagnostico");
             this.cmbDiagnostico.FormattingEnabled = true;
             this.cmbDiagnostico.Name = "cmbDiagnostico";

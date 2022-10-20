@@ -80,7 +80,7 @@ namespace Pantalla_1_Registro
                 DataSet dataset = new DataSet();
                 adapter.Fill(dataset);
                 db.Close();
-                MessageBox.Show
+                //MessageBox.Show
             }
             else
             {

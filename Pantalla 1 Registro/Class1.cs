@@ -11,6 +11,8 @@ namespace Pantalla_1_Registro
     {
         static public string username;
         static public string nReceta; 
-        static public string Info;
+        static public string info;
+        static public string testimonio;
+        static public string mailE;
     }
 }

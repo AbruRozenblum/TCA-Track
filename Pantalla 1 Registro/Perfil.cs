@@ -191,18 +191,11 @@ namespace Pantalla_1_Registro
 
             dataBase.Open();
             OleDbCommand commandD;
-            commandD = new OleDbCommand("SELECT  Diagnostico FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandD = new OleDbCommand("SELECT Diagnostico FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
             commandD.ExecuteNonQuery();
             OleDbDataAdapter adapterD = new OleDbDataAdapter(commandD);
             DataSet datasetD = new DataSet();
             adapterD.Fill(datasetD);
-
-            OleDbCommand commandMe;
-            commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
-            commandMe.ExecuteNonQuery();
-            OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
-            DataSet datasetMe = new DataSet();
-            adapterMe.Fill(datasetMe);
 
             OleDbCommand commandM;
             commandM = new OleDbCommand("SELECT Mail FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
@@ -212,7 +205,7 @@ namespace Pantalla_1_Registro
             adapterM.Fill(datasetM);
 
             OleDbCommand commandNe;
-            commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "';", dataBase);
+            commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + Class1.mailE + "';", dataBase);
             commandNe.ExecuteNonQuery();
             OleDbDataAdapter adapterNe = new OleDbDataAdapter(commandNe);
             DataSet datasetNe = new DataSet();
@@ -233,12 +226,10 @@ namespace Pantalla_1_Registro
             adapterN.Fill(datasetN);
 
             cmbDiagnostico.SelectedItem = datasetD.Tables[0].Rows[0][0].ToString();
-            txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
+            txtMailE.Text = Class1.mailE;
             txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
             txtNomE.Text = datasetNe.Tables[0].Rows[0][0].ToString();
             txtNyA.Text = datasetN.Tables[0].Rows[0][0].ToString();
-            txtNuevaC.Text = "Nueva";
-            txtActualC.Text = "Actual";
             txtPrueba.Text = Class1.username;
             txtActualC.MaxLength = 14;
             txtNuevaC.MaxLength = 14;

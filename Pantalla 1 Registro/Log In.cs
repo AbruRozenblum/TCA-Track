@@ -30,7 +30,13 @@ namespace Pantalla_1_Registro
             }
             else
             {
+                OleDbCommand commandM;
+                commandM = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + txtusername.Text + "'", dataBase);
+                OleDbDataAdapter adapterM = new OleDbDataAdapter(commandM);
+                DataSet datasetM = new DataSet();
+                adapterM.Fill(datasetM);
                 Class1.username = txtusername.Text;
+                Class1.mailE = datasetM.Tables[0].Rows[0][0].ToString();
                 Inicio formaSiguiente = new Inicio();
                 this.Hide();
                 formaSiguiente.Show();
