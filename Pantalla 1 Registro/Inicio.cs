@@ -71,7 +71,7 @@ namespace Pantalla_1_Registro
 
         private void MailDeliverer_Tick(object sender, EventArgs e)
         {
-           if ()
+          //  if () ;
         }
     }
 }

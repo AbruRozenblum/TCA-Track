@@ -44,21 +44,19 @@
             // txtusername
             // 
             this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.125F);
-            this.txtusername.Location = new System.Drawing.Point(964, 511);
-            this.txtusername.Margin = new System.Windows.Forms.Padding(6);
+            this.txtusername.Location = new System.Drawing.Point(482, 266);
             this.txtusername.Multiline = true;
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(976, 64);
+            this.txtusername.Size = new System.Drawing.Size(490, 35);
             this.txtusername.TabIndex = 4;
             // 
             // txtcontraseña
             // 
             this.txtcontraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtcontraseña.Location = new System.Drawing.Point(964, 788);
-            this.txtcontraseña.Margin = new System.Windows.Forms.Padding(6);
+            this.txtcontraseña.Location = new System.Drawing.Point(482, 410);
             this.txtcontraseña.Multiline = true;
             this.txtcontraseña.Name = "txtcontraseña";
-            this.txtcontraseña.Size = new System.Drawing.Size(976, 69);
+            this.txtcontraseña.Size = new System.Drawing.Size(490, 38);
             this.txtcontraseña.TabIndex = 5;
             // 
             // button2
@@ -69,10 +67,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1083, 1232);
-            this.button2.Margin = new System.Windows.Forms.Padding(6);
+            this.button2.Location = new System.Drawing.Point(542, 641);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(754, 63);
+            this.button2.Size = new System.Drawing.Size(377, 33);
             this.button2.TabIndex = 7;
             this.button2.Text = "No tienes cuenta? Registrate";
             this.button2.UseVisualStyleBackColor = false;
@@ -84,10 +81,9 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1141, 1037);
-            this.button1.Margin = new System.Windows.Forms.Padding(6);
+            this.button1.Location = new System.Drawing.Point(570, 539);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(646, 183);
+            this.button1.Size = new System.Drawing.Size(323, 95);
             this.button1.TabIndex = 6;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
@@ -96,10 +92,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__08_34_08;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1109, 125);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(6);
+            this.pictureBox2.Location = new System.Drawing.Point(554, 65);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(704, 127);
+            this.pictureBox2.Size = new System.Drawing.Size(352, 66);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -108,10 +103,10 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.White;
             this.checkBox1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(1678, 800);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBox1.Location = new System.Drawing.Point(839, 416);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(262, 48);
+            this.checkBox1.Size = new System.Drawing.Size(129, 26);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "Ver contraseña";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -123,9 +118,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(970, 447);
+            this.label1.Location = new System.Drawing.Point(485, 232);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 58);
+            this.label1.Size = new System.Drawing.Size(114, 29);
             this.label1.TabIndex = 12;
             this.label1.Text = "USUARIO";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -136,9 +132,10 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(970, 724);
+            this.label2.Location = new System.Drawing.Point(485, 376);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(331, 58);
+            this.label2.Size = new System.Drawing.Size(170, 29);
             this.label2.TabIndex = 13;
             this.label2.Text = "CONTRASEÑA";
             // 
@@ -147,20 +144,21 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Union1;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(2428, 1037);
+            this.pictureBox1.Location = new System.Drawing.Point(1214, 539);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(225, 254);
+            this.pictureBox1.Size = new System.Drawing.Size(112, 132);
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
             // Log_In
             // 
             this.AcceptButton = this.button1;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__08_36_07;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(2759, 1440);
+            this.ClientSize = new System.Drawing.Size(918, 616);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label2);
@@ -171,7 +169,6 @@
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.pictureBox2);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Log_In";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log_In";
