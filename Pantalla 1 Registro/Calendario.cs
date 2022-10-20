@@ -101,7 +101,7 @@ namespace Pantalla_1_Registro
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(horaactual.ToString());
+           // EnviarCorreo_Especialista();
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -121,6 +121,10 @@ namespace Pantalla_1_Registro
             {
                 displaDays();
             }
+        }
+
+        private void Calendario_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
 
         private void BtnNuevoEvento_Click_1(object sender, EventArgs e)

@@ -59,5 +59,19 @@ namespace Pantalla_1_Registro
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
+
+        private void Inicio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Hide();
+            while (true)
+            {
+
+            }
+        }
+
+        private void MailDeliverer_Tick(object sender, EventArgs e)
+        {
+           if ()
+        }
     }
 }

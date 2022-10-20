@@ -29,6 +29,7 @@ namespace Pantalla_1_Registro
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnIrRecetas = new System.Windows.Forms.Button();
             this.btnIrInformacion = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@ namespace Pantalla_1_Registro
             this.btnIrTestimonios = new System.Windows.Forms.Button();
             this.btnIrPerfil = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mailDeliverer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,10 +48,10 @@ namespace Pantalla_1_Registro
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__15_52_02;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1731, 363);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(866, 189);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(921, 926);
+            this.pictureBox2.Size = new System.Drawing.Size(460, 482);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -59,10 +61,10 @@ namespace Pantalla_1_Registro
             this.btnIrRecetas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrRecetas.FlatAppearance.BorderSize = 0;
             this.btnIrRecetas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrRecetas.Location = new System.Drawing.Point(212, 571);
-            this.btnIrRecetas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIrRecetas.Location = new System.Drawing.Point(106, 297);
+            this.btnIrRecetas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIrRecetas.Name = "btnIrRecetas";
-            this.btnIrRecetas.Size = new System.Drawing.Size(748, 160);
+            this.btnIrRecetas.Size = new System.Drawing.Size(374, 83);
             this.btnIrRecetas.TabIndex = 7;
             this.btnIrRecetas.UseVisualStyleBackColor = true;
             this.btnIrRecetas.Click += new System.EventHandler(this.btnIrRecetas_Click);
@@ -73,10 +75,10 @@ namespace Pantalla_1_Registro
             this.btnIrInformacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInformacion.FlatAppearance.BorderSize = 0;
             this.btnIrInformacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInformacion.Location = new System.Drawing.Point(212, 951);
-            this.btnIrInformacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIrInformacion.Location = new System.Drawing.Point(106, 495);
+            this.btnIrInformacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIrInformacion.Name = "btnIrInformacion";
-            this.btnIrInformacion.Size = new System.Drawing.Size(542, 154);
+            this.btnIrInformacion.Size = new System.Drawing.Size(271, 80);
             this.btnIrInformacion.TabIndex = 6;
             this.btnIrInformacion.UseVisualStyleBackColor = true;
             this.btnIrInformacion.Click += new System.EventHandler(this.btnIrInformacion_Click);
@@ -87,10 +89,10 @@ namespace Pantalla_1_Registro
             this.btnIrDiario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrDiario.FlatAppearance.BorderSize = 0;
             this.btnIrDiario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrDiario.Location = new System.Drawing.Point(212, 763);
-            this.btnIrDiario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIrDiario.Location = new System.Drawing.Point(106, 397);
+            this.btnIrDiario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIrDiario.Name = "btnIrDiario";
-            this.btnIrDiario.Size = new System.Drawing.Size(552, 154);
+            this.btnIrDiario.Size = new System.Drawing.Size(276, 80);
             this.btnIrDiario.TabIndex = 5;
             this.btnIrDiario.UseVisualStyleBackColor = true;
             this.btnIrDiario.Click += new System.EventHandler(this.btnIrDiario_Click);
@@ -101,10 +103,10 @@ namespace Pantalla_1_Registro
             this.btnIrCalendario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrCalendario.FlatAppearance.BorderSize = 0;
             this.btnIrCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrCalendario.Location = new System.Drawing.Point(212, 1135);
-            this.btnIrCalendario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIrCalendario.Location = new System.Drawing.Point(106, 590);
+            this.btnIrCalendario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIrCalendario.Name = "btnIrCalendario";
-            this.btnIrCalendario.Size = new System.Drawing.Size(480, 154);
+            this.btnIrCalendario.Size = new System.Drawing.Size(240, 80);
             this.btnIrCalendario.TabIndex = 4;
             this.btnIrCalendario.UseVisualStyleBackColor = true;
             this.btnIrCalendario.Click += new System.EventHandler(this.btnIrCalendario_Click);
@@ -115,10 +117,10 @@ namespace Pantalla_1_Registro
             this.btnIrTestimonios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrTestimonios.FlatAppearance.BorderSize = 0;
             this.btnIrTestimonios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrTestimonios.Location = new System.Drawing.Point(212, 386);
-            this.btnIrTestimonios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIrTestimonios.Location = new System.Drawing.Point(106, 201);
+            this.btnIrTestimonios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIrTestimonios.Name = "btnIrTestimonios";
-            this.btnIrTestimonios.Size = new System.Drawing.Size(1012, 158);
+            this.btnIrTestimonios.Size = new System.Drawing.Size(506, 82);
             this.btnIrTestimonios.TabIndex = 3;
             this.btnIrTestimonios.UseVisualStyleBackColor = true;
             this.btnIrTestimonios.Click += new System.EventHandler(this.btnIrTestimonios_Click);
@@ -130,10 +132,10 @@ namespace Pantalla_1_Registro
             this.btnIrPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrPerfil.FlatAppearance.BorderSize = 0;
             this.btnIrPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrPerfil.Location = new System.Drawing.Point(184, 62);
-            this.btnIrPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIrPerfil.Location = new System.Drawing.Point(92, 32);
+            this.btnIrPerfil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnIrPerfil.Name = "btnIrPerfil";
-            this.btnIrPerfil.Size = new System.Drawing.Size(206, 179);
+            this.btnIrPerfil.Size = new System.Drawing.Size(103, 93);
             this.btnIrPerfil.TabIndex = 1;
             this.btnIrPerfil.UseVisualStyleBackColor = false;
             this.btnIrPerfil.Click += new System.EventHandler(this.btnIrPerfil_Click);
@@ -143,20 +145,25 @@ namespace Pantalla_1_Registro
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__15_33_26;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1082, 62);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(541, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(732, 179);
+            this.pictureBox1.Size = new System.Drawing.Size(366, 93);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // mailDeliverer
+            // 
+            this.mailDeliverer.Interval = 60000;
+            this.mailDeliverer.Tick += new System.EventHandler(this.MailDeliverer_Tick);
+            // 
             // Inicio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__09_544;
-            this.ClientSize = new System.Drawing.Size(2756, 1692);
+            this.ClientSize = new System.Drawing.Size(685, 389);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnIrRecetas);
             this.Controls.Add(this.btnIrInformacion);
@@ -165,11 +172,12 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnIrTestimonios);
             this.Controls.Add(this.btnIrPerfil);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Inicio_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -186,5 +194,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnIrInformacion;
         private System.Windows.Forms.Button btnIrRecetas;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Timer mailDeliverer;
     }
 }

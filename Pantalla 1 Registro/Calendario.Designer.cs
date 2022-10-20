@@ -273,6 +273,7 @@ namespace Pantalla_1_Registro
             this.Name = "Calendario";
             this.Text = "Calendario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Calendario_FormClosed);
             this.Load += new System.EventHandler(this.Calendario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
