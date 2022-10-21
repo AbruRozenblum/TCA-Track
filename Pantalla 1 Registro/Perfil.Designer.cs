@@ -62,8 +62,10 @@ namespace Pantalla_1_Registro
             this.txtNyA = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnNyA = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnImportar
@@ -417,7 +419,7 @@ namespace Pantalla_1_Registro
             // txtNyA
             // 
             this.txtNyA.Location = new System.Drawing.Point(233, 701);
-            this.txtNyA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNyA.Margin = new System.Windows.Forms.Padding(2);
             this.txtNyA.Multiline = true;
             this.txtNyA.Name = "txtNyA";
             this.txtNyA.Size = new System.Drawing.Size(336, 26);
@@ -443,11 +445,23 @@ namespace Pantalla_1_Registro
             this.btnNyA.FlatAppearance.BorderSize = 0;
             this.btnNyA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNyA.Location = new System.Drawing.Point(580, 692);
-            this.btnNyA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNyA.Margin = new System.Windows.Forms.Padding(2);
             this.btnNyA.Name = "btnNyA";
             this.btnNyA.Size = new System.Drawing.Size(38, 35);
             this.btnNyA.TabIndex = 70;
             this.btnNyA.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Union1;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(1216, 568);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(112, 132);
+            this.pictureBox2.TabIndex = 71;
+            this.pictureBox2.TabStop = false;
             // 
             // Perfil
             // 
@@ -455,7 +469,8 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__09_58_21;
-            this.ClientSize = new System.Drawing.Size(836, 674);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnNyA);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtNyA);
@@ -493,6 +508,7 @@ namespace Pantalla_1_Registro
             this.Load += new System.EventHandler(this.Perfil_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -532,5 +548,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.TextBox txtNyA;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnNyA;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

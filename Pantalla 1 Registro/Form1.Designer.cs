@@ -52,7 +52,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtMailDelUsuario
@@ -72,6 +74,7 @@
             // 
             // cmbDiagnostico
             // 
+            this.cmbDiagnostico.BackColor = System.Drawing.Color.White;
             this.cmbDiagnostico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             resources.ApplyResources(this.cmbDiagnostico, "cmbDiagnostico");
             this.cmbDiagnostico.FormattingEnabled = true;
@@ -115,7 +118,7 @@
             this.btnRegistrarse.BackColor = System.Drawing.Color.Transparent;
             this.btnRegistrarse.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__10_45_44;
             resources.ApplyResources(this.btnRegistrarse, "btnRegistrarse");
-            this.btnRegistrarse.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnRegistrarse.FlatAppearance.BorderColor = System.Drawing.Color.Plum;
             this.btnRegistrarse.FlatAppearance.BorderSize = 0;
             this.btnRegistrarse.Name = "btnRegistrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
@@ -221,6 +224,14 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Name = "label9";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Union1;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnRegistrarse;
@@ -228,6 +239,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__09_54_58;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -255,6 +267,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,6 +298,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
