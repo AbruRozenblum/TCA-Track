@@ -124,13 +124,10 @@
   <data name="txtMailDelUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>192, 380</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="txtMailDelUsuario.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtMailDelUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 32</value>
+    <value>391, 26</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="txtMailDelUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -152,11 +149,8 @@
   <data name="txtUsuario.Location" type="System.Drawing.Point, System.Drawing">
     <value>192, 230</value>
   </data>
-  <data name="txtUsuario.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="txtUsuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 32</value>
+    <value>391, 26</value>
   </data>
   <data name="txtUsuario.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>

@@ -105,6 +105,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Testimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Testimonio.Designer.cs">
+      <DependentUpon>Testimonio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Salados.resx">
       <DependentUpon>Salados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Testimonio.resx">
+      <DependentUpon>Testimonio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Testimonios.resx">
       <DependentUpon>Testimonios.cs</DependentUpon>

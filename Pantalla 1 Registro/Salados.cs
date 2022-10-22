@@ -40,7 +40,7 @@ namespace Pantalla_1_Registro
                     btnReceta.ForeColor = Color.White;
                     btnReceta.BackgroundImage = Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_19_0859171;
                     btnReceta.Size = new Size(150, 150);
-                    btnReceta.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                    btnReceta.Text = (dataset1.Tables[0].Rows[i][0].ToString()).ToUpper();
                 };
                 flowLayoutPanel1.Controls.Add(btnReceta);
                 btnReceta.Click += BtnReceta_Click;

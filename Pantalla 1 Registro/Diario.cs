@@ -24,40 +24,33 @@ namespace Pantalla_1_Registro
         {
             db = new OleDbConnection();
             db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-            txtTitulo.Size = new System.Drawing.Size(298, 21);
-            txtTitulo.Hide();
-            db.Open();
-            OleDbCommand commandT;
-            commandT = new OleDbCommand("SELECT Titulo FROM Diario WHERE Username = '" + Class1.username + "';", db);
-            OleDbDataAdapter adapterT = new OleDbDataAdapter(commandT);
-            DataSet datasetT = new DataSet();
-            adapterT.Fill(datasetT);
-            for (int i = 0; i < datasetT.Tables[0].Rows.Count; i++)
-            {
-                cbxTitulo.Items.Add(datasetT.Tables[0].Rows[i][0].ToString());
-            }
             dtfecha.MaxDate = DateTime.Now;
             dtfecha.Value = DateTime.Now;
+            OleDbCommand commandF;
+            commandF = new OleDbCommand("SELECT Titulo FROM Diario WHERE Username = '" + Class1.username + "';", db);
+            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
+            DataSet datasetF = new DataSet();
+            adapterF.Fill(datasetF);
+            for(int i = 0; i < datasetF.Tables[0].Rows.Count; i++) 
+            {
+                cmbTitulo.Items.Add(datasetF.Tables[0].Rows[i][0].ToString());
+            }
         }
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            DateTime fecha = dtfecha.Value;
+            db.Open();
+            DateTime fecha = dtfecha.Value.Date;
             OleDbCommand commandF;
             commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
             OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
             DataSet datasetF = new DataSet();
             adapterF.Fill(datasetF);
-
             if (datasetF.Tables[0].Rows.Count == 0)
             {
-                if (txtTexto.Text == null)
+                if (txtTexto.Text == "")
                 {
                     MessageBox.Show("No hay ningun texto escrito");
-                }
-                else if (txtTitulo == null)
-                {
-                    MessageBox.Show("Escriba un título");
                 }
                 else
                 {
@@ -65,7 +58,7 @@ namespace Pantalla_1_Registro
                     commandT = new OleDbCommand("SELECT Titulo FROM Diario WHERE Username = '" + Class1.username + "';", db);
                     OleDbDataAdapter adapterT = new OleDbDataAdapter(commandT);
                     DataSet datasetT = new DataSet();
-                    adapterF.Fill(datasetT);
+                    adapterT.Fill(datasetT);
 
                     if (datasetT.Tables[0].Rows.Count == 0)
                     {
@@ -74,10 +67,7 @@ namespace Pantalla_1_Registro
                         AgregarTestimonio = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Username, Titulo) VALUES ('" + testimonio + "', '" + fecha + "', '" + Class1.username + "', '" + txtTitulo.Text + "');");
                         AgregarTestimonio.Connection = db;
                         AgregarTestimonio.ExecuteNonQuery();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ya utilizó el mismo título en otro momento, cambiar título");
+                        MessageBox.Show("Se subió el testimonio del dia: " + dtfecha.Value.Date.ToString());
                     }
                 }
             }
@@ -87,6 +77,7 @@ namespace Pantalla_1_Registro
                 ModificarTestimonio = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'");
                 ModificarTestimonio.Connection = db;
                 ModificarTestimonio.ExecuteNonQuery();
+                MessageBox.Show("Se actualizó el testimonio del dia: " + dtfecha.Value.Date.ToString());
             }
             db.Close();
 
@@ -94,40 +85,30 @@ namespace Pantalla_1_Registro
 
         private void Dtfecha_ValueChanged(object sender, EventArgs e)
         {
-            db.Open();
-            DateTime fecha = dtfecha.Value;
+            if (db.State ==  ConnectionState.Closed) 
+            {
+                db.Open();
+            }
             OleDbCommand commandF;
-            commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
+            commandF = new OleDbCommand("SELECT Testimonio FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + dtfecha.Value.Date + "';", db);
             OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
             DataSet datasetF = new DataSet();
             adapterF.Fill(datasetF);
-            if (datasetF.Tables[0].Rows.Count == 0)
-            {
-                txtTitulo.Show();
-                cbxTitulo.Hide();
-            }
-            else
+            if (datasetF.Tables[0].Rows.Count != 0)
             {
                 txtTexto.Text = datasetF.Tables[0].Rows[0][0].ToString();
             }
+            else
+            {
+                txtTexto.Text = "";
+            }
+
             db.Close();
         }
 
         private void txtTexto_TextChanged_1(object sender, EventArgs e)
         {
 
-        }
-
-        private void cbxTitulo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            db.Open();
-            OleDbCommand commandF;
-            commandF = new OleDbCommand("SELECT Fecha FROM Diario WHERE Username = '" + Class1.username + "' AND Titulo = '" + cbxTitulo.SelectedItem + "';", db);
-            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
-            DataSet datasetF = new DataSet();
-            adapterF.Fill(datasetF);
-            dtfecha.Value = Convert.ToDateTime(datasetF.Tables[0].Rows[0][0]);
-            db.Close();
         }
     }
 }

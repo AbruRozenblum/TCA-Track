@@ -31,7 +31,6 @@ namespace Pantalla_1_Registro
         {
             this.components = new System.ComponentModel.Container();
             this.txtDiario = new System.Windows.Forms.TextBox();
-            this.txtBuscador = new System.Windows.Forms.TextBox();
             this.dtfecha = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtTexto = new System.Windows.Forms.TextBox();
@@ -39,8 +38,6 @@ namespace Pantalla_1_Registro
             this.btnIrInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.cbxTitulo = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +46,8 @@ namespace Pantalla_1_Registro
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.cmbTitulo = new System.Windows.Forms.ComboBox();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -66,22 +65,10 @@ namespace Pantalla_1_Registro
             this.txtDiario.Size = new System.Drawing.Size(542, 368);
             this.txtDiario.TabIndex = 5;
             // 
-            // txtBuscador
-            // 
-            this.txtBuscador.BackColor = System.Drawing.Color.White;
-            this.txtBuscador.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.txtBuscador.ForeColor = System.Drawing.Color.MediumPurple;
-            this.txtBuscador.Location = new System.Drawing.Point(1113, 29);
-            this.txtBuscador.Multiline = true;
-            this.txtBuscador.Name = "txtBuscador";
-            this.txtBuscador.Size = new System.Drawing.Size(245, 42);
-            this.txtBuscador.TabIndex = 9;
-            this.txtBuscador.Text = "Buscador\r\n";
-            // 
             // dtfecha
             // 
             this.dtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtfecha.Location = new System.Drawing.Point(670, 64);
+            this.dtfecha.Location = new System.Drawing.Point(670, 77);
             this.dtfecha.MaxDate = new System.DateTime(2022, 9, 13, 0, 0, 0, 0);
             this.dtfecha.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dtfecha.Name = "dtfecha";
@@ -95,7 +82,7 @@ namespace Pantalla_1_Registro
             this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.txtTexto);
             this.panel1.Location = new System.Drawing.Point(58, 111);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(912, 514);
             this.panel1.TabIndex = 10;
@@ -104,7 +91,7 @@ namespace Pantalla_1_Registro
             // 
             this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTexto.Location = new System.Drawing.Point(2, 0);
-            this.txtTexto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
             this.txtTexto.Size = new System.Drawing.Size(889, 515);
@@ -150,24 +137,6 @@ namespace Pantalla_1_Registro
             this.pictureBox1.Size = new System.Drawing.Size(450, 61);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // txtTitulo
-            // 
-            this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTitulo.Location = new System.Drawing.Point(670, 29);
-            this.txtTitulo.Multiline = true;
-            this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(100, 21);
-            this.txtTitulo.TabIndex = 11;
-            // 
-            // cbxTitulo
-            // 
-            this.cbxTitulo.FormattingEnabled = true;
-            this.cbxTitulo.Location = new System.Drawing.Point(670, 29);
-            this.cbxTitulo.Name = "cbxTitulo";
-            this.cbxTitulo.Size = new System.Drawing.Size(298, 21);
-            this.cbxTitulo.TabIndex = 12;
-            this.cbxTitulo.SelectedIndexChanged += new System.EventHandler(this.cbxTitulo_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -266,6 +235,23 @@ namespace Pantalla_1_Registro
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
+            // cmbTitulo
+            // 
+            this.cmbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cmbTitulo.FormattingEnabled = true;
+            this.cmbTitulo.Location = new System.Drawing.Point(670, 44);
+            this.cmbTitulo.Name = "cmbTitulo";
+            this.cmbTitulo.Size = new System.Drawing.Size(300, 28);
+            this.cmbTitulo.TabIndex = 21;
+            // 
+            // txtTitulo
+            // 
+            this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTitulo.Location = new System.Drawing.Point(671, 13);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(299, 26);
+            this.txtTitulo.TabIndex = 22;
+            // 
             // Diario
             // 
             this.AcceptButton = this.btnsave;
@@ -274,6 +260,8 @@ namespace Pantalla_1_Registro
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__21_03_37;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.txtTitulo);
+            this.Controls.Add(this.cmbTitulo);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -282,12 +270,9 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cbxTitulo);
-            this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.dtfecha);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.txtBuscador);
             this.Controls.Add(this.txtDiario);
             this.Controls.Add(this.btnIrInicio);
             this.Controls.Add(this.pictureBox1);
@@ -311,13 +296,10 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Button btnIrInicio;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.TextBox txtDiario;
-        private System.Windows.Forms.TextBox txtBuscador;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.DateTimePicker dtfecha;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtTexto;
-        private System.Windows.Forms.TextBox txtTitulo;
-        private System.Windows.Forms.ComboBox cbxTitulo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -326,5 +308,7 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox cmbTitulo;
+        private System.Windows.Forms.TextBox txtTitulo;
     }
 }

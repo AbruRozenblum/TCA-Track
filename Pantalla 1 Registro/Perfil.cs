@@ -167,6 +167,7 @@ namespace Pantalla_1_Registro
                 OleDbCommand foto = new OleDbCommand("UPDATE Info_usuario SET Foto_perfil = '" + foto_perfil + "' WHERE Username = '" + Class1.username + "'");
                 foto.Connection = dataBase;
                 foto.ExecuteNonQuery();
+                dataBase.Close();
             }
             else
             {

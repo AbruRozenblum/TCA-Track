@@ -33,7 +33,7 @@ namespace Pantalla_1_Registro
             str1 = str1.Replace(";", Environment.NewLine);
             Console.WriteLine("The final string: '{0}'", str1);
             lblingredientes.Text = str;
-            lblNombre.Text = Class1.nReceta;
+            lblNombre.Text = Class1.nReceta.ToUpper();
             lblprocedimiento.Text = str1;
         }
 

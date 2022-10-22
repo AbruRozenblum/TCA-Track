@@ -19,7 +19,6 @@ C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debu
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Recetas.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Salados.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonios.resources
-C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.RecetaTemplate.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControl1.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControlBlank.resources
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.UserControlDays.resources
@@ -169,3 +168,4 @@ C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla 1 R
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe.config
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.pdb
+C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources

@@ -34,6 +34,7 @@ namespace Pantalla_1_Registro
             DataSet datasetI = new DataSet();
             adapterI.Fill(datasetI);
             lblinformacion.Text = datasetI.Tables[0].Rows[0][0].ToString();
+            lblNombre.Text = Class1.info;
         }
 
         private void lblNombre_Click(object sender, EventArgs e)
