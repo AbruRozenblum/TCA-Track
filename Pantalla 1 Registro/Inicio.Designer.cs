@@ -149,7 +149,7 @@ namespace Pantalla_1_Registro
             // 
             // mailDeliverer
             // 
-            this.mailDeliverer.Interval = 60000;
+            this.mailDeliverer.Interval = 30000;
             this.mailDeliverer.Tick += new System.EventHandler(this.MailDeliverer_Tick);
             // 
             // pictureBox3
@@ -276,6 +276,7 @@ namespace Pantalla_1_Registro
             this.Text = "Inicio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Inicio_FormClosed);
+            this.Load += new System.EventHandler(this.Inicio_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
