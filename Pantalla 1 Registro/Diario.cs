@@ -110,5 +110,29 @@ namespace Pantalla_1_Registro
         {
 
         }
+
+        private void cmbTitulo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (db.State == ConnectionState.Closed)
+            {
+                db.Open();
+            }
+            OleDbCommand commandF;
+            commandF = new OleDbCommand("SELECT Testimonio, Fecha FROM Diario WHERE Username = '" + Class1.username + "' AND Titulo = '" + cmbTitulo.SelectedIndex + "';", db);
+            OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
+            DataSet datasetF = new DataSet();
+            adapterF.Fill(datasetF);
+            if (datasetF.Tables[0].Rows.Count != 0)
+            {
+                txtTexto.Text = datasetF.Tables[0].Rows[0][0].ToString();
+                dtfecha.Value = new DateTime(long.Parse(datasetF.Tables[0].Rows[0][1].ToString()));
+            }
+            else
+            {
+                txtTexto.Text = "";
+            }
+
+            db.Close();
+        }
     }
 }

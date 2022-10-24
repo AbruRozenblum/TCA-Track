@@ -243,6 +243,7 @@ namespace Pantalla_1_Registro
             this.cmbTitulo.Name = "cmbTitulo";
             this.cmbTitulo.Size = new System.Drawing.Size(300, 28);
             this.cmbTitulo.TabIndex = 21;
+            this.cmbTitulo.SelectedIndexChanged += new System.EventHandler(this.cmbTitulo_SelectedIndexChanged);
             // 
             // txtTitulo
             // 
