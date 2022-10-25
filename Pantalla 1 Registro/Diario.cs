@@ -118,20 +118,12 @@ namespace Pantalla_1_Registro
                 db.Open();
             }
             OleDbCommand commandF;
-            commandF = new OleDbCommand("SELECT Testimonio, Fecha FROM Diario WHERE Username = '" + Class1.username + "' AND Titulo = '" + cmbTitulo.SelectedIndex + "';", db);
+            commandF = new OleDbCommand("SELECT Testimonio, Fecha FROM Diario WHERE Username = '" + Class1.username + "' AND Titulo = '" + cmbTitulo.SelectedItem + "'", db);
             OleDbDataAdapter adapterF = new OleDbDataAdapter(commandF);
             DataSet datasetF = new DataSet();
             adapterF.Fill(datasetF);
-            if (datasetF.Tables[0].Rows.Count != 0)
-            {
-                txtTexto.Text = datasetF.Tables[0].Rows[0][0].ToString();
-                dtfecha.Value = new DateTime(long.Parse(datasetF.Tables[0].Rows[0][1].ToString()));
-            }
-            else
-            {
-                txtTexto.Text = "";
-            }
-
+            MessageBox.Show(datasetF.Tables[0].Rows[0][0].ToString());
+            dtfecha.Text = datasetF.Tables[0].Rows[0][1].ToString();
             db.Close();
         }
     }

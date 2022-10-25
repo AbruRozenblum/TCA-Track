@@ -169,3 +169,4 @@ C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 R
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.exe
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\bin\Debug\Pantalla 1 Registro.pdb
 C:\Users\agusy\OneDrive\Documentos\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources
+C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources

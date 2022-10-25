@@ -30,10 +30,7 @@ namespace Pantalla_1_Registro
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.txtDiario = new System.Windows.Forms.TextBox();
             this.dtfecha = new System.Windows.Forms.DateTimePicker();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.txtTexto = new System.Windows.Forms.TextBox();
             this.btnsave = new System.Windows.Forms.Button();
             this.btnIrInicio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -48,22 +45,11 @@ namespace Pantalla_1_Registro
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cmbTitulo = new System.Windows.Forms.ComboBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
-            this.panel1.SuspendLayout();
+            this.txtTexto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtDiario
-            // 
-            this.txtDiario.BackColor = System.Drawing.Color.BlueViolet;
-            this.txtDiario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDiario.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDiario.Location = new System.Drawing.Point(104, 118);
-            this.txtDiario.Multiline = true;
-            this.txtDiario.Name = "txtDiario";
-            this.txtDiario.Size = new System.Drawing.Size(542, 368);
-            this.txtDiario.TabIndex = 5;
             // 
             // dtfecha
             // 
@@ -76,27 +62,6 @@ namespace Pantalla_1_Registro
             this.dtfecha.TabIndex = 2;
             this.dtfecha.Value = new System.DateTime(2022, 9, 13, 0, 0, 0, 0);
             this.dtfecha.ValueChanged += new System.EventHandler(this.Dtfecha_ValueChanged);
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.txtTexto);
-            this.panel1.Location = new System.Drawing.Point(58, 111);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(912, 514);
-            this.panel1.TabIndex = 10;
-            // 
-            // txtTexto
-            // 
-            this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTexto.Location = new System.Drawing.Point(2, 0);
-            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTexto.Multiline = true;
-            this.txtTexto.Name = "txtTexto";
-            this.txtTexto.Size = new System.Drawing.Size(889, 515);
-            this.txtTexto.TabIndex = 0;
-            this.txtTexto.TextChanged += new System.EventHandler(this.txtTexto_TextChanged_1);
             // 
             // btnsave
             // 
@@ -253,6 +218,17 @@ namespace Pantalla_1_Registro
             this.txtTitulo.Size = new System.Drawing.Size(299, 26);
             this.txtTitulo.TabIndex = 22;
             // 
+            // txtTexto
+            // 
+            this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtTexto.Location = new System.Drawing.Point(126, 120);
+            this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTexto.Multiline = true;
+            this.txtTexto.Name = "txtTexto";
+            this.txtTexto.Size = new System.Drawing.Size(889, 515);
+            this.txtTexto.TabIndex = 23;
+            this.txtTexto.Text = "hola";
+            // 
             // Diario
             // 
             this.AcceptButton = this.btnsave;
@@ -261,6 +237,7 @@ namespace Pantalla_1_Registro
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__21_03_37;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.txtTexto);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.cmbTitulo);
             this.Controls.Add(this.pictureBox2);
@@ -272,17 +249,13 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtfecha);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnsave);
-            this.Controls.Add(this.txtDiario);
             this.Controls.Add(this.btnIrInicio);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Diario";
             this.Text = "Diario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Diario_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -296,11 +269,8 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnIrInicio;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.TextBox txtDiario;
         private System.Windows.Forms.Button btnsave;
         private System.Windows.Forms.DateTimePicker dtfecha;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtTexto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -311,5 +281,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox cmbTitulo;
         private System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.TextBox txtTexto;
     }
 }
