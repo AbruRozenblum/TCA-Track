@@ -46,9 +46,11 @@ namespace Pantalla_1_Registro
             this.cmbTitulo = new System.Windows.Forms.ComboBox();
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.txtTexto = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtfecha
@@ -202,6 +204,8 @@ namespace Pantalla_1_Registro
             // 
             // cmbTitulo
             // 
+            this.cmbTitulo.BackColor = System.Drawing.SystemColors.Window;
+            this.cmbTitulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cmbTitulo.FormattingEnabled = true;
             this.cmbTitulo.Location = new System.Drawing.Point(670, 44);
@@ -221,13 +225,24 @@ namespace Pantalla_1_Registro
             // txtTexto
             // 
             this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTexto.Location = new System.Drawing.Point(126, 120);
+            this.txtTexto.Location = new System.Drawing.Point(3, 24);
             this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
-            this.txtTexto.Size = new System.Drawing.Size(889, 515);
+            this.txtTexto.Size = new System.Drawing.Size(899, 517);
             this.txtTexto.TabIndex = 23;
-            this.txtTexto.Text = "hola";
+            this.txtTexto.TextChanged += new System.EventHandler(this.TxtTexto_TextChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.txtTexto);
+            this.panel1.Location = new System.Drawing.Point(132, 96);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(888, 541);
+            this.panel1.TabIndex = 24;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // Diario
             // 
@@ -236,8 +251,7 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__21_03_37;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
-            this.Controls.Add(this.txtTexto);
+            this.ClientSize = new System.Drawing.Size(1370, 678);
             this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.cmbTitulo);
             this.Controls.Add(this.pictureBox2);
@@ -252,6 +266,7 @@ namespace Pantalla_1_Registro
             this.Controls.Add(this.btnsave);
             this.Controls.Add(this.btnIrInicio);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.panel1);
             this.Name = "Diario";
             this.Text = "Diario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -259,6 +274,8 @@ namespace Pantalla_1_Registro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -282,5 +299,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.ComboBox cmbTitulo;
         private System.Windows.Forms.TextBox txtTitulo;
         private System.Windows.Forms.TextBox txtTexto;
+        private System.Windows.Forms.Panel panel1;
     }
 }
