@@ -122,5 +122,25 @@ namespace Pantalla_1_Registro
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
         }
+
+        private void ckxVerContraseña_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckxVerContraseña.Checked)
+            {
+                txtContraseña.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtContraseña.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void txtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            dataBase = new OleDbConnection();
+            dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            txtContraseña.PasswordChar = '*';
+            txtContraseña.MaxLength = 14;
+        }
     }
 }

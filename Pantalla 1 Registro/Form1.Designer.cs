@@ -53,6 +53,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ckxVerContraseña = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -89,6 +90,7 @@
             // 
             resources.ApplyResources(this.txtContraseña, "txtContraseña");
             this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
             // txtNombreEspecialista
             // 
@@ -232,6 +234,14 @@
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
             // 
+            // ckxVerContraseña
+            // 
+            resources.ApplyResources(this.ckxVerContraseña, "ckxVerContraseña");
+            this.ckxVerContraseña.BackColor = System.Drawing.Color.White;
+            this.ckxVerContraseña.Name = "ckxVerContraseña";
+            this.ckxVerContraseña.UseVisualStyleBackColor = false;
+            this.ckxVerContraseña.CheckedChanged += new System.EventHandler(this.ckxVerContraseña_CheckedChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnRegistrarse;
@@ -239,6 +249,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__09_54_58;
+            this.Controls.Add(this.ckxVerContraseña);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -299,6 +310,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.CheckBox ckxVerContraseña;
     }
 }
 
