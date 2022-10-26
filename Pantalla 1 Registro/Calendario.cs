@@ -91,7 +91,7 @@ namespace Pantalla_1_Registro
                 db = new OleDbConnection();
                 db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
                 db.Open();
-                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + hoy.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "';", db);
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked= '" + Estado + "' WHERE Dia= '" + hoy.Text + "' AND Evento ='" + chbAct.Text + "' AND Username = '" + Class1.username + "';", db);
                 EstadoCommand.Connection = db;
                 EstadoCommand.ExecuteNonQuery();
                 db.Close();
@@ -103,7 +103,7 @@ namespace Pantalla_1_Registro
                 db = new OleDbConnection();
                 db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
                 db.Open();
-                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + hoy.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "'");
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked= '"+ Estado +"' WHERE (Dia= '"+ hoy.Text +"' AND Evento ='"+ chbAct.Text +"' AND Username = '"+ Class1.username +"')");
                 EstadoCommand.Connection = db;
                 EstadoCommand.ExecuteNonQuery();
                 db.Close();

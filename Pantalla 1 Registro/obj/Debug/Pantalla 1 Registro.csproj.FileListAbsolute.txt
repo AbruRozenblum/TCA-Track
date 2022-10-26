@@ -171,3 +171,4 @@ C:\Users\47571805\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Panta
 C:\Users\Trini\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources
 \\Mac\Home\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources
 C:\Users\47754209\Documents\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources
+C:\Users\47807487\Documents\GitHub\TCA-Track\Pantalla 1 Registro\obj\Debug\Pantalla_1_Registro.Testimonio.resources
