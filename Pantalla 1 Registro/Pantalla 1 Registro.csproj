@@ -886,5 +886,29 @@
   <ItemGroup>
     <None Include="Resources\Rectangle 287.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector 1090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Subtract.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini calendario_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini calendario_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descripcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini reloj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mini calendario_2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

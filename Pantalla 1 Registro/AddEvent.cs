@@ -124,6 +124,11 @@ namespace Pantalla_1_Registro
                 cmbHorarioFin.Enabled = true;
             }
         }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

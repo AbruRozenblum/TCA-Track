@@ -42,7 +42,7 @@ namespace Pantalla_1_Registro
                 Button btnInfo = new Button();
                 {
                     btnInfo.Font = new Font("Microsoft Sans Serif", 14);
-                    btnInfo.Size = new Size(150, 150);
+                    btnInfo.Size = new Size(150, 50);
                     btnInfo.Text = dataset1.Tables[0].Rows[i][0].ToString();
                 };
                 flowLayoutPanel1.Controls.Add(btnInfo);
