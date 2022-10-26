@@ -26,6 +26,9 @@ namespace Pantalla_1_Registro
         public static int static_month, static_year;
         string horaactual = DateTime.Now.ToString("HH:mm");
         string horaexacta = "18:15";
+        CheckBox chbAct;
+        string Estado;
+        TextBox hoy;
         public Calendario()
         {
             InitializeComponent();
@@ -40,6 +43,8 @@ namespace Pantalla_1_Registro
             Inicio formaSiguiente = new Inicio();
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra la forma2
+
+
         }
 
         private void Calendario_Load(object sender, EventArgs e)
@@ -65,16 +70,46 @@ namespace Pantalla_1_Registro
             adapter.Fill(dataset);
 
             //checklist dia actual
-            TextBox hoy = new TextBox();
+            hoy = new TextBox();
             hoy.Text = date.ToString();
             flowLayoutPanel3.Controls.Add(hoy);
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
-                CheckBox Act = new CheckBox();
-                Act.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
-                flowLayoutPanel1.Controls.Add(Act);
+                chbAct = new CheckBox();
+                chbAct.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
+                flowLayoutPanel1.Controls.Add(chbAct);
+                chbAct.CheckedChanged += chbAct_CheckedChanged;
             }
         }
+
+        private void chbAct_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbAct.Checked)
+            {
+                Estado = "si";
+                //base de datos
+                db = new OleDbConnection();
+                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+                db.Open();
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + hoy.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "';", db);
+                EstadoCommand.Connection = db;
+                EstadoCommand.ExecuteNonQuery();
+                db.Close();
+            }
+            else
+            {
+                Estado = "no";
+                //base de datos
+                db = new OleDbConnection();
+                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+                db.Open();
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE Dia = '" + hoy.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "'");
+                EstadoCommand.Connection = db;
+                EstadoCommand.ExecuteNonQuery();
+                db.Close();
+            }
+        }
+
         private void btnAnterior_Click_1(object sender, EventArgs e)
         {
             //limpiar conteiner
@@ -94,10 +129,6 @@ namespace Pantalla_1_Registro
             }
         }
 
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -131,7 +162,6 @@ namespace Pantalla_1_Registro
         {
             AddEvent formaSiguiente = new AddEvent();
             formaSiguiente.Show();
-            this.Refresh();
         }
 
         private void displaDays()

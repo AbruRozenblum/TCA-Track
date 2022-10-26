@@ -149,7 +149,7 @@ namespace Pantalla_1_Registro
             // 
             // mailDeliverer
             // 
-            this.mailDeliverer.Interval = 30000;
+            this.mailDeliverer.Interval = 15000;
             this.mailDeliverer.Tick += new System.EventHandler(this.MailDeliverer_Tick);
             // 
             // pictureBox3

@@ -107,7 +107,6 @@ namespace Pantalla_1_Registro
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(153, 356);
             this.flowLayoutPanel1.TabIndex = 14;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // label1
             // 
