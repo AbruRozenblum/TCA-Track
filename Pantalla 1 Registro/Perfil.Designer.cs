@@ -63,6 +63,7 @@ namespace Pantalla_1_Registro
             this.label11 = new System.Windows.Forms.Label();
             this.btnNyA = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnCerrarSesion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoPerfil)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,7 +77,7 @@ namespace Pantalla_1_Registro
             this.btnImportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportar.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImportar.ForeColor = System.Drawing.Color.White;
-            this.btnImportar.Location = new System.Drawing.Point(843, 393);
+            this.btnImportar.Location = new System.Drawing.Point(850, 320);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(282, 36);
             this.btnImportar.TabIndex = 21;
@@ -88,7 +89,7 @@ namespace Pantalla_1_Registro
             // 
             this.pictureBox1.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__09_58_29;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(550, 79);
+            this.pictureBox1.Location = new System.Drawing.Point(550, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(357, 74);
             this.pictureBox1.TabIndex = 19;
@@ -100,7 +101,7 @@ namespace Pantalla_1_Registro
             this.btnIrInicio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnIrInicio.FlatAppearance.BorderSize = 0;
             this.btnIrInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIrInicio.Location = new System.Drawing.Point(129, 79);
+            this.btnIrInicio.Location = new System.Drawing.Point(124, 12);
             this.btnIrInicio.Name = "btnIrInicio";
             this.btnIrInicio.Size = new System.Drawing.Size(80, 74);
             this.btnIrInicio.TabIndex = 18;
@@ -113,7 +114,7 @@ namespace Pantalla_1_Registro
             this.btnEdad.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEdad.FlatAppearance.BorderSize = 0;
             this.btnEdad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdad.Location = new System.Drawing.Point(580, 630);
+            this.btnEdad.Location = new System.Drawing.Point(587, 557);
             this.btnEdad.Name = "btnEdad";
             this.btnEdad.Size = new System.Drawing.Size(38, 35);
             this.btnEdad.TabIndex = 37;
@@ -126,7 +127,7 @@ namespace Pantalla_1_Registro
             this.btnDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDiagnostico.FlatAppearance.BorderSize = 0;
             this.btnDiagnostico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDiagnostico.Location = new System.Drawing.Point(580, 556);
+            this.btnDiagnostico.Location = new System.Drawing.Point(587, 483);
             this.btnDiagnostico.Name = "btnDiagnostico";
             this.btnDiagnostico.Size = new System.Drawing.Size(38, 35);
             this.btnDiagnostico.TabIndex = 38;
@@ -139,7 +140,7 @@ namespace Pantalla_1_Registro
             this.btnMEspecialista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMEspecialista.FlatAppearance.BorderSize = 0;
             this.btnMEspecialista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMEspecialista.Location = new System.Drawing.Point(580, 488);
+            this.btnMEspecialista.Location = new System.Drawing.Point(587, 415);
             this.btnMEspecialista.Name = "btnMEspecialista";
             this.btnMEspecialista.Size = new System.Drawing.Size(38, 35);
             this.btnMEspecialista.TabIndex = 39;
@@ -152,7 +153,7 @@ namespace Pantalla_1_Registro
             this.btnNEspecialista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNEspecialista.FlatAppearance.BorderSize = 0;
             this.btnNEspecialista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNEspecialista.Location = new System.Drawing.Point(580, 413);
+            this.btnNEspecialista.Location = new System.Drawing.Point(587, 340);
             this.btnNEspecialista.Name = "btnNEspecialista";
             this.btnNEspecialista.Size = new System.Drawing.Size(38, 35);
             this.btnNEspecialista.TabIndex = 40;
@@ -165,7 +166,7 @@ namespace Pantalla_1_Registro
             this.btnMUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMUsuario.FlatAppearance.BorderSize = 0;
             this.btnMUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMUsuario.Location = new System.Drawing.Point(580, 341);
+            this.btnMUsuario.Location = new System.Drawing.Point(587, 268);
             this.btnMUsuario.Name = "btnMUsuario";
             this.btnMUsuario.Size = new System.Drawing.Size(38, 40);
             this.btnMUsuario.TabIndex = 41;
@@ -178,7 +179,7 @@ namespace Pantalla_1_Registro
             this.btnNUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNUsuario.FlatAppearance.BorderSize = 0;
             this.btnNUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNUsuario.Location = new System.Drawing.Point(580, 274);
+            this.btnNUsuario.Location = new System.Drawing.Point(587, 201);
             this.btnNUsuario.Name = "btnNUsuario";
             this.btnNUsuario.Size = new System.Drawing.Size(38, 38);
             this.btnNUsuario.TabIndex = 42;
@@ -191,7 +192,7 @@ namespace Pantalla_1_Registro
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(894, 628);
+            this.btnGuardar.Location = new System.Drawing.Point(901, 555);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(146, 42);
             this.btnGuardar.TabIndex = 45;
@@ -203,7 +204,7 @@ namespace Pantalla_1_Registro
             // 
             this.txtPrueba.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtPrueba.Location = new System.Drawing.Point(233, 279);
+            this.txtPrueba.Location = new System.Drawing.Point(240, 206);
             this.txtPrueba.Multiline = true;
             this.txtPrueba.Name = "txtPrueba";
             this.txtPrueba.Size = new System.Drawing.Size(336, 33);
@@ -212,7 +213,7 @@ namespace Pantalla_1_Registro
             // txtMailU
             // 
             this.txtMailU.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtMailU.Location = new System.Drawing.Point(233, 350);
+            this.txtMailU.Location = new System.Drawing.Point(240, 277);
             this.txtMailU.Multiline = true;
             this.txtMailU.Name = "txtMailU";
             this.txtMailU.Size = new System.Drawing.Size(336, 33);
@@ -221,7 +222,7 @@ namespace Pantalla_1_Registro
             // txtNomE
             // 
             this.txtNomE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtNomE.Location = new System.Drawing.Point(233, 422);
+            this.txtNomE.Location = new System.Drawing.Point(240, 349);
             this.txtNomE.Multiline = true;
             this.txtNomE.Name = "txtNomE";
             this.txtNomE.Size = new System.Drawing.Size(336, 33);
@@ -230,7 +231,7 @@ namespace Pantalla_1_Registro
             // txtMailE
             // 
             this.txtMailE.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtMailE.Location = new System.Drawing.Point(233, 491);
+            this.txtMailE.Location = new System.Drawing.Point(240, 418);
             this.txtMailE.Multiline = true;
             this.txtMailE.Name = "txtMailE";
             this.txtMailE.Size = new System.Drawing.Size(336, 33);
@@ -239,7 +240,7 @@ namespace Pantalla_1_Registro
             // txtActualC
             // 
             this.txtActualC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtActualC.Location = new System.Drawing.Point(862, 538);
+            this.txtActualC.Location = new System.Drawing.Point(869, 465);
             this.txtActualC.Multiline = true;
             this.txtActualC.Name = "txtActualC";
             this.txtActualC.Size = new System.Drawing.Size(224, 27);
@@ -248,7 +249,7 @@ namespace Pantalla_1_Registro
             // txtNuevaC
             // 
             this.txtNuevaC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.txtNuevaC.Location = new System.Drawing.Point(862, 594);
+            this.txtNuevaC.Location = new System.Drawing.Point(869, 521);
             this.txtNuevaC.Multiline = true;
             this.txtNuevaC.Name = "txtNuevaC";
             this.txtNuevaC.Size = new System.Drawing.Size(224, 27);
@@ -258,7 +259,7 @@ namespace Pantalla_1_Registro
             // 
             this.pbFotoPerfil.BackColor = System.Drawing.Color.White;
             this.pbFotoPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbFotoPerfil.Location = new System.Drawing.Point(894, 279);
+            this.pbFotoPerfil.Location = new System.Drawing.Point(901, 206);
             this.pbFotoPerfil.Name = "pbFotoPerfil";
             this.pbFotoPerfil.Size = new System.Drawing.Size(150, 95);
             this.pbFotoPerfil.TabIndex = 56;
@@ -272,7 +273,7 @@ namespace Pantalla_1_Registro
             // 
             this.dtfnacimiento.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.dtfnacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.dtfnacimiento.Location = new System.Drawing.Point(233, 632);
+            this.dtfnacimiento.Location = new System.Drawing.Point(240, 559);
             this.dtfnacimiento.Name = "dtfnacimiento";
             this.dtfnacimiento.Size = new System.Drawing.Size(336, 29);
             this.dtfnacimiento.TabIndex = 57;
@@ -281,7 +282,7 @@ namespace Pantalla_1_Registro
             // 
             this.cmbDiagnostico.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.cmbDiagnostico.Location = new System.Drawing.Point(233, 565);
+            this.cmbDiagnostico.Location = new System.Drawing.Point(240, 492);
             this.cmbDiagnostico.Name = "cmbDiagnostico";
             this.cmbDiagnostico.Size = new System.Drawing.Size(336, 32);
             this.cmbDiagnostico.TabIndex = 0;
@@ -292,7 +293,7 @@ namespace Pantalla_1_Registro
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(233, 247);
+            this.label1.Location = new System.Drawing.Point(240, 174);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(253, 29);
@@ -305,7 +306,7 @@ namespace Pantalla_1_Registro
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(233, 317);
+            this.label2.Location = new System.Drawing.Point(240, 244);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(228, 29);
@@ -318,7 +319,7 @@ namespace Pantalla_1_Registro
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(233, 389);
+            this.label3.Location = new System.Drawing.Point(240, 316);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(321, 29);
@@ -331,7 +332,7 @@ namespace Pantalla_1_Registro
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(233, 458);
+            this.label4.Location = new System.Drawing.Point(240, 385);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(283, 29);
@@ -344,7 +345,7 @@ namespace Pantalla_1_Registro
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(233, 532);
+            this.label5.Location = new System.Drawing.Point(240, 459);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(174, 29);
@@ -357,7 +358,7 @@ namespace Pantalla_1_Registro
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(233, 599);
+            this.label6.Location = new System.Drawing.Point(240, 526);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 29);
@@ -370,7 +371,7 @@ namespace Pantalla_1_Registro
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(880, 230);
+            this.label7.Location = new System.Drawing.Point(887, 157);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(190, 29);
@@ -383,7 +384,7 @@ namespace Pantalla_1_Registro
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(830, 463);
+            this.label8.Location = new System.Drawing.Point(837, 390);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(304, 29);
@@ -396,7 +397,7 @@ namespace Pantalla_1_Registro
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(878, 512);
+            this.label9.Location = new System.Drawing.Point(885, 439);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(188, 22);
@@ -409,7 +410,7 @@ namespace Pantalla_1_Registro
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(878, 568);
+            this.label10.Location = new System.Drawing.Point(885, 495);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(180, 22);
@@ -418,7 +419,8 @@ namespace Pantalla_1_Registro
             // 
             // txtNyA
             // 
-            this.txtNyA.Location = new System.Drawing.Point(233, 701);
+            this.txtNyA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNyA.Location = new System.Drawing.Point(240, 628);
             this.txtNyA.Margin = new System.Windows.Forms.Padding(2);
             this.txtNyA.Multiline = true;
             this.txtNyA.Name = "txtNyA";
@@ -431,7 +433,7 @@ namespace Pantalla_1_Registro
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Palatino Linotype", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(233, 670);
+            this.label11.Location = new System.Drawing.Point(240, 597);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(247, 29);
@@ -444,7 +446,7 @@ namespace Pantalla_1_Registro
             this.btnNyA.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNyA.FlatAppearance.BorderSize = 0;
             this.btnNyA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNyA.Location = new System.Drawing.Point(580, 692);
+            this.btnNyA.Location = new System.Drawing.Point(587, 619);
             this.btnNyA.Margin = new System.Windows.Forms.Padding(2);
             this.btnNyA.Name = "btnNyA";
             this.btnNyA.Size = new System.Drawing.Size(38, 35);
@@ -463,6 +465,21 @@ namespace Pantalla_1_Registro
             this.pictureBox2.TabIndex = 71;
             this.pictureBox2.TabStop = false;
             // 
+            // btnCerrarSesion
+            // 
+            this.btnCerrarSesion.BackColor = System.Drawing.Color.Thistle;
+            this.btnCerrarSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarSesion.ForeColor = System.Drawing.Color.Black;
+            this.btnCerrarSesion.Location = new System.Drawing.Point(891, 619);
+            this.btnCerrarSesion.Name = "btnCerrarSesion";
+            this.btnCerrarSesion.Size = new System.Drawing.Size(161, 34);
+            this.btnCerrarSesion.TabIndex = 72;
+            this.btnCerrarSesion.Text = "Cerrar sesión";
+            this.btnCerrarSesion.UseVisualStyleBackColor = false;
+            this.btnCerrarSesion.Click += new System.EventHandler(this.BtnCerrarSesion_Click);
+            // 
             // Perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +487,7 @@ namespace Pantalla_1_Registro
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__09_58_21;
             this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnNyA);
             this.Controls.Add(this.label11);
@@ -549,5 +567,6 @@ namespace Pantalla_1_Registro
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btnNyA;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btnCerrarSesion;
     }
 }

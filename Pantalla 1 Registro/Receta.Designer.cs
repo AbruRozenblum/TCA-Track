@@ -42,7 +42,7 @@ namespace Pantalla_1_Registro
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(148, 14);
+            this.lblNombre.Location = new System.Drawing.Point(12, 9);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(95, 29);
             this.lblNombre.TabIndex = 0;
@@ -53,7 +53,7 @@ namespace Pantalla_1_Registro
             this.lblingredientes.AutoSize = true;
             this.lblingredientes.BackColor = System.Drawing.Color.Transparent;
             this.lblingredientes.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
-            this.lblingredientes.Location = new System.Drawing.Point(114, 90);
+            this.lblingredientes.Location = new System.Drawing.Point(12, 111);
             this.lblingredientes.Name = "lblingredientes";
             this.lblingredientes.Size = new System.Drawing.Size(153, 29);
             this.lblingredientes.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace Pantalla_1_Registro
             this.lblprocedimiento.AutoSize = true;
             this.lblprocedimiento.BackColor = System.Drawing.Color.Transparent;
             this.lblprocedimiento.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
-            this.lblprocedimiento.Location = new System.Drawing.Point(100, 307);
+            this.lblprocedimiento.Location = new System.Drawing.Point(12, 480);
             this.lblprocedimiento.Name = "lblprocedimiento";
             this.lblprocedimiento.Size = new System.Drawing.Size(175, 29);
             this.lblprocedimiento.TabIndex = 2;
@@ -76,7 +76,7 @@ namespace Pantalla_1_Registro
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(114, 64);
+            this.label1.Location = new System.Drawing.Point(12, 64);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 26);
             this.label1.TabIndex = 3;
@@ -88,7 +88,7 @@ namespace Pantalla_1_Registro
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(101, 281);
+            this.label2.Location = new System.Drawing.Point(12, 435);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(177, 26);
             this.label2.TabIndex = 4;
@@ -99,7 +99,7 @@ namespace Pantalla_1_Registro
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__09_544;
-            this.ClientSize = new System.Drawing.Size(404, 461);
+            this.ClientSize = new System.Drawing.Size(984, 749);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblprocedimiento);

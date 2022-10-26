@@ -261,5 +261,11 @@ namespace Pantalla_1_Registro
             dataBase.Close();
         }
 
+        private void BtnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Bienvenido formaSiguiente = new Bienvenido();
+            this.Hide(); 
+            formaSiguiente.Show(); 
+        }
     }
 }

@@ -56,7 +56,7 @@ namespace Pantalla_1_Registro
             // dtfecha
             // 
             this.dtfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.dtfecha.Location = new System.Drawing.Point(670, 77);
+            this.dtfecha.Location = new System.Drawing.Point(670, 78);
             this.dtfecha.MaxDate = new System.DateTime(2022, 9, 13, 0, 0, 0, 0);
             this.dtfecha.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dtfecha.Name = "dtfecha";
@@ -225,11 +225,11 @@ namespace Pantalla_1_Registro
             // txtTexto
             // 
             this.txtTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtTexto.Location = new System.Drawing.Point(3, 24);
+            this.txtTexto.Location = new System.Drawing.Point(2, 0);
             this.txtTexto.Margin = new System.Windows.Forms.Padding(2);
             this.txtTexto.Multiline = true;
             this.txtTexto.Name = "txtTexto";
-            this.txtTexto.Size = new System.Drawing.Size(899, 517);
+            this.txtTexto.Size = new System.Drawing.Size(886, 536);
             this.txtTexto.TabIndex = 23;
             this.txtTexto.TextChanged += new System.EventHandler(this.TxtTexto_TextChanged);
             // 
@@ -238,9 +238,9 @@ namespace Pantalla_1_Registro
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.txtTexto);
-            this.panel1.Location = new System.Drawing.Point(132, 96);
+            this.panel1.Location = new System.Drawing.Point(133, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(888, 541);
+            this.panel1.Size = new System.Drawing.Size(888, 523);
             this.panel1.TabIndex = 24;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 

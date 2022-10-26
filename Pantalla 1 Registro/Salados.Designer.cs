@@ -78,6 +78,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Salados";
             this.Text = "Salados";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Salados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
