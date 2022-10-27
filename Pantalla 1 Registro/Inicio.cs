@@ -79,27 +79,30 @@ namespace Pantalla_1_Registro
             while (true)
             {
                 EnviarCorreo_Especialista();
+                EnviarCorreo_Notif();
             }
         }
         public void EnviarCorreo_Notif()
         {
+            OleDbConnection db;
+            db = new OleDbConnection();
+            db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            db.Open();
+
             OleDbCommand HoraMail = new OleDbCommand("SELECT Inicio FROM Calendario WHERE Inicio = '" + horaactual + "' AND Username ='" + Class1.username + "'", db);
             OleDbDataAdapter adapterU = new OleDbDataAdapter(HoraMail);
             DataSet datasetHM = new DataSet();
             adapterU.Fill(datasetHM);
-            if (horaactual == datasetHM.Tables[0].Rows[0][0].ToString())
-            {
+
+            //if (horaactual == datasetHM.Tables[0].Rows[0][0].ToString())
+            //{
                 StringBuilder Mensaje;
+                StringBuilder MensajeBuilder = new StringBuilder();
                 DateTime FechaEnvio = DateTime.Now;
                 string De = Usuario;
                 string Para;
                 string Asunto;
                 string error = "";
-
-                OleDbConnection db;
-                db = new OleDbConnection();
-                db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-                db.Open();
 
                 //Mail usuario
                 OleDbCommand commandMailUsuario = new OleDbCommand("SELECT Mail FROM Info_usuario WHERE Username ='" + Class1.username + "' ", db);
@@ -109,18 +112,56 @@ namespace Pantalla_1_Registro
                 int contU = datasetU.Tables[0].Rows.Count;
                 Para = datasetU.Tables[0].Rows[contU - 1][0].ToString();
 
-                //mail asunto
-                OleDbCommand commandA = new OleDbCommand("SELECT Evento FROM Calendario WHERE Username ='" + Class1.username + "' AND Inicio = '" + horaactual + "'", db);
-                OleDbDataAdapter adapterA = new OleDbDataAdapter(commandA);
-                DataSet datasetA = new DataSet();
-                adapterA.Fill(datasetA);
-                int contAU = datasetA.Tables[0].Rows.Count;
-                Asunto = datasetA.Tables[0].Rows[0][contAU - 1].ToString();
+                //mail asunto 
+                Asunto = "Una de tus actividades programadas se acerca :)";
 
                 //mail mensaje 
-                OleDbCommand MensajeU1 = new OleDbCommand("SELECT Inicio FROM Calendario WHERE Username =WHERE Username ='" + Class1.username + "' AND Inicio = '" + horaactual + "'", db);
+                OleDbCommand MensajeN = new OleDbCommand("SELECT Evento FROM Calendario WHERE Username ='" + Class1.username + "' AND Inicio = '" + horaactual + "'", db);
+                OleDbDataAdapter adapterN = new OleDbDataAdapter(MensajeN);
+                DataSet datasetN = new DataSet();
+                adapterN.Fill(datasetN);
+                
+                if (datasetN.Tables[0].Rows.Count >= 0){ 
+                MensajeBuilder.Append("Tu evento: "+datasetN.Tables[0].Rows[0][0].ToString()+" esta programado para este horario, acordate de chequearlo en la app(si es que la cumpliste) asi queda registrado.");
+                Mensaje = MensajeBuilder;
+
+                try
+                {
+                    Mensaje.Append(Environment.NewLine);
+                    Mensaje.Append(string.Format("fecha envio: {0:dd/MM/yyyy}", FechaEnvio));
+                    Mensaje.Append(Environment.NewLine);
+
+                    MailMessage mail = new MailMessage();
+                    mail.From = new MailAddress(De);
+                    mail.To.Add(Para);
+                    mail.Subject = Asunto;
+                    mail.Body = Mensaje.ToString();
+
+                    SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+                    smtp.Port = 25;
+                    // smtp.UseDefaultCredentials = false;
+                    smtp.Credentials = new System.Net.NetworkCredential(Usuario, Password);
+                    smtp.EnableSsl = true;
+                    smtp.Send(mail);
+                    error = "Exito";
+                    MessageBox.Show(error);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
             }
+        //}
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EnviarCorreo_Notif();
+        }
+
         public void EnviarCorreo_Especialista()
         {
             if (horaactual == horaexacta)
