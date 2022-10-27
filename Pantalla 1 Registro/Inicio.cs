@@ -121,7 +121,7 @@ namespace Pantalla_1_Registro
                 adapterN.Fill(datasetN);
                 
                 if (datasetN.Tables[0].Rows.Count >= 0){ 
-                MensajeBuilder.Append("Tu evento: "+datasetN.Tables[0].Rows[0][0].ToString()+"\n esta programado para este horario, acordate de chequearlo en la app(si es que la cumpliste) asi queda registrado.");
+                MensajeBuilder.Append("Tu evento: "+datasetN.Tables[0].Rows[0][0].ToString()+"\nEsta programado para este horario, acordate de chequearlo en la app(si es que la cumpliste) asi queda registrado.");
                 Mensaje = MensajeBuilder;
 
                 try
@@ -156,15 +156,10 @@ namespace Pantalla_1_Registro
         //}
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            EnviarCorreo_Notif();
-        }
-
         public void EnviarCorreo_Especialista()
         {
-            if (horaactual == horaexacta)
-            {
+            //if (horaactual == horaexacta)
+            //{
                 StringBuilder Mensaje;
                 DateTime FechaEnvio = DateTime.Now;
                 string De = Usuario;
@@ -245,7 +240,7 @@ namespace Pantalla_1_Registro
                     MessageBox.Show(ex.Message);
                     return;
                 }
-            }
+           // }
         }
         private void MailDeliverer_Tick(object sender, EventArgs e)
         {
