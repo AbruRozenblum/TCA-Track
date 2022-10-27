@@ -64,10 +64,10 @@ namespace Pantalla_1_Registro
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 127);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(67, 155);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Padding = new System.Windows.Forms.Padding(100, 0, 100, 0);
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1200, 545);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1183, 517);
             this.flowLayoutPanel1.TabIndex = 27;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 

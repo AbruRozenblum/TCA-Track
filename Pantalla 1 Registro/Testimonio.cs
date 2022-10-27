@@ -23,12 +23,18 @@ namespace Pantalla_1_Registro
         {
             dataBase = new OleDbConnection();
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
-            /*OleDbCommand commandI;
-            commandI = new OleDbCommand("SELECT Testimonio FROM Testimonios WHERE Nombre = '" + Class1.testimonio + "';", dataBase);
+            OleDbCommand commandI;
+            commandI = new OleDbCommand("SELECT Testimonio, Texto FROM Testimonios WHERE Testimonio = '" + Class1.testimonio + "';", dataBase);
             OleDbDataAdapter adapterI = new OleDbDataAdapter(commandI);
             DataSet datasetI = new DataSet();
             adapterI.Fill(datasetI);
-            lblinformacion.Text = datasetI.Tables[0].Rows[0][0].ToString();*/
+            lblTestimonio.Text = datasetI.Tables[0].Rows[0][0].ToString();
+            lblTexto.Text = datasetI.Tables[0].Rows[0][1].ToString();
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

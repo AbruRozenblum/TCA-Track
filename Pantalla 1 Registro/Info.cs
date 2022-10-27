@@ -28,12 +28,23 @@ namespace Pantalla_1_Registro
         {
             dataBase = new OleDbConnection();
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
+            lblinformacion.MaximumSize = new System.Drawing.Size(550,5000);
             OleDbCommand commandI;
-            commandI = new OleDbCommand("SELECT Info FROM Info_TCA WHERE TCA = '" + Class1.info + "';", dataBase);
+            commandI = new OleDbCommand("SELECT Info FROM Info_TCA WHERE Titulo = '" + Class1.info + "';", dataBase);
             OleDbDataAdapter adapterI = new OleDbDataAdapter(commandI);
             DataSet datasetI = new DataSet();
             adapterI.Fill(datasetI);
-            lblinformacion.Text = datasetI.Tables[0].Rows[0][0].ToString();
+            String str = datasetI.Tables[0].Rows[0][0].ToString();
+            Console.WriteLine("The initial string: '{0}'", str);
+            str = str.Replace(";", Environment.NewLine);
+            Console.WriteLine("The final string: '{0}'", str);
+
+            String str1 = datasetI.Tables[0].Rows[0][0].ToString();
+            Console.WriteLine("The initial string: '{0}'", str1);
+            str1 = str1.Replace(";", Environment.NewLine);
+            Console.WriteLine("The final string: '{0}'", str1);
+            lblinformacion.Text = str1;
+            panel1.Size = new Size (600, 550);
             lblNombre.Text = Class1.info;
         }
 

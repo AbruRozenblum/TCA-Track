@@ -33,7 +33,7 @@ namespace Pantalla_1_Registro
 
             dataBase.Open();
             OleDbCommand TCA;
-            TCA = new OleDbCommand("SELECT TCA FROM Info", dataBase);
+            TCA = new OleDbCommand("SELECT Titulo FROM Info_TCA", dataBase);
             OleDbDataAdapter adapter1 = new OleDbDataAdapter(TCA);
             DataSet dataset1 = new DataSet();
             adapter1.Fill(dataset1);
@@ -41,9 +41,11 @@ namespace Pantalla_1_Registro
             {
                 Button btnInfo = new Button();
                 {
-                    btnInfo.Font = new Font("Microsoft Sans Serif", 14);
-                    btnInfo.Size = new Size(150, 50);
+                    btnInfo.Font = new Font("Microsoft Sans Serif", 12);
+                    btnInfo.Size = new Size(180, 80);
                     btnInfo.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                    btnInfo.ForeColor = Color.White;
+                    btnInfo.BackgroundImage = Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_19_0859171;
                 };
                 flowLayoutPanel1.Controls.Add(btnInfo);
                 btnInfo.Click += BtnInfo_Click;

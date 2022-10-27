@@ -31,7 +31,8 @@ namespace Pantalla_1_Registro
         {
             this.lblinformacion = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.btnVolver = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblinformacion
@@ -40,7 +41,7 @@ namespace Pantalla_1_Registro
             this.lblinformacion.BackColor = System.Drawing.Color.Transparent;
             this.lblinformacion.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.lblinformacion.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblinformacion.Location = new System.Drawing.Point(55, 95);
+            this.lblinformacion.Location = new System.Drawing.Point(12, 19);
             this.lblinformacion.Name = "lblinformacion";
             this.lblinformacion.Size = new System.Drawing.Size(150, 29);
             this.lblinformacion.TabIndex = 5;
@@ -53,25 +54,22 @@ namespace Pantalla_1_Registro
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Palatino Linotype", 16.125F);
             this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(290, 31);
+            this.lblNombre.Location = new System.Drawing.Point(55, 48);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(95, 29);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "TÍTULO";
             this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
-            // btnVolver
+            // panel1
             // 
-            this.btnVolver.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_15_a_la_s__09_581;
-            this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVolver.FlatAppearance.BorderSize = 0;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVolver.Location = new System.Drawing.Point(6, 16);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(50, 45);
-            this.btnVolver.TabIndex = 6;
-            this.btnVolver.UseVisualStyleBackColor = true;
+            this.panel1.AutoScroll = true;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.lblinformacion);
+            this.panel1.Location = new System.Drawing.Point(60, 80);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(587, 40);
+            this.panel1.TabIndex = 6;
             // 
             // Info
             // 
@@ -79,12 +77,13 @@ namespace Pantalla_1_Registro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Pantalla_1_Registro.Properties.Resources.Captura_de_Pantalla_2022_09_14_a_la_s__09_541;
             this.ClientSize = new System.Drawing.Size(684, 661);
-            this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.lblinformacion);
             this.Controls.Add(this.lblNombre);
+            this.Controls.Add(this.panel1);
             this.Name = "Info";
             this.Text = "Info";
             this.Load += new System.EventHandler(this.Info_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,6 +93,6 @@ namespace Pantalla_1_Registro
 
         private System.Windows.Forms.Label lblinformacion;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.Panel panel1;
     }
 }

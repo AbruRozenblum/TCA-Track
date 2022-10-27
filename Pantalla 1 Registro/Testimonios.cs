@@ -26,8 +26,8 @@ namespace Pantalla_1_Registro
             dataBase.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
 
             dataBase.Open();
-            /*OleDbCommand TCA;
-            TCA = new OleDbCommand("SELECT TCA FROM Info", dataBase);
+            OleDbCommand TCA;
+            TCA = new OleDbCommand("SELECT Testimonio FROM Testimonios", dataBase);
             OleDbDataAdapter adapter1 = new OleDbDataAdapter(TCA);
             DataSet dataset1 = new DataSet();
             adapter1.Fill(dataset1);
@@ -35,9 +35,11 @@ namespace Pantalla_1_Registro
             {
                 Button btnTestimonios = new Button();
                 {
-                    btnTestimonios.Font = new Font("Microsoft Sans Serif", 14);
-                    btnTestimonios.Size = new Size(150, 150);
+                    btnTestimonios.Font = new Font("Microsoft Sans Serif", 12);
+                    btnTestimonios.Size = new Size(180, 80);
                     btnTestimonios.Text = dataset1.Tables[0].Rows[i][0].ToString();
+                    btnTestimonios.ForeColor = Color.White;
+                    btnTestimonios.BackgroundImage = Pantalla_1_Registro.Properties.Resources.Captura_de_pantalla_2022_08_19_0859171;
                 };
                 flowLayoutPanel1.Controls.Add(btnTestimonios);
                 btnTestimonios.Click += BtnTestimonios_Click;
@@ -47,7 +49,7 @@ namespace Pantalla_1_Registro
         {
             Testimonio formaSiguiente = new Testimonio();
             Class1.testimonio = (sender as Button).Text;
-            formaSiguiente.Show(); // muestra la forma2*/
+            formaSiguiente.Show(); // muestra la forma2
         }
 
         private void BtnIrInicio_Click(object sender, EventArgs e)
