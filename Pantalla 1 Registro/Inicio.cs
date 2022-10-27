@@ -17,14 +17,13 @@ namespace Pantalla_1_Registro
     {
         const string Usuario = "tca.track.mail@gmail.com";
         const string Password = "cokgkgcgxzkjfxgi";
-
-
         OleDbConnection db;
         int month, year, day;
         public static bool si;
         public static int static_month, static_year;
-        string horaactual;
+        string horaactual = "00:00";
         string horaexacta = "8:00";
+
         public Inicio()
         {
             InitializeComponent();
@@ -122,7 +121,7 @@ namespace Pantalla_1_Registro
                 adapterN.Fill(datasetN);
                 
                 if (datasetN.Tables[0].Rows.Count >= 0){ 
-                MensajeBuilder.Append("Tu evento: "+datasetN.Tables[0].Rows[0][0].ToString()+" esta programado para este horario, acordate de chequearlo en la app(si es que la cumpliste) asi queda registrado.");
+                MensajeBuilder.Append("Tu evento: "+datasetN.Tables[0].Rows[0][0].ToString()+"\n esta programado para este horario, acordate de chequearlo en la app(si es que la cumpliste) asi queda registrado.");
                 Mensaje = MensajeBuilder;
 
                 try
@@ -250,7 +249,7 @@ namespace Pantalla_1_Registro
         }
         private void MailDeliverer_Tick(object sender, EventArgs e)
         {
-            horaactual = DateTime.Now.ToString("HH:mm");
+            //horaactual = DateTime.Now.ToString("HH:mm");
         }
 
         private void Inicio_Load(object sender, EventArgs e)

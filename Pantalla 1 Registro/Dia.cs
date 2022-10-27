@@ -75,11 +75,11 @@ namespace Pantalla_1_Registro
                 db = new OleDbConnection();
                 db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
                 db.Open();
-                OleDbCommand Dia_command = new OleDbCommand("SELECT Evento, Inicio, Checked FROM Calendario WHERE Dia = '" + txtFecha.Text + "'AND Username = '" + Class1.username + "' ORDER BY Inicio ASC", db);
+                OleDbCommand Dia_command = new OleDbCommand("SELECT Evento FROM Calendario WHERE Dia = '" + txtFecha.Text + "'AND Username = '" + Class1.username + "'", db);
                 OleDbDataAdapter adapter = new OleDbDataAdapter(Dia_command);
                 DataSet dataset = new DataSet();
                 adapter.Fill(dataset);
-                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "' WHERE (Dia = '" + txtFecha.Text + "´ && Username = '" + Class1.username + "' && Evento = '"+ dataset.Tables[0].Rows[0]["Evento"].ToString() + "')");
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE (Dia = '" + txtFecha.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + dataset.Tables[0].Rows[0]["Evento"].ToString() + "')");
                 EstadoCommand.Connection = db;
                 EstadoCommand.ExecuteNonQuery();
                 db.Close();
@@ -91,7 +91,11 @@ namespace Pantalla_1_Registro
                 db = new OleDbConnection();
                 db.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0; Data Source = DB_TCA_TRACK.accdb";
                 db.Open();
-                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE (Dia = '" + txtFecha.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "')");
+                OleDbCommand Dia_command = new OleDbCommand("SELECT Evento FROM Calendario WHERE Dia = '" + txtFecha.Text + "'AND Username = '" + Class1.username + "'", db);
+                OleDbDataAdapter adapter = new OleDbDataAdapter(Dia_command);
+                DataSet dataset = new DataSet();
+                adapter.Fill(dataset);
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE (Dia = '" + txtFecha.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + dataset.Tables[0].Rows[0]["Evento"].ToString() + "')");
                 EstadoCommand.Connection = db;
                 EstadoCommand.ExecuteNonQuery();
                 db.Close();
