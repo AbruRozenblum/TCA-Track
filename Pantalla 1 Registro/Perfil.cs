@@ -59,6 +59,7 @@ namespace Pantalla_1_Registro
 
         private void BtnNEspecialista_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
             OleDbCommand commandMe;
             commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
             commandMe.ExecuteNonQuery();
@@ -71,12 +72,14 @@ namespace Pantalla_1_Registro
             nEspecialista = new OleDbCommand("UPDATE Info_especialista SET Nombre = '" + txtNomE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
             nEspecialista.Connection = dataBase;
             nEspecialista.ExecuteNonQuery();
+            dataBase.Close();
 
             MessageBox.Show("Se actualizó el nombre del especialista");
         }
 
         private void BtnMEspecialista_Click(object sender, EventArgs e)
         {
+            dataBase.Open();
             OleDbCommand commandMe;
             commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
             commandMe.ExecuteNonQuery();
@@ -93,6 +96,7 @@ namespace Pantalla_1_Registro
             mEspecialista2 = new OleDbCommand("UPDATE Info_especialista SET Mail = '" + txtMailE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
             mEspecialista2.Connection = dataBase;
             mEspecialista2.ExecuteNonQuery();
+            dataBase.Close();
 
             MessageBox.Show("Se actualizó el nombre del especialista");
         }
