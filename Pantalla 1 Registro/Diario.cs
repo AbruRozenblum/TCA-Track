@@ -9,6 +9,7 @@ namespace Pantalla_1_Registro
     {
         OleDbConnection db;
         bool existe = false;
+        string fecha;
         public Diario()
         {
             InitializeComponent();
@@ -37,8 +38,9 @@ namespace Pantalla_1_Registro
             {
                 cmbTitulo.Items.Add(datasetF.Tables[0].Rows[i][0].ToString());
             }
+            fecha = dtfecha.Value.Day.ToString() + "/" + dtfecha.Value.Month.ToString() + "/" + dtfecha.Value.Year.ToString();
             OleDbCommand command;
-            command = new OleDbCommand("SELECT * FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + dtfecha.Value.Date + "';", db);
+            command = new OleDbCommand("SELECT * FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
             OleDbDataAdapter adapter = new OleDbDataAdapter(command);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
@@ -47,7 +49,7 @@ namespace Pantalla_1_Registro
                 existe = true;
                 txtTitulo.Hide();
                 OleDbCommand commandt;
-                commandt = new OleDbCommand("SELECT Testimonio, Titulo FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + dtfecha.Value.Date.ToString() + "'", db);
+                commandt = new OleDbCommand("SELECT Testimonio, Titulo FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'", db);
                 OleDbDataAdapter adaptert = new OleDbDataAdapter(commandt);
                 DataSet datasett = new DataSet();
                 adaptert.Fill(datasett);
@@ -68,9 +70,9 @@ namespace Pantalla_1_Registro
             if (existe == true)
             {
                 OleDbCommand command;
-                command = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + dtfecha.Value.Date + "';", db);
+                command = new OleDbCommand("UPDATE Diario SET Testimonio = '" + txtTexto.Text + "' WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "';", db);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Se actualizó el testimonio del día " + dtfecha.Value.Date.ToString());
+                MessageBox.Show("Se actualizó el testimonio del día " + fecha);
             }
             else
             {
@@ -84,9 +86,8 @@ namespace Pantalla_1_Registro
                 }
                 else
                 {
-                    string fecha = (dtfecha.Value.Day.ToString()) + "/" + (dtfecha.Value.Month.ToString()) + "/" + (dtfecha.Value.Year.ToString());
                     OleDbCommand command;
-                    command = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Titulo, Username) VALUES ('" + txtTexto.Text + "', '" + dtfecha.Value.Date + "', '" + txtTitulo.Text + "', '" + Class1.username + "');", db);
+                    command = new OleDbCommand("INSERT INTO Diario (Testimonio, Fecha, Titulo, Username) VALUES ('" + txtTexto.Text + "', '" + fecha + "', '" + txtTitulo.Text + "', '" + Class1.username + "');", db);
                     command.ExecuteNonQuery();
                     MessageBox.Show("Se subió el testimonio del día " + fecha);
                     
@@ -97,12 +98,13 @@ namespace Pantalla_1_Registro
 
         private void Dtfecha_ValueChanged(object sender, EventArgs e)
         {
+            fecha = dtfecha.Value.Day.ToString() + "/" + dtfecha.Value.Month.ToString() + "/" + dtfecha.Value.Year.ToString();
             if (db.State == ConnectionState.Closed)
             {
                 db.Open();
             }
             OleDbCommand command;
-            command = new OleDbCommand("SELECT Testimonio, Titulo FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + dtfecha.Value.Date.ToString() + "'", db);
+            command = new OleDbCommand("SELECT Testimonio, Titulo FROM Diario WHERE Username = '" + Class1.username + "' AND Fecha = '" + fecha + "'", db);
             OleDbDataAdapter adapter = new OleDbDataAdapter(command);
             DataSet dataset = new DataSet();
             adapter.Fill(dataset);
