@@ -48,7 +48,7 @@
             this.btnDiaNE.FlatAppearance.BorderSize = 0;
             this.btnDiaNE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDiaNE.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btnDiaNE.Location = new System.Drawing.Point(245, 402);
+            this.btnDiaNE.Location = new System.Drawing.Point(245, 417);
             this.btnDiaNE.Name = "btnDiaNE";
             this.btnDiaNE.Size = new System.Drawing.Size(115, 36);
             this.btnDiaNE.TabIndex = 2;
@@ -61,7 +61,7 @@
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 90);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 321);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 321);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // Dia
