@@ -38,7 +38,7 @@ namespace Pantalla_1_Registro
         }
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
-            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "" || txtMailEspecialista.Text == "" || txtNombreEspecialista.Text == "" || (rbtnFemenino == null && rbtnMasculino == null && rbtnOtro == null)) 
+            if (txtMailDelUsuario.Text == "" || txtUsuario.Text == "" || cmbDiagnostico.SelectedIndex == -1 || txtContraseña.Text == "" || txtNombre.Text == "" || txtNombreEspecialista.Text == "" || txtMailEspecialista.Text == "" || (rbtnFemenino == null && rbtnMasculino == null && rbtnOtro == null)) 
             {
                 MessageBox.Show("Complete todos los campos para registrarse");
             }
@@ -76,7 +76,7 @@ namespace Pantalla_1_Registro
                     agregoInfoUser.ExecuteNonQuery();
 
                     OleDbCommand buscoInfoEspecialista;
-                    buscoInfoEspecialista = new OleDbCommand("SELECT  * FROM Info_especialista WHERE Mail = '" + txtMailEspecialista.Text + "'", dataBase);
+                    buscoInfoEspecialista = new OleDbCommand("SELECT * FROM Info_especialista WHERE Mail = '" + txtMailEspecialista.Text + "'", dataBase);
                     OleDbDataAdapter adapter = new OleDbDataAdapter(buscoInfoEspecialista);
                     DataSet dataset = new DataSet();
                     adapter.Fill(dataset);

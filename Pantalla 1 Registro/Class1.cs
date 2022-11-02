@@ -13,6 +13,5 @@ namespace Pantalla_1_Registro
         static public string nReceta; 
         static public string info;
         static public string testimonio;
-        static public string mailE;
     }
 }

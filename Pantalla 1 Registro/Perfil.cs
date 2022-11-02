@@ -88,7 +88,7 @@ namespace Pantalla_1_Registro
             adapterMe.Fill(datasetMe);
 
             OleDbCommand mEspecialista;
-            mEspecialista = new OleDbCommand("UPDATE Info_usuario SET Mail_especialista = '" + txtMailE.Text + "' WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "'");
+            mEspecialista = new OleDbCommand("UPDATE Info_usuario SET Mail_especialista = '" + txtMailE.Text + "' WHERE Username = '" + Class1.username + "'");
             mEspecialista.Connection = dataBase;
             mEspecialista.ExecuteNonQuery();
 
@@ -209,8 +209,15 @@ namespace Pantalla_1_Registro
             DataSet datasetM = new DataSet();
             adapterM.Fill(datasetM);
 
+            OleDbCommand commandMe;
+            commandMe = new OleDbCommand("SELECT Mail_especialista FROM Info_usuario WHERE Username = '" + Class1.username + "';", dataBase);
+            commandMe.ExecuteNonQuery();
+            OleDbDataAdapter adapterMe = new OleDbDataAdapter(commandMe);
+            DataSet datasetMe = new DataSet();
+            adapterMe.Fill(datasetMe);
+
             OleDbCommand commandNe;
-            commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + Class1.mailE + "';", dataBase);
+            commandNe = new OleDbCommand("SELECT Nombre FROM Info_especialista WHERE Mail = '" + datasetMe.Tables[0].Rows[0][0].ToString() + "';", dataBase);
             commandNe.ExecuteNonQuery();
             OleDbDataAdapter adapterNe = new OleDbDataAdapter(commandNe);
             DataSet datasetNe = new DataSet();
@@ -231,7 +238,7 @@ namespace Pantalla_1_Registro
             adapterN.Fill(datasetN);
 
             cmbDiagnostico.SelectedItem = datasetD.Tables[0].Rows[0][0].ToString();
-            txtMailE.Text = Class1.mailE;
+            txtMailE.Text = datasetMe.Tables[0].Rows[0][0].ToString();
             txtMailU.Text = datasetM.Tables[0].Rows[0][0].ToString();
             txtNomE.Text = datasetNe.Tables[0].Rows[0][0].ToString();
             txtNyA.Text = datasetN.Tables[0].Rows[0][0].ToString();

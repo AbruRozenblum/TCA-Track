@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtMailDelUsuario = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.txtMailEspecialista = new System.Windows.Forms.TextBox();
+            this.txtNombreEspecialista = new System.Windows.Forms.TextBox();
             this.cmbDiagnostico = new System.Windows.Forms.ComboBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.txtNombreEspecialista = new System.Windows.Forms.TextBox();
+            this.txtMailEspecialista = new System.Windows.Forms.TextBox();
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.btnLogIn = new System.Windows.Forms.Button();
             this.btnRegistrarse = new System.Windows.Forms.Button();
@@ -68,10 +68,10 @@
             resources.ApplyResources(this.txtUsuario, "txtUsuario");
             this.txtUsuario.Name = "txtUsuario";
             // 
-            // txtMailEspecialista
+            // txtNombreEspecialista
             // 
-            resources.ApplyResources(this.txtMailEspecialista, "txtMailEspecialista");
-            this.txtMailEspecialista.Name = "txtMailEspecialista";
+            resources.ApplyResources(this.txtNombreEspecialista, "txtNombreEspecialista");
+            this.txtNombreEspecialista.Name = "txtNombreEspecialista";
             // 
             // cmbDiagnostico
             // 
@@ -92,10 +92,10 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.TextChanged += new System.EventHandler(this.txtContraseña_TextChanged);
             // 
-            // txtNombreEspecialista
+            // txtMailEspecialista
             // 
-            resources.ApplyResources(this.txtNombreEspecialista, "txtNombreEspecialista");
-            this.txtNombreEspecialista.Name = "txtNombreEspecialista";
+            resources.ApplyResources(this.txtMailEspecialista, "txtMailEspecialista");
+            this.txtMailEspecialista.Name = "txtMailEspecialista";
             // 
             // dtFecha
             // 
@@ -262,7 +262,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.btnLogIn);
-            this.Controls.Add(this.txtNombreEspecialista);
+            this.Controls.Add(this.txtMailEspecialista);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnRegistrarse);
@@ -270,7 +270,7 @@
             this.Controls.Add(this.rbtnMasculino);
             this.Controls.Add(this.rbtnFemenino);
             this.Controls.Add(this.cmbDiagnostico);
-            this.Controls.Add(this.txtMailEspecialista);
+            this.Controls.Add(this.txtNombreEspecialista);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtMailDelUsuario);
             this.Controls.Add(this.pictureBox1);
@@ -289,7 +289,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtMailDelUsuario;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox txtMailEspecialista;
+        private System.Windows.Forms.TextBox txtNombreEspecialista;
         private System.Windows.Forms.ComboBox cmbDiagnostico;
         private System.Windows.Forms.RadioButton rbtnFemenino;
         private System.Windows.Forms.RadioButton rbtnMasculino;
@@ -297,7 +297,7 @@
         private System.Windows.Forms.Button btnRegistrarse;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.TextBox txtNombreEspecialista;
+        private System.Windows.Forms.TextBox txtMailEspecialista;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.DateTimePicker dtFecha;
         private System.Windows.Forms.Label label1;

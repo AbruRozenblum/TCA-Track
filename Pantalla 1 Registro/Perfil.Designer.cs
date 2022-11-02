@@ -361,9 +361,9 @@ namespace Pantalla_1_Registro
             this.label6.Location = new System.Drawing.Point(240, 526);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 29);
+            this.label6.Size = new System.Drawing.Size(282, 29);
             this.label6.TabIndex = 63;
-            this.label6.Text = "EDAD";
+            this.label6.Text = "FECHA DE NACIMIENTO";
             // 
             // label7
             // 

@@ -36,7 +36,6 @@ namespace Pantalla_1_Registro
                 DataSet datasetM = new DataSet();
                 adapterM.Fill(datasetM);
                 Class1.username = txtusername.Text;
-                Class1.mailE = datasetM.Tables[0].Rows[0][0].ToString();
                 Inicio formaSiguiente = new Inicio();
                 this.Hide();
                 formaSiguiente.Show();
