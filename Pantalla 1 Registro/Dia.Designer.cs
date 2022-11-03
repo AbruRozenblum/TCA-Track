@@ -61,7 +61,7 @@
             this.flowLayoutPanel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 90);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(304, 321);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(202, 321);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // Dia

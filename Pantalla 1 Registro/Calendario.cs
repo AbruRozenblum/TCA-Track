@@ -76,7 +76,9 @@ namespace Pantalla_1_Registro
             for (int i = 0; i < dataset.Tables[0].Rows.Count; i++)
             {
                 chbAct = new CheckBox();
+                chbAct.Font = new Font("Mongolian Baiti", 12);
                 chbAct.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
+                chbAct.AutoSize = true;
                 flowLayoutPanel1.Controls.Add(chbAct);
                 chbAct.CheckedChanged += chbAct_CheckedChanged;
             }

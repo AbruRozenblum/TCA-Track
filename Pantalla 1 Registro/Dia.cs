@@ -41,9 +41,11 @@ namespace Pantalla_1_Registro
                 chbAct = new CheckBox();
                 chbAct.Font = new Font("Mongolian Baiti", 12);
                 chbAct.Text = dataset.Tables[0].Rows[i]["Evento"].ToString() + " " + dataset.Tables[0].Rows[i]["Inicio"].ToString() + "\n";
+                chbAct.AutoSize = true;
                 if (dataset.Tables[0].Rows[i]["Checked"].ToString() == "si")
                 {
                     chbAct.CheckState = CheckState.Checked;
+                    chbAct.Name = "chbAct" + i.ToString();
 
                 }
                 else
@@ -95,7 +97,7 @@ namespace Pantalla_1_Registro
                 OleDbDataAdapter adapter = new OleDbDataAdapter(Dia_command);
                 DataSet dataset = new DataSet();
                 adapter.Fill(dataset);
-                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE (Dia = '" + txtFecha.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + dataset.Tables[0].Rows[0]["Evento"].ToString() + "')");
+                OleDbCommand EstadoCommand = new OleDbCommand("UPDATE Calendario SET Checked = '" + Estado + "'  WHERE (Dia = '" + txtFecha.Text + "' AND Username = '" + Class1.username + "' AND Evento = '" + chbAct.Text + "')");
                 EstadoCommand.Connection = db;
                 EstadoCommand.ExecuteNonQuery();
                 db.Close();
